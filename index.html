@@ -1482,6 +1482,94 @@
 
   /* === EINDE RSL_MOBILE_V6_TWEAKS === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V7_FINALE - finale tweaks                              */
+  /* 1. Hero meer zijkant ademruimte                                   */
+  /* 2. Floater-quote weghalen op mobile + tablet                      */
+  /* 3. Phone screenshots: bezels en ruimte fixen                      */
+  /* ================================================================ */
+
+  /* === MOBILE (<=640px) finale tweaks === */
+  @media (max-width: 640px) {
+
+    /* 1. Hero meer ademruimte aan de zijkant */
+    .wrap { padding: 0 28px !important; }
+
+    /* 2. FLOATER-QUOTE volledig verbergen op mobile */
+    .floater-quote {
+      display: none !important;
+    }
+
+    /* 3. Phone-wrap: minder ruimte onder de phone (was 30px margin-top) */
+    .phone-wrap {
+      margin-top: 30px !important;
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    /* Phone-feed in hero: kleinere margin onder */
+    .phone {
+      margin-bottom: 0 !important;
+    }
+
+    /* Wind forecast phones: geforceerde verticale stack + ruimte onder */
+    .windforecast-phone {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 24px !important;
+      padding: 24px 14px 36px !important;
+    }
+    .windforecast-bezel {
+      max-width: 280px !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+    }
+
+    /* Session phone (Garmin tracking) - meer bottom ruimte */
+    .watches {
+      padding-left: 0 !important;
+      padding-bottom: 24px !important;
+      max-width: 320px !important;
+      margin: 36px auto 0 !important;
+    }
+    .session-phone {
+      max-width: 280px !important;
+      margin: 0 auto !important;
+    }
+
+    /* Spotinfo phone - zorg dat bottom mooi eindigt */
+    .spotinfo-phone {
+      padding: 16px 14px 28px !important;
+    }
+
+    /* Community phone - genoeg ruimte aan de bottom van de wrap */
+    .comm-phone-wrap {
+      padding-bottom: 16px !important;
+    }
+  }
+
+  /* === TABLET (641-1024px) finale tweaks === */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    /* Floater-quote ook weg op tablet (te krap met de phone ernaast) */
+    .floater-quote {
+      display: none !important;
+    }
+
+    /* Phone-wrap ruimte */
+    .phone-wrap {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    /* Wind forecast phones */
+    .windforecast-phone {
+      padding-bottom: 32px !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V7_FINALE === */
+
 </style>
 </head>
 <body>
