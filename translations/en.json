@@ -2,10 +2,8 @@
   "lang.flag": "🇬🇧",
   "lang.code": "EN",
   "lang.name": "English",
-
   "meta.title": "RigSize Live — Share rigsizes, good surfkarma",
   "meta.description": "The real-time community for windsurfers, kiters and wingers. Share your rig, see what others are riding, and get the best wind forecast per spot.",
-
   "nav.tracking": "Tracking",
   "nav.features": "Features",
   "nav.garmin": "Garmin & Apple",
@@ -13,10 +11,8 @@
   "nav.live": "Live rigsizes",
   "nav.openWebapp": "Open webapp →",
   "nav.download": "Download",
-
   "mobile.download_app": "Download the app →",
   "mobile.open_webapp": "Open webapp",
-
   "hero.eyebrow": "The <strong>most complete</strong> app for windsurf, kite & wing",
   "hero.title_line1": "Everything from your session.",
   "hero.title_line2": "In one app.",
@@ -39,7 +35,6 @@
   "hero.float_live": "Live · Wijk aan Zee",
   "hero.float_imported": "Session<br>imported",
   "hero.quote": "See from your couch which <em>rig sizes</em> are being used at all surf spots.",
-
   "community.eyebrow": "— Live rigsizes",
   "community.h2": "Share rigsizes, good surfkarma.",
   "community.intro": "RigSize Live is all about sharing together. Your data helps others choose their rig — and vice versa. <b style=\"color:var(--ink)\">See from your couch which rig sizes are being ridden at all surf spots</b>, so you load the right kit into the car with peace of mind.",
@@ -50,7 +45,6 @@
   "community.list2": "Filter by windsurf, wing, kite or foil.",
   "community.list3": "Tap a session for sail, board, fin & weight.",
   "community.img_alt": "Live rigsizes screen in RigSize Live",
-
   "how.eyebrow": "— How does it work?",
   "how.h2_line1": "From beach to logbook.",
   "how.h2_line2": "In 5 simple steps.",
@@ -75,7 +69,6 @@
   "how.slide5.body2": "Using a tracking watch? Then all your data is automatically added to your wind, spot and rig logbook.",
   "how.prev": "Previous",
   "how.next": "Next",
-
   "watch.eyebrow": "— Watch integration",
   "watch.h2_line1": "Your watch. Your data.",
   "watch.h2_line2": "Much sharper insights.",
@@ -109,7 +102,6 @@
   "watch.gear.combo_sub": "Your most used sail + board",
   "watch.gear.records_title": "Records per combo",
   "watch.gear.records_sub": "Best performance per gear",
-
   "why.eyebrow": "— What makes RSL unique",
   "why.h2_line1": "Sessions × wind × rig.",
   "why.h2_line2": "All connected.",
@@ -131,7 +123,6 @@
   "why.viz.knots": "knots →",
   "why.match.title": "Your rig match score",
   "why.match.sub": "Based on your weight (82 kg), board (JP 110L) and current wind.",
-
   "disc.aria": "For windsurf, kite and wing",
   "disc.eyebrow": "— For all disciplines",
   "disc.h2_line1": "One app.",
@@ -149,7 +140,6 @@
   "disc.wing.tag": "Wing",
   "disc.wing.title": "Wing · board · foil",
   "disc.wing.sub": "Volume, wing size and foil set. Complete logbook per session.",
-
   "feat.eyebrow": "— Features",
   "feat.h2": "One app for everything around your session.",
   "feat.intro": "From rig sharing to safety check-in, from spot chat to personal analyses — RSL covers your entire surf day, with no paid options.",
@@ -216,7 +206,6 @@
   "feat.events.num": "11 — Events & Challenges",
   "feat.events.title": "Spot challenges and events.",
   "feat.events.body": "Join spot events, beat your own records and see how you score against other surfers.",
-
   "free.eyebrow": "For the whole community",
   "free.h2_line1": "Completely",
   "free.h2_line2": "free.",
@@ -225,7 +214,6 @@
   "free.tile1.body": "No features behind a subscription. Rig sharing, forecast, Garmin, leaderboards — everything is included.",
   "free.tile2.b": "Share rigsizes, good surfkarma",
   "free.tile2.body": "The app lives on sessions surfers voluntarily share. The more people join in, the better the data.",
-
   "dl.eyebrow": "— Download",
   "dl.h2": "Ready for your next session?",
   "dl.intro": "Open the webapp in your browser. Native apps for iOS and Android coming soon.",
@@ -235,13 +223,13 @@
   "dl.browser_label": "Browser",
   "dl.soon_badge": "SOON",
   "dl.soon_tooltip": "The native apps are coming soon — use the webapp until then",
-
   "footer.privacy": "Privacy policy",
   "footer.terms": "Terms",
   "footer.product_of": "RigSize Live is a product of FTR Management B.V.",
   "footer.kvk": "KvK 53751671",
   "footer.copyright": "© 2025–2026 FTR Management B.V.",
-
   "unit.hour": "h",
-  "month.sept": "sept"
+  "month.sept": "sept",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy-en.html",
+  "footer.terms_url": "https://app.rigsizelive.com/terms-en.html"
 }

@@ -229,5 +229,7 @@
   "footer.terms": "Voorwaarden",
   "footer.product_of": "RigSize Live is een product van FTR Management B.V.",
   "footer.kvk": "KvK 53751671",
-  "footer.copyright": "© 2025–2026 FTR Management B.V."
+  "footer.copyright": "© 2025–2026 FTR Management B.V.",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html"
 }
