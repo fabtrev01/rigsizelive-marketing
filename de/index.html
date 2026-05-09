@@ -1848,17 +1848,38 @@
 
 
   /* ================================================================ */
-  /* RSL_MOBILE_V15_BORDER                                             */
-  /* ALLEEN: zwarte rand om community phone img                        */
+  /* RSL_MOBILE_V16                                                    */
+  /* 1. Comm-phone: visible black bezel via container styling          */
+  /* 2. Hero: padding-top 50px (was 100px - halve afstand tot menu)    */
   /* ================================================================ */
   @media (max-width: 640px) {
+
+    /* Hero: kleinere afstand pill <-> menu */
+    .hero-inner {
+      padding: 50px 0 80px !important;
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+    }
+
+    /* Comm-phone: forceer visible black bezel */
+    .comm-phone {
+      background: #0b1f33 !important;
+      padding: 8px !important;
+      box-sizing: content-box !important;
+      border-radius: 42px !important;
+      overflow: hidden !important;
+    }
     .comm-phone img {
-      border: 6px solid #0b1f33 !important;
-      box-sizing: border-box !important;
-      border-radius: 36px !important;
+      border: none !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      border-radius: 32px !important;
+      display: block !important;
+      box-sizing: content-box !important;
     }
   }
-  /* === EINDE RSL_MOBILE_V15_BORDER === */
+  /* === EINDE RSL_MOBILE_V16 === */
 
 </style>
 </head>
