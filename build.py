@@ -26,7 +26,7 @@ LANGUAGES = ['nl', 'en', 'de', 'fr', 'es', 'it']
 DEFAULT_LANG = 'nl'
 ROOT = Path(__file__).parent.resolve()
 
-PLACEHOLDER_RE = re.compile(r'\{\{([A-Z0-9_.]+)\}\}')
+PLACEHOLDER_RE = re.compile(r'\{\{([a-zA-Z0-9_.]+)\}\}')
 
 
 def load_translations(lang):
