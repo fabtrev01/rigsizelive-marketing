@@ -1570,6 +1570,82 @@
 
   /* === EINDE RSL_MOBILE_V7_FINALE === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V8_POLISH                                              */
+  /* 1. Hero meer padding-top (eyebrow weg van header)                 */
+  /* 2. Spotinfo phone: shadow ring weg + foto tegen kaart-rand        */
+  /* 3. Phones met object-fit:contain zodat hele screenshot zichtbaar  */
+  /* ================================================================ */
+
+  /* === MOBILE (<=640px) polish === */
+  @media (max-width: 640px) {
+
+    /* 1. Hero: meer top padding zodat oranje pill weg van header */
+    .hero-inner {
+      padding: 72px 0 70px !important;
+    }
+
+    /* 2. Spotinfo phone: shadow ring (zwarte rechte lijn) weg + foto tegen bottom */
+    .spotinfo-phone {
+      padding: 0 !important;
+      background: #f7f9fc !important;
+    }
+    .spotinfo-phone img {
+      max-width: none !important;
+      width: 100% !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+
+    /* 3. Wind forecast phones: object-fit contain zodat hele screenshot zichtbaar */
+    .windforecast-bezel img {
+      object-fit: contain !important;
+      object-position: center top !important;
+      background: #0b1220 !important;
+    }
+    .windforecast-bezel img.wf-zoom {
+      height: 100% !important;
+      width: 100% !important;
+      margin-top: 0 !important;
+    }
+
+    /* Session phone (Garmin): object-fit contain */
+    .session-phone img {
+      object-fit: contain !important;
+      object-position: center top !important;
+      background: #0b1f33 !important;
+    }
+
+    /* Community phone: object-fit contain zodat hele live-rigsizes screenshot zichtbaar */
+    .comm-phone img {
+      object-fit: contain !important;
+      object-position: center top !important;
+      background: #0b1f33 !important;
+    }
+  }
+
+  /* === TABLET (641-1024px) polish === */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    /* Spotinfo: ook op tablet de zwarte ring shadow weghalen */
+    .spotinfo-phone {
+      padding: 0 !important;
+      background: #f7f9fc !important;
+    }
+    .spotinfo-phone img {
+      max-width: none !important;
+      width: 100% !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V8_POLISH === */
+
 </style>
 </head>
 <body>
