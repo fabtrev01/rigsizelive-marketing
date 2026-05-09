@@ -1646,6 +1646,93 @@
 
   /* === EINDE RSL_MOBILE_V8_POLISH === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V9_CORRECT                                             */
+  /* 1. Hero meer wrap padding (36px)                                  */
+  /* 2. Revert v8 object-fit:contain (veroorzaakte zwarte balken)      */
+  /* 3. Spot info phone: 3-zijdige bezel via borders (geen bottom)     */
+  /* 4. Hero phone: aspect-ratio matched aan echte iPhone (9/19.5)     */
+  /* ================================================================ */
+
+  /* === MOBILE (<=640px) corrections === */
+  @media (max-width: 640px) {
+
+    /* 1. WRAP: nog meer ademruimte */
+    .wrap { padding: 0 32px !important; }
+
+    /* 2. REVERT v8: object-fit terug naar cover (origineel design) */
+    .windforecast-bezel img {
+      object-fit: cover !important;
+      object-position: center top !important;
+      background: transparent !important;
+      height: 100% !important;
+    }
+    .windforecast-bezel img.wf-zoom {
+      height: 108% !important;
+      width: 100% !important;
+      margin-top: -8% !important;
+    }
+    .session-phone img {
+      object-fit: cover !important;
+      object-position: center top !important;
+      background: transparent !important;
+      height: 100% !important;
+    }
+    .comm-phone img {
+      object-fit: cover !important;
+      object-position: center top !important;
+      background: transparent !important;
+      height: 100% !important;
+    }
+
+    /* 3. SPOT INFO PHONE: bezel via borders top+sides (geen bottom = geen streep) */
+    .spotinfo-phone {
+      padding: 0 !important;
+      background: #f7f9fc !important;
+    }
+    .spotinfo-phone img {
+      max-width: 240px !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      display: block !important;
+      border-top: 6px solid #0f283c !important;
+      border-left: 6px solid #0f283c !important;
+      border-right: 6px solid #0f283c !important;
+      border-bottom: none !important;
+      border-radius: 18px 18px 0 0 !important;
+      box-shadow: 0 -10px 30px -10px rgba(15,40,60,.18) !important;
+    }
+
+    /* 4. HERO PHONE: aspect-ratio matchen aan iPhone screenshot */
+    .phone {
+      aspect-ratio: 9/19.5 !important;
+    }
+  }
+
+  /* === TABLET (641-1024px) corrections === */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    /* Spot info phone: zelfde 3-zijdige bezel */
+    .spotinfo-phone {
+      padding: 0 !important;
+      background: #f7f9fc !important;
+    }
+    .spotinfo-phone img {
+      max-width: 280px !important;
+      width: 100% !important;
+      margin: 0 auto !important;
+      display: block !important;
+      border-top: 6px solid #0f283c !important;
+      border-left: 6px solid #0f283c !important;
+      border-right: 6px solid #0f283c !important;
+      border-bottom: none !important;
+      border-radius: 18px 18px 0 0 !important;
+      box-shadow: 0 -10px 30px -10px rgba(15,40,60,.18) !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V9_CORRECT === */
+
 </style>
 </head>
 <body>
