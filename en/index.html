@@ -1884,6 +1884,58 @@
 
   /* === EINDE RSL_MOBILE_V12_POSREL === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V13_RESET                                              */
+  /* 1. Button: 3-stop kleuren terug, 180deg (verticaal, symmetrisch)  */
+  /* 2. Phones: revert naar originele aspect-ratio 462/1000 + cover    */
+  /* ================================================================ */
+
+  /* === BUTTON: originele 3-stop kleuren, verticaal (geen links-streepje) === */
+  .btn-primary {
+    background: linear-gradient(180deg, #1f78c4 0%, #1a9cc4 50%, #2bb3a6 100%) !important;
+  }
+
+  /* === MOBILE (<=640px): revert phone manipulaties === */
+  @media (max-width: 640px) {
+
+    /* Container: terug naar originele aspect-ratio 462/1000 */
+    .windforecast-bezel,
+    .session-phone,
+    .comm-phone {
+      aspect-ratio: 462/1000 !important;
+      height: auto !important;
+    }
+
+    /* Img: terug naar origineel gedrag (vult bezel content area) */
+    .windforecast-bezel img,
+    .session-phone img,
+    .comm-phone img {
+      position: relative !important;
+      inset: auto !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+
+    /* wf-zoom: originele crop voor top-notch verwijdering */
+    .windforecast-bezel img.wf-zoom {
+      height: 108% !important;
+      margin-top: -8% !important;
+      object-position: center bottom !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V13_RESET === */
+
 </style>
 </head>
 <body>
