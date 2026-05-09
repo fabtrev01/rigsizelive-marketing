@@ -1733,6 +1733,93 @@
 
   /* === EINDE RSL_MOBILE_V9_CORRECT === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V10_REFINE                                             */
+  /* 1. Hero: padding-top 100px (oranje pill verder van menu)          */
+  /* 2. Spot info: border-radius 36px (mooiere phone-bezel afronding)  */
+  /* 3. Wind/session/comm phones: aspect-ratio auto (geen overflow)    */
+  /* ================================================================ */
+
+  /* === MOBILE (<=640px) === */
+  @media (max-width: 640px) {
+
+    /* 1. HERO: oranje pill ver weg van top menu */
+    .hero-inner {
+      padding: 100px 0 80px !important;
+    }
+    /* Eyebrow chip iets meer margin onder voor ademruimte naar kop */
+    .eyebrow {
+      margin-bottom: 28px !important;
+    }
+
+    /* 2. SPOT INFO PHONE: 36px afronding ipv 18px */
+    .spotinfo-phone img {
+      border-radius: 36px 36px 0 0 !important;
+    }
+
+    /* 3. WIND FORECAST PHONES: container natural aspect ratio */
+    .windforecast-bezel {
+      aspect-ratio: auto !important;
+      height: auto !important;
+      max-width: 280px !important;
+      width: 100% !important;
+    }
+    .windforecast-bezel img,
+    .windforecast-bezel img.wf-zoom {
+      height: auto !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+      margin: 0 !important;
+      position: relative !important;
+      display: block !important;
+    }
+
+    /* SESSION PHONE: container natural aspect ratio */
+    .session-phone {
+      aspect-ratio: auto !important;
+      height: auto !important;
+      max-width: 280px !important;
+      width: 100% !important;
+    }
+    .session-phone img {
+      height: auto !important;
+      width: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+
+    /* COMMUNITY PHONE: container natural aspect ratio */
+    .comm-phone {
+      aspect-ratio: auto !important;
+      height: auto !important;
+      max-width: 280px !important;
+      width: 100% !important;
+    }
+    .comm-phone img {
+      height: auto !important;
+      width: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+  }
+
+  /* === TABLET (641-1024px) === */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    /* Spot info: 36px afronding ook op tablet */
+    .spotinfo-phone img {
+      border-radius: 36px 36px 0 0 !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V10_REFINE === */
+
 </style>
 </head>
 <body>
