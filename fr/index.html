@@ -884,6 +884,206 @@
     .lang-switcher-menu{right:auto;left:0}
   }
 </style>
+<style id="rsl-mobile-fixes">
+/* RSL_MOBILE_FIXES_START - aggressief overflow hard fix + grid corrections */
+
+/* 1. Forceer geen horizontale scroll, ooit, op iOS */
+html, body { max-width: 100vw; overflow-x: hidden !important; }
+
+/* 2. Wrap padding kleiner op smalle schermen — meer ademruimte voor content */
+@media (max-width: 640px) {
+  .wrap { padding: 0 18px !important; }
+}
+
+/* 3. Hero - alle elementen behoorlijk wrappen + overflow voorkomen */
+@media (max-width: 700px) {
+  /* Hero subtitle - laat lange woorden breken */
+  .sub { word-wrap: break-word; overflow-wrap: break-word; max-width: 100% !important; font-size: 16px !important; }
+
+  /* Headline - krimp font op echt smalle schermen */
+  h1.headline { font-size: clamp(34px, 8vw, 48px) !important; word-wrap: break-word; }
+
+  /* Hero CTAs - knoppen full width onder elkaar op mobiel */
+  .hero-ctas { flex-direction: column; gap: 10px !important; align-items: stretch; }
+  .hero-ctas .btn { width: 100%; justify-content: center; text-align: center; }
+
+  /* Eyebrow chip - laat tekst wrappen ipv afkappen */
+  .eyebrow { white-space: normal !important; line-height: 1.4; max-width: 100%; }
+
+  /* Hero pillars - 3 kolommen wordt 1 kolom op mobiel (was forceeerde overflow) */
+  .hero-inner > div > div[style*="grid-template-columns:repeat(3,1fr)"] {
+    grid-template-columns: 1fr !important;
+    max-width: 100% !important;
+  }
+
+  /* Hero stats - laat ze wrappen ipv overflow */
+  .hero-stats {
+    flex-wrap: wrap !important;
+    gap: 24px !important;
+    max-width: 100% !important;
+  }
+  .hero-stats > div { flex: 0 0 auto; }
+  .hero-stats b { font-size: 22px !important; }
+
+  /* Free chip mag wrappen */
+  .free-chip { flex-wrap: wrap; line-height: 1.5; }
+}
+
+/* 4. Hero phone mockup - krimp op mobiel, niet overflow */
+@media (max-width: 700px) {
+  .phone-wrap { width: 100%; max-width: 100%; }
+  .phone {
+    width: min(280px, 80vw) !important;
+    height: auto !important;
+    aspect-ratio: 320 / 650;
+    margin: 0 auto;
+  }
+  .floater-1, .floater-2 { display: none !important; }
+}
+
+/* 5. Community section - phone kleiner + grid 1-col */
+@media (max-width: 900px) {
+  .comm-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+  .comm-phone-wrap { padding-left: 0 !important; }
+  .comm-phone {
+    transform: scale(0.85) !important;
+    transform-origin: top center !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .comm-phone { transform: scale(0.7) !important; margin-top: -40px !important; }
+}
+
+/* 6. Tracking/How section - 2-col grid wordt 1-col op mobiel */
+@media (max-width: 900px) {
+  #how .wrap > div[style*="grid-template-columns:.95fr 1.05fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  #howSlider .slider-card {
+    padding: 32px 24px 28px !important;
+    min-height: auto !important;
+  }
+  #howSlider .slide-title { font-size: 22px !important; }
+  #howSlider .slide-body { font-size: 15px !important; }
+}
+
+/* 7. Spotinfo-card (Feature 02) - was flex-row, op mobiel column met phone onder */
+@media (max-width: 700px) {
+  .spotinfo-card {
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+  .spotinfo-text {
+    flex: 0 0 auto !important;
+    padding: 24px !important;
+  }
+  .spotinfo-phone {
+    flex: 0 0 auto !important;
+    padding: 16px 14px 0 !important;
+    background: #f7f9fc !important;
+  }
+  .spotinfo-phone img {
+    max-width: 200px !important;
+  }
+}
+
+/* 8. Wind forecast card al ge-fixt boven, maar extra: phones niet groter dan viewport */
+@media (max-width: 540px) {
+  .windforecast-bezel { max-width: 200px !important; width: 100% !important; }
+  .windforecast-stats { grid-template-columns: 1fr 1fr !important; gap: 12px 16px !important; }
+}
+
+/* 9. Why-section data-viz - niet overflow */
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .data-viz { padding: 24px !important; min-height: auto !important; }
+  .why-quotes { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  .qtile { padding: 14px !important; }
+  .qtile b { font-size: 22px !important; }
+  .viz-big { font-size: 42px !important; }
+}
+
+/* 10. Watch/Integrations - 2-col grid 1-col + phone kleiner */
+@media (max-width: 900px) {
+  .int-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .session-phone {
+    max-width: 240px !important;
+    margin: 0 auto !important;
+  }
+  .unlock-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
+}
+
+/* 11. Features grid - alle cards full width op mobiel */
+@media (max-width: 900px) {
+  .fgrid { gap: 14px !important; }
+  .fcard {
+    grid-column: span 12 !important;
+    padding: 22px !important;
+    min-height: auto !important;
+  }
+  .fcard.tall { min-height: auto !important; }
+  .fcard h3 { font-size: 22px !important; }
+}
+
+/* 12. Section padding kleiner op mobiel - was 120px standaard, te veel */
+@media (max-width: 700px) {
+  section { padding: 70px 0 !important; }
+  .section-head { margin-bottom: 36px !important; gap: 20px !important; }
+  .section-head h2 { font-size: clamp(28px, 7vw, 40px) !important; }
+}
+
+/* 13. Disciplines triptych - 1-col + niet te hoog */
+@media (max-width: 700px) {
+  .disc-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+  .disc-card { aspect-ratio: 16 / 11 !important; }
+}
+
+/* 14. Free section - tiles 1-col */
+@media (max-width: 700px) {
+  .free-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+}
+
+/* 15. Download section - SOON badges niet over de rand */
+@media (max-width: 700px) {
+  .dl-stores { flex-direction: column !important; gap: 14px !important; align-items: stretch !important; }
+  .dl-store {
+    justify-content: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* 16. Footer - mobile spacing */
+@media (max-width: 700px) {
+  footer.footer-clean { padding: 50px 18px 40px !important; }
+  .footer-legal-links { flex-wrap: wrap; gap: 8px 14px !important; }
+}
+
+/* 17. Long words break (Dutch words can be very long) */
+@media (max-width: 700px) {
+  h1, h2, h3, p, span, div, a, b {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  /* But NOT for fixed-width buttons */
+  .btn, .dl-store, .lang-switcher-btn {
+    overflow-wrap: normal;
+    word-wrap: normal;
+  }
+}
+
+/* 18. Lang switcher btn - mag schuiven met de rest */
+@media (max-width: 700px) {
+  .nav-cta { gap: 8px !important; }
+  .lang-switcher-btn { font-size: 11px !important; padding: 5px 8px !important; }
+}
+
+/* RSL_MOBILE_FIXES_END */
+</style>
 </head>
 <body>
 
