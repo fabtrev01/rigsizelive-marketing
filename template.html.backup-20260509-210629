@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>RigSize Live — Share rigsizes, good surfkarma</title>
+<title>{{META.TITLE}}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<meta name="description" content="De real-time community voor windsurfers, kiters en wingers. Deel je rig, zie wat anderen rijden, en krijg de beste windvoorspelling per spot." />
+<meta name="description" content="{{META.DESCRIPTION}}" />
 <meta name="theme-color" content="#1a9cc4" />
 <meta property="og:title" content="RigSize Live" />
-<meta property="og:description" content="De real-time community voor windsurfers, kiters en wingers. Deel je rig, zie wat anderen rijden, en krijg de beste windvoorspelling per spot." />
+<meta property="og:description" content="{{META.DESCRIPTION}}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.rigsizelive.com" />
 <meta property="og:image" content="https://www.rigsizelive.com/images/hero-photo.png" />
@@ -1846,6 +1846,96 @@
 
   /* === EINDE RSL_MOBILE_V11_FIX === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V12_POSREL                                             */
+  /* 1. Phone img position:relative override (absolute uit origineel)  */
+  /* 2. Download button: 2-stop gradient zonder donkerblauwe start     */
+  /* ================================================================ */
+
+  /* === DESKTOP + MOBILE: button gradient gladder maken === */
+  .btn-primary {
+    background: linear-gradient(135deg, #1a9cc4 0%, #2bb3a6 100%) !important;
+  }
+
+  /* === MOBILE (<=640px) === */
+  @media (max-width: 640px) {
+
+    /* PHONE IMG: override absolute positioning uit origineel CSS */
+    .windforecast-bezel img,
+    .windforecast-bezel img.wf-zoom,
+    .session-phone img,
+    .comm-phone img {
+      position: relative !important;
+      inset: auto !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V12_POSREL === */
+
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V13_RESET                                              */
+  /* 1. Button: 3-stop kleuren terug, 180deg (verticaal, symmetrisch)  */
+  /* 2. Phones: revert naar originele aspect-ratio 462/1000 + cover    */
+  /* ================================================================ */
+
+  /* === BUTTON: originele 3-stop kleuren, verticaal (geen links-streepje) === */
+  .btn-primary {
+    background: linear-gradient(180deg, #1f78c4 0%, #1a9cc4 50%, #2bb3a6 100%) !important;
+  }
+
+  /* === MOBILE (<=640px): revert phone manipulaties === */
+  @media (max-width: 640px) {
+
+    /* Container: terug naar originele aspect-ratio 462/1000 */
+    .windforecast-bezel,
+    .session-phone,
+    .comm-phone {
+      aspect-ratio: 462/1000 !important;
+      height: auto !important;
+    }
+
+    /* Img: terug naar origineel gedrag (vult bezel content area) */
+    .windforecast-bezel img,
+    .session-phone img,
+    .comm-phone img {
+      position: relative !important;
+      inset: auto !important;
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      bottom: auto !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      object-fit: cover !important;
+      object-position: center top !important;
+      margin: 0 !important;
+      display: block !important;
+    }
+
+    /* wf-zoom: originele crop voor top-notch verwijdering */
+    .windforecast-bezel img.wf-zoom {
+      height: 108% !important;
+      margin-top: -8% !important;
+      object-position: center bottom !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V13_RESET === */
+
 </style>
 </head>
 <body>
@@ -1878,16 +1968,16 @@
       <span>RigSize<em> Live</em></span>
     </div>
     <div class="nav-links">
-      <a href="#how">Tracking</a>
-      <a href="#features">Features</a>
-      <a href="#watch">Garmin & Apple</a>
-      <a href="#forecast">Windvoorspelling</a>
-      <a href="#community">Live rigsizes</a>
+      <a href="#how">{{NAV.TRACKING}}</a>
+      <a href="#features">{{NAV.FEATURES}}</a>
+      <a href="#watch">{{NAV.GARMIN}}</a>
+      <a href="#forecast">{{NAV.FORECAST}}</a>
+      <a href="#community">{{NAV.LIVE}}</a>
     </div>
     <div class="nav-cta">
       <div class="lang-switcher" id="langSwitcher">
         <button class="lang-switcher-btn" id="langSwitcherBtn" aria-haspopup="true" aria-expanded="false">
-          <span>🇳🇱 NL</span>
+          <span>{{LANG.FLAG}} {{LANG.CODE}}</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="lang-switcher-menu" role="menu">
@@ -1899,8 +1989,8 @@
           <a href="/it" data-lang="it">🇮🇹 Italiano</a>
         </div>
       </div>
-      <a class="btn btn-ghost" href="https://app.rigsizelive.com">Open webapp →</a>
-      <a class="btn btn-primary" href="#download">Download</a>
+      <a class="btn btn-ghost" href="https://app.rigsizelive.com">{{nav.openWebapp}}</a>
+      <a class="btn btn-primary" href="#download">{{nav.download}}</a>
     </div>
     <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
@@ -1908,16 +1998,16 @@
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#how">Tracking</a>
-  <a href="#features">Features</a>
-  <a href="#watch">Garmin & Apple</a>
-  <a href="#forecast">Windvoorspelling</a>
-  <a href="#community">Live rigsizes</a>
+  <a href="#how">{{NAV.TRACKING}}</a>
+  <a href="#features">{{NAV.FEATURES}}</a>
+  <a href="#watch">{{NAV.GARMIN}}</a>
+  <a href="#forecast">{{NAV.FORECAST}}</a>
+  <a href="#community">{{NAV.LIVE}}</a>
   <div class="mobile-cta">
-    <a class="btn btn-primary" href="#download">Download de app →</a>
-    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">Open webapp</a>
+    <a class="btn btn-primary" href="#download">{{MOBILE.DOWNLOAD_APP}}</a>
+    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">{{MOBILE.OPEN_WEBAPP}}</a>
   </div>
-  <div class="mobile-meta"><span>🇳🇱 Nederlands</span></div>
+  <div class="mobile-meta"><span>{{LANG.FLAG}} {{LANG.NAME}}</span></div>
 </div>
 
 <!-- ================= HERO ================= -->
@@ -1925,46 +2015,46 @@
   <div class="hero-photo"></div>
   <div class="wrap hero-inner">
     <div>
-      <span class="eyebrow"><span class="dot"></span> <span>De <strong>meest complete</strong> app voor windsurf, kite & wing</span></span>
+      <span class="eyebrow"><span class="dot"></span> <span>{{HERO.EYEBROW}}</span></span>
       <h1 class="headline">
-        Alles uit je sessie.<br>
-        <span class="acc">In één app.</span>
+        {{HERO.TITLE_LINE1}}<br>
+        <span class="acc">{{HERO.TITLE_LINE2}}</span>
       </h1>
-      <p class="sub">RigSize Live combineert als enige <b style="color:#fff;font-weight:600">rigdata, winddata, spotdata en je eigen tracking</b> in één analyse. Gebruik gewoon je favoriete horloge-app — synct via <b style="color:#fff;font-weight:600">Garmin Connect</b> of <b style="color:#fff;font-weight:600">Apple Health</b> en alles landt automatisch in RSL.</p>
+      <p class="sub">{{HERO.SUB}}</p>
 
       <div class="hero-ctas">
-        <a href="#download" class="btn btn-primary">Download de app →</a>
-        <a href="https://app.rigsizelive.com" class="btn btn-ghost">Probeer in de browser</a>
+        <a href="#download" class="btn btn-primary">{{HERO.CTA1}}</a>
+        <a href="https://app.rigsizelive.com" class="btn btn-ghost">{{HERO.CTA2}}</a>
       </div>
 
       <!-- Value pillars directly under CTA -->
       <div class="hero-pillars" style="margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:580px">
         <div style="border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:rgba(255,255,255,.03)">
-          <div class="mono" style="color:#7cd7e8">01 · Deel</div>
-          <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">Je rig & spot</div>
-          <div style="font-size:12px;color:var(--muted-d);margin-top:3px">Real-time op jouw plek</div>
+          <div class="mono" style="color:#7cd7e8">{{HERO.PILLAR1.NUM}}</div>
+          <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">{{HERO.PILLAR1.TITLE}}</div>
+          <div style="font-size:12px;color:var(--muted-d);margin-top:3px">{{HERO.PILLAR1.SUB}}</div>
         </div>
         <div style="border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:rgba(255,255,255,.03)">
-          <div class="mono" style="color:#7cd7e8">02 · Track <span style="opacity:.6">(optioneel)</span></div>
-          <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">Via je horloge</div>
+          <div class="mono" style="color:#7cd7e8">{{HERO.PILLAR2.NUM}} <span style="opacity:.6">{{HERO.PILLAR2.OPTIONAL}}</span></div>
+          <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">{{HERO.PILLAR2.TITLE}}</div>
           <div style="font-size:12px;color:var(--muted-d);margin-top:3px">Garmin Connect · Apple Health</div>
         </div>
         <div style="border:1px solid rgba(43,179,166,.5);border-radius:12px;padding:12px 14px;background:rgba(43,179,166,.1)">
-          <div class="mono" style="color:#7cd7e8">03 · Analyseer</div>
-          <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">Rig × wind × spot</div>
-          <div style="font-size:12px;color:#b8e4dd;margin-top:3px">Alleen bij RSL</div>
+          <div class="mono" style="color:#7cd7e8">{{HERO.PILLAR3.NUM}}</div>
+          <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">{{HERO.PILLAR3.TITLE}}</div>
+          <div style="font-size:12px;color:#b8e4dd;margin-top:3px">{{HERO.PILLAR3.SUB}}</div>
         </div>
       </div>
 
       <div class="free-chip">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
-        Gratis te gebruiken — zonder Pro-versie of paywall.
+        {{HERO.FREE_CHIP}}
       </div>
 
       <div class="hero-stats">
-        <div><b>3-in-1</b><span>Windsurf · Kite · Wing</span></div>
-        <div><b>4.500+</b><span>Spots wereldwijd</span></div>
-        <div><b>400+</b><span>Spots in Nederland</span></div>
+        <div><b>3-in-1</b><span>{{HERO.STAT1_LABEL}}</span></div>
+        <div><b>4.500+</b><span>{{HERO.STAT2_LABEL}}</span></div>
+        <div><b>400+</b><span>{{HERO.STAT3_LABEL}}</span></div>
       </div>
     </div>
 
@@ -1972,11 +2062,11 @@
     <div class="phone-wrap">
       <div class="floater floater-1">
         <div style="width:26px;height:26px;border-radius:6px;background:var(--brand);display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 13h15a3 3 0 1 1-3 3"/><path d="M3 18h7"/></svg></div>
-        <div><b>22 kts</b><small>Live · Wijk aan Zee</small></div>
+        <div><b>22 kts</b><small>{{HERO.FLOAT_LIVE}}</small></div>
       </div>
       <div class="floater floater-2">
         <img src="/icons/garmin.png" class="gm" alt="Garmin" />
-        <div><b style="display:block;line-height:1.1">Sessie<br>geïmporteerd</b><small>GPS + 41.3 km/h top</small></div>
+        <div><b style="display:block;line-height:1.1">{{HERO.FLOAT_IMPORTED}}</b><small>GPS + 41.3 km/h top</small></div>
       </div>
       <div class="phone">
         <div class="phone-screen phone-photo">
@@ -1985,7 +2075,7 @@
       </div>
       <div class="floater-quote">
         <span class="q-mark">“</span>
-        <span>Vanaf de bank al zien met welke <em>rigmaten</em> er gevaren wordt op alle surfspots.</span>
+        <span>{{HERO.QUOTE}}</span>
       </div>
     </div>
   </div>
@@ -1997,27 +2087,27 @@
     <div class="comm-grid">
       <div class="comm-copy">
         <div class="comm-head">
-          <div class="mono">— Live rigsizes</div>
-          <h2 class="comm-h2">Share rigsizes, good surfkarma.</h2>
-          <p class="comm-intro">RigSize Live draait om samen delen. Jouw data helpt anderen hun rig in te schatten — en andersom. <b style="color:var(--ink)">Vanaf de bank al zien met welke rigmaten er gevaren wordt op alle surfspots</b>, zodat je met een gerust hart de juiste set in de auto laadt.</p>
+          <div class="mono">{{COMMUNITY.EYEBROW}}</div>
+          <h2 class="comm-h2">{{COMMUNITY.H2}}</h2>
+          <p class="comm-intro">{{COMMUNITY.INTRO}}</p>
         </div>
 
         <div class="comm-stat">
           <span class="comm-stat-num">23</span>
-          <span class="comm-stat-label">sessies live op Wijk aan Zee</span>
+          <span class="comm-stat-label">{{COMMUNITY.STAT_LABEL}}</span>
         </div>
-        <h3 class="comm-h3">Eén tap en je weet wat ze rijden.</h3>
-        <p class="comm-p">Open de Live-feed van een spot en je ziet <b>elke surfer die op dat moment op het water staat</b>, met zijn of haar volledige rig — zeil, board, vin, gewicht. Geen giswerk meer aan de auto, geen vraag-app meer in WhatsApp.</p>
+        <h3 class="comm-h3">{{COMMUNITY.H3}}</h3>
+        <p class="comm-p">{{COMMUNITY.P}}</p>
         <ul class="comm-list">
-          <li><span class="cdot"></span><span>Live rigs van iedereen op de spot — realtime.</span></li>
-          <li><span class="cdot"></span><span>Filter op windsurf, wing, kite of foil.</span></li>
-          <li><span class="cdot"></span><span>Tik op een sessie voor zeil, board, vin & gewicht.</span></li>
+          <li><span class="cdot"></span><span>{{COMMUNITY.LIST1}}</span></li>
+          <li><span class="cdot"></span><span>{{COMMUNITY.LIST2}}</span></li>
+          <li><span class="cdot"></span><span>{{COMMUNITY.LIST3}}</span></li>
         </ul>
       </div>
 
       <div class="comm-phone-wrap">
         <div class="comm-phone">
-          <img src="/images/live-rigsizes.png?v=1" alt="Live rigsizes scherm in RigSize Live"/>
+          <img src="/images/live-rigsizes.png?v=1" alt="{{COMMUNITY.IMG_ALT}}"/>
         </div>
       </div>
     </div>
@@ -2096,17 +2186,17 @@
   <div class="wrap">
     <div class="how-layout" style="display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center">
       <div>
-        <div class="mono" style="color:var(--brand)">— Hoe werkt het?</div>
-        <h2 style="font-size:clamp(30px,3.8vw,46px);margin:10px 0 18px;letter-spacing:-0.03em">Van strand tot logboek.<br><span style="color:var(--brand)">In 5 simpele stappen.</span></h2>
-        <p style="color:var(--muted);font-size:16px;max-width:540px">Je kunt RSL gebruiken met alleen je telefoon — leg hem veilig aan de kant en deel live je rig met anderen thuis of aan de kant. Heb je een tracking-horloge? Dan voegt RSL automatisch je GPS-, snelheids- en hartslagdata toe aan je logboek.</p>
+        <div class="mono" style="color:var(--brand)">{{how.eyebrow}}</div>
+        <h2 style="font-size:clamp(30px,3.8vw,46px);margin:10px 0 18px;letter-spacing:-0.03em">{{HOW.H2_LINE1}}<br><span style="color:var(--brand)">{{HOW.H2_LINE2}}</span></h2>
+        <p style="color:var(--muted);font-size:16px;max-width:540px">{{HOW.INTRO}}</p>
 
         <div style="margin-top:28px;padding:18px 20px;background:var(--brand-soft);border:1px solid rgba(26,156,196,.25);border-radius:14px;display:flex;gap:14px;align-items:flex-start">
           <div style="flex-shrink:0;width:36px;height:36px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;border:1px solid rgba(26,156,196,.3)">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#1a9cc4" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
           </div>
           <div>
-            <b style="font-family:'Space Grotesk';font-size:15px;color:#0e4d72;display:block;margin-bottom:4px">Geen horloge nodig</b>
-            <span style="font-size:13px;color:#14507a;line-height:1.5">Alleen je telefoon is genoeg om je rig live te delen met de community. Je scherm mag uit zolang je sessie actief is.</span>
+            <b style="font-family:'Space Grotesk';font-size:15px;color:#0e4d72;display:block;margin-bottom:4px">{{HOW.BOX1.TITLE}}</b>
+            <span style="font-size:13px;color:#14507a;line-height:1.5">{{HOW.BOX1.TEXT}}</span>
           </div>
         </div>
 
@@ -2115,8 +2205,8 @@
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#0b1220" stroke-width="2"><circle cx="12" cy="12" r="6"/><path d="M9 2h6M9 22h6"/></svg>
           </div>
           <div>
-            <b style="font-family:'Space Grotesk';font-size:15px;color:var(--ink);display:block;margin-bottom:4px">Tracking-horloge? Nog completer.</b>
-            <span style="font-size:13px;color:var(--muted);line-height:1.5">Garmin of Apple Watch — via Garmin Connect of Apple Health komt je sessiedata automatisch in RSL en wordt gekoppeld aan rig, wind en spot.</span>
+            <b style="font-family:'Space Grotesk';font-size:15px;color:var(--ink);display:block;margin-bottom:4px">{{HOW.BOX2.TITLE}}</b>
+            <span style="font-size:13px;color:var(--muted);line-height:1.5">{{HOW.BOX2.TEXT}}</span>
           </div>
         </div>
       </div>
@@ -2126,51 +2216,51 @@
         <div class="slider-card">
           <!-- Slides -->
           <div class="slide" data-slide="1">
-            <div class="slide-step"><span class="slide-label">Stap 1</span><span class="slide-sep">·</span><span class="slide-num">01</span> / 05 · Spot</div>
+            <div class="slide-step"><span class="slide-label">{{HOW.STEP_PREFIX}} 1</span><span class="slide-sep">·</span><span class="slide-num">01</span> / 05 · Spot</div>
             <div class="slide-icon">
               <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-6-3V4l6 3 6-3 6 3v13l-6 3-6-3z"/><path d="M9 7v13M15 4v13"/></svg>
             </div>
-            <h3 class="slide-title">Zoek je surfspot</h3>
-            <p class="slide-body">Zoek je spot op de kaart of via de zoekbalk. Je ziet direct <b>wie er op dat moment surft</b> en welk materiaal ze gebruiken.</p>
-            <div class="slide-note">☆ Favoriet een spot voor wind alerts en chat notificaties</div>
+            <h3 class="slide-title">{{how.slide1.title}}</h3>
+            <p class="slide-body">{{HOW.SLIDE1.BODY}}</p>
+            <div class="slide-note">☆ {{HOW.SLIDE1.NOTE}}</div>
           </div>
 
           <div class="slide" data-slide="2" hidden>
-            <div class="slide-step"><span class="slide-label">Stap 2</span><span class="slide-sep">·</span><span class="slide-num">02</span> / 05 · Community</div>
+            <div class="slide-step"><span class="slide-label">{{HOW.STEP_PREFIX}} 2</span><span class="slide-sep">·</span><span class="slide-num">02</span> / 05 · Community</div>
             <div class="slide-icon">
               <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3 3-5 7-5s7 2 7 5"/><circle cx="17" cy="6" r="2.5"/></svg>
             </div>
-            <h3 class="slide-title">Zie wat anderen rijden</h3>
-            <p class="slide-body">Tik op een surfer op de kaart of in de lijst en zie direct zijn of haar rig. <b>Perfecte referentie</b> voor jouw materiaalkeuze.</p>
+            <h3 class="slide-title">{{how.slide2.title}}</h3>
+            <p class="slide-body">{{HOW.SLIDE2.BODY}}</p>
           </div>
 
           <div class="slide" data-slide="3" hidden>
-            <div class="slide-step"><span class="slide-label">Stap 3</span><span class="slide-sep">·</span><span class="slide-num">03</span> / 05 · Sessie</div>
+            <div class="slide-step"><span class="slide-label">{{HOW.STEP_PREFIX}} 3</span><span class="slide-sep">·</span><span class="slide-num">03</span> / 05 · Sessie</div>
             <div class="slide-icon">
               <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></svg>
             </div>
-            <h3 class="slide-title">Start je sessie</h3>
-            <p class="slide-body">Tik op <b>Surfsessie Starten</b>, vul je rig in en ga het water op. Je rig wordt <b>live gedeeld</b> zolang jij surft. Je scherm mag uit — leg je telefoon ergens veilig weg aan de kant.</p>
+            <h3 class="slide-title">{{how.slide3.title}}</h3>
+            <p class="slide-body">{{HOW.SLIDE3.BODY}}</p>
           </div>
 
           <div class="slide" data-slide="4" hidden>
-            <div class="slide-step"><span class="slide-label">Stap 4</span><span class="slide-sep">·</span><span class="slide-num">04</span> / 05 · Tracking</div>
+            <div class="slide-step"><span class="slide-label">{{HOW.STEP_PREFIX}} 4</span><span class="slide-sep">·</span><span class="slide-num">04</span> / 05 · Tracking</div>
             <div class="slide-icon">
               <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg>
             </div>
-            <h3 class="slide-title">Je rig wordt gedeeld<br>+ start eventueel je tracking</h3>
-            <p class="slide-body">Je rig wordt live gedeeld op de kaart zolang jij je sessie actief hebt. Andere surfers zien jouw materiaal direct als referentie.</p>
-            <p class="slide-body" style="margin-top:10px">Start — als je die hebt — je tracking-horloge met de app van jouw voorkeur.</p>
+            <h3 class="slide-title">{{HOW.SLIDE4.TITLE}}</h3>
+            <p class="slide-body">{{HOW.SLIDE4.BODY1}}</p>
+            <p class="slide-body" style="margin-top:10px">{{HOW.SLIDE4.BODY2}}</p>
           </div>
 
           <div class="slide" data-slide="5" hidden>
-            <div class="slide-step"><span class="slide-label">Stap 5</span><span class="slide-sep">·</span><span class="slide-num">05</span> / 05 · Logboek</div>
+            <div class="slide-step"><span class="slide-label">{{HOW.STEP_PREFIX}} 5</span><span class="slide-sep">·</span><span class="slide-num">05</span> / 05 · Logboek</div>
             <div class="slide-icon">
               <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M10 7h4M9 12h6M9 16h6"/></svg>
             </div>
-            <h3 class="slide-title">Rig, wind & tracking logboek</h3>
-            <p class="slide-body">Bekijk de <b>windverwachting per spot</b> en bouw automatisch een logboek op van al je sessies — inclusief rig, duur en notities.</p>
-            <p class="slide-body" style="margin-top:10px">Gebruik je een tracking-horloge? Dan wordt al jouw data automatisch toegevoegd bij je wind-, spot- en rig-logboek.</p>
+            <h3 class="slide-title">{{HOW.SLIDE5.TITLE}}</h3>
+            <p class="slide-body">{{HOW.SLIDE5.BODY1}}</p>
+            <p class="slide-body" style="margin-top:10px">{{HOW.SLIDE5.BODY2}}</p>
           </div>
 
           <!-- Dots -->
@@ -2185,11 +2275,11 @@
 
         <!-- Controls -->
         <div style="margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:14px">
-          <button id="prevBtn" class="slide-nav" aria-label="Vorige">
+          <button id="prevBtn" class="slide-nav" aria-label="{{HOW.PREV}}">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 6l-6 6 6 6"/></svg>
           </button>
           <button id="nextBtn" class="slide-next">
-            <span id="nextLabel">Volgende</span>
+            <span id="nextLabel">{{HOW.NEXT}}</span>
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </button>
         </div>
@@ -2316,26 +2406,26 @@
   <div class="wrap">
     <div class="int-grid">
       <div>
-        <div class="mono" style="color:#7cd7e8">— Horloge-integratie</div>
-        <h2>Jouw horloge. Jouw data.<br><span style="background:linear-gradient(90deg,#7cd7e8,#5ee0c9);-webkit-background-clip:text;background-clip:text;color:transparent">Veel scherpere inzichten.</span></h2>
-        <p>Gebruik je favoriete horloge en tracking-app zoals je dat nu ook doet. Zodra de sessie synct met <b style="color:#fff">Garmin Connect</b> of <b style="color:#fff">Apple Health</b>, landt alle data automatisch in RSL — en wordt gekoppeld aan rig, wind en spot voor analyses die je nergens anders krijgt.</p>
+        <div class="mono" style="color:#7cd7e8">{{WATCH.EYEBROW}}</div>
+        <h2>{{WATCH.H2_LINE1}}<br><span style="background:linear-gradient(90deg,#7cd7e8,#5ee0c9);-webkit-background-clip:text;background-clip:text;color:transparent">{{WATCH.H2_LINE2}}</span></h2>
+        <p>{{WATCH.INTRO}}</p>
 
         <ul class="int-list">
-          <li><span class="ok">✓</span> <b style="color:#fff;font-weight:600">Garmin Connect™</b> — automatische sessie-import</li>
-          <li><span class="ok">✓</span> <b style="color:#fff;font-weight:600">Apple Health</b> — Apple Watch-sessies synchroniseren direct</li>
-          <li><span class="ok">✓</span> GPS-route, top- & gemiddelde snelheid, afstand en hartslag</li>
-          <li><span class="ok">✓</span> Alpha 500, streaks en records per gear-combo</li>
+          <li><span class="ok">✓</span> {{WATCH.LIST1}}</li>
+          <li><span class="ok">✓</span> {{WATCH.LIST2}}</li>
+          <li><span class="ok">✓</span> {{WATCH.LIST3}}</li>
+          <li><span class="ok">✓</span> {{WATCH.LIST4}}</li>
         </ul>
 
         <div style="margin-top:28px;padding:16px 18px;background:rgba(43,179,166,.1);border:1px solid rgba(43,179,166,.3);border-radius:12px;font-size:14px;line-height:1.6">
-          <b style="font-family:'Space Grotesk';color:#fff;display:block;margin-bottom:4px">Met horloge → nieuwe deuren open</b>
-          <span style="color:rgba(255,255,255,.75)">Doe mee aan community <b style="color:#7cd7e8;font-weight:600">leaderboards</b>, ontgrendel <b style="color:#7cd7e8;font-weight:600">persoonlijke analyses</b> en zie <b style="color:#7cd7e8;font-weight:600">gear insights</b> — welke combo maakt jou het snelst, langst, verst.</span>
+          <b style="font-family:'Space Grotesk';color:#fff;display:block;margin-bottom:4px">{{WATCH.UNLOCK_TITLE}}</b>
+          <span style="color:rgba(255,255,255,.75)">{{WATCH.UNLOCK_BODY}}</span>
         </div>
       </div>
 
       <div class="watches">
         <div class="session-phone">
-          <img src="/images/session-details.png" alt="RigSize Live sessie-details met Garmin tracking, kaart, snelheid en afstand" />
+          <img src="/images/session-details.png" alt="{{WATCH.SESSION_ALT}}" />
         </div>
       </div>
     </div>
@@ -2347,35 +2437,35 @@
         <div class="unlock-head">
           <div class="unlock-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l1-5h10l1 5M8 4h8M12 15v4M8 19h8M5 9h14a3 3 0 01-3 6H8a3 3 0 01-3-6z"/></svg></div>
           <div>
-            <div class="mono" style="color:#d8f3fa">Unlocked met horloge</div>
-            <h3>Leaderboards</h3>
+            <div class="mono" style="color:#d8f3fa">{{WATCH.UNLOCKED}}</div>
+            <h3>{{watch.lb.title}}</h3>
           </div>
         </div>
-        <p class="unlock-sub">Strijd met de community op elk relevant metric — per spot, seizoen of wereldwijd.</p>
+        <p class="unlock-sub">{{WATCH.LB.SUB}}</p>
         <div class="lb-list">
           <div class="lb-item">
             <div class="lb-ic" style="background:rgba(124,215,232,.15);color:#7cd7e8"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-            <div style="flex:1"><b>Langste sessie per spot</b><span>Fabian Trevisan</span></div>
+            <div style="flex:1"><b>{{watch.lb.item1}}</b><span>Fabian Trevisan</span></div>
             <span class="lb-val">2u 43m</span>
           </div>
           <div class="lb-item">
             <div class="lb-ic" style="background:rgba(94,224,201,.15);color:#5ee0c9"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 11l8-4M8 13l8 4"/></svg></div>
-            <div style="flex:1"><b>Rigsizes gedeeld</b><span>Fabian Trevisan</span></div>
+            <div style="flex:1"><b>{{watch.lb.item2}}</b><span>Fabian Trevisan</span></div>
             <span class="lb-val">36×</span>
           </div>
           <div class="lb-item">
             <div class="lb-ic" style="background:rgba(255,122,61,.15);color:#ff9e5c"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 3L4 14h6l-1 7 9-11h-6l1-7z"/></svg></div>
-            <div style="flex:1"><b>Hoogste topsnelheid</b><span>Fabian Trevisan</span></div>
+            <div style="flex:1"><b>{{watch.lb.item3}}</b><span>Fabian Trevisan</span></div>
             <span class="lb-val">68 km/h</span>
           </div>
           <div class="lb-item">
             <div class="lb-ic" style="background:rgba(143,92,255,.15);color:#b59dff"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l18-8-8 18-2-8-8-2z"/></svg></div>
-            <div style="flex:1"><b>Langste afstand in 1 sessie</b><span>Fabian Trevisan</span></div>
+            <div style="flex:1"><b>{{watch.lb.item4}}</b><span>Fabian Trevisan</span></div>
             <span class="lb-val">64 km</span>
           </div>
           <div class="lb-item">
             <div class="lb-ic" style="background:rgba(34,160,107,.18);color:#5ed79e"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div>
-            <div style="flex:1"><b>Meeste dagen gesurft</b><span>Fabian Trevisan</span></div>
+            <div style="flex:1"><b>{{watch.lb.item5}}</b><span>Fabian Trevisan</span></div>
             <span class="lb-val">56d</span>
           </div>
         </div>
@@ -2386,31 +2476,31 @@
         <div class="unlock-head">
           <div class="unlock-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M6 16l4-6 4 4 5-8"/></svg></div>
           <div>
-            <div class="mono" style="color:#d8f3fa">Unlocked met horloge</div>
-            <h3>Analyses</h3>
+            <div class="mono" style="color:#d8f3fa">{{WATCH.UNLOCKED}}</div>
+            <h3>{{watch.an.title}}</h3>
           </div>
         </div>
-        <p class="unlock-sub">Jouw sessies, wind en rig gecombineerd tot eerlijke antwoorden op de vragen die er toe doen.</p>
+        <p class="unlock-sub">{{WATCH.AN.SUB}}</p>
 
         <div class="an-card">
-          <div class="an-top"><b>Seizoenspatroon</b><span>Wanneer surf jij het meest?</span></div>
+          <div class="an-top"><b>{{WATCH.AN.SEASON_TITLE}}</b><span>{{WATCH.AN.SEASON_SUB}}</span></div>
           <div class="an-bars">
             <i style="height:20%"></i><i style="height:26%"></i><i style="height:42%"></i><i style="height:52%"></i>
             <i class="hl" style="height:95%"></i>
             <i style="height:38%"></i><i style="height:48%"></i><i style="height:64%"></i><i style="height:50%"></i><i style="height:32%"></i><i style="height:22%"></i><i style="height:18%"></i>
           </div>
           <div class="an-axis"><span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
-          <div class="an-note">Mei is jouw topmaand — gemiddeld 5× per jaar.</div>
+          <div class="an-note">{{WATCH.AN.SEASON_NOTE}}</div>
         </div>
 
         <div class="an-card">
-          <div class="an-top"><b>Jouw surftiming</b><span>Vroege vogel of avondsurfer?</span></div>
+          <div class="an-top"><b>{{WATCH.AN.TIMING_TITLE}}</b><span>{{WATCH.AN.TIMING_SUB}}</span></div>
           <div class="an-timeline">
             <div class="an-timeline-fill"></div>
             <div class="an-timeline-marker"></div>
           </div>
           <div class="an-timeline-axis"><span>0</span><span>6</span><span>12</span><span>18</span><span>24</span></div>
-          <div class="an-note" style="background:rgba(255,158,92,.14);color:#ffc89a">55% van je sessies start tussen 11–13u. Jij bent een vroege vogel.</div>
+          <div class="an-note" style="background:rgba(255,158,92,.14);color:#ffc89a">{{WATCH.AN.TIMING_NOTE}}</div>
         </div>
       </div>
 
@@ -2419,14 +2509,14 @@
         <div class="unlock-head">
           <div class="unlock-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <div>
-            <div class="mono" style="color:#d8f3fa">Unlocked met horloge</div>
-            <h3>Gear Insights</h3>
+            <div class="mono" style="color:#d8f3fa">{{WATCH.UNLOCKED}}</div>
+            <h3>{{watch.gear.title}}</h3>
           </div>
         </div>
-        <p class="unlock-sub">Welke board + zeil combo werkt bij jou het best? Alle data uit al je sessies, per combo.</p>
+        <p class="unlock-sub">{{WATCH.GEAR.SUB}}</p>
 
         <div class="an-card">
-          <div class="an-top"><b>Top combo's</b><span>Je meest gebruikte zeil + board</span></div>
+          <div class="an-top"><b>{{WATCH.GEAR.COMBO_TITLE}}</b><span>{{WATCH.GEAR.COMBO_SUB}}</span></div>
           <div class="combo-row">
             <span class="combo-label">1 · 7.5 m² + 113 L</span>
             <span class="combo-val">46u</span>
@@ -2440,7 +2530,7 @@
         </div>
 
         <div class="an-card">
-          <div class="an-top"><b>Records per combo</b><span>Beste prestaties per gear</span></div>
+          <div class="an-top"><b>{{WATCH.GEAR.RECORDS_TITLE}}</b><span>{{WATCH.GEAR.RECORDS_SUB}}</span></div>
           <div class="rec-row">
             <div class="rec-ring" style="background:linear-gradient(135deg,#ff9e5c,#ff7a3d)">
               <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#fff" stroke-width="2.4"><path d="M7 4h10l-2 6h5l-8 10 2-7H7V4z"/></svg>
@@ -2469,38 +2559,38 @@
 <section class="why" id="why">
   <div class="wrap why-grid">
     <div class="why-copy">
-      <div class="mono" style="color:var(--brand)">— Wat RSL uniek maakt</div>
-      <h2>Sessies × wind × rig. <span class="hl">Alles gekoppeld.</span></h2>
-      <p>Andere apps tracken je sessie. Andere apps tonen wind. RigSize Live is de enige die álle data combineert: welk zeil werkt bij welke wind op welk spot — op basis van échte sessies van echte surfers. Geen gokwerk meer voor je naar het water gaat.</p>
+      <div class="mono" style="color:var(--brand)">{{why.eyebrow}}</div>
+      <h2>{{WHY.H2_LINE1}} <span class="hl">{{WHY.H2_LINE2}}</span></h2>
+      <p>{{WHY.INTRO}}</p>
 
       <div class="why-quotes">
         <div class="qtile">
-          <b>Analyses</b><span>van je verschillende board/zeil combinaties bij windsterktes</span>
+          <b>{{WHY.QTILE1.B}}</b><span>{{WHY.QTILE1.SPAN}}</span>
         </div>
         <div class="qtile">
-          <b>Wie</b><span>is al op de spot en met welk rig is hij of zij aan het varen?</span>
+          <b>{{WHY.QTILE2.B}}</b><span>{{WHY.QTILE2.SPAN}}</span>
         </div>
         <div class="qtile">
-          <b>3 sporten</b><span>Windsurf · Kite · Wing — één community</span>
+          <b>{{WHY.QTILE3.B}}</b><span>{{WHY.QTILE3.SPAN}}</span>
         </div>
         <div class="qtile">
-          <b>Wind</b><span>elk uur ververst — en elke 10 minuten op realtime meetspots</span>
+          <b>{{WHY.QTILE4.B}}</b><span>{{WHY.QTILE4.SPAN}}</span>
         </div>
       </div>
     </div>
 
     <div class="data-viz">
       <div class="viz-head">
-        <span class="mono">RIG × WIND · Wijk aan Zee · sept</span>
+        <span class="mono">{{WHY.VIZ.LABEL}}</span>
         <span>·</span>
       </div>
       <div>
         <div style="display:flex;justify-content:space-between;align-items:flex-end">
           <div>
             <div class="viz-big">5.4<small>m²</small></div>
-            <div style="font-size:13px;color:var(--muted-d);margin-top:4px">meest gekozen bij 20–24 kts</div>
+            <div style="font-size:13px;color:var(--muted-d);margin-top:4px">{{WHY.VIZ.SUB}}</div>
           </div>
-          <div style="text-align:right;font-size:12px;color:var(--muted-d)">op basis van<br><b style="color:#fff;font-family:'Space Grotesk';font-size:18px">847 sessies</b></div>
+          <div style="text-align:right;font-size:12px;color:var(--muted-d)">{{WHY.VIZ.BASIS}}<br><b style="color:#fff;font-family:'Space Grotesk';font-size:18px">{{WHY.VIZ.SESSIONS}}</b></div>
         </div>
 
         <div class="chart">
@@ -2528,17 +2618,17 @@
         </div>
 
         <div class="legend">
-          <span><i style="background:var(--brand)"></i> 5.4 m² gekozen</span>
-          <span><i style="background:var(--wave)"></i> Match met live wind</span>
-          <span style="margin-left:auto;color:var(--muted-d)">knopen →</span>
+          <span><i style="background:var(--brand)"></i> {{WHY.VIZ.LEGEND1}}</span>
+          <span><i style="background:var(--wave)"></i> {{WHY.VIZ.LEGEND2}}</span>
+          <span style="margin-left:auto;color:var(--muted-d)">{{WHY.VIZ.KNOTS}}</span>
         </div>
       </div>
 
       <div class="match-card">
         <div class="ring">92</div>
         <div>
-          <b>Jouw rig match score</b>
-          <small>Gebaseerd op je gewicht (82 kg), board (JP 110L) en de actuele wind.</small>
+          <b>{{WHY.MATCH.TITLE}}</b>
+          <small>{{WHY.MATCH.SUB}}</small>
         </div>
       </div>
     </div>
@@ -2546,36 +2636,36 @@
 </section>
 
 <!-- ================= DISCIPLINES TRIPTYCH ================= -->
-<section class="disciplines" aria-label="Voor windsurf, kite en wing">
+<section class="disciplines" aria-label="{{DISC.ARIA}}">
   <div class="wrap">
     <div class="disc-head">
-      <div class="mono">— Voor alle disciplines</div>
-      <h2>Eén app. <span class="o">Voor de mooiste 3 sporten.</span></h2>
-      <p>Of je nu opspant aan het Veerse Meer, je kite pompt op Scheveningen Noord of een wing oplaadt op Wijk aan Zee — RSL is gebouwd voor windsurf, kite én wing. Met de juiste afmetingen, calculators en spotinfo per discipline.</p>
+      <div class="mono">{{DISC.EYEBROW}}</div>
+      <h2>{{DISC.H2_LINE1}} <span class="o">{{DISC.H2_LINE2}}</span></h2>
+      <p>{{DISC.INTRO}}</p>
     </div>
     <div class="disc-grid">
       <figure class="disc-card">
-        <img src="/images/windsurfer.png" alt="Windsurfer op turquoise water" loading="lazy"/>
+        <img src="/images/windsurfer.png" alt="{{DISC.WINDSURF.ALT}}" loading="lazy"/>
         <figcaption>
-          <span class="disc-tag">Windsurf</span>
-          <b>Zeil · board · fin</b>
-          <small>Mast, boom, fin. Plus calculator op gewicht, board en wind.</small>
+          <span class="disc-tag">{{DISC.WINDSURF.TAG}}</span>
+          <b>{{DISC.WINDSURF.TITLE}}</b>
+          <small>{{DISC.WINDSURF.SUB}}</small>
         </figcaption>
       </figure>
       <figure class="disc-card">
-        <img src="/images/kiter.png" alt="Kitesurfer in helder water" loading="lazy"/>
+        <img src="/images/kiter.png" alt="{{DISC.KITE.ALT}}" loading="lazy"/>
         <figcaption>
-          <span class="disc-tag">Kite</span>
-          <b>Kite · board · bar</b>
-          <small>Maat, model, twintip of foil. Live wat anderen op jouw spot varen.</small>
+          <span class="disc-tag">{{DISC.KITE.TAG}}</span>
+          <b>{{DISC.KITE.TITLE}}</b>
+          <small>{{DISC.KITE.SUB}}</small>
         </figcaption>
       </figure>
       <figure class="disc-card">
-        <img src="/images/winger.png" alt="Wingfoiler boven koraal" loading="lazy"/>
+        <img src="/images/winger.png" alt="{{DISC.WING.ALT}}" loading="lazy"/>
         <figcaption>
-          <span class="disc-tag">Wing</span>
-          <b>Wing · board · foil</b>
-          <small>Volume, vleugel-maat en foil-set. Compleet logboek per sessie.</small>
+          <span class="disc-tag">{{DISC.WING.TAG}}</span>
+          <b>{{DISC.WING.TITLE}}</b>
+          <small>{{DISC.WING.SUB}}</small>
         </figcaption>
       </figure>
     </div>
@@ -2587,10 +2677,10 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <div class="mono">— Features</div>
-        <h2>Eén app voor alles rondom jouw sessie.</h2>
+        <div class="mono">{{FEAT.EYEBROW}}</div>
+        <h2>{{FEAT.H2}}</h2>
       </div>
-      <p>Van rig delen tot safety check-in, van spot-chat tot persoonlijke analyses — RSL dekt je hele surfdag, zonder betaalde opties.</p>
+      <p>{{FEAT.INTRO}}</p>
     </div>
 
     <div class="fgrid">
@@ -2598,13 +2688,13 @@
       <!-- Share rig -->
       <div class="fcard dark c-span-6 tall">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 6-8 14-8-14 8-6z"/><path d="M12 2v20"/></svg></div>
-        <div class="mono">01 — Deel je rig</div>
-        <h3>Real-time delen<br>wat je hebt opgetuigd.</h3>
-        <p>Eén tap: jouw zeil, board, fin of foil staan live op jouw spot. Anderen kunnen op je setup afstemmen terwijl jij nog op het strand staat.</p>
+        <div class="mono">{{feat.share.num}}</div>
+        <h3>{{FEAT.SHARE.TITLE}}</h3>
+        <p>{{FEAT.SHARE.BODY}}</p>
         <div class="preview">
           <div style="padding:18px;background:rgba(249,115,22,.08);display:flex;justify-content:space-between;align-items:center">
             <div>
-              <div class="mono" style="color:#ffb07a">Sessie actief</div>
+              <div class="mono" style="color:#ffb07a">{{FEAT.SHARE.LIVE}}</div>
               <div style="font-family:'Space Grotesk';font-size:22px;margin-top:4px;color:#fff">5.4 m² · Tabou 110 L</div>
               <div style="font-size:12px;color:var(--muted-d);margin-top:2px">Wijk aan Zee · 00:42:18</div>
             </div>
@@ -2619,12 +2709,12 @@
       <div class="fcard c-span-6 tall spotinfo-card">
         <div class="spotinfo-text">
           <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
-          <div class="mono">02 — Spot informatie</div>
-          <h3>Alles over je spot<br>in één tap.</h3>
-          <p>Tik een spot aan op de kaart en zie meteen wind, sessies, ranking, foto's en rig-data van de community. Wereldwijd, voor windsurf, kite & wing.</p>
+          <div class="mono">{{feat.spot.num}}</div>
+          <h3>{{FEAT.SPOT.TITLE}}</h3>
+          <p>{{FEAT.SPOT.BODY}}</p>
         </div>
         <div class="spotinfo-phone" aria-hidden="true">
-          <img src="/images/spot-info.png?v=3" alt="Spot informatie scherm in de RigSize Live app"/>
+          <img src="/images/spot-info.png?v=3" alt="{{FEAT.SPOT.ALT}}"/>
         </div>
       </div>
 
@@ -2632,35 +2722,35 @@
       <div class="fcard c-span-12 tall windforecast-card" id="forecast">
         <div class="windforecast-phone" aria-hidden="true">
           <div class="windforecast-bezel">
-            <img src="/images/wind-voorspelling.png" alt="Windvoorspelling in de RigSize Live app"/>
+            <img src="/images/wind-voorspelling.png" alt="{{FEAT.WIND.ALT1}}"/>
           </div>
           <div class="windforecast-bezel">
-            <img src="/images/wind-map-oosterschelde.png" alt="Windkaart Oosterschelde in de RigSize Live app"/>
+            <img src="/images/wind-map-oosterschelde.png" alt="{{FEAT.WIND.ALT2}}"/>
           </div>
         </div>
         <div class="windforecast-text">
           <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h13a3 3 0 100-6M3 14h16a3 3 0 110 6M3 11h9"/></svg></div>
-          <div class="mono">03 — Windvoorspelling & live</div>
-          <h3>Uurlijks bijgewerkte voorspelling + 10-minuten live data.</h3>
-          <p>Zeer nauwkeurige voorspelling, elk uur opnieuw. Plus indien aanwezig in de buurt van je spot: live metingen van windstations — ververst elke 10 minuten — zodat je nooit meer twijfelt of je zal gaan.</p>
+          <div class="mono">{{feat.wind.num}}</div>
+          <h3>{{FEAT.WIND.TITLE}}</h3>
+          <p>{{FEAT.WIND.BODY}}</p>
           <div class="windforecast-stats">
-            <div><div class="mono">Wind update</div><b>elk uur</b></div>
-            <div><div class="mono">Live stations</div><b>48× · 10 min</b></div>
-            <div><div class="mono">Getijden</div><b>RWS</b></div>
-            <div><div class="mono">Golven</div><b>live</b></div>
+            <div><div class="mono">{{FEAT.WIND.STAT_UPDATE_LABEL}}</div><b>{{FEAT.WIND.STAT_UPDATE_VAL}}</b></div>
+            <div><div class="mono">{{FEAT.WIND.STAT_STATIONS_LABEL}}</div><b>48× · 10 min</b></div>
+            <div><div class="mono">{{FEAT.WIND.STAT_TIDES_LABEL}}</div><b>RWS</b></div>
+            <div><div class="mono">{{FEAT.WIND.STAT_WAVES_LABEL}}</div><b>{{FEAT.WIND.STAT_WAVES_VAL}}</b></div>
           </div>
           <div class="windforecast-chips">
             <div class="wf-chip">
               <div class="wf-chip-ic">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0M2 6c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg>
               </div>
-              <div><b>Getijden</b><span>Hoog water · Laag water</span></div>
+              <div><b>{{FEAT.WIND.CHIP1_B}}</b><span>{{FEAT.WIND.CHIP1_SPAN}}</span></div>
             </div>
             <div class="wf-chip wf-chip-2">
               <div class="wf-chip-ic">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14c3 0 3-4 6-4s3 4 6 4 3-4 6-4M3 19c3 0 3-4 6-4s3 4 6 4 3-4 6-4"/></svg>
               </div>
-              <div><b>Golven</b><span>hoogte · periode</span></div>
+              <div><b>{{FEAT.WIND.CHIP2_B}}</b><span>{{FEAT.WIND.CHIP2_SPAN}}</span></div>
             </div>
           </div>
         </div>
@@ -2669,91 +2759,91 @@
       <!-- Alerts -->
       <div class="fcard c-span-4">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 1112 0c0 7 3 7 3 7H3s3 0 3-7zM10 20h4"/></svg></div>
-        <div class="mono">04 — Wind alerts</div>
-        <h3>Pushmelding zodra 't raak is.</h3>
-        <p>Stel je ideale windvenster per spot in. Nooit meer een goede dag missen.</p>
+        <div class="mono">{{feat.alerts.num}}</div>
+        <h3>{{FEAT.ALERTS.TITLE}}</h3>
+        <p>{{FEAT.ALERTS.BODY}}</p>
         <div class="preview alert-preview">
-          <div class="alert-row"><span class="b"></span><div><b>IJmuiden</b> — 22 kts NW verwacht</div></div>
-          <div class="alert-row" style="background:#f1f3f6;border-color:var(--line-d);opacity:.7"><span class="b" style="background:#b7c0cf;box-shadow:0 0 0 4px rgba(183,192,207,.25)"></span><div><b>Workum</b> — 16 kts · onder grens</div></div>
+          <div class="alert-row"><span class="b"></span><div><b>IJmuiden</b> — {{FEAT.ALERTS.PREVIEW1}}</div></div>
+          <div class="alert-row" style="background:#f1f3f6;border-color:var(--line-d);opacity:.7"><span class="b" style="background:#b7c0cf;box-shadow:0 0 0 4px rgba(183,192,207,.25)"></span><div><b>Workum</b> — {{FEAT.ALERTS.PREVIEW2}}</div></div>
         </div>
       </div>
 
       <!-- Fin & Foil calc -->
       <div class="fcard c-span-4">
         <div class="ficon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-1 4-1 8 0 14M12 16c-3 0-5 1-7 4M12 16c3 0 5 1 7 4M9 22h6"/></svg></div>
-        <div class="mono">05 — Vin & Foil calculator</div>
-        <h3>Optimale vin- of foilmaat in seconden.</h3>
-        <p>Vul gewicht, board en windsterkte in. RSL rekent direct de juiste maat.</p>
+        <div class="mono">{{feat.calc.num}}</div>
+        <h3>{{FEAT.CALC.TITLE}}</h3>
+        <p>{{FEAT.CALC.BODY}}</p>
         <div class="preview calc-preview">
-          <div class="calc-row"><span>Gewicht</span><b>82 kg</b></div>
-          <div class="calc-row"><span>Board</span><b>110 L Freeride</b></div>
-          <div class="calc-row"><span>Wind</span><b>22 kts</b></div>
-          <div class="calc-result">Advies: vin 34 cm <span>↗</span></div>
+          <div class="calc-row"><span>{{FEAT.CALC.WEIGHT}}</span><b>82 kg</b></div>
+          <div class="calc-row"><span>{{FEAT.CALC.BOARD}}</span><b>110 L Freeride</b></div>
+          <div class="calc-row"><span>{{FEAT.CALC.WIND}}</span><b>22 kts</b></div>
+          <div class="calc-result">{{FEAT.CALC.ADVICE}} <span>↗</span></div>
         </div>
       </div>
 
       <!-- Leaderboard -->
       <div class="fcard c-span-4">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h5v16H4zM15 9h5v11h-5zM9 13h6v7H9z"/></svg></div>
-        <div class="mono">06 — Leaderboard per spot</div>
-        <h3>Claim je plek op je thuisspot.</h3>
-        <p>Wie surft het meest, het langst, het snelst? Verdien hang-loosjes.</p>
+        <div class="mono">{{feat.lb.num}}</div>
+        <h3>{{FEAT.LB.TITLE}}</h3>
+        <p>{{FEAT.LB.BODY}}</p>
         <div class="preview lb-preview">
-          <div class="lb-row"><span class="n top">1</span><span class="ava">MV</span><span>Martijn V.</span><span class="val">48u · sept</span></div>
-          <div class="lb-row"><span class="n top">2</span><span class="ava" style="background:linear-gradient(135deg,#3ea3ff,#7cc3ff)">SK</span><span>Sanne K.</span><span class="val">42u</span></div>
-          <div class="lb-row"><span class="n">3</span><span class="ava" style="background:linear-gradient(135deg,#4fd1c5,#2bb3a6)">TB</span><span>Thom B.</span><span class="val">37u</span></div>
-          <div class="lb-row"><span class="n">4</span><span class="ava" style="background:linear-gradient(135deg,#8b7cff,#a395ff)">YV</span><span>Yara V.</span><span class="val">31u</span></div>
+          <div class="lb-row"><span class="n top">1</span><span class="ava">MV</span><span>Martijn V.</span><span class="val">48{{UNIT.HOUR}} · {{MONTH.SEPT}}</span></div>
+          <div class="lb-row"><span class="n top">2</span><span class="ava" style="background:linear-gradient(135deg,#3ea3ff,#7cc3ff)">SK</span><span>Sanne K.</span><span class="val">42{{UNIT.HOUR}}</span></div>
+          <div class="lb-row"><span class="n">3</span><span class="ava" style="background:linear-gradient(135deg,#4fd1c5,#2bb3a6)">TB</span><span>Thom B.</span><span class="val">37{{UNIT.HOUR}}</span></div>
+          <div class="lb-row"><span class="n">4</span><span class="ava" style="background:linear-gradient(135deg,#8b7cff,#a395ff)">YV</span><span>Yara V.</span><span class="val">31{{UNIT.HOUR}}</span></div>
         </div>
       </div>
 
       <!-- Chat -->
       <div class="fcard c-span-6">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H7l-3 3V4z"/></svg></div>
-        <div class="mono">07 — Spot chat</div>
-        <h3>Praat mee in de chat van je favoriete spot.</h3>
-        <p>Vraag naar condities, deel tips, roep een sessie-maatje op — per spot, groep of planning.</p>
+        <div class="mono">{{feat.chat.num}}</div>
+        <h3>{{FEAT.CHAT.TITLE}}</h3>
+        <p>{{FEAT.CHAT.BODY}}</p>
         <div class="preview chat-preview">
-          <div class="bubble them"><small>Thom · 14:22</small>Iemand al geweest? Lijkt vlagerig</div>
-          <div class="bubble me">5.4 werkt prima, N is stabiel</div>
-          <div class="bubble them"><small>Sanne · 14:31</small>Rij ook, ben er 15:00</div>
+          <div class="bubble them"><small>Thom · 14:22</small>{{FEAT.CHAT.MSG1}}</div>
+          <div class="bubble me">{{FEAT.CHAT.MSG2}}</div>
+          <div class="bubble them"><small>Sanne · 14:31</small>{{FEAT.CHAT.MSG3}}</div>
         </div>
       </div>
 
       <!-- Insights -->
       <div class="fcard dark c-span-6">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M6 16l4-6 4 4 5-8"/></svg></div>
-        <div class="mono">08 — Persoonlijke insights</div>
-        <h3>Jouw sessies, vertaald naar inzicht.</h3>
-        <p>Met welke rigmaten vaar je het hardst? Ben je ochtend- of avondsurfer? Welke maand is je beste ooit? Alle data, eerlijke antwoorden.</p>
+        <div class="mono">{{feat.insights.num}}</div>
+        <h3>{{FEAT.INSIGHTS.TITLE}}</h3>
+        <p>{{FEAT.INSIGHTS.BODY}}</p>
         <div class="preview insights-stats" style="padding:16px;background:rgba(255,255,255,.03);display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
-          <div><div class="mono" style="color:#ffb07a">TOP MAAND</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">Mei '24</div><div style="font-size:11px;color:var(--muted-d)">11 sessies · 34u</div></div>
-          <div><div class="mono" style="color:#ffb07a">GEM. SESSIE</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">2u 18m</div><div style="font-size:11px;color:var(--muted-d)">op 5.4 m²</div></div>
-          <div><div class="mono" style="color:#ffb07a">TOPSNELHEID</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">41.3 <small style="font-size:11px">km/h</small></div><div style="font-size:11px;color:var(--muted-d)">Tabou Rocket</div></div>
+          <div><div class="mono" style="color:#ffb07a">{{FEAT.INSIGHTS.TOP_MONTH}}</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">{{FEAT.INSIGHTS.MONTH_VAL}}</div><div style="font-size:11px;color:var(--muted-d)">{{FEAT.INSIGHTS.MONTH_SUB}}</div></div>
+          <div><div class="mono" style="color:#ffb07a">{{FEAT.INSIGHTS.AVG_SESSION}}</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">{{FEAT.INSIGHTS.AVG_VAL}}</div><div style="font-size:11px;color:var(--muted-d)">{{FEAT.INSIGHTS.AVG_SUB}}</div></div>
+          <div><div class="mono" style="color:#ffb07a">{{FEAT.INSIGHTS.TOP_SPEED}}</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">41.3 <small style="font-size:11px">km/h</small></div><div style="font-size:11px;color:var(--muted-d)">Tabou Rocket</div></div>
         </div>
       </div>
 
       <!-- Safety -->
       <div class="fcard c-span-4">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <div class="mono">09 — Safety check-in</div>
-        <h3>Veilig het water op.</h3>
-        <p>Stel een terugkeertijd in. Anderen op de kaart en in de feed zien een waarschuwing. Alleen surfen met een net.</p>
+        <div class="mono">{{feat.safety.num}}</div>
+        <h3>{{FEAT.SAFETY.TITLE}}</h3>
+        <p>{{FEAT.SAFETY.BODY}}</p>
       </div>
 
       <!-- Groepsplanning -->
       <div class="fcard c-span-4">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3 3-5 7-5s7 2 7 5"/><circle cx="17" cy="6" r="2.5"/><path d="M15 13c3 0 6 2 6 5"/></svg></div>
-        <div class="mono">10 — Groepsplanning</div>
-        <h3>Plan een sessie, zie wie er is.</h3>
-        <p>Kies spot en tijd. Vrienden haken aan, de chat is er meteen bij. Geen losse groeps-apps meer.</p>
+        <div class="mono">{{feat.group.num}}</div>
+        <h3>{{FEAT.GROUP.TITLE}}</h3>
+        <p>{{FEAT.GROUP.BODY}}</p>
       </div>
 
       <!-- Events -->
       <div class="fcard c-span-4">
         <div class="ficon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M8.5 12l-2 9 5.5-4 5.5 4-2-9"/></svg></div>
-        <div class="mono">11 — Events & Challenges</div>
-        <h3>Spot uitdagingen en events.</h3>
-        <p>Doe mee aan spot-events, versla je eigen records en zie hoe jij scoort vs. andere surfers.</p>
+        <div class="mono">{{feat.events.num}}</div>
+        <h3>{{FEAT.EVENTS.TITLE}}</h3>
+        <p>{{FEAT.EVENTS.BODY}}</p>
       </div>
     </div>
   </div>
@@ -2763,18 +2853,18 @@
 <!-- ================= FREE ================= -->
 <section class="free" id="free">
   <div class="wrap">
-    <div class="tag"><span class="eyebrow"><span class="dot"></span> Voor de hele community</span></div>
-    <h2>Helemaal <span class="o">gratis.</span></h2>
-    <p>Alle functies die je hier ziet zijn beschikbaar voor iedereen — geen Pro-versie, geen paywall, geen verborgen tier. Goede data delen maakt de community beter, dus we houden de drempel zo laag mogelijk.</p>
+    <div class="tag"><span class="eyebrow"><span class="dot"></span> {{FREE.EYEBROW}}</span></div>
+    <h2>{{FREE.H2_LINE1}} <span class="o">{{FREE.H2_LINE2}}</span></h2>
+    <p>{{FREE.INTRO}}</p>
 
     <div class="free-grid">
       <div class="free-tile">
-        <b>Geen Pro-tier</b>
-        <p>Geen features achter een abonnement. Rig delen, forecast, Garmin, leaderboards — alles zit erin.</p>
+        <b>{{FREE.TILE1.B}}</b>
+        <p>{{FREE.TILE1.BODY}}</p>
       </div>
       <div class="free-tile" style="border-color:rgba(43,179,166,.6);background:rgba(43,179,166,.08)">
-        <b style="color:#c8f1ea">Share rigsizes, good surfkarma</b>
-        <p style="color:#d5ecea">De app leeft van sessies die surfers vrijwillig delen. Hoe meer mensen meedoen, hoe beter de data.</p>
+        <b style="color:#c8f1ea">{{FREE.TILE2.B}}</b>
+        <p style="color:#d5ecea">{{FREE.TILE2.BODY}}</p>
       </div>
     </div>
   </div>
@@ -2783,24 +2873,24 @@
 <!-- ================= DOWNLOAD ================= -->
 <section class="download" id="download">
   <div class="wrap">
-    <div class="mono" style="color:var(--brand)">— Download</div>
-    <h2>Klaar voor je volgende sessie?</h2>
-    <p>Open de webapp in je browser. De native apps voor iOS en Android volgen binnenkort.</p>
+    <div class="mono" style="color:var(--brand)">{{DL.EYEBROW}}</div>
+    <h2>{{DL.H2}}</h2>
+    <p>{{DL.INTRO}}</p>
 
     <div class="dl-stores">
-      <span class="dl-store dl-soon" data-soon="1" aria-disabled="true" title="De native apps verschijnen binnenkort - gebruik tot die tijd de webapp">
+      <span class="dl-store dl-soon" data-soon="1" aria-disabled="true" title="{{DL.SOON_TOOLTIP}}">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.4 2-3.5 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-2-.9-3.3-.8-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.8 1.2 1.9 2.6 3.2 2.6s1.8-.8 3.3-.8 2 .8 3.3.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM15.2 5.3c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.5 2.9-1.3z"/></svg>
-        <div><small>Binnenkort op</small><b>App Store</b></div>
-        <span class="dl-soon-badge">SOON</span>
+        <div><small>{{DL.APPSTORE_PRE}}</small><b>App Store</b></div>
+        <span class="dl-soon-badge">{{DL.SOON_BADGE}}</span>
       </span>
-      <span class="dl-store dl-soon" data-soon="1" aria-disabled="true" title="De native apps verschijnen binnenkort - gebruik tot die tijd de webapp">
+      <span class="dl-store dl-soon" data-soon="1" aria-disabled="true" title="{{DL.SOON_TOOLTIP}}">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.3c-.4.4-.6.9-.6 1.6v16.2c0 .7.2 1.2.6 1.6l.1.1L13.2 12 3.7 2.3zM17.5 15.3l-3.2-3.3 3.2-3.3 3.9 2.2c1.1.6 1.1 1.6 0 2.2zM4.3 21.7l9.5-9.7 3.3 3.3L5.4 22c-.5.2-.9.1-1.1-.3zM13.8 12L4.3 2.3c.2-.4.6-.5 1.1-.3l11.7 6.5z"/></svg>
-        <div><small>Binnenkort op</small><b>Google Play</b></div>
-        <span class="dl-soon-badge">SOON</span>
+        <div><small>{{DL.PLAY_PRE}}</small><b>Google Play</b></div>
+        <span class="dl-soon-badge">{{DL.SOON_BADGE}}</span>
       </span>
       <a class="dl-store dl-browser" href="https://app.rigsizelive.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
-        <div><small>Open direct in</small><b>Browser</b></div>
+        <div><small>{{DL.BROWSER_PRE}}</small><b>{{DL.BROWSER_LABEL}}</b></div>
       </a>
     </div>
   </div>
@@ -2810,13 +2900,13 @@
 <footer class="footer-clean">
   <div class="wrap">
     <div class="footer-legal-links">
-      <a href="https://app.rigsizelive.com/privacy.html">Privacybeleid</a>
+      <a href="{{FOOTER.PRIVACY_URL}}">{{FOOTER.PRIVACY}}</a>
       <span class="footer-sep">&middot;</span>
-      <a href="https://app.rigsizelive.com/terms.html">Voorwaarden</a>
+      <a href="{{FOOTER.TERMS_URL}}">{{FOOTER.TERMS}}</a>
     </div>
-    <p class="footer-legal-line">RigSize Live is een product van FTR Management B.V.</p>
-    <p class="footer-legal-line">KvK 53751671 &middot; <a href="mailto:info@rigsizelive.com">info@rigsizelive.com</a></p>
-    <p class="footer-legal-line footer-copyright">© 2025–2026 FTR Management B.V.</p>
+    <p class="footer-legal-line">{{FOOTER.PRODUCT_OF}}</p>
+    <p class="footer-legal-line">{{FOOTER.KVK}} &middot; <a href="mailto:info@rigsizelive.com">info@rigsizelive.com</a></p>
+    <p class="footer-legal-line footer-copyright">{{FOOTER.COPYRIGHT}}</p>
   </div>
 </footer>
 
