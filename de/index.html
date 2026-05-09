@@ -883,250 +883,357 @@
   @media (max-width: 900px){
     .lang-switcher-menu{right:auto;left:0}
   }
-</style>
-<style id="rsl-mobile-fixes">
-/* RSL_MOBILE_FIXES_V3 - iOS body-width fix */
 
-/* 1. CRITICAL: NO max-width:100vw on body - that clamps iOS Safari to 320px */
-html { overflow-x: hidden; }
-body { overflow-x: hidden; width: 100%; }
+  /* ============================================================ */
+  /* RSL_MOBILE_TABLET_REWRITE - mobile-first responsive layout    */
+  /* Desktop (>1024px) blijft 100% ongemoeid                       */
+  /* Mobile (<=640px) en tablet (641-1024px) krijgen nieuwe layout */
+  /* ============================================================ */
 
-/* 2. Wrap padding kleiner op smal scherm */
-@media (max-width: 640px) {
-  .wrap { padding: 0 18px !important; }
-}
+  /* === ALLE schermen <=1024px (mobile + tablet) === */
+  @media (max-width: 1024px) {
 
-/* 3. Hero - alle text/element overflow opvangen */
-@media (max-width: 700px) {
-  .eyebrow {
-    display: flex !important;
-    align-items: flex-start !important;
-    flex-wrap: wrap !important;
-    max-width: 100% !important;
-    white-space: normal !important;
-    line-height: 1.4 !important;
-    padding: 8px 14px !important;
-    font-size: 12px !important;
+    /* Body width fix: NOOIT 100vw, alleen overflow:hidden */
+    html { overflow-x: hidden; }
+    body { overflow-x: hidden; width: 100%; }
+
+    /* Wrap container: meer adempassing */
+    .wrap { padding: 0 24px; max-width: 100%; }
+
+    /* === NAV === */
+    .nav-links, .nav-cta { display: none; }
+    .nav-burger { display: flex; }
+
+    /* === HERO === */
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding: 80px 0 90px;
+    }
+
+    /* Eyebrow chip - laat 'm wrappen, beperken tot viewport */
+    .eyebrow {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      gap: 10px;
+      max-width: 100%;
+      white-space: normal;
+      line-height: 1.4;
+      padding: 9px 14px;
+      font-size: 13px;
+      box-sizing: border-box;
+    }
+    .eyebrow .dot {
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+    .eyebrow > span:not(.dot) {
+      flex: 1 1 0;
+      min-width: 0;
+      overflow-wrap: break-word;
+    }
+
+    /* Headline kleiner */
+    h1.headline {
+      font-size: clamp(36px, 6vw, 56px);
+      margin: 18px 0 16px;
+    }
+
+    /* Sub paragraaf binnen viewport houden */
+    .sub {
+      font-size: 17px;
+      max-width: 100%;
+      width: 100%;
+      overflow-wrap: break-word;
+    }
+
+    /* CTAs */
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .hero-ctas .btn {
+      flex: 1 1 auto;
+      justify-content: center;
+      min-width: 200px;
+    }
+
+    /* Hero pillars - tablet 2-col, mobile 1-col (later override) */
+    .hero-pillars {
+      grid-template-columns: repeat(2, 1fr) !important;
+      max-width: 100% !important;
+    }
+
+    /* Hero stats */
+    .hero-stats {
+      flex-wrap: wrap;
+      gap: 24px 32px;
+      max-width: 100%;
+      margin-top: 40px;
+      padding-top: 24px;
+    }
+    .hero-stats > div { flex: 0 0 auto; min-width: 0; }
+    .hero-stats b { font-size: 24px; }
+
+    /* Free chip mag wrappen */
+    .free-chip {
+      display: inline-flex;
+      flex-wrap: wrap;
+      line-height: 1.5;
+      max-width: 100%;
+    }
+
+    /* Phone mockup hero - center + smaller */
+    .phone-wrap {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .phone {
+      width: 280px;
+      height: auto;
+      aspect-ratio: 320/650;
+    }
+    .floater-1, .floater-2 { display: none; }
+
+    /* Floater quote: integreer in flow op mobile/tablet */
+    .floater-quote {
+      position: static !important;
+      display: flex !important;
+      width: auto !important;
+      max-width: 320px !important;
+      margin: 20px auto 0 !important;
+      right: auto !important;
+      top: auto !important;
+      left: auto !important;
+      bottom: auto !important;
+      transform: none !important;
+      padding: 14px 18px !important;
+    }
+
+    /* === COMMUNITY === */
+    .comm-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .comm-phone-wrap {
+      padding-left: 0;
+      width: 100%;
+    }
+    .comm-phone {
+      width: 280px;
+      height: auto;
+      aspect-ratio: 340/680;
+      transform: none;
+      margin: 0 auto;
+      padding: 8px;
+    }
+    .comm-phone img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+    }
+
+    /* === HOW IT WORKS section === */
+    #how {
+      padding: 80px 0 80px !important;
+    }
+    .how-layout {
+      grid-template-columns: 1fr !important;
+      gap: 40px !important;
+    }
+    .slider-card {
+      padding: 32px 24px 28px !important;
+      min-height: auto !important;
+    }
+    .slide-title { font-size: 22px !important; }
+    .slide-body { font-size: 15px !important; }
+
+    /* === INTEGRATIONS / WATCH === */
+    .int-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .watches {
+      padding-left: 0;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    .unlock-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 50px;
+    }
+    .session-phone { max-width: 280px; margin: 0 auto; }
+
+    /* === WHY === */
+    .why-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .data-viz { padding: 24px; min-height: auto; }
+    .why-quotes { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .qtile { padding: 14px; }
+    .qtile b { font-size: 22px; }
+    .viz-big { font-size: 42px; }
+
+    /* === DISCIPLINES === */
+    .disc-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .disc-card { aspect-ratio: 16/10; }
+
+    /* === FEATURES GRID === */
+    .fgrid { gap: 14px; }
+    .fcard {
+      grid-column: span 12;
+      padding: 24px;
+      min-height: auto;
+    }
+    .fcard.tall { min-height: auto; }
+    .fcard h3 { font-size: 22px; }
+
+    /* Spotinfo card - was flex-row, op mobiel column */
+    .spotinfo-card {
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .spotinfo-text {
+      flex: 0 0 auto;
+      padding: 24px;
+    }
+    .spotinfo-phone {
+      flex: 0 0 auto;
+      padding: 16px 14px 0;
+      background: #f7f9fc;
+    }
+    .spotinfo-phone img { max-width: 220px; }
+
+    /* Wind forecast card */
+    .windforecast-card {
+      flex-direction: column;
+      min-height: auto;
+      align-items: stretch;
+    }
+    .windforecast-text { flex: 0 0 auto; padding: 28px; }
+    .windforecast-phone { flex: 0 0 auto; padding: 28px 16px; gap: 20px; }
+    .windforecast-stats { grid-template-columns: 1fr 1fr; }
+    .windforecast-bezel { max-width: 280px; width: 100%; }
+
+    /* === FREE === */
+    .free-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    /* === DOWNLOAD === */
+    .dl-stores {
+      flex-direction: column;
+      gap: 14px;
+      align-items: stretch;
+    }
+    .dl-store {
+      justify-content: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* === SECTION HEADERS === */
+    .section-head {
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .section-head h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      max-width: 100%;
+    }
+    .section-head p {
+      font-size: 16px;
+      max-width: 100%;
+    }
+
+    /* === FOOTER === */
+    .footer-clean { padding: 50px 24px 40px; }
+    .footer-legal-links { flex-wrap: wrap; gap: 8px 14px; justify-content: center; }
+    .foot-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+
+    /* Section padding kleiner */
+    section { padding: 80px 0; }
+
+    /* Long-word break veiligheid */
+    h1, h2, h3, p {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
   }
-  .eyebrow .dot { flex-shrink: 0; margin-top: 5px; }
-  .eyebrow > span:not(.dot) { flex: 1 1 0; min-width: 0; }
 
-  h1.headline {
-    font-size: clamp(34px, 8vw, 48px) !important;
-    word-wrap: break-word;
+  /* === TABLET-only fijnafstelling (641-1024px) === */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .wrap { padding: 0 32px; }
+
+    /* Tablet kan 2-col features */
+    .fcard.c-span-6 { grid-column: span 6; }
+    .fcard.c-span-4 { grid-column: span 6; }
+    .fcard.c-span-8 { grid-column: span 12; }
+    .fcard.c-span-12 { grid-column: span 12; }
+
+    /* Tablet kan 2-col free + disc */
+    .free-grid { grid-template-columns: 1fr 1fr; }
+    .disc-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    /* Tablet kan 2-col download stores */
+    .dl-stores {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .dl-store {
+      flex: 1 1 calc(50% - 7px);
+      min-width: 200px;
+    }
+
+    /* Tablet hero phone iets groter */
+    .phone { width: 320px; }
+    .comm-phone { width: 320px; }
+
+    /* Tablet hero pillars 3-col */
+    .hero-pillars { grid-template-columns: repeat(3, 1fr) !important; }
   }
 
-  .sub {
-    max-width: 100% !important;
-    width: 100% !important;
-    font-size: 16px !important;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+  /* === MOBILE-only fijnafstelling (<=640px) === */
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+
+    /* Hero pillars 1-col op mobile */
+    .hero-pillars { grid-template-columns: 1fr !important; }
+
+    /* Hero CTAs full-width column */
+    .hero-ctas { flex-direction: column; }
+    .hero-ctas .btn { width: 100%; box-sizing: border-box; }
+
+    /* Insights stat-grid 1-col */
+    .insights-stats { grid-template-columns: 1fr !important; gap: 12px !important; }
+
+    /* Why quotes naar 1-col op echt smal */
+    .why-quotes { grid-template-columns: 1fr; }
+
+    /* Hero stats centreer en kleiner */
+    .hero-stats { gap: 20px 28px; }
+    .hero-stats b { font-size: 22px; }
+
+    /* Section padding compacter */
+    section { padding: 70px 0; }
+
+    /* Footer single column */
+    .foot-grid { grid-template-columns: 1fr; gap: 20px; }
   }
 
-  .hero-ctas {
-    flex-direction: column !important;
-    gap: 10px !important;
-    align-items: stretch !important;
-    max-width: 100% !important;
-  }
-  .hero-ctas .btn {
-    width: 100% !important;
-    justify-content: center !important;
-    text-align: center !important;
-    box-sizing: border-box !important;
-  }
+  /* === EINDE RSL_MOBILE_TABLET_REWRITE === */
 
-  .hero-inner > div > div[style*="repeat(3,1fr)"] {
-    grid-template-columns: 1fr !important;
-    max-width: 100% !important;
-  }
-
-  .hero-stats {
-    flex-wrap: wrap !important;
-    gap: 24px !important;
-    max-width: 100% !important;
-  }
-  .hero-stats > div { flex: 0 0 auto; min-width: 0; }
-  .hero-stats b { font-size: 22px !important; }
-
-  .free-chip {
-    flex-wrap: wrap !important;
-    line-height: 1.5 !important;
-    max-width: 100% !important;
-  }
-}
-
-/* 4. Hero phone */
-@media (max-width: 700px) {
-  .phone-wrap { width: 100%; max-width: 100%; }
-  .phone {
-    width: min(280px, 80vw) !important;
-    height: auto !important;
-    aspect-ratio: 320 / 650;
-    margin: 0 auto;
-  }
-  .floater-1, .floater-2 { display: none !important; }
-}
-
-/* 5. Community - phone via WIDTH ipv transform:scale */
-@media (max-width: 900px) {
-  .comm-grid {
-    grid-template-columns: 1fr !important;
-    gap: 36px !important;
-  }
-  .comm-phone-wrap {
-    padding-left: 0 !important;
-    width: 100% !important;
-    overflow: hidden !important;
-  }
-  .comm-phone {
-    width: min(280px, 75vw) !important;
-    height: auto !important;
-    aspect-ratio: 340 / 680 !important;
-    transform: none !important;
-    margin: 0 auto !important;
-    padding: 8px !important;
-    border-radius: 36px !important;
-  }
-  .comm-phone img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 30px !important;
-  }
-}
-@media (max-width: 540px) {
-  .comm-phone { width: min(260px, 70vw) !important; }
-}
-
-/* 6. How section */
-@media (max-width: 900px) {
-  #how .wrap > div[style*=".95fr 1.05fr"] {
-    grid-template-columns: 1fr !important;
-    gap: 40px !important;
-  }
-  #howSlider .slider-card {
-    padding: 32px 24px 28px !important;
-    min-height: auto !important;
-  }
-  #howSlider .slide-title { font-size: 22px !important; }
-  #howSlider .slide-body { font-size: 15px !important; }
-}
-
-/* 7. Spotinfo card */
-@media (max-width: 700px) {
-  .spotinfo-card {
-    flex-direction: column !important;
-    overflow: hidden !important;
-  }
-  .spotinfo-text {
-    flex: 0 0 auto !important;
-    padding: 24px !important;
-  }
-  .spotinfo-phone {
-    flex: 0 0 auto !important;
-    padding: 16px 14px 0 !important;
-    background: #f7f9fc !important;
-  }
-  .spotinfo-phone img { max-width: 220px !important; }
-}
-
-/* 8. Wind forecast */
-@media (max-width: 900px) {
-  .windforecast-phone .windforecast-bezel { max-width: 280px !important; }
-}
-@media (max-width: 540px) {
-  .windforecast-bezel { max-width: 280px !important; width: 100% !important; }
-  .windforecast-stats { grid-template-columns: 1fr 1fr !important; gap: 12px 16px !important; }
-}
-
-/* 9. Why section */
-@media (max-width: 900px) {
-  .why-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-  .data-viz { padding: 24px !important; min-height: auto !important; }
-  .why-quotes { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
-  .qtile { padding: 14px !important; }
-  .qtile b { font-size: 22px !important; }
-  .viz-big { font-size: 42px !important; }
-}
-
-/* 10. Watch */
-@media (max-width: 900px) {
-  .int-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
-  .session-phone { max-width: 280px !important; margin: 0 auto !important; }
-  .unlock-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
-}
-
-/* 11. Features grid */
-@media (max-width: 900px) {
-  .fgrid { gap: 14px !important; }
-  .fcard {
-    grid-column: span 12 !important;
-    padding: 22px !important;
-    min-height: auto !important;
-  }
-  .fcard.tall { min-height: auto !important; }
-  .fcard h3 { font-size: 22px !important; }
-}
-
-/* 12. Insights stat-grid */
-@media (max-width: 540px) {
-  .fcard.dark .preview[style*="repeat(3,1fr)"] {
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
-  }
-}
-
-/* 13. Section padding */
-@media (max-width: 700px) {
-  section { padding: 70px 0 !important; }
-  .section-head { margin-bottom: 36px !important; gap: 20px !important; }
-  .section-head h2 { font-size: clamp(28px, 7vw, 40px) !important; }
-}
-
-/* 14. Disciplines */
-@media (max-width: 700px) {
-  .disc-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
-  .disc-card { aspect-ratio: 16 / 11 !important; }
-}
-
-/* 15. Free section */
-@media (max-width: 700px) {
-  .free-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
-}
-
-/* 16. Download */
-@media (max-width: 700px) {
-  .dl-stores { flex-direction: column !important; gap: 14px !important; align-items: stretch !important; }
-  .dl-store {
-    justify-content: center !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-  }
-}
-
-/* 17. Footer */
-@media (max-width: 700px) {
-  footer.footer-clean { padding: 50px 18px 40px !important; }
-  .footer-legal-links { flex-wrap: wrap; gap: 8px 14px !important; }
-}
-
-/* 18. Long words */
-@media (max-width: 700px) {
-  h1, h2, h3, p {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  }
-}
-
-/* 19. Lang switcher */
-@media (max-width: 700px) {
-  .nav-cta { gap: 8px !important; }
-  .lang-switcher-btn { font-size: 11px !important; padding: 5px 8px !important; }
-}
-
-/* RSL_MOBILE_FIXES_V3_END */
 </style>
 </head>
 <body>
@@ -1219,7 +1326,7 @@ body { overflow-x: hidden; width: 100%; }
       </div>
 
       <!-- Value pillars directly under CTA -->
-      <div style="margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:580px">
+      <div class="hero-pillars" style="margin-top:34px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:580px">
         <div style="border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:rgba(255,255,255,.03)">
           <div class="mono" style="color:#7cd7e8">01 · Teilen</div>
           <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">Dein Rig & Spot</div>
@@ -1375,7 +1482,7 @@ body { overflow-x: hidden; width: 100%; }
 <!-- ================= HOW IT WORKS / TRACKING ================= -->
 <section id="how" style="background:#fff;padding:110px 0 100px;border-bottom:1px solid var(--line-d)">
   <div class="wrap">
-    <div style="display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center">
+    <div class="how-layout" style="display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center">
       <div>
         <div class="mono" style="color:var(--brand)">— Wie funktioniert es?</div>
         <h2 style="font-size:clamp(30px,3.8vw,46px);margin:10px 0 18px;letter-spacing:-0.03em">Vom Strand zum Logbuch.<br><span style="color:var(--brand)">In 5 einfachen Schritten.</span></h2>
@@ -2006,7 +2113,7 @@ body { overflow-x: hidden; width: 100%; }
         <div class="mono">08 — Persönliche Insights</div>
         <h3>Deine Sessions, übersetzt in Erkenntnisse.</h3>
         <p>Mit welchen Rig-Größen fährst du am schnellsten? Bist du Morgen- oder Abendsurfer? Welcher Monat war dein bester überhaupt? Alle Daten, ehrliche Antworten.</p>
-        <div class="preview" style="padding:16px;background:rgba(255,255,255,.03);display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+        <div class="preview insights-stats" style="padding:16px;background:rgba(255,255,255,.03);display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
           <div><div class="mono" style="color:#ffb07a">TOP-MONAT</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">Mai '24</div><div style="font-size:11px;color:var(--muted-d)">11 Sessions · 34h</div></div>
           <div><div class="mono" style="color:#ffb07a">Ø SESSION</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">2h 18m</div><div style="font-size:11px;color:var(--muted-d)">auf 5,4 m²</div></div>
           <div><div class="mono" style="color:#ffb07a">TOP-SPEED</div><div style="font-family:'Space Grotesk';font-size:20px;color:#fff;margin-top:4px">41.3 <small style="font-size:11px">km/h</small></div><div style="font-size:11px;color:var(--muted-d)">Tabou Rocket</div></div>
