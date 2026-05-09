@@ -1820,6 +1820,32 @@
 
   /* === EINDE RSL_MOBILE_V10_REFINE === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V11_FIX                                                */
+  /* 1. Hero: longhand padding-top/bottom (wrap horizontal blijft)     */
+  /* 2. Wind sectie: tekst boven, phones onder (column-reverse)        */
+  /* ================================================================ */
+
+  /* === MOBILE (<=640px) === */
+  @media (max-width: 640px) {
+
+    /* 1. HERO: longhand padding zodat wrap's 0 32px horizontal blijft */
+    .hero-inner {
+      padding: 100px 0 80px !important;
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+    }
+
+    /* 2. WIND SECTIE: tekst boven, phones onder */
+    .windforecast-card {
+      display: flex !important;
+      flex-direction: column-reverse !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V11_FIX === */
+
 </style>
 </head>
 <body>
