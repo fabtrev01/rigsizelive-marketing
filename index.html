@@ -1373,6 +1373,115 @@
 
   /* === EINDE RSL_MOBILE_V5_SIMPLIFICATION === */
 
+
+  /* ================================================================ */
+  /* RSL_MOBILE_V6_TWEAKS - finishing touches op v5                    */
+  /* Hero ademruimte, eyebrow compacter, disciplines herontwerp        */
+  /* ================================================================ */
+
+  /* === MOBILE (<=640px) tweaks === */
+  @media (max-width: 640px) {
+
+    /* Wrap: meer ademruimte aan de zijkant */
+    .wrap { padding: 0 22px !important; }
+
+    /* Eyebrow chip: compacter */
+    .eyebrow {
+      padding: 6px 12px !important;
+      font-size: 11px !important;
+      line-height: 1.4 !important;
+      letter-spacing: 0 !important;
+    }
+    .eyebrow .dot {
+      width: 6px !important;
+      height: 6px !important;
+      margin-right: 6px !important;
+    }
+
+    /* Hero: iets compacter */
+    .hero-inner {
+      padding: 50px 0 70px !important;
+    }
+    h1.headline {
+      font-size: clamp(30px, 7.5vw, 44px) !important;
+      margin: 16px 0 12px !important;
+    }
+    .sub {
+      font-size: 15px !important;
+      line-height: 1.55 !important;
+    }
+
+    /* === DISCIPLINES: foto prominent, tekst compact === */
+    .disc-card {
+      aspect-ratio: 16/10 !important;
+      margin-bottom: 12px !important;
+    }
+    .disc-card figcaption {
+      padding: 14px 18px !important;
+      background: linear-gradient(180deg, transparent 0%, rgba(8,21,34,.35) 35%, rgba(8,21,34,.85) 100%) !important;
+    }
+    .disc-tag {
+      color: #fff !important;
+      margin-bottom: 4px !important;
+      font-size: 10px !important;
+      letter-spacing: 0.16em !important;
+      opacity: 0.95 !important;
+    }
+    .disc-card b {
+      font-size: 22px !important;
+      display: block !important;
+      line-height: 1.15 !important;
+    }
+    .disc-card small {
+      display: none !important;
+    }
+
+    /* === PHONE BEZELS: meer ademruimte === */
+    /* Session phone (Garmin tracking) - container krijgt padding-bottom zodat bezel goed eindigt */
+    .watches {
+      padding-bottom: 16px !important;
+    }
+    /* Spotinfo phone in feature card */
+    .spotinfo-phone {
+      padding: 16px 14px 24px !important;
+    }
+    /* Wind forecast phones - extra padding-bottom */
+    .windforecast-phone {
+      padding-bottom: 32px !important;
+    }
+    /* Community phone - genoeg ruimte onderaan */
+    .comm-phone-wrap {
+      padding-bottom: 8px !important;
+    }
+  }
+
+  /* === TABLET (641-1024px) tweaks === */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    /* Disciplines: 2-col met aspect-ratio 4/3 */
+    .disc-card {
+      aspect-ratio: 4/3 !important;
+    }
+    .disc-card figcaption {
+      padding: 18px 22px !important;
+      background: linear-gradient(180deg, transparent 0%, rgba(8,21,34,.4) 35%, rgba(8,21,34,.85) 100%) !important;
+    }
+    .disc-tag {
+      color: #fff !important;
+      opacity: 0.95 !important;
+    }
+    .disc-card b {
+      font-size: 24px !important;
+      display: block !important;
+    }
+    .disc-card small {
+      display: block !important;
+      font-size: 13px !important;
+      margin-top: 4px !important;
+    }
+  }
+
+  /* === EINDE RSL_MOBILE_V6_TWEAKS === */
+
 </style>
 </head>
 <body>
