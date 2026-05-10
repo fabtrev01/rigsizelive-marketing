@@ -1848,62 +1848,41 @@
 
 
   /* ================================================================ */
-  /* RSL_MOBILE_V16                                                    */
-  /* 1. Comm-phone: visible black bezel via container styling          */
-  /* 2. Hero: padding-top 50px (was 100px - halve afstand tot menu)    */
+  /* RSL_MOBILE_V18                                                    */
+  /* Restore origineel .comm-phone styling (phone-frame look) op mobiel */
+  /* V10's aspect-ratio:auto override zette dit kapot                  */
   /* ================================================================ */
   @media (max-width: 640px) {
-
-    /* Hero: kleinere afstand pill <-> menu */
-    .hero-inner {
-      padding: 50px 0 80px !important;
-      padding-left: 32px !important;
-      padding-right: 32px !important;
-    }
-
-    /* Comm-phone: forceer visible black bezel */
     .comm-phone {
       background: #0b1f33 !important;
-      padding: 8px !important;
-      box-sizing: content-box !important;
+      padding: 6px !important;
       border-radius: 42px !important;
-      overflow: hidden !important;
-    }
-    .comm-phone img {
-      border: none !important;
+      aspect-ratio: 462/1000 !important;
+      height: auto !important;
+      max-width: 280px !important;
       width: 100% !important;
-      height: auto !important;
-      max-width: 100% !important;
-      border-radius: 32px !important;
-      display: block !important;
-      box-sizing: content-box !important;
-    }
-  }
-  /* === EINDE RSL_MOBILE_V16 === */
-
-
-  /* ================================================================ */
-  /* RSL_MOBILE_V17                                                    */
-  /* Comm-phone: margin-on-img approach voor visible black bezel       */
-  /* ================================================================ */
-  @media (max-width: 640px) {
-    .comm-phone {
-      background: #0b1f33 !important;
-      border-radius: 42px !important;
       overflow: hidden !important;
-      padding: 0 !important;
+      position: relative !important;
+      margin: 0 auto !important;
+      box-shadow: 0 30px 60px -25px rgba(8,21,34,.4),
+                  0 12px 25px -10px rgba(8,21,34,.18),
+                  inset 0 0 0 1px rgba(255,255,255,.08) !important;
     }
     .comm-phone img {
-      margin: 8px !important;
-      width: calc(100% - 16px) !important;
-      height: auto !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      border-radius: 34px !important;
       display: block !important;
-      border-radius: 28px !important;
       border: none !important;
-      box-sizing: content-box !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      position: relative !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
     }
   }
-  /* === EINDE RSL_MOBILE_V17 === */
+  /* === EINDE RSL_MOBILE_V18 === */
 
 </style>
 </head>
