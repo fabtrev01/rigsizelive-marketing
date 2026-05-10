@@ -1848,14 +1848,15 @@
 
 
   /* ================================================================ */
-  /* RSL_MOBILE_V18                                                    */
-  /* Restore origineel .comm-phone styling (phone-frame look) op mobiel */
-  /* V10's aspect-ratio:auto override zette dit kapot                  */
+  /* RSL_MOBILE_V19                                                    */
+  /* Fix overflow onderaan: padding-approach (ipv border op img)       */
+  /* Container: zwart bg + padding voor frame-look                     */
+  /* Img: 100% van content-area zodat het binnen padding past          */
   /* ================================================================ */
   @media (max-width: 640px) {
     .comm-phone {
       background: #0b1f33 !important;
-      padding: 6px !important;
+      padding: 8px !important;
       border-radius: 42px !important;
       aspect-ratio: 462/1000 !important;
       height: auto !important;
@@ -1864,25 +1865,25 @@
       overflow: hidden !important;
       position: relative !important;
       margin: 0 auto !important;
+      box-sizing: border-box !important;
       box-shadow: 0 30px 60px -25px rgba(8,21,34,.4),
-                  0 12px 25px -10px rgba(8,21,34,.18),
-                  inset 0 0 0 1px rgba(255,255,255,.08) !important;
+                  0 12px 25px -10px rgba(8,21,34,.18) !important;
     }
     .comm-phone img {
       width: 100% !important;
       height: 100% !important;
       object-fit: cover !important;
+      object-position: center top !important;
       border-radius: 34px !important;
       display: block !important;
       border: none !important;
       margin: 0 !important;
       padding: 0 !important;
       position: relative !important;
-      max-width: 100% !important;
       box-sizing: border-box !important;
     }
   }
-  /* === EINDE RSL_MOBILE_V18 === */
+  /* === EINDE RSL_MOBILE_V19 === */
 
 </style>
 </head>
