@@ -24,24 +24,6 @@ from pathlib import Path
 
 LANGUAGES = ['nl', 'en', 'de', 'fr', 'es', 'it']
 DEFAULT_LANG = 'nl'
-# Hardcoded labels per taal (geen JSON keys nodig voor deze)
-NEXT_LABELS = {
-    'nl': 'Volgende',
-    'en': 'Next',
-    'de': 'Weiter',
-    'fr': 'Suivant',
-    'es': 'Siguiente',
-    'it': 'Avanti',
-}
-END_LABELS = {
-    'nl': 'Einde',
-    'en': 'End',
-    'de': 'Ende',
-    'fr': 'Fin',
-    'es': 'Fin',
-    'it': 'Fine',
-}
-
 ROOT = Path(__file__).parent.resolve()
 
 PLACEHOLDER_RE = re.compile(r'\{\{([a-zA-Z0-9_.]+)\}\}')

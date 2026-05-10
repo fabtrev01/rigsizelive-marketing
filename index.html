@@ -2243,7 +2243,7 @@
       </div>
 
       <!-- Slider -->
-      <div id="howSlider" style="position:relative">
+      <div id="howSlider" data-next-label="__NEXT_LABEL__" data-end-label="__END_LABEL__" style="position:relative">
         <div class="slider-card">
           <!-- Slides -->
           <div class="slide" data-slide="1">
@@ -2422,7 +2422,7 @@
         slides.forEach(s=>{s.hidden=(+s.dataset.slide!==i)});
         dots.forEach(d=>d.classList.toggle('active',+d.dataset.i===i));
         prev.disabled=(i===1);
-        nextLbl.textContent=(i===total)?'Einde':'Volgende';
+        nextLbl.textContent=(i===total)?(root.dataset.endLabel||'Einde'):(root.dataset.nextLabel||'Volgende');
       }
       prev.addEventListener('click',()=>show(i-1));
       next.addEventListener('click',()=>{if(i<total)show(i+1);else show(1)});
