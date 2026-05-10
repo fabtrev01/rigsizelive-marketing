@@ -122,9 +122,6 @@ def main():
         translations = load_translations(lang)
         translations_flat = flatten(translations)
         html = render(template, translations_flat, lang)
-        # Hardcoded labels per taal voor slider knop
-        html = html.replace('__NEXT_LABEL__', NEXT_LABELS.get(lang, 'Next'))
-        html = html.replace('__END_LABEL__', END_LABELS.get(lang, 'End'))
 
         if lang == DEFAULT_LANG:
             out_path = ROOT / 'index.html'
