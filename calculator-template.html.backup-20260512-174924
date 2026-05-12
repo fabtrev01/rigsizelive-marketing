@@ -1,23 +1,17 @@
 <!doctype html>
-<html lang="nl">
+<html lang="{{LANG_CODE}}">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Vin & Foil Calculator — bereken jouw maat | RigSize Live</title>
-<meta name="description" content="Gratis online calculator voor windsurfvin, windsurf foil, wing foil en kite foil. Vinmaat of foilgrootte berekenen op basis van gewicht, zeil en stijl." />
-<link rel="canonical" href="https://www.rigsizelive.com/vin-foil-calculator/" />
-<link rel="alternate" hreflang="nl" href="https://www.rigsizelive.com/vin-foil-calculator/" />
-<link rel="alternate" hreflang="en" href="https://www.rigsizelive.com/en/fin-foil-calculator/" />
-<link rel="alternate" hreflang="de" href="https://www.rigsizelive.com/de/finnen-foil-rechner/" />
-<link rel="alternate" hreflang="fr" href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" />
-<link rel="alternate" hreflang="es" href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" />
-<link rel="alternate" hreflang="it" href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" />
-<link rel="alternate" hreflang="x-default" href="https://www.rigsizelive.com/vin-foil-calculator/" />
+<title>{{META.TITLE}}</title>
+<meta name="description" content="{{META.DESCRIPTION}}" />
+<link rel="canonical" href="{{CANONICAL_URL}}" />
+{{HREFLANG_TAGS}}
 <meta name="theme-color" content="#1a9cc4" />
-<meta property="og:title" content="Vin & Foil Calculator — bereken jouw maat | RigSize Live" />
-<meta property="og:description" content="Gratis online calculator voor windsurfvin, windsurf foil, wing foil en kite foil. Vinmaat of foilgrootte berekenen op basis van gewicht, zeil en stijl." />
+<meta property="og:title" content="{{META.TITLE}}" />
+<meta property="og:description" content="{{META.DESCRIPTION}}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rigsizelive.com/vin-foil-calculator/" />
+<meta property="og:url" content="{{CANONICAL_URL}}" />
 <meta property="og:image" content="https://www.rigsizelive.com/images/hero-photo.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/png" href="/icons/logo-192.png" />
@@ -32,9 +26,9 @@
   "@graph": [
     {
       "@type": "WebApplication",
-      "name": "RigSize Live Vin & Foil Calculator",
-      "url": "https://www.rigsizelive.com/vin-foil-calculator/",
-      "description": "Gratis online calculator voor windsurfvin, windsurf foil, wing foil en kite foil. Vinmaat of foilgrootte berekenen op basis van gewicht, zeil en stijl.",
+      "name": "{{SCHEMA.APP_NAME}}",
+      "url": "{{CANONICAL_URL}}",
+      "description": "{{META.DESCRIPTION}}",
       "applicationCategory": "SportsApplication",
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
@@ -42,13 +36,13 @@
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [{"@type":"Question","name":"Hoe lang moet mijn windsurfvin zijn?","acceptedAnswer":{"@type":"Answer","text":"De juiste vinlengte hangt af van je gewicht, zeilgrootte, board-breedte en discipline. Vuistregel voor slalom: 30-34 cm bij een 7,5 m² zeil. Voor freeride 28-32 cm, voor wave 18-24 cm en voor freestyle 16-22 cm. De calculator rekent het precies voor je uit op basis van je input — inclusief wiervin-correctie en een aparte maat voor G10 versus carbon vinnen."}},{"@type":"Question","name":"Welke maat wing heb ik nodig voor wingfoilen?","acceptedAnswer":{"@type":"Answer","text":"De wing-grootte hangt af van je gewicht en de wind. Voor een rider van 75-85 kg bij 15-20 knopen wind is een 5,0 m² wing gangbaar. Bij lichtere wind (10-15 knopen) ga je naar 6,0-7,0 m², bij sterke wind (25+ knopen) naar 3,5-4,0 m². Veel wingfoilers hebben twee maten in hun quiver om het hele windbereik te dekken. De calculator gebruikt deze input om je foilmaat te berekenen."}},{"@type":"Question","name":"Welke foil maat heb ik nodig voor wingfoilen?","acceptedAnswer":{"@type":"Answer","text":"Zwaardere riders, lichte wind of beginners hebben een grotere voorvleugel nodig — typisch 1500-2200 cm² met low aspect profiel. Intermediate riders gebruiken meestal 1200-1500 cm². Gevorderden in sterke wind kunnen toe met 800-1200 cm² high aspect. De calculator geeft drie maten — low, mid en high aspect — afgestemd op je gewicht en wing-grootte."}},{"@type":"Question","name":"Welke kitefoil grootte voor een beginner?","acceptedAnswer":{"@type":"Answer","text":"Voor een beginnende kitefoiler is een grote voorvleugel essentieel: 900-1200 cm², dikke profielen, lage aspect ratio. Dit geeft vroege lift, stabiel rij-gedrag en vergevingsgezindheid bij touch-downs. Pas op gevorderd niveau over naar 500-800 cm² high aspect race foils. Combineer met een kortere mast (55-65 cm) voor extra controle als beginner."}},{"@type":"Question","name":"Klopt de vuistregel: vinlengte = zeilmaat × 5 + 4?","acceptedAnswer":{"@type":"Answer","text":"Deze klassieke vuistregel werkt redelijk voor traditionele lang-smalle boards, maar is achterhaald voor de huidige generatie korte en brede boards. Een 7,5 m² zeil zou volgens deze regel een vin van 41,5 cm betekenen — in de praktijk is dat veel te lang voor moderne slalom-boards van 75-85 cm breed. Onze calculator gebruikt geoptimaliseerde formules (zeilmaat × 4,0 + correcties voor board-breedte en gewicht) die getest zijn tegen materiaal van Starboard, K4, Tabou en andere merken."}},{"@type":"Question","name":"Hoe meet ik mijn board breedte voor de juiste vinmaat?","acceptedAnswer":{"@type":"Answer","text":"Gebruik de \"one-foot-off\" regel (OFO): meet de board-breedte op exact 30 cm (1 foot) vanaf de achterkant. Deze breedte is een gangbaar startpunt voor vinlengte — de maximale vinlengte is ongeveer gelijk aan deze maat plus 2 cm, de minimale ongeveer 6-10 cm minder. De calculator gebruikt deze breedte als één van de input-variabelen voor een nauwkeuriger advies."}},{"@type":"Question","name":"Wat is het verschil tussen low, mid en high aspect foils?","acceptedAnswer":{"@type":"Answer","text":"Low aspect = bredere voorvleugel, makkelijker opstijgen, stabieler — ideaal voor freeride en beginners. Mid aspect = balans tussen lift en snelheid, geschikt voor allround en freestyle. High aspect = lange smalle vleugel, hoge topsnelheid, glide-efficiënt — bedoeld voor race, downwind en gevorderde freeride. De calculator toont alle drie zodat je kunt kiezen wat past bij je rij-stijl."}},{"@type":"Question","name":"Welke vinmaat voor wave windsurfen?","acceptedAnswer":{"@type":"Answer","text":"Wave-vinnen zijn fors korter dan freeride en slalom. Voor een rider van 75-85 kg met een 4,5-5,5 m² wave-zeil ligt de juiste lengte tussen 18 en 24 cm. Single-fin setups gaan iets langer, thruster/quad setups gebruiken kortere fronts (12-16 cm) plus kleinere sides. Bij wave-vinnen telt het profiel en de stijfheid bijna zwaarder dan de lengte: zachtere profielen geven meer drive in de bocht."}},{"@type":"Question","name":"Wat is een wiervin en wanneer gebruik je hem?","acceptedAnswer":{"@type":"Answer","text":"Een wiervin (weed fin) heeft een sterk naar achteren gebogen profiel, ontworpen om plantenmateriaal af te schudden in plaats van vast te haken. Gebruik hem op spots met wier, gras of ondiep zand-water — typisch op het IJsselmeer, Markermeer, Brouwersdam, het Veerse Meer en veel Franse meren in de zomer. Een wiervin tilt het drukpunt naar achteren, dus zet je mastvoet en voetbanden ook iets meer naar achteren voor de juiste balans."}},{"@type":"Question","name":"Hoeveel korter moet mijn wiervin zijn?","acceptedAnswer":{"@type":"Answer","text":"Voor slalom en freeride is een wiervin ongeveer 18% korter dan een normale vin met vergelijkbare prestaties (door het grotere oppervlak per cm lengte). Voor wave en freestyle: 10% korter — kortere vinnen hebben relatief minder oppervlakte-verschil. De calculator past dit automatisch toe als je de wiervin-toggle aanzet."}},{"@type":"Question","name":"Welke mast-lengte voor wingfoil of kitefoil?","acceptedAnswer":{"@type":"Answer","text":"Voor beginners: een kortere mast (60-75 cm) houdt je dichter bij het water, minder spannend en zachtere touch-downs. Intermediate: 75-85 cm voor meer ruimte om hoogte te corrigeren. Gevorderd: 85-95 cm voor downwind en choppy water — minder kans op breaching. Houd ook rekening met de waterdiepte op je spot: een 90 cm mast werkt niet in 1 meter water. De calculator toont een mast-advies per niveau in het foil-setup blok."}},{"@type":"Question","name":"Carbon of G10 vin — wat is het verschil?","acceptedAnswer":{"@type":"Answer","text":"G10 (glasvezel-epoxy laminaat) is dikker, vergevingsgezind, goedkoper en uitstekend voor freeride en beginnende slalom. Carbon is dunner, stijver, sneller en gewichtsbesparend — maar minder vergevingsgezind in choppy water. De calculator geeft beide maten omdat een carbon vin doorgaans ongeveer 5% korter mag zijn dan een G10 voor vergelijkbare prestaties (MUF X-Ride vs Ride benchmark)."}},{"@type":"Question","name":"Werkt deze calculator voor alle merken (Starboard, F-One, K4...)?","acceptedAnswer":{"@type":"Answer","text":"Ja. De formules zijn gevalideerd tegen uitgebreide markt-benchmarks — materiaal en publicaties van Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA en MACkite, plus publieke fin-guides van PWA-pro Nico Prien (NP7) en de Bornhoft/RYA vin-onderzoeken. Mits je de juiste discipline en stijl kiest, geeft de calculator een merk-onafhankelijk advies dat je 1-op-1 kunt vertalen naar het assortiment van elke fabrikant."}}]
+      "mainEntity": [{{FAQ_SCHEMA_ITEMS}}]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rigsizelive.com/" },
-        { "@type": "ListItem", "position": 2, "name": "RigSize Live Vin & Foil Calculator", "item": "https://www.rigsizelive.com/vin-foil-calculator/" }
+        { "@type": "ListItem", "position": 1, "name": "{{NAV.HOME}}", "item": "{{HOME_URL}}" },
+        { "@type": "ListItem", "position": 2, "name": "{{SCHEMA.APP_NAME}}", "item": "{{CANONICAL_URL}}" }
       ]
     }
   ]
@@ -227,33 +221,28 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <!-- NAV -->
 <nav class="nav">
   <div class="wrap nav-row">
-    <a href="https://www.rigsizelive.com/" class="brand">
+    <a href="{{HOME_URL}}" class="brand">
       <img src="/icons/logo-color-lg.png" alt="RigSize Live" style="border-radius:8px" />
       <span>RigSize<em> Live</em></span>
     </a>
     <div class="nav-links">
-      <a href="https://www.rigsizelive.com/#how">Tracking</a>
-      <a href="https://www.rigsizelive.com/#features">Features</a>
-      <a href="https://www.rigsizelive.com/#forecast">Windvoorspelling</a>
-      <a href="https://www.rigsizelive.com/#community">Live rigsizes</a>
+      <a href="{{HOME_URL}}#how">{{NAV.TRACKING}}</a>
+      <a href="{{HOME_URL}}#features">{{NAV.FEATURES}}</a>
+      <a href="{{HOME_URL}}#forecast">{{NAV.FORECAST}}</a>
+      <a href="{{HOME_URL}}#community">{{NAV.LIVE}}</a>
     </div>
     <div class="nav-cta">
       <div class="lang-switcher" id="langSwitcher">
         <button class="lang-switcher-btn" id="langSwitcherBtn" aria-haspopup="true" aria-expanded="false">
-          <span>🇳🇱 NL</span>
+          <span>{{LANG.FLAG}} {{LANG.CODE}}</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="lang-switcher-menu" role="menu">
-          <a href="https://www.rigsizelive.com/vin-foil-calculator/" data-lang="nl">🇳🇱 Nederlands</a>
-          <a href="https://www.rigsizelive.com/en/fin-foil-calculator/" data-lang="en">🇬🇧 English</a>
-          <a href="https://www.rigsizelive.com/de/finnen-foil-rechner/" data-lang="de">🇩🇪 Deutsch</a>
-          <a href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" data-lang="fr">🇫🇷 Français</a>
-          <a href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" data-lang="es">🇪🇸 Español</a>
-          <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" data-lang="it">🇮🇹 Italiano</a>
+{{LANG_SWITCHER_LINKS}}
         </div>
       </div>
-      <a class="btn btn-ghost" href="https://app.rigsizelive.com">Open webapp →</a>
-      <a class="btn btn-primary" href="https://www.rigsizelive.com/#download">Download</a>
+      <a class="btn btn-ghost" href="https://app.rigsizelive.com">{{nav.openWebapp}}</a>
+      <a class="btn btn-primary" href="{{HOME_URL}}#download">{{nav.download}}</a>
     </div>
     <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
@@ -261,21 +250,16 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="https://www.rigsizelive.com/#how">Tracking</a>
-  <a href="https://www.rigsizelive.com/#features">Features</a>
-  <a href="https://www.rigsizelive.com/#forecast">Windvoorspelling</a>
-  <a href="https://www.rigsizelive.com/#community">Live rigsizes</a>
+  <a href="{{HOME_URL}}#how">{{NAV.TRACKING}}</a>
+  <a href="{{HOME_URL}}#features">{{NAV.FEATURES}}</a>
+  <a href="{{HOME_URL}}#forecast">{{NAV.FORECAST}}</a>
+  <a href="{{HOME_URL}}#community">{{NAV.LIVE}}</a>
   <div class="mobile-cta">
-    <a class="btn btn-primary" href="https://www.rigsizelive.com/#download">Download de app →</a>
-    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">Open webapp</a>
+    <a class="btn btn-primary" href="{{HOME_URL}}#download">{{MOBILE.DOWNLOAD_APP}}</a>
+    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">{{MOBILE.OPEN_WEBAPP}}</a>
   </div>
   <div class="mobile-lang">
-    <a href="https://www.rigsizelive.com/vin-foil-calculator/" data-lang="nl" class="active">🇳🇱 Nederlands</a>
-    <a href="https://www.rigsizelive.com/en/fin-foil-calculator/" data-lang="en">🇬🇧 English</a>
-    <a href="https://www.rigsizelive.com/de/finnen-foil-rechner/" data-lang="de">🇩🇪 Deutsch</a>
-    <a href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" data-lang="fr">🇫🇷 Français</a>
-    <a href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" data-lang="es">🇪🇸 Español</a>
-    <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" data-lang="it">🇮🇹 Italiano</a>
+{{MOBILE_LANG_LINKS}}
   </div>
 </div>
 
@@ -284,9 +268,9 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
   <div class="hero-photo"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <span class="eyebrow"><span class="dot"></span> RigSize Live · Calculator</span>
-      <h1 class="headline">Vin & <span class="acc">Foil</span> Calculator</h1>
-      <p class="hero-sub">Bereken in seconden de juiste maat voor je windsurfvin, windsurf foil, wing foil of kite foil. Op basis van je gewicht, zeil en rij-stijl.</p>
+      <span class="eyebrow"><span class="dot"></span> {{HERO.EYEBROW}}</span>
+      <h1 class="headline">{{HERO.TITLE_PRE}} <span class="acc">{{HERO.TITLE_ACC}}</span> {{HERO.TITLE_POST}}</h1>
+      <p class="hero-sub">{{HERO.SUBTITLE}}</p>
     </div>
   </div>
 </header>
@@ -297,61 +281,61 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
     <div class="calc-card">
 
       <div class="calc-fld">
-        <label class="calc-lbl">Sport</label>
+        <label class="calc-lbl">{{CALC.SPORT}}</label>
         <select class="calc-sel" id="calcDisc">
-          <option value="ws_fin">Windsurf (Vin)</option>
-          <option value="ws_foil">Windsurf (Foil)</option>
-          <option value="wing">Wingfoilen</option>
-          <option value="kite">Kitefoilen</option>
+          <option value="ws_fin">{{CALC.WS_FIN}}</option>
+          <option value="ws_foil">{{CALC.WS_FOIL}}</option>
+          <option value="wing">{{CALC.WING}}</option>
+          <option value="kite">{{CALC.KITE}}</option>
         </select>
       </div>
 
       <div class="calc-fld" id="calcStyleGroup">
-        <label class="calc-lbl">Stijl</label>
+        <label class="calc-lbl">{{CALC.STYLE}}</label>
         <select class="calc-sel" id="calcStyle">
-          <option value="freeride">Freeride</option>
-          <option value="slalom" selected>Slalom / Race</option>
-          <option value="wave">Wave</option>
-          <option value="freestyle">Freestyle</option>
+          <option value="freeride">{{CALC.STYLE_FREERIDE}}</option>
+          <option value="slalom" selected>{{CALC.STYLE_SLALOM}}</option>
+          <option value="wave">{{CALC.STYLE_WAVE}}</option>
+          <option value="freestyle">{{CALC.STYLE_FREESTYLE}}</option>
         </select>
       </div>
 
       <div class="calc-row2">
         <div class="calc-fld">
-          <label class="calc-lbl">Gewicht (kg)</label>
+          <label class="calc-lbl">{{CALC.WEIGHT}}</label>
           <input type="text" inputmode="decimal" id="calcWeight" value="80" class="calc-inp">
         </div>
         <div class="calc-fld" id="calcSailGroup">
-          <label class="calc-lbl" id="calcSailLabel">Zeilgrootte (m²)</label>
-          <input type="text" inputmode="decimal" id="calcSail" value="" placeholder="bijv. 7.5" class="calc-inp">
+          <label class="calc-lbl" id="calcSailLabel">{{CALC.SAIL}}</label>
+          <input type="text" inputmode="decimal" id="calcSail" value="" placeholder="{{CALC.SAIL_PH}}" class="calc-inp">
         </div>
       </div>
 
       <div class="calc-fld" id="calcWidthGroup">
-        <label class="calc-lbl">Board breedte (cm) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#94a3b8">- optioneel</span></label>
-        <input type="text" inputmode="decimal" id="calcWidth" value="" placeholder="bijv. 70" class="calc-inp">
+        <label class="calc-lbl">{{CALC.WIDTH}} <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#94a3b8">- {{CALC.OPTIONAL}}</span></label>
+        <input type="text" inputmode="decimal" id="calcWidth" value="" placeholder="{{CALC.WIDTH_PH}}" class="calc-inp">
       </div>
 
       <label class="calc-weed" id="calcWeedGroup">
         <input type="checkbox" id="calcWeed">
-        <span>🌿 Wiervin correctie</span>
+        <span>{{CALC.WEED_FIN}}</span>
       </label>
 
       <div class="calc-fld">
-        <label class="calc-lbl">Ervaringsniveau</label>
+        <label class="calc-lbl">{{CALC.LEVEL}}</label>
         <div class="calc-pills" id="calcLevelPills">
-          <button type="button" class="calc-pill" data-v="beginner">Beginner</button>
-          <button type="button" class="calc-pill on" data-v="intermediate">Intermediate</button>
-          <button type="button" class="calc-pill" data-v="gevorderd">Gevorderd</button>
+          <button type="button" class="calc-pill" data-v="beginner">{{CALC.BEGINNER}}</button>
+          <button type="button" class="calc-pill on" data-v="intermediate">{{CALC.INTERMEDIATE}}</button>
+          <button type="button" class="calc-pill" data-v="gevorderd">{{CALC.ADVANCED}}</button>
         </div>
       </div>
 
       <div class="calc-fld" id="calcWindGroup">
-        <label class="calc-lbl" id="calcWindLabel">Windcondities</label>
+        <label class="calc-lbl" id="calcWindLabel">{{CALC.WIND}}</label>
         <div class="calc-pills" id="calcWindPills">
-          <button type="button" class="calc-pill" data-v="low">Onderpowered</button>
-          <button type="button" class="calc-pill on" data-v="mid">Normaal</button>
-          <button type="button" class="calc-pill" data-v="high">Overpowered</button>
+          <button type="button" class="calc-pill" data-v="low">{{CALC.WIND_LOW}}</button>
+          <button type="button" class="calc-pill on" data-v="mid">{{CALC.WIND_MID}}</button>
+          <button type="button" class="calc-pill" data-v="high">{{CALC.WIND_HIGH}}</button>
         </div>
       </div>
 
@@ -365,7 +349,7 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
       <details class="calc-collapse" id="calcFoilSetup">
         <summary class="calc-collapse-head">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-          <span class="calc-collapse-title">Foil setup advies</span>
+          <span class="calc-collapse-title">{{CALC.FOIL_SETUP}}</span>
           <svg class="calc-collapse-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </summary>
         <div class="calc-collapse-body" id="calcFoilSetupContent"></div>
@@ -374,116 +358,65 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
       <details class="calc-collapse">
         <summary class="calc-collapse-head">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-          <span class="calc-collapse-title">Disclaimer</span>
+          <span class="calc-collapse-title">{{CALC.DISCLAIMER}}</span>
           <svg class="calc-collapse-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </summary>
         <div class="calc-collapse-body">
-          <p class="calc-disclaimer-text">Deze calculator geeft een advies op basis van benchmark-data. De uiteindelijke keuze hangt af van persoonlijke voorkeur, lokale condities en specifieke board-kenmerken. Gebruik dit als startpunt en pas aan op basis van je eigen ervaring op het water.</p>
+          <p class="calc-disclaimer-text">{{CALC.DISCLAIMER_TEXT}}</p>
         </div>
       </details>
 
-      <p style="text-align:center;margin-top:16px;font-size:11px;color:#94a3b8;line-height:1.55">Formules gebaseerd op James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE en MACkite benchmarks.</p>
+      <p style="text-align:center;margin-top:16px;font-size:11px;color:#94a3b8;line-height:1.55">{{CALC.SOURCES}}</p>
 
-    </div>
-  </div>
-</section>
-
-<!-- SPORTS -->
-<section class="sports-section">
-  <div class="wrap">
-    <h2>Voor welke watersport?</h2>
-    <p class="sub">De calculator dekt alle vier de disciplines waarin RigSize Live gespecialiseerd is. Gebaseerd op uitgebreide markt-benchmarks tegen materiaal van toonaangevende fabrikanten en publieke gear-data van professionele riders.</p>
-    <div class="sports-grid">
-      <div class="sport-card">
-        <div class="sport-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h13a3 3 0 100-6M3 14h16a3 3 0 110 6M3 11h9"/></svg></div>
-        <h3>Windsurfen — vin</h3>
-        <p>Vinlengte in cm voor slalom, freeride, wave en freestyle. Inclusief wiervin-correctie en G10 vs Carbon advies.</p>
-      </div>
-      <div class="sport-card">
-        <div class="sport-icon" style="background:#e0e7ff;color:#4338ca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 16l5-8 4 5 4-3 5 6"/></svg></div>
-        <h3>Windsurf foil</h3>
-        <p>Voorvleugel oppervlak (cm²) voor low / mid / high aspect, plus mast en fuselage advies.</p>
-      </div>
-      <div class="sport-card">
-        <div class="sport-icon" style="background:#fef3c7;color:#92400e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
-        <h3>Wingfoilen</h3>
-        <p>Foil maat op basis van wing-grootte en gewicht. Freeride, allround en downwind.</p>
-      </div>
-      <div class="sport-card">
-        <div class="sport-icon" style="background:#fce7f3;color:#9d174d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8c4-4 12-4 16 0M6 12c3-3 9-3 12 0M8 16c2-2 6-2 8 0"/></svg></div>
-        <h3>Kitefoilen</h3>
-        <p>Voorvleugel maat voor freeride, freestyle/big air en race. Inclusief setup-advies.</p>
-      </div>
     </div>
   </div>
 </section>
 
 <!-- AD SLOT 1 -->
-<div class="ad-slot" data-slot="below-sports">
+<div class="ad-slot" data-slot="below-calculator">
   <div class="ad-slot-inner">
     <b>Ad slot 1</b>
-    Reserved
+    {{AD.PLACEHOLDER_BELOW_CALC}}
   </div>
 </div>
+
+<!-- SPORTS -->
+<section class="sports-section">
+  <div class="wrap">
+    <h2>{{SPORTS.TITLE}}</h2>
+    <p class="sub">{{SPORTS.SUBTITLE}}</p>
+    <div class="sports-grid">
+      <div class="sport-card">
+        <div class="sport-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h13a3 3 0 100-6M3 14h16a3 3 0 110 6M3 11h9"/></svg></div>
+        <h3>{{SPORTS.WS_FIN_TITLE}}</h3>
+        <p>{{SPORTS.WS_FIN_DESC}}</p>
+      </div>
+      <div class="sport-card">
+        <div class="sport-icon" style="background:#e0e7ff;color:#4338ca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 16l5-8 4 5 4-3 5 6"/></svg></div>
+        <h3>{{SPORTS.WS_FOIL_TITLE}}</h3>
+        <p>{{SPORTS.WS_FOIL_DESC}}</p>
+      </div>
+      <div class="sport-card">
+        <div class="sport-icon" style="background:#fef3c7;color:#92400e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
+        <h3>{{SPORTS.WING_TITLE}}</h3>
+        <p>{{SPORTS.WING_DESC}}</p>
+      </div>
+      <div class="sport-card">
+        <div class="sport-icon" style="background:#fce7f3;color:#9d174d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8c4-4 12-4 16 0M6 12c3-3 9-3 12 0M8 16c2-2 6-2 8 0"/></svg></div>
+        <h3>{{SPORTS.KITE_TITLE}}</h3>
+        <p>{{SPORTS.KITE_DESC}}</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- FAQ -->
 <section class="faq-section">
   <div class="wrap">
-    <h2>Veelgestelde vragen</h2>
-    <p class="sub">De vragen waarmee de meeste mensen op deze pagina komen.</p>
+    <h2>{{FAQ.TITLE}}</h2>
+    <p class="sub">{{FAQ.SUBTITLE}}</p>
     <div class="faq-list">
-      <details class="faq-item" open>
-        <summary>Hoe lang moet mijn windsurfvin zijn?</summary>
-        <p>De juiste vinlengte hangt af van je gewicht, zeilgrootte, board-breedte en discipline. Vuistregel voor slalom: 30-34 cm bij een 7,5 m² zeil. Voor freeride 28-32 cm, voor wave 18-24 cm en voor freestyle 16-22 cm. De calculator rekent het precies voor je uit op basis van je input — inclusief wiervin-correctie en een aparte maat voor G10 versus carbon vinnen.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Welke maat wing heb ik nodig voor wingfoilen?</summary>
-        <p>De wing-grootte hangt af van je gewicht en de wind. Voor een rider van 75-85 kg bij 15-20 knopen wind is een 5,0 m² wing gangbaar. Bij lichtere wind (10-15 knopen) ga je naar 6,0-7,0 m², bij sterke wind (25+ knopen) naar 3,5-4,0 m². Veel wingfoilers hebben twee maten in hun quiver om het hele windbereik te dekken. De calculator gebruikt deze input om je foilmaat te berekenen.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Welke foil maat heb ik nodig voor wingfoilen?</summary>
-        <p>Zwaardere riders, lichte wind of beginners hebben een grotere voorvleugel nodig — typisch 1500-2200 cm² met low aspect profiel. Intermediate riders gebruiken meestal 1200-1500 cm². Gevorderden in sterke wind kunnen toe met 800-1200 cm² high aspect. De calculator geeft drie maten — low, mid en high aspect — afgestemd op je gewicht en wing-grootte.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Welke kitefoil grootte voor een beginner?</summary>
-        <p>Voor een beginnende kitefoiler is een grote voorvleugel essentieel: 900-1200 cm², dikke profielen, lage aspect ratio. Dit geeft vroege lift, stabiel rij-gedrag en vergevingsgezindheid bij touch-downs. Pas op gevorderd niveau over naar 500-800 cm² high aspect race foils. Combineer met een kortere mast (55-65 cm) voor extra controle als beginner.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Klopt de vuistregel: vinlengte = zeilmaat × 5 + 4?</summary>
-        <p>Deze klassieke vuistregel werkt redelijk voor traditionele lang-smalle boards, maar is achterhaald voor de huidige generatie korte en brede boards. Een 7,5 m² zeil zou volgens deze regel een vin van 41,5 cm betekenen — in de praktijk is dat veel te lang voor moderne slalom-boards van 75-85 cm breed. Onze calculator gebruikt geoptimaliseerde formules (zeilmaat × 4,0 + correcties voor board-breedte en gewicht) die getest zijn tegen materiaal van Starboard, K4, Tabou en andere merken.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Hoe meet ik mijn board breedte voor de juiste vinmaat?</summary>
-        <p>Gebruik de "one-foot-off" regel (OFO): meet de board-breedte op exact 30 cm (1 foot) vanaf de achterkant. Deze breedte is een gangbaar startpunt voor vinlengte — de maximale vinlengte is ongeveer gelijk aan deze maat plus 2 cm, de minimale ongeveer 6-10 cm minder. De calculator gebruikt deze breedte als één van de input-variabelen voor een nauwkeuriger advies.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Wat is het verschil tussen low, mid en high aspect foils?</summary>
-        <p>Low aspect = bredere voorvleugel, makkelijker opstijgen, stabieler — ideaal voor freeride en beginners. Mid aspect = balans tussen lift en snelheid, geschikt voor allround en freestyle. High aspect = lange smalle vleugel, hoge topsnelheid, glide-efficiënt — bedoeld voor race, downwind en gevorderde freeride. De calculator toont alle drie zodat je kunt kiezen wat past bij je rij-stijl.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Welke vinmaat voor wave windsurfen?</summary>
-        <p>Wave-vinnen zijn fors korter dan freeride en slalom. Voor een rider van 75-85 kg met een 4,5-5,5 m² wave-zeil ligt de juiste lengte tussen 18 en 24 cm. Single-fin setups gaan iets langer, thruster/quad setups gebruiken kortere fronts (12-16 cm) plus kleinere sides. Bij wave-vinnen telt het profiel en de stijfheid bijna zwaarder dan de lengte: zachtere profielen geven meer drive in de bocht.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Wat is een wiervin en wanneer gebruik je hem?</summary>
-        <p>Een wiervin (weed fin) heeft een sterk naar achteren gebogen profiel, ontworpen om plantenmateriaal af te schudden in plaats van vast te haken. Gebruik hem op spots met wier, gras of ondiep zand-water — typisch op het IJsselmeer, Markermeer, Brouwersdam, het Veerse Meer en veel Franse meren in de zomer. Een wiervin tilt het drukpunt naar achteren, dus zet je mastvoet en voetbanden ook iets meer naar achteren voor de juiste balans.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Hoeveel korter moet mijn wiervin zijn?</summary>
-        <p>Voor slalom en freeride is een wiervin ongeveer 18% korter dan een normale vin met vergelijkbare prestaties (door het grotere oppervlak per cm lengte). Voor wave en freestyle: 10% korter — kortere vinnen hebben relatief minder oppervlakte-verschil. De calculator past dit automatisch toe als je de wiervin-toggle aanzet.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Welke mast-lengte voor wingfoil of kitefoil?</summary>
-        <p>Voor beginners: een kortere mast (60-75 cm) houdt je dichter bij het water, minder spannend en zachtere touch-downs. Intermediate: 75-85 cm voor meer ruimte om hoogte te corrigeren. Gevorderd: 85-95 cm voor downwind en choppy water — minder kans op breaching. Houd ook rekening met de waterdiepte op je spot: een 90 cm mast werkt niet in 1 meter water. De calculator toont een mast-advies per niveau in het foil-setup blok.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Carbon of G10 vin — wat is het verschil?</summary>
-        <p>G10 (glasvezel-epoxy laminaat) is dikker, vergevingsgezind, goedkoper en uitstekend voor freeride en beginnende slalom. Carbon is dunner, stijver, sneller en gewichtsbesparend — maar minder vergevingsgezind in choppy water. De calculator geeft beide maten omdat een carbon vin doorgaans ongeveer 5% korter mag zijn dan een G10 voor vergelijkbare prestaties (MUF X-Ride vs Ride benchmark).</p>
-      </details>
-      <details class="faq-item">
-        <summary>Werkt deze calculator voor alle merken (Starboard, F-One, K4...)?</summary>
-        <p>Ja. De formules zijn gevalideerd tegen uitgebreide markt-benchmarks — materiaal en publicaties van Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA en MACkite, plus publieke fin-guides van PWA-pro Nico Prien (NP7) en de Bornhoft/RYA vin-onderzoeken. Mits je de juiste discipline en stijl kiest, geeft de calculator een merk-onafhankelijk advies dat je 1-op-1 kunt vertalen naar het assortiment van elke fabrikant.</p>
-      </details>
+{{FAQ_ITEMS_HTML}}
     </div>
   </div>
 </section>
@@ -492,16 +425,16 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <div class="ad-slot" data-slot="below-faq">
   <div class="ad-slot-inner">
     <b>Ad slot 2</b>
-    Reserved
+    {{AD.PLACEHOLDER_BELOW_FAQ}}
   </div>
 </div>
 
 <!-- CTA -->
 <section class="cta-section">
   <div class="wrap">
-    <h3>Meer dan alleen rekenen?</h3>
-    <p>In RigSize Live track je sessies, krijg je wind-voorspellingen voor jouw spot en zie je hoe andere riders presteren.</p>
-    <a class="btn btn-primary" href="https://www.rigsizelive.com/#download">Download de app</a>
+    <h3>{{CTA.TITLE}}</h3>
+    <p>{{CTA.BODY}}</p>
+    <a class="btn btn-primary" href="{{HOME_URL}}#download">{{CTA.BUTTON}}</a>
   </div>
 </section>
 
@@ -509,13 +442,13 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <footer class="footer-clean">
   <div class="wrap">
     <div class="footer-legal-links">
-      <a href="https://app.rigsizelive.com/privacy.html">Privacybeleid</a>
+      <a href="{{FOOTER.PRIVACY_URL}}">{{FOOTER.PRIVACY}}</a>
       <span class="footer-sep">&middot;</span>
-      <a href="https://app.rigsizelive.com/terms.html">Voorwaarden</a>
+      <a href="{{FOOTER.TERMS_URL}}">{{FOOTER.TERMS}}</a>
     </div>
-    <p class="footer-legal-line">RigSize Live is een product van FTR Management B.V.</p>
-    <p class="footer-legal-line">KvK 53751671 &middot; <a href="mailto:info@rigsizelive.com">info@rigsizelive.com</a></p>
-    <p class="footer-legal-line footer-copyright">© 2025–2026 FTR Management B.V.</p>
+    <p class="footer-legal-line">{{FOOTER.PRODUCT_OF}}</p>
+    <p class="footer-legal-line">{{FOOTER.KVK}} &middot; <a href="mailto:info@rigsizelive.com">info@rigsizelive.com</a></p>
+    <p class="footer-legal-line footer-copyright">{{FOOTER.COPYRIGHT}}</p>
   </div>
 </footer>
 
@@ -542,7 +475,7 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 
 // CALCULATOR
 (function(){
-  var I18N = {"SAIL": "Zeilgrootte (m²)", "SAIL_PH": "bijv. 7.5", "WING_SIZE": "Wing grootte (m²)", "WING_PH": "bijv. 5.0", "WIND": "Windcondities", "RIDER": "Rider type", "WIND_LOW": "Onderpowered", "WIND_MID": "Normaal", "WIND_HIGH": "Overpowered", "RIDER_LIGHT": "Lichte wind", "RIDER_ALLROUND": "Allround", "RIDER_STRONG": "Sterke wind", "RES_STD": "Standaard", "RES_STD_SUB": "G10 - dikker, minder stijf", "RES_PERF": "Performance", "RES_PERF_SUB": "Carbon - dun, stijf", "WARN_MAX": "Max vinlengte {len} cm voor board {board} cm.", "WARN_MIN": "Minimaal {len} cm voor {style}.", "WARN_FOIL_WIDE": "Foil span overschrijdt board breedte.", "BEGINNER": "Beginner", "INTERMEDIATE": "Intermediate", "ADVANCED": "Gevorderd", "LEVEL": "Ervaringsniveau", "FUSELAGE": "Fuselage", "MAST": "Mast", "FOIL_NOTE": "Fuselage = afstand tussen vleugel en stabilizer. Mast = hoogte van het board boven de foil. Langer = stabieler, korter = wendbaarder."};
+  var I18N = {{CALC_I18N_JSON}};
 
   var LF={ws_fin:{beginner:1.10,intermediate:1.03,gevorderd:0.92},ws_foil:{beginner:1.10,intermediate:0.85,gevorderd:0.70},wing:{beginner:1.10,intermediate:0.78,gevorderd:0.60},kite:{beginner:1.10,intermediate:1.03,gevorderd:0.85}};
   var WF={ws_fin:{low:1.07,mid:1.0,high:0.93},ws_foil:{low:1.10,mid:1.0,high:0.90},wing:{low:1.10,mid:1.0,high:0.90},kite:{low:1.0,mid:1.0,high:1.0}};
