@@ -2,13 +2,16 @@
   "lang.flag": "🇳🇱",
   "lang.code": "NL",
   "lang.name": "Nederlands",
+
   "meta.title": "Vin & Foil Calculator — bereken jouw maat | RigSize Live",
   "meta.description": "Gratis online calculator voor windsurfvin, windsurf foil, wing foil en kite foil. Vinmaat of foilgrootte berekenen op basis van gewicht, zeil en stijl.",
+
   "hero.eyebrow": "RigSize Live · Calculator",
   "hero.title_pre": "Vin &",
   "hero.title_acc": "Foil",
   "hero.title_post": "Calculator",
   "hero.subtitle": "Bereken in seconden de juiste maat voor je windsurfvin, windsurf foil, wing foil of kite foil. Op basis van je gewicht, zeil en rij-stijl.",
+
   "calc.sport": "Sport",
   "calc.ws_fin": "Windsurf (Vin)",
   "calc.ws_foil": "Windsurf (Foil)",
@@ -54,9 +57,10 @@
   "calc.disclaimer": "Disclaimer",
   "calc.disclaimer_text": "Deze calculator geeft een advies op basis van benchmark-data. De uiteindelijke keuze hangt af van persoonlijke voorkeur, lokale condities en specifieke board-kenmerken. Gebruik dit als startpunt en pas aan op basis van je eigen ervaring op het water.",
   "calc.sources": "Formules gebaseerd op James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE en MACkite benchmarks.",
-  "promo.title": "Maat gevonden? Tijd om 'm te varen.",
-  "promo.text": "Live wind voor jouw spot, sessies tracken en zien wat anderen rijden — RigSize Live brengt het allemaal samen.",
-  "promo.button": "Bekijk RigSize Live →",
+
+  "ad.placeholder_below_calc": "Reserved",
+  "ad.placeholder_below_faq": "Reserved",
+
   "sports.title": "Voor welke watersport?",
   "sports.subtitle": "De calculator dekt alle vier de disciplines waarin RigSize Live gespecialiseerd is. Gebaseerd op uitgebreide markt-benchmarks tegen materiaal van toonaangevende fabrikanten en publieke gear-data van professionele riders.",
   "sports.ws_fin_title": "Windsurfen — vin",
@@ -67,6 +71,7 @@
   "sports.wing_desc": "Foil maat op basis van wing-grootte en gewicht. Freeride, allround en downwind.",
   "sports.kite_title": "Kitefoilen",
   "sports.kite_desc": "Voorvleugel maat voor freeride, freestyle/big air en race. Inclusief setup-advies.",
+
   "faq.title": "Veelgestelde vragen",
   "faq.subtitle": "De vragen waarmee de meeste mensen op deze pagina komen.",
   "faq.items": [
@@ -123,9 +128,11 @@
       "a": "Ja. De formules zijn gevalideerd tegen uitgebreide markt-benchmarks — materiaal en publicaties van Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA en MACkite, plus publieke fin-guides van PWA-pro Nico Prien (NP7) en de Bornhoft/RYA vin-onderzoeken. Mits je de juiste discipline en stijl kiest, geeft de calculator een merk-onafhankelijk advies dat je 1-op-1 kunt vertalen naar het assortiment van elke fabrikant."
     }
   ],
+
   "cta.title": "Meer dan alleen rekenen?",
   "cta.body": "In RigSize Live track je sessies, krijg je wind-voorspellingen voor jouw spot en zie je hoe andere riders presteren.",
   "cta.button": "Download de app",
+
   "nav.home": "Home",
   "nav.tracking": "Tracking",
   "nav.features": "Features",
@@ -134,8 +141,10 @@
   "nav.live": "Live rigsizes",
   "nav.openWebapp": "Open webapp →",
   "nav.download": "Download",
+
   "mobile.download_app": "Download de app →",
   "mobile.open_webapp": "Open webapp",
+
   "footer.privacy": "Privacybeleid",
   "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
   "footer.terms": "Voorwaarden",
@@ -143,5 +152,6 @@
   "footer.product_of": "RigSize Live is een product van FTR Management B.V.",
   "footer.kvk": "KvK 53751671",
   "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
   "schema.app_name": "RigSize Live Vin & Foil Calculator"
 }

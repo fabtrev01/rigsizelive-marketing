@@ -156,10 +156,17 @@ h1.headline .acc{background:linear-gradient(90deg,#7cd7e8,#5ee0c9);-webkit-backg
 .calc-foil-table tr.current .calc-foil-dot{background:var(--brand)}
 .calc-disclaimer-text{font-size:12px;color:#64748b;line-height:1.6}
 
-/* AD SLOT */
-.ad-slot{max-width:920px;margin:24px auto;padding:0 28px}
-.ad-slot-inner{border:2px dashed #cbd5e1;border-radius:14px;padding:32px 24px;text-align:center;background:repeating-linear-gradient(45deg,#fafbfc,#fafbfc 10px,#f1f5f9 10px,#f1f5f9 14px);font-family:monospace;font-size:11px;color:#94a3b8;letter-spacing:.08em;text-transform:uppercase}
-.ad-slot-inner b{color:#475569;font-weight:700;display:block;margin-bottom:4px}
+/* RSL CROSS-PROMO */
+.rsl-promo{max-width:920px;margin:0 auto;padding:40px 28px 20px}
+.rsl-promo-card{display:flex;align-items:center;gap:24px;background:linear-gradient(135deg,#fff,#f0f9ff);border:1px solid #bae6fd;border-radius:20px;padding:24px 28px;box-shadow:0 1px 3px rgba(15,23,42,.04),0 16px 40px -20px rgba(26,156,196,.2)}
+.rsl-promo-icon{flex-shrink:0;width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#1f78c4,#1a9cc4 55%,#2bb3a6);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -10px rgba(26,156,196,.5)}
+.rsl-promo-icon svg{width:28px;height:28px}
+.rsl-promo-body{flex:1;min-width:0}
+.rsl-promo-body h3{font-size:18px;font-weight:700;color:#0f172a;margin:0 0 4px;letter-spacing:-.01em}
+.rsl-promo-body p{font-size:14px;color:#475569;line-height:1.55;margin:0}
+.rsl-promo-cta{flex-shrink:0}
+.rsl-promo-cta .btn{background:var(--brand-grad);color:#fff;border:none;padding:12px 22px;font-size:14px;font-weight:600;border-radius:9999px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;box-shadow:0 10px 24px -10px rgba(31,120,196,.45);transition:transform .15s,filter .15s}
+.rsl-promo-cta .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
 
 /* SPORTS SECTION */
 .sports-section{padding:60px 0;background:#fafbfc;border-top:1px solid #f1f5f9;border-bottom:1px solid #f1f5f9}
@@ -212,7 +219,10 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
   .hero-inner{padding:80px 0 140px}
   .calc-card{margin:-60px 16px 0;padding:22px}
   .sports-section,.faq-section,.cta-section{padding:48px 0}
-  .ad-slot{padding:0 16px}
+  .rsl-promo{padding:32px 16px 16px}
+  .rsl-promo-card{flex-direction:column;align-items:flex-start;text-align:left;padding:22px;gap:16px}
+  .rsl-promo-cta{width:100%}
+  .rsl-promo-cta .btn{width:100%;justify-content:center}
 }
 </style>
 </head>
@@ -402,13 +412,21 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
   </div>
 </section>
 
-<!-- AD SLOT 1 -->
-<div class="ad-slot" data-slot="below-sports">
-  <div class="ad-slot-inner">
-    <b>Ad slot 1</b>
-    {{AD.PLACEHOLDER_BELOW_CALC}}
+<!-- RSL CROSS-PROMO -->
+<section class="rsl-promo">
+  <div class="rsl-promo-card">
+    <div class="rsl-promo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7"/><path d="M2 12s3 7 10 7 10-7 10-7"/><circle cx="12" cy="12" r="3"/></svg>
+    </div>
+    <div class="rsl-promo-body">
+      <h3>{{PROMO.TITLE}}</h3>
+      <p>{{PROMO.TEXT}}</p>
+    </div>
+    <div class="rsl-promo-cta">
+      <a class="btn" href="{{HOME_URL}}">{{PROMO.BUTTON}}</a>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- FAQ -->
 <section class="faq-section">
@@ -420,14 +438,6 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
     </div>
   </div>
 </section>
-
-<!-- AD SLOT 2 -->
-<div class="ad-slot" data-slot="below-faq">
-  <div class="ad-slot-inner">
-    <b>Ad slot 2</b>
-    {{AD.PLACEHOLDER_BELOW_FAQ}}
-  </div>
-</div>
 
 <!-- CTA -->
 <section class="cta-section">

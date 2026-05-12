@@ -2,13 +2,16 @@
   "lang.flag": "🇬🇧",
   "lang.code": "EN",
   "lang.name": "English",
+
   "meta.title": "Fin & Foil Calculator — find your size | RigSize Live",
   "meta.description": "Free online calculator for windsurf fin size, windsurf foil, wing foil and kite foil. Calculate fin length or foil size based on weight, sail and style.",
+
   "hero.eyebrow": "RigSize Live · Calculator",
   "hero.title_pre": "Fin &",
   "hero.title_acc": "Foil",
   "hero.title_post": "Calculator",
   "hero.subtitle": "Calculate the right size for your windsurf fin, windsurf foil, wing foil or kite foil in seconds. Based on your weight, sail and riding style.",
+
   "calc.sport": "Sport",
   "calc.ws_fin": "Windsurf (Fin)",
   "calc.ws_foil": "Windsurf (Foil)",
@@ -54,9 +57,10 @@
   "calc.disclaimer": "Disclaimer",
   "calc.disclaimer_text": "This calculator provides recommendations based on benchmark data. The final choice depends on personal preference, local conditions and specific board characteristics. Use this as a starting point and adjust based on your own experience on the water.",
   "calc.sources": "Formulas based on James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE and MACkite benchmarks.",
-  "promo.title": "Got your size? Time to put it in the wind.",
-  "promo.text": "Live wind for your spot, session tracking and seeing what other riders are using — RigSize Live brings it all together.",
-  "promo.button": "Explore RigSize Live →",
+
+  "ad.placeholder_below_calc": "Reserved",
+  "ad.placeholder_below_faq": "Reserved",
+
   "sports.title": "Which watersport?",
   "sports.subtitle": "The calculator covers all four disciplines that RigSize Live specializes in. Based on extensive market benchmarks against materials from leading manufacturers and public gear data from professional riders.",
   "sports.ws_fin_title": "Windsurfing — fin",
@@ -67,6 +71,7 @@
   "sports.wing_desc": "Foil size based on wing size and weight. Freeride, allround and downwind.",
   "sports.kite_title": "Kite foiling",
   "sports.kite_desc": "Front wing size for freeride, freestyle/big air and race. Including setup advice.",
+
   "faq.title": "Frequently asked questions",
   "faq.subtitle": "The questions that bring most people to this page.",
   "faq.items": [
@@ -123,9 +128,11 @@
       "a": "Yes. The formulas are validated against extensive market benchmarks — materials and publications from Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA and MACkite, plus public fin guides from PWA pro Nico Prien (NP7) and the Bornhoft/RYA fin studies. As long as you select the correct discipline and style, the calculator provides brand-agnostic recommendations that translate 1-to-1 to any manufacturer's lineup."
     }
   ],
+
   "cta.title": "More than just calculations?",
   "cta.body": "In RigSize Live you track sessions, get wind forecasts for your spot and see how other riders are performing.",
   "cta.button": "Download the app",
+
   "nav.home": "Home",
   "nav.tracking": "Tracking",
   "nav.features": "Features",
@@ -134,8 +141,10 @@
   "nav.live": "Live rigsizes",
   "nav.openWebapp": "Open webapp →",
   "nav.download": "Download",
+
   "mobile.download_app": "Download the app →",
   "mobile.open_webapp": "Open webapp",
+
   "footer.privacy": "Privacy policy",
   "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
   "footer.terms": "Terms",
@@ -143,5 +152,6 @@
   "footer.product_of": "RigSize Live is a product of FTR Management B.V.",
   "footer.kvk": "Chamber of Commerce 53751671",
   "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
   "schema.app_name": "RigSize Live Fin & Foil Calculator"
 }
