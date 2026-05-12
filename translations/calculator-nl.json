@@ -1,0 +1,157 @@
+{
+  "lang.flag": "🇳🇱",
+  "lang.code": "NL",
+  "lang.name": "Nederlands",
+
+  "meta.title": "Vin & Foil Calculator — bereken jouw maat | RigSize Live",
+  "meta.description": "Gratis online calculator voor windsurfvin, windsurf foil, wing foil en kite foil. Vinmaat of foilgrootte berekenen op basis van gewicht, zeil en stijl.",
+
+  "hero.eyebrow": "RigSize Live · Calculator",
+  "hero.title_pre": "Vin &",
+  "hero.title_acc": "Foil",
+  "hero.title_post": "Calculator",
+  "hero.subtitle": "Bereken in seconden de juiste maat voor je windsurfvin, windsurf foil, wing foil of kite foil. Op basis van je gewicht, zeil en rij-stijl.",
+
+  "calc.sport": "Sport",
+  "calc.ws_fin": "Windsurf (Vin)",
+  "calc.ws_foil": "Windsurf (Foil)",
+  "calc.wing": "Wingfoilen",
+  "calc.kite": "Kitefoilen",
+  "calc.style": "Stijl",
+  "calc.style_freeride": "Freeride",
+  "calc.style_slalom": "Slalom / Race",
+  "calc.style_wave": "Wave",
+  "calc.style_freestyle": "Freestyle",
+  "calc.weight": "Gewicht (kg)",
+  "calc.sail": "Zeilgrootte (m²)",
+  "calc.wing_size": "Wing grootte (m²)",
+  "calc.sail_ph": "bijv. 7.5",
+  "calc.wing_ph": "bijv. 5.0",
+  "calc.width": "Board breedte (cm)",
+  "calc.width_ph": "bijv. 70",
+  "calc.optional": "optioneel",
+  "calc.weed_fin": "🌿 Wiervin correctie",
+  "calc.level": "Ervaringsniveau",
+  "calc.beginner": "Beginner",
+  "calc.intermediate": "Intermediate",
+  "calc.advanced": "Gevorderd",
+  "calc.wind": "Windcondities",
+  "calc.rider": "Rider type",
+  "calc.wind_low": "Onderpowered",
+  "calc.wind_mid": "Normaal",
+  "calc.wind_high": "Overpowered",
+  "calc.rider_light": "Lichte wind",
+  "calc.rider_allround": "Allround",
+  "calc.rider_strong": "Sterke wind",
+  "calc.res_std": "Standaard",
+  "calc.res_std_sub": "G10 - dikker, minder stijf",
+  "calc.res_perf": "Performance",
+  "calc.res_perf_sub": "Carbon - dun, stijf",
+  "calc.warn_max": "Max vinlengte {len} cm voor board {board} cm.",
+  "calc.warn_min": "Minimaal {len} cm voor {style}.",
+  "calc.warn_foil_wide": "Foil span overschrijdt board breedte.",
+  "calc.foil_setup": "Foil setup advies",
+  "calc.fuselage": "Fuselage",
+  "calc.mast": "Mast",
+  "calc.foil_note": "Fuselage = afstand tussen vleugel en stabilizer. Mast = hoogte van het board boven de foil. Langer = stabieler, korter = wendbaarder.",
+  "calc.disclaimer": "Disclaimer",
+  "calc.disclaimer_text": "Deze calculator geeft een advies op basis van benchmark-data. De uiteindelijke keuze hangt af van persoonlijke voorkeur, lokale condities en specifieke board-kenmerken. Gebruik dit als startpunt en pas aan op basis van je eigen ervaring op het water.",
+  "calc.sources": "Formules gebaseerd op James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE en MACkite benchmarks.",
+
+  "ad.placeholder_below_calc": "Reserved",
+  "ad.placeholder_below_faq": "Reserved",
+
+  "sports.title": "Voor welke watersport?",
+  "sports.subtitle": "De calculator dekt alle vier de disciplines waarin RigSize Live gespecialiseerd is. Gebaseerd op uitgebreide markt-benchmarks tegen materiaal van toonaangevende fabrikanten en publieke gear-data van professionele riders.",
+  "sports.ws_fin_title": "Windsurfen — vin",
+  "sports.ws_fin_desc": "Vinlengte in cm voor slalom, freeride, wave en freestyle. Inclusief wiervin-correctie en G10 vs Carbon advies.",
+  "sports.ws_foil_title": "Windsurf foil",
+  "sports.ws_foil_desc": "Voorvleugel oppervlak (cm²) voor low / mid / high aspect, plus mast en fuselage advies.",
+  "sports.wing_title": "Wingfoilen",
+  "sports.wing_desc": "Foil maat op basis van wing-grootte en gewicht. Freeride, allround en downwind.",
+  "sports.kite_title": "Kitefoilen",
+  "sports.kite_desc": "Voorvleugel maat voor freeride, freestyle/big air en race. Inclusief setup-advies.",
+
+  "faq.title": "Veelgestelde vragen",
+  "faq.subtitle": "De vragen waarmee de meeste mensen op deze pagina komen.",
+  "faq.items": [
+    {
+      "q": "Hoe lang moet mijn windsurfvin zijn?",
+      "a": "De juiste vinlengte hangt af van je gewicht, zeilgrootte, board-breedte en discipline. Vuistregel voor slalom: 30-34 cm bij een 7,5 m² zeil. Voor freeride 28-32 cm, voor wave 18-24 cm en voor freestyle 16-22 cm. De calculator rekent het precies voor je uit op basis van je input — inclusief wiervin-correctie en een aparte maat voor G10 versus carbon vinnen."
+    },
+    {
+      "q": "Welke maat wing heb ik nodig voor wingfoilen?",
+      "a": "De wing-grootte hangt af van je gewicht en de wind. Voor een rider van 75-85 kg bij 15-20 knopen wind is een 5,0 m² wing gangbaar. Bij lichtere wind (10-15 knopen) ga je naar 6,0-7,0 m², bij sterke wind (25+ knopen) naar 3,5-4,0 m². Veel wingfoilers hebben twee maten in hun quiver om het hele windbereik te dekken. De calculator gebruikt deze input om je foilmaat te berekenen."
+    },
+    {
+      "q": "Welke foil maat heb ik nodig voor wingfoilen?",
+      "a": "Zwaardere riders, lichte wind of beginners hebben een grotere voorvleugel nodig — typisch 1500-2200 cm² met low aspect profiel. Intermediate riders gebruiken meestal 1200-1500 cm². Gevorderden in sterke wind kunnen toe met 800-1200 cm² high aspect. De calculator geeft drie maten — low, mid en high aspect — afgestemd op je gewicht en wing-grootte."
+    },
+    {
+      "q": "Welke kitefoil grootte voor een beginner?",
+      "a": "Voor een beginnende kitefoiler is een grote voorvleugel essentieel: 900-1200 cm², dikke profielen, lage aspect ratio. Dit geeft vroege lift, stabiel rij-gedrag en vergevingsgezindheid bij touch-downs. Pas op gevorderd niveau over naar 500-800 cm² high aspect race foils. Combineer met een kortere mast (55-65 cm) voor extra controle als beginner."
+    },
+    {
+      "q": "Klopt de vuistregel: vinlengte = zeilmaat × 5 + 4?",
+      "a": "Deze klassieke vuistregel werkt redelijk voor traditionele lang-smalle boards, maar is achterhaald voor de huidige generatie korte en brede boards. Een 7,5 m² zeil zou volgens deze regel een vin van 41,5 cm betekenen — in de praktijk is dat veel te lang voor moderne slalom-boards van 75-85 cm breed. Onze calculator gebruikt geoptimaliseerde formules (zeilmaat × 4,0 + correcties voor board-breedte en gewicht) die getest zijn tegen materiaal van Starboard, K4, Tabou en andere merken."
+    },
+    {
+      "q": "Hoe meet ik mijn board breedte voor de juiste vinmaat?",
+      "a": "Gebruik de \"one-foot-off\" regel (OFO): meet de board-breedte op exact 30 cm (1 foot) vanaf de achterkant. Deze breedte is een gangbaar startpunt voor vinlengte — de maximale vinlengte is ongeveer gelijk aan deze maat plus 2 cm, de minimale ongeveer 6-10 cm minder. De calculator gebruikt deze breedte als één van de input-variabelen voor een nauwkeuriger advies."
+    },
+    {
+      "q": "Wat is het verschil tussen low, mid en high aspect foils?",
+      "a": "Low aspect = bredere voorvleugel, makkelijker opstijgen, stabieler — ideaal voor freeride en beginners. Mid aspect = balans tussen lift en snelheid, geschikt voor allround en freestyle. High aspect = lange smalle vleugel, hoge topsnelheid, glide-efficiënt — bedoeld voor race, downwind en gevorderde freeride. De calculator toont alle drie zodat je kunt kiezen wat past bij je rij-stijl."
+    },
+    {
+      "q": "Welke vinmaat voor wave windsurfen?",
+      "a": "Wave-vinnen zijn fors korter dan freeride en slalom. Voor een rider van 75-85 kg met een 4,5-5,5 m² wave-zeil ligt de juiste lengte tussen 18 en 24 cm. Single-fin setups gaan iets langer, thruster/quad setups gebruiken kortere fronts (12-16 cm) plus kleinere sides. Bij wave-vinnen telt het profiel en de stijfheid bijna zwaarder dan de lengte: zachtere profielen geven meer drive in de bocht."
+    },
+    {
+      "q": "Wat is een wiervin en wanneer gebruik je hem?",
+      "a": "Een wiervin (weed fin) heeft een sterk naar achteren gebogen profiel, ontworpen om plantenmateriaal af te schudden in plaats van vast te haken. Gebruik hem op spots met wier, gras of ondiep zand-water — typisch op het IJsselmeer, Markermeer, Brouwersdam, het Veerse Meer en veel Franse meren in de zomer. Een wiervin tilt het drukpunt naar achteren, dus zet je mastvoet en voetbanden ook iets meer naar achteren voor de juiste balans."
+    },
+    {
+      "q": "Hoeveel korter moet mijn wiervin zijn?",
+      "a": "Voor slalom en freeride is een wiervin ongeveer 18% korter dan een normale vin met vergelijkbare prestaties (door het grotere oppervlak per cm lengte). Voor wave en freestyle: 10% korter — kortere vinnen hebben relatief minder oppervlakte-verschil. De calculator past dit automatisch toe als je de wiervin-toggle aanzet."
+    },
+    {
+      "q": "Welke mast-lengte voor wingfoil of kitefoil?",
+      "a": "Voor beginners: een kortere mast (60-75 cm) houdt je dichter bij het water, minder spannend en zachtere touch-downs. Intermediate: 75-85 cm voor meer ruimte om hoogte te corrigeren. Gevorderd: 85-95 cm voor downwind en choppy water — minder kans op breaching. Houd ook rekening met de waterdiepte op je spot: een 90 cm mast werkt niet in 1 meter water. De calculator toont een mast-advies per niveau in het foil-setup blok."
+    },
+    {
+      "q": "Carbon of G10 vin — wat is het verschil?",
+      "a": "G10 (glasvezel-epoxy laminaat) is dikker, vergevingsgezind, goedkoper en uitstekend voor freeride en beginnende slalom. Carbon is dunner, stijver, sneller en gewichtsbesparend — maar minder vergevingsgezind in choppy water. De calculator geeft beide maten omdat een carbon vin doorgaans ongeveer 5% korter mag zijn dan een G10 voor vergelijkbare prestaties (MUF X-Ride vs Ride benchmark)."
+    },
+    {
+      "q": "Werkt deze calculator voor alle merken (Starboard, F-One, K4...)?",
+      "a": "Ja. De formules zijn gevalideerd tegen uitgebreide markt-benchmarks — materiaal en publicaties van Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA en MACkite, plus publieke fin-guides van PWA-pro Nico Prien (NP7) en de Bornhoft/RYA vin-onderzoeken. Mits je de juiste discipline en stijl kiest, geeft de calculator een merk-onafhankelijk advies dat je 1-op-1 kunt vertalen naar het assortiment van elke fabrikant."
+    }
+  ],
+
+  "cta.title": "Meer dan alleen rekenen?",
+  "cta.body": "In RigSize Live track je sessies, krijg je wind-voorspellingen voor jouw spot en zie je hoe andere riders presteren.",
+  "cta.button": "Download de app",
+
+  "nav.home": "Home",
+  "nav.tracking": "Tracking",
+  "nav.features": "Features",
+  "nav.garmin": "Garmin & Apple",
+  "nav.forecast": "Windvoorspelling",
+  "nav.live": "Live rigsizes",
+  "nav.openWebapp": "Open webapp →",
+  "nav.download": "Download",
+
+  "mobile.download_app": "Download de app →",
+  "mobile.open_webapp": "Open webapp",
+
+  "footer.privacy": "Privacybeleid",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
+  "footer.terms": "Voorwaarden",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
+  "footer.product_of": "RigSize Live is een product van FTR Management B.V.",
+  "footer.kvk": "KvK 53751671",
+  "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
+  "schema.app_name": "RigSize Live Vin & Foil Calculator"
+}

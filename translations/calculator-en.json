@@ -1,0 +1,157 @@
+{
+  "lang.flag": "🇬🇧",
+  "lang.code": "EN",
+  "lang.name": "English",
+
+  "meta.title": "Fin & Foil Calculator — find your size | RigSize Live",
+  "meta.description": "Free online calculator for windsurf fin size, windsurf foil, wing foil and kite foil. Calculate fin length or foil size based on weight, sail and style.",
+
+  "hero.eyebrow": "RigSize Live · Calculator",
+  "hero.title_pre": "Fin &",
+  "hero.title_acc": "Foil",
+  "hero.title_post": "Calculator",
+  "hero.subtitle": "Calculate the right size for your windsurf fin, windsurf foil, wing foil or kite foil in seconds. Based on your weight, sail and riding style.",
+
+  "calc.sport": "Sport",
+  "calc.ws_fin": "Windsurf (Fin)",
+  "calc.ws_foil": "Windsurf (Foil)",
+  "calc.wing": "Wing foil",
+  "calc.kite": "Kite foil",
+  "calc.style": "Style",
+  "calc.style_freeride": "Freeride",
+  "calc.style_slalom": "Slalom / Race",
+  "calc.style_wave": "Wave",
+  "calc.style_freestyle": "Freestyle",
+  "calc.weight": "Weight (kg)",
+  "calc.sail": "Sail size (m²)",
+  "calc.wing_size": "Wing size (m²)",
+  "calc.sail_ph": "e.g. 7.5",
+  "calc.wing_ph": "e.g. 5.0",
+  "calc.width": "Board width (cm)",
+  "calc.width_ph": "e.g. 70",
+  "calc.optional": "optional",
+  "calc.weed_fin": "🌿 Weed fin correction",
+  "calc.level": "Experience level",
+  "calc.beginner": "Beginner",
+  "calc.intermediate": "Intermediate",
+  "calc.advanced": "Advanced",
+  "calc.wind": "Wind conditions",
+  "calc.rider": "Rider type",
+  "calc.wind_low": "Underpowered",
+  "calc.wind_mid": "Normal",
+  "calc.wind_high": "Overpowered",
+  "calc.rider_light": "Light wind",
+  "calc.rider_allround": "Allround",
+  "calc.rider_strong": "Strong wind",
+  "calc.res_std": "Standard",
+  "calc.res_std_sub": "G10 - thicker, less stiff",
+  "calc.res_perf": "Performance",
+  "calc.res_perf_sub": "Carbon - thin, stiff",
+  "calc.warn_max": "Max fin length {len} cm for {board} cm board.",
+  "calc.warn_min": "Minimum {len} cm for {style}.",
+  "calc.warn_foil_wide": "Foil span exceeds board width.",
+  "calc.foil_setup": "Foil setup advice",
+  "calc.fuselage": "Fuselage",
+  "calc.mast": "Mast",
+  "calc.foil_note": "Fuselage = distance between front wing and stabilizer. Mast = height of board above the foil. Longer = more stable, shorter = more agile.",
+  "calc.disclaimer": "Disclaimer",
+  "calc.disclaimer_text": "This calculator provides recommendations based on benchmark data. The final choice depends on personal preference, local conditions and specific board characteristics. Use this as a starting point and adjust based on your own experience on the water.",
+  "calc.sources": "Formulas based on James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE and MACkite benchmarks.",
+
+  "ad.placeholder_below_calc": "Reserved",
+  "ad.placeholder_below_faq": "Reserved",
+
+  "sports.title": "Which watersport?",
+  "sports.subtitle": "The calculator covers all four disciplines that RigSize Live specializes in. Based on extensive market benchmarks against materials from leading manufacturers and public gear data from professional riders.",
+  "sports.ws_fin_title": "Windsurfing — fin",
+  "sports.ws_fin_desc": "Fin length in cm for slalom, freeride, wave and freestyle. Including weed fin correction and G10 vs Carbon advice.",
+  "sports.ws_foil_title": "Windsurf foil",
+  "sports.ws_foil_desc": "Front wing surface area (cm²) for low / mid / high aspect, plus mast and fuselage advice.",
+  "sports.wing_title": "Wing foiling",
+  "sports.wing_desc": "Foil size based on wing size and weight. Freeride, allround and downwind.",
+  "sports.kite_title": "Kite foiling",
+  "sports.kite_desc": "Front wing size for freeride, freestyle/big air and race. Including setup advice.",
+
+  "faq.title": "Frequently asked questions",
+  "faq.subtitle": "The questions that bring most people to this page.",
+  "faq.items": [
+    {
+      "q": "What size windsurf fin do I need?",
+      "a": "The right fin length depends on your weight, sail size, board width and discipline. Rule of thumb for slalom: 30-34 cm with a 7.5 m² sail. For freeride 28-32 cm, for wave 18-24 cm and for freestyle 16-22 cm. The calculator works it out exactly based on your input — including weed fin correction and separate sizes for G10 versus carbon fins."
+    },
+    {
+      "q": "What size wing do I need for wing foiling?",
+      "a": "Wing size depends on your weight and the wind. For a 75-85 kg rider in 15-20 knot wind, a 5.0 m² wing is standard. For lighter wind (10-15 knots) you'll want 6.0-7.0 m²; for strong wind (25+ knots), 3.5-4.0 m². Most wing foilers have two sizes in their quiver to cover the full wind range. The calculator uses this input to determine your foil size."
+    },
+    {
+      "q": "What size foil do I need for wing foiling?",
+      "a": "Heavier riders, light wind or beginners need a larger front wing — typically 1500-2200 cm² with a low aspect profile. Intermediate riders usually use 1200-1500 cm². Advanced riders in strong wind can use 800-1200 cm² high aspect. The calculator provides three sizes — low, mid and high aspect — matched to your weight and wing size."
+    },
+    {
+      "q": "What size kite foil for a beginner?",
+      "a": "For a beginner kite foiler, a large front wing is essential: 900-1200 cm², thick profiles, low aspect ratio. This provides early lift, stable handling and forgiving behavior on touch-downs. Move to 500-800 cm² high aspect race foils only at advanced level. Combine with a shorter mast (55-65 cm) for extra control as a beginner."
+    },
+    {
+      "q": "Does the rule \"fin length = sail size × 5 + 4\" still work?",
+      "a": "This classic rule of thumb works reasonably for traditional long-narrow boards but is outdated for the current generation of short, wide boards. A 7.5 m² sail would suggest a 41.5 cm fin — in practice that's way too long for modern slalom boards 75-85 cm wide. Our calculator uses optimized formulas (sail × 4.0 + corrections for board width and weight) tested against materials from Starboard, K4, Tabou and other brands."
+    },
+    {
+      "q": "How do I measure board width for the right fin size?",
+      "a": "Use the \"one-foot-off\" rule (OFO): measure board width exactly 30 cm (1 foot) from the tail. This width is a standard starting point for fin length — the maximum fin length is roughly this width plus 2 cm, the minimum 6-10 cm less. The calculator uses this width as one of the input variables for a more accurate recommendation."
+    },
+    {
+      "q": "What's the difference between low, mid and high aspect foils?",
+      "a": "Low aspect = wider front wing, easier to lift, more stable — ideal for freeride and beginners. Mid aspect = balance between lift and speed, suited for allround and freestyle. High aspect = long narrow wing, high top speed, efficient glide — designed for racing, downwind and advanced freeride. The calculator shows all three so you can pick what suits your riding style."
+    },
+    {
+      "q": "What size fin for wave windsurfing?",
+      "a": "Wave fins are significantly shorter than freeride and slalom. For a 75-85 kg rider with a 4.5-5.5 m² wave sail, the right length is 18-24 cm. Single-fin setups go slightly longer; thruster/quad setups use shorter fronts (12-16 cm) plus smaller sides. For wave fins, profile and stiffness matter almost more than length: softer profiles give more drive through the turn."
+    },
+    {
+      "q": "What is a weed fin and when do you use one?",
+      "a": "A weed fin has a strongly raked-back profile, designed to shed plant material rather than catch on it. Use it on spots with weed, grass or shallow sandy water — common on inland waters in the Netherlands, German Baltic, French lakes in summer, and Florida flats. A weed fin moves the center of effort backwards, so move your mast base and footstraps slightly back too for proper balance."
+    },
+    {
+      "q": "How much shorter should my weed fin be?",
+      "a": "For slalom and freeride, a weed fin is roughly 18% shorter than a regular fin with comparable performance (due to greater surface area per cm of length). For wave and freestyle: 10% shorter — shorter fins have relatively less surface-area difference. The calculator applies this automatically when you enable the weed fin toggle."
+    },
+    {
+      "q": "What mast length for wing foil or kite foil?",
+      "a": "For beginners: a shorter mast (60-75 cm) keeps you closer to the water — less daunting and softer touch-downs. Intermediate: 75-85 cm for more room to correct height. Advanced: 85-95 cm for downwind and choppy water — less risk of breaching. Also consider water depth at your spot: a 90 cm mast won't work in 1 m of water. The calculator shows a mast recommendation per level in the foil setup block."
+    },
+    {
+      "q": "Carbon or G10 fin — what's the difference?",
+      "a": "G10 (fiberglass-epoxy laminate) is thicker, more forgiving, cheaper and excellent for freeride and beginner slalom. Carbon is thinner, stiffer, faster and lighter — but less forgiving in choppy water. The calculator provides both sizes because a carbon fin can typically be about 5% shorter than G10 for comparable performance (MUF X-Ride vs Ride benchmark)."
+    },
+    {
+      "q": "Does this calculator work for all brands (Starboard, F-One, K4...)?",
+      "a": "Yes. The formulas are validated against extensive market benchmarks — materials and publications from Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA and MACkite, plus public fin guides from PWA pro Nico Prien (NP7) and the Bornhoft/RYA fin studies. As long as you select the correct discipline and style, the calculator provides brand-agnostic recommendations that translate 1-to-1 to any manufacturer's lineup."
+    }
+  ],
+
+  "cta.title": "More than just calculations?",
+  "cta.body": "In RigSize Live you track sessions, get wind forecasts for your spot and see how other riders are performing.",
+  "cta.button": "Download the app",
+
+  "nav.home": "Home",
+  "nav.tracking": "Tracking",
+  "nav.features": "Features",
+  "nav.garmin": "Garmin & Apple",
+  "nav.forecast": "Wind forecast",
+  "nav.live": "Live rigsizes",
+  "nav.openWebapp": "Open webapp →",
+  "nav.download": "Download",
+
+  "mobile.download_app": "Download the app →",
+  "mobile.open_webapp": "Open webapp",
+
+  "footer.privacy": "Privacy policy",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
+  "footer.terms": "Terms",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
+  "footer.product_of": "RigSize Live is a product of FTR Management B.V.",
+  "footer.kvk": "Chamber of Commerce 53751671",
+  "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
+  "schema.app_name": "RigSize Live Fin & Foil Calculator"
+}
