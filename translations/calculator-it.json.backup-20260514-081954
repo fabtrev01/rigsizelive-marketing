@@ -2,13 +2,16 @@
   "lang.flag": "🇮🇹",
   "lang.code": "IT",
   "lang.name": "Italiano",
+
   "meta.title": "Calcolatore pinna e foil — trova la tua misura | RigSize Live",
   "meta.description": "Calcolatore online gratuito per pinna da windsurf, foil da windsurf, wing foil e kite foil. Calcola la misura della pinna o del foil in base a peso, vela e stile.",
+
   "hero.eyebrow": "RigSize Live · Calcolatore",
   "hero.title_pre": "Calcolatore",
   "hero.title_acc": "Pinna",
   "hero.title_post": "& Foil",
   "hero.subtitle": "Calcola in pochi secondi la misura corretta per la tua pinna da windsurf, foil da windsurf, wing foil o kite foil. In base al tuo peso, vela e stile di navigazione.",
+
   "calc.sport": "Sport",
   "calc.ws_fin": "Windsurf (Pinna)",
   "calc.ws_foil": "Windsurf (Foil)",
@@ -54,9 +57,11 @@
   "calc.disclaimer": "Avvertenza",
   "calc.disclaimer_text": "Questo calcolatore fornisce una raccomandazione basata su dati di benchmark. La scelta finale dipende dalle preferenze personali, dalle condizioni locali e dalle caratteristiche specifiche della tavola. Usalo come punto di partenza e adatta in base alla tua esperienza in acqua.",
   "calc.sources": "Formule basate sui benchmark di James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE e MACkite.",
+
   "promo.title": "Misura trovata? In acqua!",
   "promo.text": "Vento in diretta per il tuo spot, tracking delle sessioni e visione del materiale di altri rider — RigSize Live riunisce tutto in un unico posto.",
   "promo.button": "Scopri RigSize Live →",
+
   "sports.title": "Per quale sport acquatico?",
   "sports.subtitle": "Il calcolatore copre tutte e quattro le discipline in cui RigSize Live è specializzato. Basato su ampi benchmark di mercato confrontati con il materiale dei produttori leader e i dati pubblici di gear di rider professionisti.",
   "sports.ws_fin_title": "Windsurf — pinna",
@@ -67,6 +72,7 @@
   "sports.wing_desc": "Misura del foil in base alla misura della wing e al peso. Freeride, allround e downwind.",
   "sports.kite_title": "Kite Foil",
   "sports.kite_desc": "Misura ala anteriore per freeride, freestyle/big air e race. Con consigli di setup.",
+
   "faq.title": "Domande frequenti",
   "faq.subtitle": "Le domande con cui la maggior parte dei visitatori arriva su questa pagina.",
   "faq.items": [
@@ -124,9 +130,11 @@
       "a": "Sì. Le formule sono validate contro ampi benchmark di mercato — materiali e pubblicazioni di Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA e MACkite, oltre alle guide pubbliche sulle pinne del pro PWA Nico Prien (NP7) e agli studi Bornhoft/RYA sulle pinne. Purché tu scelga la disciplina e lo stile corretti, il calcolatore fornisce una raccomandazione indipendente dal marchio, trasferibile 1-a-1 al catalogo di qualsiasi produttore."
     }
   ],
+
   "cta.title": "Più che solo calcolare?",
   "cta.body": "In RigSize Live registri le tue sessioni, ricevi previsioni del vento per il tuo spot e vedi come vanno gli altri rider.",
   "cta.button": "Scarica l'app",
+
   "nav.home": "Home",
   "nav.tracking": "Tracking",
   "nav.features": "Funzioni",
@@ -135,14 +143,17 @@
   "nav.live": "Rigsizes in diretta",
   "nav.openWebapp": "Apri webapp →",
   "nav.download": "Scarica",
+
   "mobile.download_app": "Scarica l'app →",
   "mobile.open_webapp": "Apri webapp",
+
   "footer.privacy": "Privacy",
-  "footer.privacy_url": "https://app.rigsizelive.com/privacy-en.html",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
   "footer.terms": "Termini",
-  "footer.terms_url": "https://app.rigsizelive.com/terms-en.html",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
   "footer.product_of": "RigSize Live è un prodotto di FTR Management B.V.",
   "footer.kvk": "KvK 53751671",
   "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
   "schema.app_name": "RigSize Live Calcolatore pinna e foil"
 }

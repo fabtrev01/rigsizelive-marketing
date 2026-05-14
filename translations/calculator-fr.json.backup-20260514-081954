@@ -2,13 +2,16 @@
   "lang.flag": "🇫🇷",
   "lang.code": "FR",
   "lang.name": "Français",
+
   "meta.title": "Calculateur d'aileron & foil — trouvez votre taille | RigSize Live",
   "meta.description": "Calculateur en ligne gratuit pour aileron de windsurf, foil de windsurf, wing foil et kite foil. Déterminez la taille de votre aileron ou foil selon votre poids, voile et style.",
+
   "hero.eyebrow": "RigSize Live · Calculateur",
   "hero.title_pre": "Calculateur",
   "hero.title_acc": "Aileron",
   "hero.title_post": "& Foil",
   "hero.subtitle": "Calculez en quelques secondes la bonne taille pour votre aileron de windsurf, foil de windsurf, wing foil ou kite foil. Selon votre poids, votre voile et votre style de navigation.",
+
   "calc.sport": "Sport",
   "calc.ws_fin": "Windsurf (Aileron)",
   "calc.ws_foil": "Windsurf (Foil)",
@@ -54,9 +57,11 @@
   "calc.disclaimer": "Avertissement",
   "calc.disclaimer_text": "Ce calculateur fournit une recommandation basée sur des données de référence. Le choix final dépend des préférences personnelles, des conditions locales et des caractéristiques spécifiques de la planche. Utilisez ceci comme point de départ et ajustez selon votre propre expérience sur l'eau.",
   "calc.sources": "Formules basées sur les benchmarks de James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE et MACkite.",
+
   "promo.title": "Taille trouvée ? À l'eau !",
   "promo.text": "Vent en direct pour votre spot, suivi de sessions et visualisation du matos des autres riders — RigSize Live regroupe tout au même endroit.",
   "promo.button": "Découvrir RigSize Live →",
+
   "sports.title": "Pour quel sport nautique ?",
   "sports.subtitle": "Le calculateur couvre les quatre disciplines dans lesquelles RigSize Live est spécialisé. Basé sur des benchmarks de marché étendus comparés aux matériels des fabricants leaders et aux données publiques de gear des riders professionnels.",
   "sports.ws_fin_title": "Windsurf — aileron",
@@ -67,6 +72,7 @@
   "sports.wing_desc": "Taille de foil selon la taille de wing et le poids. Freeride, polyvalent et downwind.",
   "sports.kite_title": "Kite Foil",
   "sports.kite_desc": "Taille d'aile avant pour freeride, freestyle/big air et race. Avec conseils de réglage.",
+
   "faq.title": "Questions fréquentes",
   "faq.subtitle": "Les questions qui amènent la plupart des visiteurs sur cette page.",
   "faq.items": [
@@ -124,9 +130,11 @@
       "a": "Oui. Les formules sont validées contre des benchmarks de marché étendus — matériels et publications de Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA et MACkite, plus les guides publics d'ailerons du pro PWA Nico Prien (NP7) et les études Bornhoft/RYA sur les ailerons. Tant que vous choisissez la bonne discipline et le bon style, le calculateur fournit une recommandation indépendante de la marque, que vous pouvez transposer 1-pour-1 à la gamme de n'importe quel fabricant."
     }
   ],
+
   "cta.title": "Plus que du calcul ?",
   "cta.body": "Dans RigSize Live vous suivez vos sessions, obtenez les prévisions de vent pour votre spot et voyez comment les autres riders performent.",
   "cta.button": "Télécharger l'app",
+
   "nav.home": "Accueil",
   "nav.tracking": "Tracking",
   "nav.features": "Fonctionnalités",
@@ -135,14 +143,17 @@
   "nav.live": "Rigsizes en direct",
   "nav.openWebapp": "Ouvrir la webapp →",
   "nav.download": "Télécharger",
+
   "mobile.download_app": "Télécharger l'app →",
   "mobile.open_webapp": "Ouvrir la webapp",
+
   "footer.privacy": "Confidentialité",
-  "footer.privacy_url": "https://app.rigsizelive.com/privacy-en.html",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
   "footer.terms": "Conditions",
-  "footer.terms_url": "https://app.rigsizelive.com/terms-en.html",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
   "footer.product_of": "RigSize Live est un produit de FTR Management B.V.",
   "footer.kvk": "KvK 53751671",
   "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
   "schema.app_name": "RigSize Live Calculateur d'aileron & foil"
 }

@@ -12,7 +12,9 @@
 <meta property="og:title" content="RigSize Live" />
 <meta property="og:description" content="{{META.DESCRIPTION}}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rigsizelive.com" />
+<meta property="og:url" content="{{CANONICAL_URL}}" />
+<link rel="canonical" href="{{CANONICAL_URL}}" />
+{{HREFLANG_TAGS}}
 <meta property="og:image" content="https://www.rigsizelive.com/images/hero-photo.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/png" href="/icons/logo-192.png" />
@@ -334,6 +336,11 @@
   .fcard.dark p{color:rgba(255,255,255,.82)}
   .fcard.dark .mono{color:#ffd8bf}
   .fcard.tall{min-height:340px}
+  /* Klikbare card (calculator) - subtiele hover-lift, behoudt fcard layout */
+  a.fcard.fcard-link{text-decoration:none;color:inherit;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+  a.fcard.fcard-link:hover{transform:translateY(-3px);box-shadow:0 16px 36px -18px rgba(15,23,42,.18);border-color:rgba(26,156,196,.35)}
+  a.fcard.fcard-link::after{content:"→";position:absolute;top:22px;right:24px;font-size:18px;color:var(--brand);opacity:0;transform:translateX(-4px);transition:opacity .18s,transform .18s}
+  a.fcard.fcard-link:hover::after{opacity:1;transform:translateX(0)}
   .c-span-6{grid-column:span 6}
   .c-span-4{grid-column:span 4}
   .c-span-8{grid-column:span 8}
@@ -2766,7 +2773,8 @@
           <p>{{FEAT.WIND.BODY}}</p>
           <div class="windforecast-stats">
             <div><div class="mono">{{FEAT.WIND.STAT_UPDATE_LABEL}}</div><b>{{FEAT.WIND.STAT_UPDATE_VAL}}</b></div>
-            <div><div class="mono">{{FEAT.WIND.STAT_STATIONS_LABEL}}</div><b>10 min</b></div>
+            <div><div class="mono">{{FEAT.WIND.STAT_STATIONS_LABEL}}</div><b>48× · 10 min</b></div>
+            <div><div class="mono">{{FEAT.WIND.STAT_TIDES_LABEL}}</div><b>RWS</b></div>
             <div><div class="mono">{{FEAT.WIND.STAT_WAVES_LABEL}}</div><b>{{FEAT.WIND.STAT_WAVES_VAL}}</b></div>
           </div>
           <div class="windforecast-chips">
@@ -2799,7 +2807,7 @@
       </div>
 
       <!-- Fin & Foil calc -->
-      <div class="fcard c-span-4">
+      <a class="fcard fcard-link c-span-4" href="{{CALC_URL}}">
         <div class="ficon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-1 4-1 8 0 14M12 16c-3 0-5 1-7 4M12 16c3 0 5 1 7 4M9 22h6"/></svg></div>
         <div class="mono">{{feat.calc.num}}</div>
         <h3>{{FEAT.CALC.TITLE}}</h3>
@@ -2810,7 +2818,7 @@
           <div class="calc-row"><span>{{FEAT.CALC.WIND}}</span><b>22 kts</b></div>
           <div class="calc-result">{{FEAT.CALC.ADVICE}} <span>↗</span></div>
         </div>
-      </div>
+      </a>
 
       <!-- Leaderboard -->
       <div class="fcard c-span-4">

@@ -2,13 +2,16 @@
   "lang.flag": "🇪🇸",
   "lang.code": "ES",
   "lang.name": "Español",
+
   "meta.title": "Calculadora de aleta y foil — encuentra tu talla | RigSize Live",
   "meta.description": "Calculadora online gratuita para aleta de windsurf, foil de windsurf, wing foil y kite foil. Calcula el tamaño de aleta o foil según tu peso, vela y estilo.",
+
   "hero.eyebrow": "RigSize Live · Calculadora",
   "hero.title_pre": "Calculadora",
   "hero.title_acc": "Aleta",
   "hero.title_post": "& Foil",
   "hero.subtitle": "Calcula en segundos la talla correcta para tu aleta de windsurf, foil de windsurf, wing foil o kite foil. Basado en tu peso, vela y estilo de navegación.",
+
   "calc.sport": "Deporte",
   "calc.ws_fin": "Windsurf (Aleta)",
   "calc.ws_foil": "Windsurf (Foil)",
@@ -54,9 +57,11 @@
   "calc.disclaimer": "Aviso",
   "calc.disclaimer_text": "Esta calculadora ofrece una recomendación basada en datos de referencia. La elección final depende de preferencias personales, condiciones locales y características específicas de la tabla. Úsalo como punto de partida y ajusta según tu propia experiencia en el agua.",
   "calc.sources": "Fórmulas basadas en los benchmarks de James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE y MACkite.",
+
   "promo.title": "¿Talla encontrada? ¡Al agua!",
   "promo.text": "Viento en directo para tu spot, seguimiento de sesiones y ver qué material usan otros riders — RigSize Live lo reúne todo en un solo lugar.",
   "promo.button": "Descubrir RigSize Live →",
+
   "sports.title": "¿Para qué deporte acuático?",
   "sports.subtitle": "La calculadora cubre las cuatro disciplinas en las que RigSize Live está especializada. Basada en amplios benchmarks de mercado contra material de fabricantes líderes y datos públicos de gear de riders profesionales.",
   "sports.ws_fin_title": "Windsurf — aleta",
@@ -67,6 +72,7 @@
   "sports.wing_desc": "Tamaño de foil según el tamaño de wing y el peso. Freeride, polivalente y downwind.",
   "sports.kite_title": "Kite Foil",
   "sports.kite_desc": "Tamaño de ala delantera para freeride, freestyle/big air y race. Con recomendación de setup.",
+
   "faq.title": "Preguntas frecuentes",
   "faq.subtitle": "Las preguntas con las que la mayoría de visitantes llegan a esta página.",
   "faq.items": [
@@ -124,9 +130,11 @@
       "a": "Sí. Las fórmulas están validadas contra amplios benchmarks de mercado — materiales y publicaciones de Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA y MACkite, además de guías públicas de aletas del pro PWA Nico Prien (NP7) y los estudios Bornhoft/RYA sobre aletas. Siempre que elijas la disciplina y el estilo correctos, la calculadora ofrece una recomendación independiente de marca que puedes trasladar 1-a-1 al catálogo de cualquier fabricante."
     }
   ],
+
   "cta.title": "¿Más que solo calcular?",
   "cta.body": "En RigSize Live registras tus sesiones, obtienes previsiones de viento para tu spot y ves cómo rinden otros riders.",
   "cta.button": "Descargar la app",
+
   "nav.home": "Inicio",
   "nav.tracking": "Tracking",
   "nav.features": "Funciones",
@@ -135,14 +143,17 @@
   "nav.live": "Rigsizes en directo",
   "nav.openWebapp": "Abrir webapp →",
   "nav.download": "Descargar",
+
   "mobile.download_app": "Descargar la app →",
   "mobile.open_webapp": "Abrir webapp",
+
   "footer.privacy": "Privacidad",
-  "footer.privacy_url": "https://app.rigsizelive.com/privacy-en.html",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
   "footer.terms": "Términos",
-  "footer.terms_url": "https://app.rigsizelive.com/terms-en.html",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
   "footer.product_of": "RigSize Live es un producto de FTR Management B.V.",
   "footer.kvk": "KvK 53751671",
   "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
   "schema.app_name": "RigSize Live Calculadora de aleta y foil"
 }
