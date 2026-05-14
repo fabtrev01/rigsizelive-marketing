@@ -1,0 +1,159 @@
+{
+  "lang.flag": "🇫🇷",
+  "lang.code": "FR",
+  "lang.name": "Français",
+
+  "meta.title": "Calculateur d'aileron & foil — trouvez votre taille | RigSize Live",
+  "meta.description": "Calculateur en ligne gratuit pour aileron de windsurf, foil de windsurf, wing foil et kite foil. Déterminez la taille de votre aileron ou foil selon votre poids, voile et style.",
+
+  "hero.eyebrow": "RigSize Live · Calculateur",
+  "hero.title_pre": "Calculateur",
+  "hero.title_acc": "Aileron",
+  "hero.title_post": "& Foil",
+  "hero.subtitle": "Calculez en quelques secondes la bonne taille pour votre aileron de windsurf, foil de windsurf, wing foil ou kite foil. Selon votre poids, votre voile et votre style de navigation.",
+
+  "calc.sport": "Sport",
+  "calc.ws_fin": "Windsurf (Aileron)",
+  "calc.ws_foil": "Windsurf (Foil)",
+  "calc.wing": "Wing Foil",
+  "calc.kite": "Kite Foil",
+  "calc.style": "Style",
+  "calc.style_freeride": "Freeride",
+  "calc.style_slalom": "Slalom / Race",
+  "calc.style_wave": "Vague",
+  "calc.style_freestyle": "Freestyle",
+  "calc.weight": "Poids (kg)",
+  "calc.sail": "Taille de voile (m²)",
+  "calc.wing_size": "Taille de wing (m²)",
+  "calc.sail_ph": "ex. 7.5",
+  "calc.wing_ph": "ex. 5.0",
+  "calc.width": "Largeur de planche (cm)",
+  "calc.width_ph": "ex. 70",
+  "calc.optional": "optionnel",
+  "calc.weed_fin": "🌿 Correction aileron weed",
+  "calc.level": "Niveau",
+  "calc.beginner": "Débutant",
+  "calc.intermediate": "Intermédiaire",
+  "calc.advanced": "Avancé",
+  "calc.wind": "Conditions de vent",
+  "calc.rider": "Type de rider",
+  "calc.wind_low": "Sous-toilé",
+  "calc.wind_mid": "Normal",
+  "calc.wind_high": "Sur-toilé",
+  "calc.rider_light": "Vent léger",
+  "calc.rider_allround": "Polyvalent",
+  "calc.rider_strong": "Vent fort",
+  "calc.res_std": "Standard",
+  "calc.res_std_sub": "G10 - plus épais, moins rigide",
+  "calc.res_perf": "Performance",
+  "calc.res_perf_sub": "Carbone - fin, rigide",
+  "calc.warn_max": "Longueur max d'aileron {len} cm pour planche {board} cm.",
+  "calc.warn_min": "Minimum {len} cm pour {style}.",
+  "calc.warn_foil_wide": "L'envergure du foil dépasse la largeur de la planche.",
+  "calc.foil_setup": "Conseils de réglage foil",
+  "calc.fuselage": "Fuselage",
+  "calc.mast": "Mât",
+  "calc.foil_note": "Fuselage = distance entre l'aile avant et le stabilisateur. Mât = hauteur de la planche au-dessus du foil. Plus long = plus stable, plus court = plus maniable.",
+  "calc.disclaimer": "Avertissement",
+  "calc.disclaimer_text": "Ce calculateur fournit une recommandation basée sur des données de référence. Le choix final dépend des préférences personnelles, des conditions locales et des caractéristiques spécifiques de la planche. Utilisez ceci comme point de départ et ajustez selon votre propre expérience sur l'eau.",
+  "calc.sources": "Formules basées sur les benchmarks de James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE et MACkite.",
+
+  "promo.title": "Taille trouvée ? À l'eau !",
+  "promo.text": "Vent en direct pour votre spot, suivi de sessions et visualisation du matos des autres riders — RigSize Live regroupe tout au même endroit.",
+  "promo.button": "Découvrir RigSize Live →",
+
+  "sports.title": "Pour quel sport nautique ?",
+  "sports.subtitle": "Le calculateur couvre les quatre disciplines dans lesquelles RigSize Live est spécialisé. Basé sur des benchmarks de marché étendus comparés aux matériels des fabricants leaders et aux données publiques de gear des riders professionnels.",
+  "sports.ws_fin_title": "Windsurf — aileron",
+  "sports.ws_fin_desc": "Longueur d'aileron en cm pour slalom, freeride, vague et freestyle. Inclut la correction aileron weed et le conseil G10 vs Carbone.",
+  "sports.ws_foil_title": "Foil de windsurf",
+  "sports.ws_foil_desc": "Surface de l'aile avant (cm²) pour low / mid / high aspect, plus conseils mât et fuselage.",
+  "sports.wing_title": "Wing Foil",
+  "sports.wing_desc": "Taille de foil selon la taille de wing et le poids. Freeride, polyvalent et downwind.",
+  "sports.kite_title": "Kite Foil",
+  "sports.kite_desc": "Taille d'aile avant pour freeride, freestyle/big air et race. Avec conseils de réglage.",
+
+  "faq.title": "Questions fréquentes",
+  "faq.subtitle": "Les questions qui amènent la plupart des visiteurs sur cette page.",
+  "faq.items": [
+    {
+      "q": "Quelle longueur d'aileron de windsurf me faut-il ?",
+      "a": "La bonne longueur d'aileron dépend de votre poids, de la taille de voile, de la largeur de planche et de la discipline. Règle empirique pour le slalom : 30-34 cm avec une voile de 7,5 m². Pour le freeride 28-32 cm, pour la vague 18-24 cm et pour le freestyle 16-22 cm. Le calculateur le détermine précisément selon vos données — y compris la correction aileron weed et une taille séparée pour les ailerons G10 versus carbone."
+    },
+    {
+      "q": "Quelle taille de wing pour le wing foil ?",
+      "a": "La taille de wing dépend de votre poids et du vent. Pour un rider de 75-85 kg avec 15-20 nœuds de vent, une wing de 5,0 m² est standard. Par vent plus léger (10-15 nœuds), passez à 6,0-7,0 m² ; par vent fort (25+ nœuds), à 3,5-4,0 m². La plupart des wing foilers ont deux tailles dans leur quiver pour couvrir toute la plage de vent. Le calculateur utilise cette donnée pour déterminer la taille de votre foil."
+    },
+    {
+      "q": "Quelle taille de foil pour le wing foil ?",
+      "a": "Les riders plus lourds, le vent léger ou les débutants ont besoin d'une aile avant plus grande — typiquement 1500-2200 cm² avec profil low aspect. Les riders intermédiaires utilisent généralement 1200-1500 cm². Les avancés par vent fort se contentent de 800-1200 cm² high aspect. Le calculateur fournit trois tailles — low, mid et high aspect — adaptées à votre poids et taille de wing."
+    },
+    {
+      "q": "Quelle taille de kite foil pour un débutant ?",
+      "a": "Pour un débutant en kite foil, une grande aile avant est essentielle : 900-1200 cm², profils épais, faible aspect ratio. Cela offre une portance précoce, un comportement stable et tolérant lors des touchettes. Ne passez aux foils de race 500-800 cm² high aspect qu'au niveau avancé. Combinez avec un mât plus court (55-65 cm) pour un contrôle supplémentaire en tant que débutant."
+    },
+    {
+      "q": "La règle « longueur aileron = taille voile × 5 + 4 » est-elle exacte ?",
+      "a": "Cette règle classique fonctionne raisonnablement pour les planches traditionnelles longues et étroites, mais elle est dépassée pour la génération actuelle de planches courtes et larges. Une voile de 7,5 m² impliquerait un aileron de 41,5 cm — en pratique beaucoup trop long pour les planches de slalom modernes de 75-85 cm de large. Notre calculateur utilise des formules optimisées (taille voile × 4,0 + corrections pour largeur de planche et poids), testées contre les matériels de Starboard, K4, Tabou et autres marques."
+    },
+    {
+      "q": "Comment mesurer la largeur de planche pour la bonne taille d'aileron ?",
+      "a": "Utilisez la règle « one-foot-off » (OFO) : mesurez la largeur de planche exactement à 30 cm (1 pied) de l'arrière. Cette largeur est un point de départ standard pour la longueur d'aileron — la longueur maximale est environ cette largeur plus 2 cm, la minimale 6-10 cm de moins. Le calculateur utilise cette largeur comme une des variables d'entrée pour une recommandation plus précise."
+    },
+    {
+      "q": "Quelle différence entre foils low, mid et high aspect ?",
+      "a": "Low aspect = aile avant plus large, démarrage plus facile, plus stable — idéal pour le freeride et les débutants. Mid aspect = équilibre entre portance et vitesse, adapté au polyvalent et au freestyle. High aspect = aile longue et étroite, vitesse de pointe élevée, glide efficace — conçu pour la race, le downwind et le freeride avancé. Le calculateur affiche les trois pour que vous puissiez choisir selon votre style.",
+      "_quality_note": "Algemene foil-categorisering, geen FR-specifieke aanpassing nodig"
+    },
+    {
+      "q": "Quelle taille d'aileron pour le windsurf de vague ?",
+      "a": "Les ailerons de vague sont nettement plus courts que ceux de freeride et de slalom. Pour un rider de 75-85 kg avec une voile de vague 4,5-5,5 m², la bonne longueur est de 18 à 24 cm. Les setups single-fin vont un peu plus long, les setups thruster/quad utilisent des fronts plus courts (12-16 cm) plus des sides plus petits. Pour les ailerons de vague, le profil et la rigidité comptent presque autant que la longueur : les profils plus souples donnent plus de drive en virage."
+    },
+    {
+      "q": "Qu'est-ce qu'un aileron weed et quand l'utiliser ?",
+      "a": "Un aileron weed (aileron anti-algues) a un profil fortement incliné vers l'arrière, conçu pour glisser sur les végétaux plutôt que de s'y accrocher. Utilisez-le sur les spots avec algues, herbes ou eau peu profonde sablonneuse — typique au lac de Serre-Ponçon, au lac d'Annecy, sur certains spots de Camargue ou dans les étangs du Languedoc en été. Un aileron weed déplace le centre de pression vers l'arrière, donc reculez également le pied de mât et les straps pour un bon équilibre."
+    },
+    {
+      "q": "De combien plus court doit être mon aileron weed ?",
+      "a": "Pour le slalom et le freeride, un aileron weed est environ 18% plus court qu'un aileron normal à performance comparable (en raison de la plus grande surface par cm de longueur). Pour la vague et le freestyle : 10% plus court — les ailerons courts ont une différence de surface relativement plus faible. Le calculateur applique cela automatiquement quand vous activez le toggle aileron weed."
+    },
+    {
+      "q": "Quelle longueur de mât pour wing foil ou kite foil ?",
+      "a": "Pour les débutants : un mât plus court (60-75 cm) vous garde plus proche de l'eau — moins intimidant et touchettes plus douces. Intermédiaire : 75-85 cm pour plus de marge de correction en hauteur. Avancé : 85-95 cm pour le downwind et le clapot — moins de risque de breaching. Tenez aussi compte de la profondeur d'eau sur votre spot : un mât de 90 cm ne fonctionne pas dans 1 m d'eau. Le calculateur affiche une recommandation de mât par niveau dans le bloc foil setup."
+    },
+    {
+      "q": "Carbone ou G10 — quelle différence pour un aileron ?",
+      "a": "G10 (stratifié fibre de verre-époxy) est plus épais, plus tolérant, moins cher et excellent pour le freeride et le slalom débutant. Le carbone est plus fin, plus rigide, plus rapide et plus léger — mais moins tolérant dans le clapot. Le calculateur fournit les deux tailles parce qu'un aileron carbone peut généralement être environ 5% plus court qu'un G10 pour une performance comparable (benchmark MUF X-Ride vs Ride)."
+    },
+    {
+      "q": "Ce calculateur fonctionne-t-il pour toutes les marques (Starboard, F-One, K4...) ?",
+      "a": "Oui. Les formules sont validées contre des benchmarks de marché étendus — matériels et publications de Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA et MACkite, plus les guides publics d'ailerons du pro PWA Nico Prien (NP7) et les études Bornhoft/RYA sur les ailerons. Tant que vous choisissez la bonne discipline et le bon style, le calculateur fournit une recommandation indépendante de la marque, que vous pouvez transposer 1-pour-1 à la gamme de n'importe quel fabricant."
+    }
+  ],
+
+  "cta.title": "Plus que du calcul ?",
+  "cta.body": "Dans RigSize Live vous suivez vos sessions, obtenez les prévisions de vent pour votre spot et voyez comment les autres riders performent.",
+  "cta.button": "Télécharger l'app",
+
+  "nav.home": "Accueil",
+  "nav.tracking": "Tracking",
+  "nav.features": "Fonctionnalités",
+  "nav.garmin": "Garmin & Apple",
+  "nav.forecast": "Prévision de vent",
+  "nav.live": "Rigsizes en direct",
+  "nav.openWebapp": "Ouvrir la webapp →",
+  "nav.download": "Télécharger",
+
+  "mobile.download_app": "Télécharger l'app →",
+  "mobile.open_webapp": "Ouvrir la webapp",
+
+  "footer.privacy": "Confidentialité",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
+  "footer.terms": "Conditions",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
+  "footer.product_of": "RigSize Live est un produit de FTR Management B.V.",
+  "footer.kvk": "KvK 53751671",
+  "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
+  "schema.app_name": "RigSize Live Calculateur d'aileron & foil"
+}

@@ -1,0 +1,159 @@
+{
+  "lang.flag": "🇪🇸",
+  "lang.code": "ES",
+  "lang.name": "Español",
+
+  "meta.title": "Calculadora de aleta y foil — encuentra tu talla | RigSize Live",
+  "meta.description": "Calculadora online gratuita para aleta de windsurf, foil de windsurf, wing foil y kite foil. Calcula el tamaño de aleta o foil según tu peso, vela y estilo.",
+
+  "hero.eyebrow": "RigSize Live · Calculadora",
+  "hero.title_pre": "Calculadora",
+  "hero.title_acc": "Aleta",
+  "hero.title_post": "& Foil",
+  "hero.subtitle": "Calcula en segundos la talla correcta para tu aleta de windsurf, foil de windsurf, wing foil o kite foil. Basado en tu peso, vela y estilo de navegación.",
+
+  "calc.sport": "Deporte",
+  "calc.ws_fin": "Windsurf (Aleta)",
+  "calc.ws_foil": "Windsurf (Foil)",
+  "calc.wing": "Wing Foil",
+  "calc.kite": "Kite Foil",
+  "calc.style": "Estilo",
+  "calc.style_freeride": "Freeride",
+  "calc.style_slalom": "Slalom / Race",
+  "calc.style_wave": "Olas",
+  "calc.style_freestyle": "Freestyle",
+  "calc.weight": "Peso (kg)",
+  "calc.sail": "Tamaño de vela (m²)",
+  "calc.wing_size": "Tamaño de wing (m²)",
+  "calc.sail_ph": "ej. 7.5",
+  "calc.wing_ph": "ej. 5.0",
+  "calc.width": "Anchura de tabla (cm)",
+  "calc.width_ph": "ej. 70",
+  "calc.optional": "opcional",
+  "calc.weed_fin": "🌿 Corrección aleta weed",
+  "calc.level": "Nivel",
+  "calc.beginner": "Principiante",
+  "calc.intermediate": "Intermedio",
+  "calc.advanced": "Avanzado",
+  "calc.wind": "Condiciones de viento",
+  "calc.rider": "Tipo de rider",
+  "calc.wind_low": "Underpowered",
+  "calc.wind_mid": "Normal",
+  "calc.wind_high": "Overpowered",
+  "calc.rider_light": "Viento flojo",
+  "calc.rider_allround": "Polivalente",
+  "calc.rider_strong": "Viento fuerte",
+  "calc.res_std": "Estándar",
+  "calc.res_std_sub": "G10 - más grueso, menos rígido",
+  "calc.res_perf": "Performance",
+  "calc.res_perf_sub": "Carbono - fino, rígido",
+  "calc.warn_max": "Longitud máx. de aleta {len} cm para tabla de {board} cm.",
+  "calc.warn_min": "Mínimo {len} cm para {style}.",
+  "calc.warn_foil_wide": "La envergadura del foil excede el ancho de la tabla.",
+  "calc.foil_setup": "Recomendación de setup del foil",
+  "calc.fuselage": "Fuselaje",
+  "calc.mast": "Mástil",
+  "calc.foil_note": "Fuselaje = distancia entre el ala delantera y el estabilizador. Mástil = altura de la tabla sobre el foil. Más largo = más estable, más corto = más maniobrable.",
+  "calc.disclaimer": "Aviso",
+  "calc.disclaimer_text": "Esta calculadora ofrece una recomendación basada en datos de referencia. La elección final depende de preferencias personales, condiciones locales y características específicas de la tabla. Úsalo como punto de partida y ajusta según tu propia experiencia en el agua.",
+  "calc.sources": "Fórmulas basadas en los benchmarks de James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE y MACkite.",
+
+  "promo.title": "¿Talla encontrada? ¡Al agua!",
+  "promo.text": "Viento en directo para tu spot, seguimiento de sesiones y ver qué material usan otros riders — RigSize Live lo reúne todo en un solo lugar.",
+  "promo.button": "Descubrir RigSize Live →",
+
+  "sports.title": "¿Para qué deporte acuático?",
+  "sports.subtitle": "La calculadora cubre las cuatro disciplinas en las que RigSize Live está especializada. Basada en amplios benchmarks de mercado contra material de fabricantes líderes y datos públicos de gear de riders profesionales.",
+  "sports.ws_fin_title": "Windsurf — aleta",
+  "sports.ws_fin_desc": "Longitud de aleta en cm para slalom, freeride, olas y freestyle. Incluye corrección aleta weed y recomendación G10 vs Carbono.",
+  "sports.ws_foil_title": "Foil de windsurf",
+  "sports.ws_foil_desc": "Superficie del ala delantera (cm²) para low / mid / high aspect, más recomendación de mástil y fuselaje.",
+  "sports.wing_title": "Wing Foil",
+  "sports.wing_desc": "Tamaño de foil según el tamaño de wing y el peso. Freeride, polivalente y downwind.",
+  "sports.kite_title": "Kite Foil",
+  "sports.kite_desc": "Tamaño de ala delantera para freeride, freestyle/big air y race. Con recomendación de setup.",
+
+  "faq.title": "Preguntas frecuentes",
+  "faq.subtitle": "Las preguntas con las que la mayoría de visitantes llegan a esta página.",
+  "faq.items": [
+    {
+      "q": "¿Qué longitud de aleta de windsurf necesito?",
+      "a": "La longitud correcta de aleta depende de tu peso, tamaño de vela, anchura de tabla y disciplina. Regla general para slalom: 30-34 cm con una vela de 7,5 m². Para freeride 28-32 cm, para olas 18-24 cm y para freestyle 16-22 cm. La calculadora lo determina con precisión basándose en tus datos — incluyendo corrección aleta weed y una talla separada para aletas de G10 versus carbono."
+    },
+    {
+      "q": "¿Qué tamaño de wing necesito para wing foil?",
+      "a": "El tamaño de wing depende de tu peso y del viento. Para un rider de 75-85 kg con 15-20 nudos de viento, una wing de 5,0 m² es estándar. Con viento más flojo (10-15 nudos) necesitas 6,0-7,0 m²; con viento fuerte (25+ nudos), 3,5-4,0 m². Muchos wing foilers tienen dos tamaños en su quiver para cubrir todo el rango de viento. La calculadora utiliza este dato para determinar el tamaño de tu foil."
+    },
+    {
+      "q": "¿Qué tamaño de foil necesito para wing foil?",
+      "a": "Los riders más pesados, el viento flojo o los principiantes necesitan un ala delantera más grande — típicamente 1500-2200 cm² con perfil low aspect. Los riders intermedios suelen usar 1200-1500 cm². Los avanzados con viento fuerte se apañan con 800-1200 cm² high aspect. La calculadora ofrece tres tallas — low, mid y high aspect — adaptadas a tu peso y tamaño de wing."
+    },
+    {
+      "q": "¿Qué tamaño de kite foil para principiante?",
+      "a": "Para un principiante en kite foil, un ala delantera grande es esencial: 900-1200 cm², perfiles gruesos, aspect ratio bajo. Esto proporciona elevación temprana, comportamiento estable y tolerancia ante touch-downs. Solo a nivel avanzado se pasa a foils de race 500-800 cm² high aspect. Combina con un mástil más corto (55-65 cm) para tener más control como principiante."
+    },
+    {
+      "q": "¿Es cierta la regla: longitud aleta = tamaño vela × 5 + 4?",
+      "a": "Esta regla clásica funciona razonablemente para tablas tradicionales largas y estrechas, pero está desfasada para la generación actual de tablas cortas y anchas. Una vela de 7,5 m² implicaría una aleta de 41,5 cm — en la práctica, demasiado larga para las tablas modernas de slalom de 75-85 cm de ancho. Nuestra calculadora utiliza fórmulas optimizadas (tamaño vela × 4,0 + correcciones por ancho de tabla y peso), testadas contra material de Starboard, K4, Tabou y otras marcas."
+    },
+    {
+      "q": "¿Cómo mido el ancho de la tabla para la talla correcta de aleta?",
+      "a": "Usa la regla \"one-foot-off\" (OFO): mide el ancho de tabla exactamente a 30 cm (1 pie) de la cola. Esta anchura es un punto de partida estándar para la longitud de aleta — la longitud máxima de aleta es aproximadamente esta anchura más 2 cm, la mínima 6-10 cm menos. La calculadora usa este ancho como una de las variables de entrada para una recomendación más precisa."
+    },
+    {
+      "q": "¿Cuál es la diferencia entre foils low, mid y high aspect?",
+      "a": "Low aspect = ala delantera más ancha, más fácil de levantar, más estable — ideal para freeride y principiantes. Mid aspect = equilibrio entre lift y velocidad, adecuado para polivalente y freestyle. High aspect = ala larga y estrecha, velocidad punta alta, glide eficiente — diseñado para race, downwind y freeride avanzado. La calculadora muestra los tres para que puedas elegir según tu estilo."
+    },
+    {
+      "q": "¿Qué tamaño de aleta para windsurf de olas?",
+      "a": "Las aletas de olas son sustancialmente más cortas que las de freeride y slalom. Para un rider de 75-85 kg con una vela de olas de 4,5-5,5 m², la longitud correcta está entre 18 y 24 cm. Los setups single-fin van un poco más largos, los setups thruster/quad usan fronts más cortos (12-16 cm) más sides más pequeños. En las aletas de olas el perfil y la rigidez cuentan casi más que la longitud: los perfiles más blandos dan más drive en la curva."
+    },
+    {
+      "q": "¿Qué es una aleta weed y cuándo se usa?",
+      "a": "Una aleta weed tiene un perfil fuertemente inclinado hacia atrás, diseñada para deslizarse sobre vegetación en lugar de engancharse. Úsala en spots con algas, hierba o agua poco profunda con arena — típico en algunas zonas del Delta del Ebro, lagunas de Pontevedra o ciertos spots de Mallorca en temporada alta. Una aleta weed desplaza el centro de presión hacia atrás, así que coloca también el pie de mástil y los foot straps algo más atrás para mantener el equilibrio.",
+      "_quality_note": "Spaanse weed-spots zijn minder algemeen bekend; gegevens minder zeker — graag laten reviewen"
+    },
+    {
+      "q": "¿Cuánto más corta debe ser mi aleta weed?",
+      "a": "Para slalom y freeride, una aleta weed es aproximadamente un 18% más corta que una aleta normal con rendimiento comparable (debido a la mayor superficie por cm de longitud). Para olas y freestyle: 10% más corta — las aletas cortas tienen una diferencia de superficie relativamente menor. La calculadora aplica esto automáticamente cuando activas el toggle de aleta weed."
+    },
+    {
+      "q": "¿Qué longitud de mástil para wing foil o kite foil?",
+      "a": "Para principiantes: un mástil más corto (60-75 cm) te mantiene más cerca del agua — menos intimidante y touch-downs más suaves. Intermedio: 75-85 cm para más margen de corrección de altura. Avanzado: 85-95 cm para downwind y aguas picadas — menos riesgo de breaching. Ten en cuenta también la profundidad del agua en tu spot: un mástil de 90 cm no funciona en 1 m de agua. La calculadora muestra una recomendación de mástil por nivel en el bloque foil setup."
+    },
+    {
+      "q": "¿Carbono o G10 — qué diferencia hay en una aleta?",
+      "a": "G10 (laminado fibra de vidrio-epoxi) es más grueso, más tolerante, más económico y excelente para freeride y slalom inicial. El carbono es más fino, más rígido, más rápido y más ligero — pero menos tolerante en aguas picadas. La calculadora ofrece ambas tallas porque una aleta de carbono puede ser típicamente alrededor de un 5% más corta que una de G10 con rendimiento comparable (benchmark MUF X-Ride vs Ride)."
+    },
+    {
+      "q": "¿Funciona esta calculadora para todas las marcas (Starboard, F-One, K4...)?",
+      "a": "Sí. Las fórmulas están validadas contra amplios benchmarks de mercado — materiales y publicaciones de Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA y MACkite, además de guías públicas de aletas del pro PWA Nico Prien (NP7) y los estudios Bornhoft/RYA sobre aletas. Siempre que elijas la disciplina y el estilo correctos, la calculadora ofrece una recomendación independiente de marca que puedes trasladar 1-a-1 al catálogo de cualquier fabricante."
+    }
+  ],
+
+  "cta.title": "¿Más que solo calcular?",
+  "cta.body": "En RigSize Live registras tus sesiones, obtienes previsiones de viento para tu spot y ves cómo rinden otros riders.",
+  "cta.button": "Descargar la app",
+
+  "nav.home": "Inicio",
+  "nav.tracking": "Tracking",
+  "nav.features": "Funciones",
+  "nav.garmin": "Garmin & Apple",
+  "nav.forecast": "Previsión de viento",
+  "nav.live": "Rigsizes en directo",
+  "nav.openWebapp": "Abrir webapp →",
+  "nav.download": "Descargar",
+
+  "mobile.download_app": "Descargar la app →",
+  "mobile.open_webapp": "Abrir webapp",
+
+  "footer.privacy": "Privacidad",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
+  "footer.terms": "Términos",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
+  "footer.product_of": "RigSize Live es un producto de FTR Management B.V.",
+  "footer.kvk": "KvK 53751671",
+  "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
+  "schema.app_name": "RigSize Live Calculadora de aleta y foil"
+}

@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Finnen- & Foil-Rechner — die richtige Größe finden | RigSize Live</title>
+<meta name="description" content="Kostenloser Online-Rechner für Windsurf-Finnen, Windsurf-Foils, Wing-Foils und Kite-Foils. Finnenlänge oder Foilgröße bestimmen anhand von Gewicht, Segel und Stil." />
+<link rel="canonical" href="https://www.rigsizelive.com/de/finnen-foil-rechner/" />
+<link rel="alternate" hreflang="nl" href="https://www.rigsizelive.com/vin-foil-calculator/" />
+<link rel="alternate" hreflang="en" href="https://www.rigsizelive.com/en/fin-foil-calculator/" />
+<link rel="alternate" hreflang="de" href="https://www.rigsizelive.com/de/finnen-foil-rechner/" />
+<link rel="alternate" hreflang="fr" href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" />
+<link rel="alternate" hreflang="es" href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" />
+<link rel="alternate" hreflang="it" href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" />
+<link rel="alternate" hreflang="x-default" href="https://www.rigsizelive.com/vin-foil-calculator/" />
+<meta name="theme-color" content="#1a9cc4" />
+<meta property="og:title" content="Finnen- & Foil-Rechner — die richtige Größe finden | RigSize Live" />
+<meta property="og:description" content="Kostenloser Online-Rechner für Windsurf-Finnen, Windsurf-Foils, Wing-Foils und Kite-Foils. Finnenlänge oder Foilgröße bestimmen anhand von Gewicht, Segel und Stil." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.rigsizelive.com/de/finnen-foil-rechner/" />
+<meta property="og:image" content="https://www.rigsizelive.com/images/hero-photo.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="/icons/logo-192.png" />
+<link rel="apple-touch-icon" href="/icons/logo-192.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "RigSize Live Finnen- & Foil-Rechner",
+      "url": "https://www.rigsizelive.com/de/finnen-foil-rechner/",
+      "description": "Kostenloser Online-Rechner für Windsurf-Finnen, Windsurf-Foils, Wing-Foils und Kite-Foils. Finnenlänge oder Foilgröße bestimmen anhand von Gewicht, Segel und Stil.",
+      "applicationCategory": "SportsApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "creator": { "@type": "Organization", "name": "RigSize Live", "url": "https://www.rigsizelive.com" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [{"@type":"Question","name":"Wie lang muss meine Windsurf-Finne sein?","acceptedAnswer":{"@type":"Answer","text":"Die richtige Finnenlänge hängt von deinem Gewicht, der Segelgröße, der Boardbreite und der Disziplin ab. Faustregel für Slalom: 30-34 cm bei einem 7,5 m² Segel. Für Freeride 28-32 cm, für Wave 18-24 cm und für Freestyle 16-22 cm. Der Rechner ermittelt es präzise basierend auf deinen Eingaben — inklusive Weedfinnen-Korrektur und einer separaten Empfehlung für G10 versus Carbon-Finnen."}},{"@type":"Question","name":"Welche Wing-Größe brauche ich zum Wing-Foilen?","acceptedAnswer":{"@type":"Answer","text":"Die Wing-Größe hängt von deinem Gewicht und dem Wind ab. Für einen Rider von 75-85 kg bei 15-20 Knoten Wind ist ein 5,0 m² Wing üblich. Bei leichterem Wind (10-15 Knoten) brauchst du 6,0-7,0 m², bei starkem Wind (25+ Knoten) 3,5-4,0 m². Viele Wing-Foiler haben zwei Größen im Quiver, um den gesamten Windbereich abzudecken. Der Rechner nutzt diese Eingabe, um deine Foilgröße zu bestimmen."}},{"@type":"Question","name":"Welche Foilgröße brauche ich zum Wing-Foilen?","acceptedAnswer":{"@type":"Answer","text":"Schwerere Rider, leichter Wind oder Anfänger brauchen einen größeren Frontflügel — typischerweise 1500-2200 cm² mit Low-Aspect-Profil. Fortgeschrittene Rider nutzen meistens 1200-1500 cm². Profis bei starkem Wind kommen mit 800-1200 cm² High Aspect aus. Der Rechner liefert drei Größen — Low, Mid und High Aspect — abgestimmt auf dein Gewicht und deine Wing-Größe."}},{"@type":"Question","name":"Welche Kite-Foil-Größe für Anfänger?","acceptedAnswer":{"@type":"Answer","text":"Für einen Anfänger im Kite-Foilen ist ein großer Frontflügel essenziell: 900-1200 cm², dicke Profile, niedriges Aspect Ratio. Das liefert frühen Lift, stabiles Fahrverhalten und Verzeihen bei Touch-Downs. Erst auf Profi-Niveau wechselt man zu 500-800 cm² High-Aspect-Race-Foils. Kombiniere mit einem kürzeren Mast (55-65 cm) für extra Kontrolle als Anfänger."}},{"@type":"Question","name":"Stimmt die Faustregel: Finnenlänge = Segelgröße × 5 + 4?","acceptedAnswer":{"@type":"Answer","text":"Diese klassische Faustregel funktioniert noch einigermaßen für traditionell lang-schmale Boards, ist aber überholt für die aktuelle Generation kurzer und breiter Boards. Ein 7,5 m² Segel würde nach dieser Regel eine 41,5 cm Finne bedeuten — in der Praxis viel zu lang für moderne Slalom-Boards von 75-85 cm Breite. Unser Rechner verwendet optimierte Formeln (Segelgröße × 4,0 + Korrekturen für Boardbreite und Gewicht), getestet gegen Materialien von Starboard, K4, Tabou und anderen Marken."}},{"@type":"Question","name":"Wie messe ich die Boardbreite für die richtige Finnengröße?","acceptedAnswer":{"@type":"Answer","text":"Verwende die \"One-Foot-Off\"-Regel (OFO): miss die Boardbreite genau 30 cm (1 Foot) vom Heck entfernt. Diese Breite ist ein üblicher Ausgangspunkt für die Finnenlänge — die maximale Finnenlänge entspricht etwa dieser Breite plus 2 cm, die minimale ungefähr 6-10 cm weniger. Der Rechner nutzt diese Breite als eine der Eingabevariablen für eine präzisere Empfehlung."}},{"@type":"Question","name":"Was ist der Unterschied zwischen Low, Mid und High Aspect Foils?","acceptedAnswer":{"@type":"Answer","text":"Low Aspect = breiterer Frontflügel, leichter zu Lift bringen, stabiler — ideal für Freeride und Anfänger. Mid Aspect = Balance zwischen Lift und Speed, geeignet für Allround und Freestyle. High Aspect = langer schmaler Flügel, hohe Topspeed, effizientes Gleiten — gedacht für Race, Downwind und fortgeschrittenen Freeride. Der Rechner zeigt alle drei, damit du wählen kannst, was zu deinem Fahrstil passt."}},{"@type":"Question","name":"Welche Finnengröße für Wave-Windsurfen?","acceptedAnswer":{"@type":"Answer","text":"Wave-Finnen sind deutlich kürzer als Freeride und Slalom. Für einen Rider von 75-85 kg mit einem 4,5-5,5 m² Wave-Segel liegt die richtige Länge zwischen 18 und 24 cm. Single-Fin-Setups gehen etwas länger, Thruster/Quad-Setups verwenden kürzere Fronts (12-16 cm) plus kleinere Seitenfinnen. Bei Wave-Finnen zählt das Profil und die Steifigkeit fast mehr als die Länge: weichere Profile geben mehr Drive in der Kurve."}},{"@type":"Question","name":"Was ist eine Weedfinne und wann verwendet man sie?","acceptedAnswer":{"@type":"Answer","text":"Eine Weedfinne hat ein stark nach hinten gepfeiltes Profil, entworfen um Pflanzenmaterial abzuwerfen statt sich darin zu verfangen. Verwende sie an Spots mit Algen, Gras oder seichtem Sandwasser — typisch an der Ostsee bei Zingst, dem Steinhuder Meer, Gardasee in der Hochsaison oder an Süßwasserseen. Eine Weedfinne verschiebt den Druckpunkt nach hinten, also stelle Mastfuß und Fußschlaufen ebenfalls etwas weiter hinten ein für die richtige Balance."}},{"@type":"Question","name":"Wie viel kürzer muss meine Weedfinne sein?","acceptedAnswer":{"@type":"Answer","text":"Für Slalom und Freeride ist eine Weedfinne etwa 18% kürzer als eine normale Finne bei vergleichbarer Leistung (durch die größere Oberfläche pro cm Länge). Für Wave und Freestyle: 10% kürzer — kürzere Finnen haben relativ weniger Oberflächen-Unterschied. Der Rechner passt das automatisch an, wenn du den Weedfinnen-Schalter aktivierst."}},{"@type":"Question","name":"Welche Mastlänge für Wing-Foil oder Kite-Foil?","acceptedAnswer":{"@type":"Answer","text":"Für Anfänger: ein kürzerer Mast (60-75 cm) hält dich näher am Wasser — weniger einschüchternd und weichere Touch-Downs. Fortgeschritten: 75-85 cm für mehr Spielraum zur Höhenkorrektur. Profi: 85-95 cm für Downwind und choppy Wasser — geringeres Risiko von Breaching. Berücksichtige auch die Wassertiefe an deinem Spot: ein 90 cm Mast funktioniert nicht in 1 m Wasser. Der Rechner zeigt eine Mastempfehlung pro Level im Foil-Setup-Block."}},{"@type":"Question","name":"Carbon oder G10 Finne — was ist der Unterschied?","acceptedAnswer":{"@type":"Answer","text":"G10 (Glasfaser-Epoxid-Laminat) ist dicker, fehlerverzeihender, günstiger und hervorragend für Freeride und Slalom-Einsteiger. Carbon ist dünner, steifer, schneller und leichter — aber weniger fehlerverzeihend in choppy Wasser. Der Rechner liefert beide Größen, weil eine Carbon-Finne in der Regel etwa 5% kürzer sein kann als eine G10 bei vergleichbarer Leistung (MUF X-Ride vs Ride Benchmark)."}},{"@type":"Question","name":"Funktioniert dieser Rechner für alle Marken (Starboard, F-One, K4...)?","acceptedAnswer":{"@type":"Answer","text":"Ja. Die Formeln sind gegen umfangreiche Markt-Benchmarks validiert — Materialien und Publikationen von Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA und MACkite, plus öffentliche Finnen-Guides vom PWA-Profi Nico Prien (NP7) und den Bornhoft/RYA Finnen-Studien. Sofern du die richtige Disziplin und den passenden Stil wählst, liefert der Rechner eine markenunabhängige Empfehlung, die du 1-zu-1 auf das Sortiment jedes Herstellers übertragen kannst."}}]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rigsizelive.com/de/" },
+        { "@type": "ListItem", "position": 2, "name": "RigSize Live Finnen- & Foil-Rechner", "item": "https://www.rigsizelive.com/de/finnen-foil-rechner/" }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#0b1220; --ink-2:#0e1a2a; --sea:#081522; --foam:#f4f6f8; --paper:#ffffff;
+  --line:rgba(255,255,255,.08); --line-d:rgba(9,20,36,.10);
+  --muted:#6b7689; --muted-d:rgba(255,255,255,.62);
+  --brand:#1a9cc4; --brand-2:#2bb3a6; --brand-deep:#1d6ea8; --brand-soft:#e6f4fa;
+  --brand-grad:linear-gradient(135deg,#1f78c4 0%,#1a9cc4 50%,#2bb3a6 100%);
+  --accent:#ff7a3d;
+}
+*{box-sizing:border-box}
+html,body{margin:0;overflow-x:hidden}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.45}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-0.02em;margin:0;line-height:1.1;font-weight:700;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.mono{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(29,110,168,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.14);color:#fff}
+.nav-row{display:flex;align-items:center;gap:32px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-0.01em}
+.brand img{width:30px;height:30px;display:block}
+.brand span{font-family:'Space Grotesk',sans-serif;font-size:17px}
+.brand em{color:#7cd7e8;font-style:normal}
+.nav-links{display:flex;gap:26px;margin-left:12px;font-size:14px;color:var(--muted-d)}
+.nav-links a:hover{color:#fff}
+.nav-cta{margin-left:auto;display:flex;align-items:center;gap:14px}
+.nav-burger{display:none;margin-left:auto;width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);align-items:center;justify-content:center;cursor:pointer;color:#fff}
+.nav-burger svg{width:22px;height:22px;display:block}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;bottom:0;z-index:100;background:#0f3a5f;padding:32px 28px;flex-direction:column;gap:8px;color:#fff;overflow-y:auto}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:#fff;font-family:'Space Grotesk',sans-serif;font-size:22px;font-weight:600;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.12);text-decoration:none;letter-spacing:-.01em}
+.mobile-menu .mobile-cta{display:flex;flex-direction:column;gap:10px;margin-top:24px}
+.mobile-menu .mobile-lang{display:flex;flex-direction:column;gap:0;margin-top:24px;border-top:1px solid rgba(255,255,255,.12);padding-top:8px}
+.mobile-menu .mobile-lang a{color:rgba(255,255,255,.85);font-family:'Inter',sans-serif;font-size:16px;font-weight:500;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08);text-decoration:none;letter-spacing:0}
+.mobile-menu .mobile-lang a:last-child{border-bottom:none}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s;text-decoration:none}
+.btn-primary{background:var(--brand-grad);color:#fff;box-shadow:0 10px 24px -10px rgba(31,120,196,.6)}
+.btn-primary:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn-ghost{color:#fff;border-color:var(--line)}
+.btn-ghost:hover{background:rgba(255,255,255,.06)}
+
+/* Language switcher */
+.lang-switcher{position:relative}
+.lang-switcher-btn{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:13px;padding:7px 12px;border-radius:999px;cursor:pointer;font-family:inherit}
+.lang-switcher-btn svg{width:12px;height:12px}
+.lang-switcher-menu{display:none;position:absolute;top:calc(100% + 8px);right:0;background:#0f3a5f;border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:6px;min-width:170px;z-index:60}
+.lang-switcher.open .lang-switcher-menu{display:block}
+.lang-switcher-menu a{display:block;padding:9px 12px;color:rgba(255,255,255,.85);font-size:14px;border-radius:8px}
+.lang-switcher-menu a:hover{background:rgba(255,255,255,.08);color:#fff}
+
+/* HERO compact */
+.hero{position:relative;color:#fff;overflow:hidden;background:radial-gradient(900px 500px at 20% 10%,rgba(43,179,166,.32),transparent 60%),radial-gradient(1100px 600px at 80% 90%,rgba(31,120,196,.42),transparent 60%),linear-gradient(160deg,#1f78c4 0%,#1a9cc4 55%,#2bb3a6 100%)}
+.hero-photo{position:absolute;inset:0;pointer-events:none;background-image:url('/images/hero-photo.png');background-size:cover;background-position:22% 55%;opacity:.55}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,40,70,.1) 0%,rgba(15,40,70,.5) 70%,rgba(15,40,70,.8) 100%),linear-gradient(90deg,rgba(15,40,70,.4) 0%,rgba(15,40,70,.05) 50%,rgba(15,40,70,.4) 100%)}
+.hero-inner{position:relative;padding:130px 0 180px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;background:rgba(255,255,255,.1);color:#c9ffe8;border:1px solid rgba(255,255,255,.18);font-size:13px;font-weight:600;letter-spacing:.01em;backdrop-filter:blur(8px)}
+.eyebrow .dot{width:7px;height:7px;border-radius:999px;background:#5ee0c9;box-shadow:0 0 0 4px rgba(94,224,201,.25)}
+h1.headline{font-size:clamp(40px,6vw,80px);letter-spacing:-0.03em;font-weight:800;margin:22px 0 18px;max-width:920px;margin-left:auto;margin-right:auto}
+h1.headline .acc{background:linear-gradient(90deg,#7cd7e8,#5ee0c9);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{font-size:18px;color:var(--muted-d);max-width:620px;margin:0 auto;line-height:1.55}
+
+/* CALCULATOR */
+.calc-section{padding:0 0 60px;background:linear-gradient(180deg,transparent 0,transparent 50px,var(--paper) 50px)}
+.calc-card{position:relative;margin:-70px auto 0;max-width:560px;background:#fff;border:1px solid #e2e8f0;border-radius:24px;padding:28px;box-shadow:0 1px 3px rgba(15,23,42,.06),0 24px 60px -24px rgba(15,23,42,.25)}
+.calc-fld{margin-bottom:16px}
+.calc-lbl{display:block;font-family:'Space Grotesk',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#64748b;font-weight:600;margin-bottom:7px}
+.calc-sel,.calc-inp{width:100%;border:1px solid #cbd5e1;border-radius:9999px;padding:13px 18px;font-size:15px;color:#0f172a;background:#fff;font-family:inherit;-webkit-appearance:none;appearance:none;box-sizing:border-box;transition:border-color .15s,box-shadow .15s}
+.calc-inp:focus,.calc-sel:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(26,156,196,.15)}
+.calc-sel{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 20px center;padding-right:42px;cursor:pointer}
+.calc-row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.calc-pills{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
+.calc-pill{padding:10px 6px;border:1px solid #cbd5e1;background:#fff;border-radius:9999px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#64748b;cursor:pointer;font-family:inherit;transition:all .15s}
+.calc-pill:hover{border-color:#94a3b8}
+.calc-pill.on{border-color:var(--brand);background:#e0f7fa;color:#0e6c8a}
+.calc-weed{display:flex;align-items:center;gap:10px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:14px;padding:12px 16px;cursor:pointer;margin-bottom:16px;font-size:14px;color:#166534;font-weight:600}
+.calc-weed input{margin:0;cursor:pointer;width:16px;height:16px}
+.calc-warn{display:none;align-items:flex-start;gap:10px;background:#fef3c7;border:1px solid #fde68a;border-radius:12px;padding:12px 16px;font-size:13px;color:#92400e;margin-bottom:16px;line-height:1.5}
+.calc-results{display:grid;gap:12px;margin-top:10px}
+.calc-res{background:linear-gradient(160deg,#1d6ea8,#1a9cc4 55%,#2bb3a6);color:#fff;border-radius:20px;padding:22px 24px;text-align:center;box-shadow:0 8px 24px -12px rgba(26,156,196,.5)}
+.calc-res-lbl{font-family:'Space Grotesk',monospace;font-size:16px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;opacity:.95;line-height:1.3}
+.calc-res-sub{font-size:15px;opacity:.92;font-weight:500;text-transform:none;letter-spacing:0;margin-top:6px;line-height:1.35}
+.calc-res-val{font-size:44px;font-weight:800;margin-top:8px;line-height:1;font-family:'Space Grotesk',monospace}
+.calc-res-unit{font-size:20px;font-weight:600;margin-left:5px}
+.calc-res-span{display:block;font-size:12px;font-weight:500;opacity:.9;margin-top:5px}
+
+.calc-collapse{margin-top:18px}
+.calc-collapse-head{display:flex;align-items:center;gap:8px;cursor:pointer;padding:8px 0;-webkit-tap-highlight-color:transparent}
+.calc-collapse-head svg{width:16px;height:16px;color:#94a3b8;flex-shrink:0}
+.calc-collapse-head .calc-collapse-title{font-size:13px;color:#64748b;font-weight:600;flex:1}
+.calc-collapse-head .calc-collapse-chev{transition:transform .2s}
+.calc-collapse[open] .calc-collapse-chev{transform:rotate(180deg)}
+.calc-collapse summary{list-style:none}
+.calc-collapse summary::-webkit-details-marker{display:none}
+.calc-collapse-body{padding:14px 16px;background:#f0f9ff;border:1px solid #bae6fd;border-radius:14px;margin-top:4px;font-size:13px;color:#475569;line-height:1.65}
+.calc-foil-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:10px}
+.calc-foil-table th{text-align:left;padding:0 8px 8px 0;font-weight:600;font-family:'Space Grotesk',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#64748b}
+.calc-foil-table th:nth-child(n+2){text-align:right;padding-right:0}
+.calc-foil-table td{padding:6px 8px 6px 0;color:#94a3b8}
+.calc-foil-table td:nth-child(n+2){text-align:right;padding-right:0}
+.calc-foil-table tr.current td{color:#0f172a;font-weight:600}
+.calc-foil-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#cbd5e1;margin-right:8px;vertical-align:middle}
+.calc-foil-table tr.current .calc-foil-dot{background:var(--brand)}
+.calc-disclaimer-text{font-size:12px;color:#64748b;line-height:1.6}
+
+/* RSL CROSS-PROMO */
+.rsl-promo{max-width:920px;margin:0 auto;padding:40px 28px 20px}
+.rsl-promo-card{display:flex;align-items:center;gap:24px;background:linear-gradient(135deg,#fff,#f0f9ff);border:1px solid #bae6fd;border-radius:20px;padding:24px 28px;box-shadow:0 1px 3px rgba(15,23,42,.04),0 16px 40px -20px rgba(26,156,196,.2)}
+.rsl-promo-icon{flex-shrink:0;width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,#1f78c4,#1a9cc4 55%,#2bb3a6);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -10px rgba(26,156,196,.5)}
+.rsl-promo-icon svg{width:28px;height:28px}
+.rsl-promo-body{flex:1;min-width:0}
+.rsl-promo-body h3{font-size:18px;font-weight:700;color:#0f172a;margin:0 0 4px;letter-spacing:-.01em}
+.rsl-promo-body p{font-size:14px;color:#475569;line-height:1.55;margin:0}
+.rsl-promo-cta{flex-shrink:0}
+.rsl-promo-cta .btn{background:var(--brand-grad);color:#fff;border:none;padding:12px 22px;font-size:14px;font-weight:600;border-radius:9999px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;box-shadow:0 10px 24px -10px rgba(31,120,196,.45);transition:transform .15s,filter .15s}
+.rsl-promo-cta .btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+
+/* SPORTS SECTION */
+.sports-section{padding:60px 0;background:#fafbfc;border-top:1px solid #f1f5f9;border-bottom:1px solid #f1f5f9}
+.sports-section h2{font-size:clamp(28px,3.5vw,40px);font-weight:800;letter-spacing:-.02em;margin:0 0 8px;text-align:center}
+.sports-section .sub{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto 36px;text-align:center;line-height:1.55}
+.sports-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:920px;margin:0 auto}
+@media (min-width:780px){.sports-grid{grid-template-columns:repeat(4,1fr)}}
+.sport-card{border:1px solid #e2e8f0;border-radius:18px;padding:22px;background:#fff;transition:transform .15s,box-shadow .15s}
+.sport-card:hover{transform:translateY(-2px);box-shadow:0 12px 32px -16px rgba(15,23,42,.18)}
+.sport-icon{width:42px;height:42px;border-radius:12px;background:#e0f7fa;color:var(--brand);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.sport-icon svg{width:22px;height:22px}
+.sport-card h3{font-size:17px;font-weight:700;margin:0 0 6px}
+.sport-card p{font-size:13px;color:var(--muted);line-height:1.55}
+
+/* FAQ */
+.faq-section{padding:60px 0}
+.faq-section h2{font-size:clamp(28px,3.5vw,40px);font-weight:800;letter-spacing:-.02em;margin:0 0 8px;text-align:center}
+.faq-section .sub{font-size:16px;color:var(--muted);max-width:680px;margin:0 auto 36px;text-align:center;line-height:1.55}
+.faq-list{max-width:780px;margin:0 auto}
+.faq-item{border-top:1px solid #e2e8f0;padding:18px 0}
+.faq-item:last-child{border-bottom:1px solid #e2e8f0}
+.faq-item summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;color:var(--ink)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:24px;color:#94a3b8;font-weight:300;flex-shrink:0;line-height:1}
+.faq-item[open] summary::after{content:'\2212'}
+.faq-item p{font-size:15px;color:#475569;line-height:1.7;margin:14px 0 0}
+
+/* CTA */
+.cta-section{padding:60px 0;background:var(--brand-grad);color:#fff;text-align:center}
+.cta-section h3{font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-.02em;margin:0 0 10px;color:#fff}
+.cta-section p{font-size:16px;opacity:.92;max-width:540px;margin:0 auto 24px;line-height:1.55}
+.cta-section .btn-primary{background:#fff;color:var(--brand-deep)}
+.cta-section .btn-primary:hover{background:#f8fafc;filter:none}
+
+/* FOOTER */
+footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);background:transparent;border-top:1px solid var(--line-d)}
+.footer-legal-links{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:20px;font-family:'Space Grotesk',sans-serif;font-size:15px}
+.footer-legal-links a{color:var(--brand);font-weight:500;transition:opacity .15s}
+.footer-legal-links a:hover{opacity:.7;text-decoration:underline}
+.footer-sep{color:var(--muted);opacity:.5}
+.footer-legal-line{font-size:14px;line-height:1.6;color:var(--ink);margin:6px 0}
+.footer-legal-line a{color:var(--muted);text-decoration:underline}
+.footer-copyright{margin-top:16px;color:var(--muted);font-size:13px}
+
+/* RESPONSIVE */
+@media (max-width:780px){
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .nav-burger{display:flex}
+  .hero-inner{padding:80px 0 140px}
+  .calc-card{margin:-60px 16px 0;padding:22px}
+  .sports-section,.faq-section,.cta-section{padding:48px 0}
+  .rsl-promo{padding:32px 16px 16px}
+  .rsl-promo-card{flex-direction:column;align-items:flex-start;text-align:left;padding:22px;gap:16px}
+  .rsl-promo-cta{width:100%}
+  .rsl-promo-cta .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap nav-row">
+    <a href="https://www.rigsizelive.com/de/" class="brand">
+      <img src="/icons/logo-color-lg.png" alt="RigSize Live" style="border-radius:8px" />
+      <span>RigSize<em> Live</em></span>
+    </a>
+    <div class="nav-links">
+      <a href="https://www.rigsizelive.com/de/#how">Tracking</a>
+      <a href="https://www.rigsizelive.com/de/#features">Features</a>
+      <a href="https://www.rigsizelive.com/de/#forecast">Windvorhersage</a>
+      <a href="https://www.rigsizelive.com/de/#community">Live Rigsizes</a>
+    </div>
+    <div class="nav-cta">
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-switcher-btn" id="langSwitcherBtn" aria-haspopup="true" aria-expanded="false">
+          <span>🇩🇪 DE</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-switcher-menu" role="menu">
+          <a href="https://www.rigsizelive.com/vin-foil-calculator/" data-lang="nl">🇳🇱 Nederlands</a>
+          <a href="https://www.rigsizelive.com/en/fin-foil-calculator/" data-lang="en">🇬🇧 English</a>
+          <a href="https://www.rigsizelive.com/de/finnen-foil-rechner/" data-lang="de">🇩🇪 Deutsch</a>
+          <a href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" data-lang="fr">🇫🇷 Français</a>
+          <a href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" data-lang="es">🇪🇸 Español</a>
+          <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" data-lang="it">🇮🇹 Italiano</a>
+        </div>
+      </div>
+      <a class="btn btn-ghost" href="https://app.rigsizelive.com">Webapp öffnen →</a>
+      <a class="btn btn-primary" href="https://www.rigsizelive.com/de/#download">Download</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="https://www.rigsizelive.com/de/#how">Tracking</a>
+  <a href="https://www.rigsizelive.com/de/#features">Features</a>
+  <a href="https://www.rigsizelive.com/de/#forecast">Windvorhersage</a>
+  <a href="https://www.rigsizelive.com/de/#community">Live Rigsizes</a>
+  <div class="mobile-cta">
+    <a class="btn btn-primary" href="https://www.rigsizelive.com/de/#download">App herunterladen →</a>
+    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">Webapp öffnen</a>
+  </div>
+  <div class="mobile-lang">
+    <a href="https://www.rigsizelive.com/vin-foil-calculator/" data-lang="nl">🇳🇱 Nederlands</a>
+    <a href="https://www.rigsizelive.com/en/fin-foil-calculator/" data-lang="en">🇬🇧 English</a>
+    <a href="https://www.rigsizelive.com/de/finnen-foil-rechner/" data-lang="de" class="active">🇩🇪 Deutsch</a>
+    <a href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" data-lang="fr">🇫🇷 Français</a>
+    <a href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" data-lang="es">🇪🇸 Español</a>
+    <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" data-lang="it">🇮🇹 Italiano</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-photo"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow"><span class="dot"></span> RigSize Live · Rechner</span>
+      <h1 class="headline">Finnen- & <span class="acc">Foil</span> Rechner</h1>
+      <p class="hero-sub">Berechne in Sekunden die richtige Größe für deine Windsurf-Finne, dein Windsurf-Foil, Wing-Foil oder Kite-Foil. Basierend auf deinem Gewicht, Segel und Fahrstil.</p>
+    </div>
+  </div>
+</header>
+
+<!-- CALCULATOR -->
+<section class="calc-section">
+  <div class="wrap">
+    <div class="calc-card">
+
+      <div class="calc-fld">
+        <label class="calc-lbl">Sportart</label>
+        <select class="calc-sel" id="calcDisc">
+          <option value="ws_fin">Windsurfen (Finne)</option>
+          <option value="ws_foil">Windsurfen (Foil)</option>
+          <option value="wing">Wing-Foilen</option>
+          <option value="kite">Kite-Foilen</option>
+        </select>
+      </div>
+
+      <div class="calc-fld" id="calcStyleGroup">
+        <label class="calc-lbl">Stil</label>
+        <select class="calc-sel" id="calcStyle">
+          <option value="freeride">Freeride</option>
+          <option value="slalom" selected>Slalom / Race</option>
+          <option value="wave">Wave</option>
+          <option value="freestyle">Freestyle</option>
+        </select>
+      </div>
+
+      <div class="calc-row2">
+        <div class="calc-fld">
+          <label class="calc-lbl">Gewicht (kg)</label>
+          <input type="text" inputmode="decimal" id="calcWeight" value="80" class="calc-inp">
+        </div>
+        <div class="calc-fld" id="calcSailGroup">
+          <label class="calc-lbl" id="calcSailLabel">Segelgröße (m²)</label>
+          <input type="text" inputmode="decimal" id="calcSail" value="" placeholder="z.B. 7.5" class="calc-inp">
+        </div>
+      </div>
+
+      <div class="calc-fld" id="calcWidthGroup">
+        <label class="calc-lbl">Boardbreite (cm) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#94a3b8">- optional</span></label>
+        <input type="text" inputmode="decimal" id="calcWidth" value="" placeholder="z.B. 70" class="calc-inp">
+      </div>
+
+      <label class="calc-weed" id="calcWeedGroup">
+        <input type="checkbox" id="calcWeed">
+        <span>🌿 Weedfinnen-Korrektur</span>
+      </label>
+
+      <div class="calc-fld">
+        <label class="calc-lbl">Erfahrungslevel</label>
+        <div class="calc-pills" id="calcLevelPills">
+          <button type="button" class="calc-pill" data-v="beginner">Anfänger</button>
+          <button type="button" class="calc-pill on" data-v="intermediate">Fortgeschritten</button>
+          <button type="button" class="calc-pill" data-v="gevorderd">Profi</button>
+        </div>
+      </div>
+
+      <div class="calc-fld" id="calcWindGroup">
+        <label class="calc-lbl" id="calcWindLabel">Windbedingungen</label>
+        <div class="calc-pills" id="calcWindPills">
+          <button type="button" class="calc-pill" data-v="low">Underpowered</button>
+          <button type="button" class="calc-pill on" data-v="mid">Normal</button>
+          <button type="button" class="calc-pill" data-v="high">Overpowered</button>
+        </div>
+      </div>
+
+      <div class="calc-warn" id="calcWarn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;flex-shrink:0;margin-top:1px"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span id="calcWarnTxt"></span>
+      </div>
+
+      <div class="calc-results" id="calcResults"></div>
+
+      <details class="calc-collapse" id="calcFoilSetup">
+        <summary class="calc-collapse-head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span class="calc-collapse-title">Foil-Setup-Empfehlung</span>
+          <svg class="calc-collapse-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="calc-collapse-body" id="calcFoilSetupContent"></div>
+      </details>
+
+      <details class="calc-collapse">
+        <summary class="calc-collapse-head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span class="calc-collapse-title">Disclaimer</span>
+          <svg class="calc-collapse-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <div class="calc-collapse-body">
+          <p class="calc-disclaimer-text">Dieser Rechner liefert eine Empfehlung auf Basis von Benchmark-Daten. Die endgültige Wahl hängt von persönlichen Vorlieben, lokalen Bedingungen und spezifischen Board-Eigenschaften ab. Nutze die Empfehlung als Ausgangspunkt und passe sie nach eigenen Erfahrungen auf dem Wasser an.</p>
+        </div>
+      </details>
+
+      <p style="text-align:center;margin-top:16px;font-size:11px;color:#94a3b8;line-height:1.55">Formeln basierend auf James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE und MACkite Benchmarks.</p>
+
+    </div>
+  </div>
+</section>
+
+<!-- SPORTS -->
+<section class="sports-section">
+  <div class="wrap">
+    <h2>Für welche Wassersportart?</h2>
+    <p class="sub">Der Rechner deckt alle vier Disziplinen ab, auf die RigSize Live spezialisiert ist. Basierend auf umfangreichen Markt-Benchmarks gegen Materialien führender Hersteller und öffentlichen Gear-Daten von Profi-Ridern.</p>
+    <div class="sports-grid">
+      <div class="sport-card">
+        <div class="sport-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h13a3 3 0 100-6M3 14h16a3 3 0 110 6M3 11h9"/></svg></div>
+        <h3>Windsurfen — Finne</h3>
+        <p>Finnenlänge in cm für Slalom, Freeride, Wave und Freestyle. Inklusive Weedfinnen-Korrektur und G10 vs Carbon Empfehlung.</p>
+      </div>
+      <div class="sport-card">
+        <div class="sport-icon" style="background:#e0e7ff;color:#4338ca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 16l5-8 4 5 4-3 5 6"/></svg></div>
+        <h3>Windsurf-Foil</h3>
+        <p>Frontflügel-Fläche (cm²) für Low / Mid / High Aspect, plus Mast- und Fuselage-Empfehlung.</p>
+      </div>
+      <div class="sport-card">
+        <div class="sport-icon" style="background:#fef3c7;color:#92400e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
+        <h3>Wing-Foilen</h3>
+        <p>Foil-Größe basierend auf Wing-Größe und Gewicht. Freeride, Allround und Downwind.</p>
+      </div>
+      <div class="sport-card">
+        <div class="sport-icon" style="background:#fce7f3;color:#9d174d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8c4-4 12-4 16 0M6 12c3-3 9-3 12 0M8 16c2-2 6-2 8 0"/></svg></div>
+        <h3>Kite-Foilen</h3>
+        <p>Frontflügel-Größe für Freeride, Freestyle/Big Air und Race. Inklusive Setup-Empfehlung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RSL CROSS-PROMO -->
+<section class="rsl-promo">
+  <div class="rsl-promo-card">
+    <div class="rsl-promo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7"/><path d="M2 12s3 7 10 7 10-7 10-7"/><circle cx="12" cy="12" r="3"/></svg>
+    </div>
+    <div class="rsl-promo-body">
+      <h3>Größe gefunden? Ab aufs Wasser.</h3>
+      <p>Live-Wind für deinen Spot, Sessions tracken und sehen, was andere Rider fahren — RigSize Live bringt alles zusammen.</p>
+    </div>
+    <div class="rsl-promo-cta">
+      <a class="btn" href="https://www.rigsizelive.com/de/">RigSize Live entdecken →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="wrap">
+    <h2>Häufig gestellte Fragen</h2>
+    <p class="sub">Die Fragen, mit denen die meisten Besucher auf diese Seite kommen.</p>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Wie lang muss meine Windsurf-Finne sein?</summary>
+        <p>Die richtige Finnenlänge hängt von deinem Gewicht, der Segelgröße, der Boardbreite und der Disziplin ab. Faustregel für Slalom: 30-34 cm bei einem 7,5 m² Segel. Für Freeride 28-32 cm, für Wave 18-24 cm und für Freestyle 16-22 cm. Der Rechner ermittelt es präzise basierend auf deinen Eingaben — inklusive Weedfinnen-Korrektur und einer separaten Empfehlung für G10 versus Carbon-Finnen.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Wing-Größe brauche ich zum Wing-Foilen?</summary>
+        <p>Die Wing-Größe hängt von deinem Gewicht und dem Wind ab. Für einen Rider von 75-85 kg bei 15-20 Knoten Wind ist ein 5,0 m² Wing üblich. Bei leichterem Wind (10-15 Knoten) brauchst du 6,0-7,0 m², bei starkem Wind (25+ Knoten) 3,5-4,0 m². Viele Wing-Foiler haben zwei Größen im Quiver, um den gesamten Windbereich abzudecken. Der Rechner nutzt diese Eingabe, um deine Foilgröße zu bestimmen.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Foilgröße brauche ich zum Wing-Foilen?</summary>
+        <p>Schwerere Rider, leichter Wind oder Anfänger brauchen einen größeren Frontflügel — typischerweise 1500-2200 cm² mit Low-Aspect-Profil. Fortgeschrittene Rider nutzen meistens 1200-1500 cm². Profis bei starkem Wind kommen mit 800-1200 cm² High Aspect aus. Der Rechner liefert drei Größen — Low, Mid und High Aspect — abgestimmt auf dein Gewicht und deine Wing-Größe.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Kite-Foil-Größe für Anfänger?</summary>
+        <p>Für einen Anfänger im Kite-Foilen ist ein großer Frontflügel essenziell: 900-1200 cm², dicke Profile, niedriges Aspect Ratio. Das liefert frühen Lift, stabiles Fahrverhalten und Verzeihen bei Touch-Downs. Erst auf Profi-Niveau wechselt man zu 500-800 cm² High-Aspect-Race-Foils. Kombiniere mit einem kürzeren Mast (55-65 cm) für extra Kontrolle als Anfänger.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Stimmt die Faustregel: Finnenlänge = Segelgröße × 5 + 4?</summary>
+        <p>Diese klassische Faustregel funktioniert noch einigermaßen für traditionell lang-schmale Boards, ist aber überholt für die aktuelle Generation kurzer und breiter Boards. Ein 7,5 m² Segel würde nach dieser Regel eine 41,5 cm Finne bedeuten — in der Praxis viel zu lang für moderne Slalom-Boards von 75-85 cm Breite. Unser Rechner verwendet optimierte Formeln (Segelgröße × 4,0 + Korrekturen für Boardbreite und Gewicht), getestet gegen Materialien von Starboard, K4, Tabou und anderen Marken.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie messe ich die Boardbreite für die richtige Finnengröße?</summary>
+        <p>Verwende die "One-Foot-Off"-Regel (OFO): miss die Boardbreite genau 30 cm (1 Foot) vom Heck entfernt. Diese Breite ist ein üblicher Ausgangspunkt für die Finnenlänge — die maximale Finnenlänge entspricht etwa dieser Breite plus 2 cm, die minimale ungefähr 6-10 cm weniger. Der Rechner nutzt diese Breite als eine der Eingabevariablen für eine präzisere Empfehlung.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was ist der Unterschied zwischen Low, Mid und High Aspect Foils?</summary>
+        <p>Low Aspect = breiterer Frontflügel, leichter zu Lift bringen, stabiler — ideal für Freeride und Anfänger. Mid Aspect = Balance zwischen Lift und Speed, geeignet für Allround und Freestyle. High Aspect = langer schmaler Flügel, hohe Topspeed, effizientes Gleiten — gedacht für Race, Downwind und fortgeschrittenen Freeride. Der Rechner zeigt alle drei, damit du wählen kannst, was zu deinem Fahrstil passt.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Finnengröße für Wave-Windsurfen?</summary>
+        <p>Wave-Finnen sind deutlich kürzer als Freeride und Slalom. Für einen Rider von 75-85 kg mit einem 4,5-5,5 m² Wave-Segel liegt die richtige Länge zwischen 18 und 24 cm. Single-Fin-Setups gehen etwas länger, Thruster/Quad-Setups verwenden kürzere Fronts (12-16 cm) plus kleinere Seitenfinnen. Bei Wave-Finnen zählt das Profil und die Steifigkeit fast mehr als die Länge: weichere Profile geben mehr Drive in der Kurve.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Was ist eine Weedfinne und wann verwendet man sie?</summary>
+        <p>Eine Weedfinne hat ein stark nach hinten gepfeiltes Profil, entworfen um Pflanzenmaterial abzuwerfen statt sich darin zu verfangen. Verwende sie an Spots mit Algen, Gras oder seichtem Sandwasser — typisch an der Ostsee bei Zingst, dem Steinhuder Meer, Gardasee in der Hochsaison oder an Süßwasserseen. Eine Weedfinne verschiebt den Druckpunkt nach hinten, also stelle Mastfuß und Fußschlaufen ebenfalls etwas weiter hinten ein für die richtige Balance.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Wie viel kürzer muss meine Weedfinne sein?</summary>
+        <p>Für Slalom und Freeride ist eine Weedfinne etwa 18% kürzer als eine normale Finne bei vergleichbarer Leistung (durch die größere Oberfläche pro cm Länge). Für Wave und Freestyle: 10% kürzer — kürzere Finnen haben relativ weniger Oberflächen-Unterschied. Der Rechner passt das automatisch an, wenn du den Weedfinnen-Schalter aktivierst.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Welche Mastlänge für Wing-Foil oder Kite-Foil?</summary>
+        <p>Für Anfänger: ein kürzerer Mast (60-75 cm) hält dich näher am Wasser — weniger einschüchternd und weichere Touch-Downs. Fortgeschritten: 75-85 cm für mehr Spielraum zur Höhenkorrektur. Profi: 85-95 cm für Downwind und choppy Wasser — geringeres Risiko von Breaching. Berücksichtige auch die Wassertiefe an deinem Spot: ein 90 cm Mast funktioniert nicht in 1 m Wasser. Der Rechner zeigt eine Mastempfehlung pro Level im Foil-Setup-Block.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Carbon oder G10 Finne — was ist der Unterschied?</summary>
+        <p>G10 (Glasfaser-Epoxid-Laminat) ist dicker, fehlerverzeihender, günstiger und hervorragend für Freeride und Slalom-Einsteiger. Carbon ist dünner, steifer, schneller und leichter — aber weniger fehlerverzeihend in choppy Wasser. Der Rechner liefert beide Größen, weil eine Carbon-Finne in der Regel etwa 5% kürzer sein kann als eine G10 bei vergleichbarer Leistung (MUF X-Ride vs Ride Benchmark).</p>
+      </details>
+      <details class="faq-item">
+        <summary>Funktioniert dieser Rechner für alle Marken (Starboard, F-One, K4...)?</summary>
+        <p>Ja. Die Formeln sind gegen umfangreiche Markt-Benchmarks validiert — Materialien und Publikationen von Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA und MACkite, plus öffentliche Finnen-Guides vom PWA-Profi Nico Prien (NP7) und den Bornhoft/RYA Finnen-Studien. Sofern du die richtige Disziplin und den passenden Stil wählst, liefert der Rechner eine markenunabhängige Empfehlung, die du 1-zu-1 auf das Sortiment jedes Herstellers übertragen kannst.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="wrap">
+    <h3>Mehr als nur Rechnen?</h3>
+    <p>In RigSize Live trackst du Sessions, erhältst Windvorhersagen für deinen Spot und siehst, wie andere Rider performen.</p>
+    <a class="btn btn-primary" href="https://www.rigsizelive.com/de/#download">App herunterladen</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-clean">
+  <div class="wrap">
+    <div class="footer-legal-links">
+      <a href="https://app.rigsizelive.com/privacy.html">Datenschutz</a>
+      <span class="footer-sep">&middot;</span>
+      <a href="https://app.rigsizelive.com/terms.html">AGB</a>
+    </div>
+    <p class="footer-legal-line">RigSize Live ist ein Produkt der FTR Management B.V.</p>
+    <p class="footer-legal-line">KvK 53751671 &middot; <a href="mailto:info@rigsizelive.com">info@rigsizelive.com</a></p>
+    <p class="footer-legal-line footer-copyright">© 2025–2026 FTR Management B.V.</p>
+  </div>
+</footer>
+
+<script>
+// Burger + lang switcher
+(function(){
+  var burger = document.getElementById('navBurger');
+  var menu = document.getElementById('mobileMenu');
+  if(burger && menu){
+    burger.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    menu.addEventListener('click', function(e){ if(e.target.tagName === 'A'){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; } });
+  }
+  var ls = document.getElementById('langSwitcher');
+  var lsBtn = document.getElementById('langSwitcherBtn');
+  if(ls && lsBtn){
+    lsBtn.addEventListener('click', function(e){ e.stopPropagation(); ls.classList.toggle('open'); });
+    document.addEventListener('click', function(){ ls.classList.remove('open'); });
+  }
+})();
+
+// CALCULATOR
+(function(){
+  var I18N = {"SAIL": "Segelgröße (m²)", "SAIL_PH": "z.B. 7.5", "WING_SIZE": "Wing-Größe (m²)", "WING_PH": "z.B. 5.0", "WIND": "Windbedingungen", "RIDER": "Rider-Typ", "WIND_LOW": "Underpowered", "WIND_MID": "Normal", "WIND_HIGH": "Overpowered", "RIDER_LIGHT": "Leichtwind", "RIDER_ALLROUND": "Allround", "RIDER_STRONG": "Starkwind", "RES_STD": "Standard", "RES_STD_SUB": "G10 - dicker, weniger steif", "RES_PERF": "Performance", "RES_PERF_SUB": "Carbon - dünn, steif", "WARN_MAX": "Max. Finnenlänge {len} cm für Board mit {board} cm.", "WARN_MIN": "Mindestens {len} cm für {style}.", "WARN_FOIL_WIDE": "Foil-Spannweite überschreitet die Boardbreite.", "BEGINNER": "Anfänger", "INTERMEDIATE": "Fortgeschritten", "ADVANCED": "Profi", "LEVEL": "Erfahrungslevel", "FUSELAGE": "Fuselage", "MAST": "Mast", "FOIL_NOTE": "Fuselage = Abstand zwischen Frontflügel und Stabilizer. Mast = Höhe des Boards über dem Foil. Länger = stabiler, kürzer = wendiger."};
+
+  var LF={ws_fin:{beginner:1.10,intermediate:1.03,gevorderd:0.92},ws_foil:{beginner:1.10,intermediate:0.85,gevorderd:0.70},wing:{beginner:1.10,intermediate:0.78,gevorderd:0.60},kite:{beginner:1.10,intermediate:1.03,gevorderd:0.85}};
+  var WF={ws_fin:{low:1.07,mid:1.0,high:0.93},ws_foil:{low:1.10,mid:1.0,high:0.90},wing:{low:1.10,mid:1.0,high:0.90},kite:{low:1.0,mid:1.0,high:1.0}};
+  var FOIL_SETUP={ws_foil:{beginner:{fuselage:'75-85',mast:'70-80'},intermediate:{fuselage:'65-75',mast:'75-85'},gevorderd:{fuselage:'55-65',mast:'80-90'}},wing:{beginner:{fuselage:'70-80',mast:'65-75'},intermediate:{fuselage:'60-70',mast:'70-80'},gevorderd:{fuselage:'50-60',mast:'75-85'}},kite:{beginner:{fuselage:'60-70',mast:'55-65'},intermediate:{fuselage:'50-60',mast:'60-70'},gevorderd:{fuselage:'40-55',mast:'65-80'}}};
+
+  var lvl='intermediate', wnd='mid';
+  function $(id){return document.getElementById(id);}
+  function num(x,def){var v=parseFloat(String(x||'').replace(',','.'));return isNaN(v)?def:v;}
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+
+  function setActive(group,val){
+    var btns=document.querySelectorAll('#'+group+' .calc-pill');
+    for(var i=0;i<btns.length;i++) btns[i].classList.toggle('on', btns[i].dataset.v===val);
+  }
+
+  function updateUI(){
+    var d=$('calcDisc').value;
+    $('calcStyleGroup').style.display=(d==='ws_fin')?'block':'none';
+    $('calcWidthGroup').style.display=(d.indexOf('ws')===0)?'block':'none';
+    $('calcWindGroup').style.display=(d==='kite')?'none':'block';
+    $('calcSailGroup').style.display=(d==='kite')?'none':'block';
+    $('calcWeedGroup').style.display=(d==='ws_fin')?'flex':'none';
+    $('calcFoilSetup').style.display=(d==='ws_fin')?'none':'block';
+    var sailLabel=$('calcSailLabel');
+    var sailInp=$('calcSail');
+    if(d==='wing'){
+      sailLabel.textContent=I18N.WING_SIZE;
+      sailInp.placeholder=I18N.WING_PH;
+    } else {
+      sailLabel.textContent=I18N.SAIL;
+      sailInp.placeholder=I18N.SAIL_PH;
+    }
+    $('calcWindLabel').textContent=(d==='ws_fin')?I18N.WIND:I18N.RIDER;
+    var wb=document.querySelectorAll('#calcWindPills .calc-pill');
+    if(wb.length===3){
+      if(d==='ws_fin'){wb[0].textContent=I18N.WIND_LOW;wb[1].textContent=I18N.WIND_MID;wb[2].textContent=I18N.WIND_HIGH;}
+      else if(d==='kite'){wb[0].textContent='';wb[1].textContent='';wb[2].textContent='';}
+      else {wb[0].textContent=I18N.RIDER_LIGHT;wb[1].textContent=I18N.RIDER_ALLROUND;wb[2].textContent=I18N.RIDER_STRONG;}
+    }
+    calc();
+  }
+
+  function calc(){
+    var d=$('calcDisc').value;
+    var wRaw=$('calcWeight').value;
+    var sRaw=$('calcSail').value;
+    var bRaw=$('calcWidth').value;
+    var sd=$('calcStyle').value;
+    var weed=$('calcWeed').checked;
+    var needsSail=(d!=='kite');
+    if(!wRaw||(needsSail&&!sRaw)){render(null);return;}
+    var w=clamp(num(wRaw,80),30,150);
+    var s=clamp(num(sRaw,7.5),2,13);
+    var b=clamp(num(bRaw,70),45,105);
+    var resA,resB,resC,spanA,spanB,spanC,warn='',unit='cm';
+    if(d==='ws_fin'){
+      var base=((s*4.0)+(b-70)*0.20+(w-80)*0.22+10.5)*LF.ws_fin[lvl]*WF.ws_fin[wnd];
+      var dm=(sd==='slalom')?1.05:(sd==='freeride')?1.01:(sd==='wave')?0.73:0.68;
+      var fb=base*dm;
+      var wfm={slalom:0.82,freeride:0.82,wave:0.90,freestyle:0.90};
+      resA=weed?fb*(wfm[sd]||0.82):fb;
+      resB=resA*0.95;
+      var maxR=(sd==='slalom')?0.70:0.65;
+      var maxL=b*maxR;
+      if(bRaw&&resA>maxL){resA=maxL;warn=I18N.WARN_MAX.replace('{len}',Math.round(maxL)).replace('{board}',b);}
+      if(bRaw&&resB>maxL)resB=maxL;
+      var minL=(sd==='freeride'||sd==='slalom')?20:14;
+      if(resA<minL){resA=minL;warn=I18N.WARN_MIN.replace('{len}',minL).replace('{style}',sd);}
+      if(resB<minL)resB=minL;
+    } else if(d==='ws_foil'){
+      unit='cm²';
+      resA=((w*10)+(s*100))*LF.ws_foil[lvl]*WF.ws_foil[wnd];
+      resC=resA*0.90;resB=resA*0.75;
+      spanA=Math.sqrt(resA*5.0);spanC=Math.sqrt(resC*7.0);spanB=Math.sqrt(resB*10.0);
+      if(spanB>b*1.45)warn=I18N.WARN_FOIL_WIDE;
+    } else if(d==='wing'){
+      unit='cm²';
+      resA=((w*20)+(s*45))*LF.wing[lvl]*WF.wing[wnd];
+      resC=resA*0.85;resB=resA*0.70;
+      spanA=Math.sqrt(resA*5.0);spanC=Math.sqrt(resC*7.5);spanB=Math.sqrt(resB*10.0);
+    } else if(d==='kite'){
+      unit='cm²';
+      resA=(w*9+150)*LF.kite[lvl];
+      resC=resA*0.85;resB=resA*0.65;
+      spanA=Math.sqrt(resA*4.5);spanC=Math.sqrt(resC*6.0);spanB=Math.sqrt(resB*9.0);
+    }
+    render({d:d,resA:resA,resB:resB,resC:resC,spanA:spanA,spanB:spanB,spanC:spanC,warn:warn,unit:unit});
+    updateFoilSetup();
+  }
+
+  function render(r){
+    var w=$('calcWarn');var res=$('calcResults');
+    if(!r){res.innerHTML='';w.style.display='none';return;}
+    if(r.warn){w.style.display='flex';$('calcWarnTxt').textContent=r.warn;} else w.style.display='none';
+    var L;
+    if(r.d==='ws_fin') L=[[I18N.RES_STD,I18N.RES_STD_SUB],[I18N.RES_PERF,I18N.RES_PERF_SUB]];
+    else if(r.d==='ws_foil') L=[['Low Aspect','freeride'],['Mid Aspect','freerace'],['High Aspect','slalom / race']];
+    else if(r.d==='wing') L=[['Low Aspect','freeride'],['Mid Aspect','allround / freestyle'],['High Aspect','downwind / race']];
+    else L=[['Low Aspect','freeride'],['Mid Aspect','freestyle / big air'],['High Aspect','race']];
+    function card(lbl,sub,val,span){
+      return '<div class="calc-res"><div class="calc-res-lbl">'+lbl+'<div class="calc-res-sub">'+sub+'</div></div><div class="calc-res-val">'+Math.round(val)+'<span class="calc-res-unit">'+r.unit+'</span></div>'+(span?'<span class="calc-res-span">'+Math.round(span)+' cm span</span>':'')+'</div>';
+    }
+    if(r.d==='ws_fin'){
+      res.innerHTML=card(L[0][0],L[0][1],r.resA,null)+card(L[1][0],L[1][1],r.resB,null);
+    } else {
+      res.innerHTML=card(L[0][0],L[0][1],r.resA,r.spanA)+card(L[1][0],L[1][1],r.resC,r.spanC)+card(L[2][0],L[2][1],r.resB,r.spanB);
+    }
+  }
+
+  function updateFoilSetup(){
+    var d=$('calcDisc').value;
+    var block=$('calcFoilSetup');
+    var content=$('calcFoilSetupContent');
+    if(!FOIL_SETUP[d]){block.style.display='none';return;}
+    block.style.display='block';
+    var data=FOIL_SETUP[d];
+    var levels=[['beginner',I18N.BEGINNER],['intermediate',I18N.INTERMEDIATE],['gevorderd',I18N.ADVANCED]];
+    var html='<table class="calc-foil-table"><thead><tr><th>'+I18N.LEVEL+'</th><th>'+I18N.FUSELAGE+'</th><th>'+I18N.MAST+'</th></tr></thead><tbody>';
+    for(var i=0;i<levels.length;i++){
+      var k=levels[i][0];var lbl=levels[i][1];var info=data[k];
+      var cls=(k===lvl)?' class="current"':'';
+      html+='<tr'+cls+'><td><span class="calc-foil-dot"></span>'+lbl+'</td><td>'+info.fuselage+' cm</td><td>'+info.mast+' cm</td></tr>';
+    }
+    html+='</tbody></table><p style="margin:10px 0 0;font-size:12px;color:#64748b;line-height:1.55">'+I18N.FOIL_NOTE+'</p>';
+    content.innerHTML=html;
+  }
+
+  // Event listeners
+  ['calcDisc','calcStyle','calcWeight','calcSail','calcWidth','calcWeed'].forEach(function(id){
+    var e=$(id);if(!e)return;
+    var ev=(id==='calcWeed')?'change':'input';
+    e.addEventListener(ev,function(){ if(id==='calcDisc')updateUI(); else calc(); });
+  });
+  document.querySelectorAll('#calcLevelPills .calc-pill').forEach(function(b){
+    b.addEventListener('click',function(){lvl=b.dataset.v;setActive('calcLevelPills',lvl);calc();});
+  });
+  document.querySelectorAll('#calcWindPills .calc-pill').forEach(function(b){
+    b.addEventListener('click',function(){wnd=b.dataset.v;setActive('calcWindPills',wnd);calc();});
+  });
+
+  updateUI();
+})();
+</script>
+
+</body>
+</html>

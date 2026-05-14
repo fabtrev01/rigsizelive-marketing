@@ -1,0 +1,159 @@
+{
+  "lang.flag": "🇮🇹",
+  "lang.code": "IT",
+  "lang.name": "Italiano",
+
+  "meta.title": "Calcolatore pinna e foil — trova la tua misura | RigSize Live",
+  "meta.description": "Calcolatore online gratuito per pinna da windsurf, foil da windsurf, wing foil e kite foil. Calcola la misura della pinna o del foil in base a peso, vela e stile.",
+
+  "hero.eyebrow": "RigSize Live · Calcolatore",
+  "hero.title_pre": "Calcolatore",
+  "hero.title_acc": "Pinna",
+  "hero.title_post": "& Foil",
+  "hero.subtitle": "Calcola in pochi secondi la misura corretta per la tua pinna da windsurf, foil da windsurf, wing foil o kite foil. In base al tuo peso, vela e stile di navigazione.",
+
+  "calc.sport": "Sport",
+  "calc.ws_fin": "Windsurf (Pinna)",
+  "calc.ws_foil": "Windsurf (Foil)",
+  "calc.wing": "Wing Foil",
+  "calc.kite": "Kite Foil",
+  "calc.style": "Stile",
+  "calc.style_freeride": "Freeride",
+  "calc.style_slalom": "Slalom / Race",
+  "calc.style_wave": "Onda",
+  "calc.style_freestyle": "Freestyle",
+  "calc.weight": "Peso (kg)",
+  "calc.sail": "Misura vela (m²)",
+  "calc.wing_size": "Misura wing (m²)",
+  "calc.sail_ph": "es. 7.5",
+  "calc.wing_ph": "es. 5.0",
+  "calc.width": "Larghezza tavola (cm)",
+  "calc.width_ph": "es. 70",
+  "calc.optional": "opzionale",
+  "calc.weed_fin": "🌿 Correzione pinna weed",
+  "calc.level": "Livello",
+  "calc.beginner": "Principiante",
+  "calc.intermediate": "Intermedio",
+  "calc.advanced": "Avanzato",
+  "calc.wind": "Condizioni di vento",
+  "calc.rider": "Tipo di rider",
+  "calc.wind_low": "Underpowered",
+  "calc.wind_mid": "Normale",
+  "calc.wind_high": "Overpowered",
+  "calc.rider_light": "Vento leggero",
+  "calc.rider_allround": "Allround",
+  "calc.rider_strong": "Vento forte",
+  "calc.res_std": "Standard",
+  "calc.res_std_sub": "G10 - più spesso, meno rigido",
+  "calc.res_perf": "Performance",
+  "calc.res_perf_sub": "Carbonio - sottile, rigido",
+  "calc.warn_max": "Lunghezza max pinna {len} cm per tavola di {board} cm.",
+  "calc.warn_min": "Minimo {len} cm per {style}.",
+  "calc.warn_foil_wide": "L'apertura del foil supera la larghezza della tavola.",
+  "calc.foil_setup": "Consigli setup foil",
+  "calc.fuselage": "Fusoliera",
+  "calc.mast": "Albero",
+  "calc.foil_note": "Fusoliera = distanza tra ala anteriore e stabilizzatore. Albero = altezza della tavola sopra il foil. Più lungo = più stabile, più corto = più manovrabile.",
+  "calc.disclaimer": "Avvertenza",
+  "calc.disclaimer_text": "Questo calcolatore fornisce una raccomandazione basata su dati di benchmark. La scelta finale dipende dalle preferenze personali, dalle condizioni locali e dalle caratteristiche specifiche della tavola. Usalo come punto di partenza e adatta in base alla tua esperienza in acqua.",
+  "calc.sources": "Formule basate sui benchmark di James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE e MACkite.",
+
+  "promo.title": "Misura trovata? In acqua!",
+  "promo.text": "Vento in diretta per il tuo spot, tracking delle sessioni e visione del materiale di altri rider — RigSize Live riunisce tutto in un unico posto.",
+  "promo.button": "Scopri RigSize Live →",
+
+  "sports.title": "Per quale sport acquatico?",
+  "sports.subtitle": "Il calcolatore copre tutte e quattro le discipline in cui RigSize Live è specializzato. Basato su ampi benchmark di mercato confrontati con il materiale dei produttori leader e i dati pubblici di gear di rider professionisti.",
+  "sports.ws_fin_title": "Windsurf — pinna",
+  "sports.ws_fin_desc": "Lunghezza pinna in cm per slalom, freeride, onda e freestyle. Inclusa correzione pinna weed e consiglio G10 vs Carbonio.",
+  "sports.ws_foil_title": "Foil da windsurf",
+  "sports.ws_foil_desc": "Superficie ala anteriore (cm²) per low / mid / high aspect, più consigli su albero e fusoliera.",
+  "sports.wing_title": "Wing Foil",
+  "sports.wing_desc": "Misura del foil in base alla misura della wing e al peso. Freeride, allround e downwind.",
+  "sports.kite_title": "Kite Foil",
+  "sports.kite_desc": "Misura ala anteriore per freeride, freestyle/big air e race. Con consigli di setup.",
+
+  "faq.title": "Domande frequenti",
+  "faq.subtitle": "Le domande con cui la maggior parte dei visitatori arriva su questa pagina.",
+  "faq.items": [
+    {
+      "q": "Quanto deve essere lunga la mia pinna da windsurf?",
+      "a": "La lunghezza corretta della pinna dipende dal tuo peso, dalla misura della vela, dalla larghezza della tavola e dalla disciplina. Regola pratica per lo slalom: 30-34 cm con una vela da 7,5 m². Per freeride 28-32 cm, per onda 18-24 cm e per freestyle 16-22 cm. Il calcolatore la determina con precisione in base ai tuoi dati — inclusa la correzione pinna weed e una misura separata per pinne in G10 rispetto al carbonio."
+    },
+    {
+      "q": "Che misura di wing mi serve per il wing foil?",
+      "a": "La misura della wing dipende dal tuo peso e dal vento. Per un rider di 75-85 kg con 15-20 nodi di vento, una wing da 5,0 m² è standard. Con vento più leggero (10-15 nodi) servono 6,0-7,0 m²; con vento forte (25+ nodi) 3,5-4,0 m². Molti wing foiler hanno due misure nel quiver per coprire l'intero range di vento. Il calcolatore usa questo dato per determinare la misura del tuo foil."
+    },
+    {
+      "q": "Che misura di foil mi serve per il wing foil?",
+      "a": "Rider più pesanti, vento leggero o principianti hanno bisogno di un'ala anteriore più grande — tipicamente 1500-2200 cm² con profilo low aspect. I rider intermedi usano di solito 1200-1500 cm². Gli avanzati con vento forte se la cavano con 800-1200 cm² high aspect. Il calcolatore fornisce tre misure — low, mid e high aspect — adattate al tuo peso e alla misura della wing."
+    },
+    {
+      "q": "Che misura di kite foil per un principiante?",
+      "a": "Per un principiante nel kite foil, un'ala anteriore grande è essenziale: 900-1200 cm², profili spessi, aspect ratio basso. Questo offre lift precoce, comportamento stabile e tolleranza nei touch-down. Si passa ai foil da race 500-800 cm² high aspect solo a livello avanzato. Abbinala a un albero più corto (55-65 cm) per maggior controllo da principiante."
+    },
+    {
+      "q": "È vera la regola: lunghezza pinna = misura vela × 5 + 4?",
+      "a": "Questa regola classica funziona ancora discretamente per le tavole tradizionali lunghe e strette, ma è superata per l'attuale generazione di tavole corte e larghe. Una vela da 7,5 m² implicherebbe una pinna da 41,5 cm — in pratica troppo lunga per le tavole moderne da slalom di 75-85 cm di larghezza. Il nostro calcolatore usa formule ottimizzate (misura vela × 4,0 + correzioni per larghezza tavola e peso), testate contro il materiale di Starboard, K4, Tabou e altri marchi."
+    },
+    {
+      "q": "Come misuro la larghezza della tavola per la misura corretta della pinna?",
+      "a": "Usa la regola \"one-foot-off\" (OFO): misura la larghezza della tavola esattamente a 30 cm (1 piede) dalla coda. Questa larghezza è un punto di partenza standard per la lunghezza della pinna — la lunghezza massima della pinna è circa questa larghezza più 2 cm, la minima 6-10 cm in meno. Il calcolatore usa questa larghezza come una delle variabili di input per una raccomandazione più precisa."
+    },
+    {
+      "q": "Qual è la differenza tra foil low, mid e high aspect?",
+      "a": "Low aspect = ala anteriore più larga, più facile da decollare, più stabile — ideale per freeride e principianti. Mid aspect = equilibrio tra lift e velocità, adatto ad allround e freestyle. High aspect = ala lunga e stretta, velocità massima elevata, glide efficiente — pensato per race, downwind e freeride avanzato. Il calcolatore mostra tutti e tre così puoi scegliere in base al tuo stile."
+    },
+    {
+      "q": "Che misura di pinna per il windsurf da onda?",
+      "a": "Le pinne da onda sono nettamente più corte di quelle da freeride e slalom. Per un rider di 75-85 kg con una vela da onda da 4,5-5,5 m², la lunghezza corretta è tra 18 e 24 cm. I setup single-fin vanno un po' più lunghi, i setup thruster/quad usano front più corti (12-16 cm) più side più piccole. Nelle pinne da onda il profilo e la rigidità contano quasi più della lunghezza: profili più morbidi danno più drive in curva."
+    },
+    {
+      "q": "Cos'è una pinna weed e quando si usa?",
+      "a": "Una pinna weed ha un profilo molto inclinato all'indietro, progettata per scivolare sopra il materiale vegetale invece che impigliarsi. Usala negli spot con alghe, erbe o acqua bassa sabbiosa — tipico nei laghi del nord come il Lago di Garda durante la stagione estiva, sull'Adriatico in alcune lagune, o in certi spot della Sardegna meridionale. Una pinna weed sposta il punto di pressione verso poppa, quindi sposta anche il piede d'albero e gli strap leggermente all'indietro per mantenere il giusto equilibrio.",
+      "_quality_note": "Italiaanse weed-spots zijn minder eenduidig vastgesteld; voorbeelden zijn benaderend"
+    },
+    {
+      "q": "Di quanto più corta deve essere la mia pinna weed?",
+      "a": "Per slalom e freeride una pinna weed è circa il 18% più corta di una pinna normale a parità di prestazioni (per via della maggiore superficie per cm di lunghezza). Per onda e freestyle: 10% più corta — le pinne più corte hanno una differenza di superficie relativamente minore. Il calcolatore applica questo automaticamente quando attivi il toggle pinna weed."
+    },
+    {
+      "q": "Che lunghezza d'albero per wing foil o kite foil?",
+      "a": "Per principianti: un albero più corto (60-75 cm) ti tiene più vicino all'acqua — meno intimidatorio e touch-down più morbidi. Intermedio: 75-85 cm per più margine di correzione in altezza. Avanzato: 85-95 cm per downwind e mare formato — minor rischio di breaching. Considera anche la profondità dell'acqua sul tuo spot: un albero da 90 cm non funziona in 1 m d'acqua. Il calcolatore mostra una raccomandazione di albero per livello nel blocco foil setup."
+    },
+    {
+      "q": "Carbonio o G10 — che differenza c'è per una pinna?",
+      "a": "G10 (laminato vetroresina-epossidica) è più spesso, più tollerante, più economico ed eccellente per freeride e slalom alle prime armi. Il carbonio è più sottile, più rigido, più veloce e più leggero — ma meno tollerante in mare mosso. Il calcolatore fornisce entrambe le misure perché una pinna in carbonio può essere tipicamente circa il 5% più corta di una in G10 a parità di prestazioni (benchmark MUF X-Ride vs Ride)."
+    },
+    {
+      "q": "Questo calcolatore funziona per tutti i marchi (Starboard, F-One, K4...)?",
+      "a": "Sì. Le formule sono validate contro ampi benchmark di mercato — materiali e pubblicazioni di Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA e MACkite, oltre alle guide pubbliche sulle pinne del pro PWA Nico Prien (NP7) e agli studi Bornhoft/RYA sulle pinne. Purché tu scelga la disciplina e lo stile corretti, il calcolatore fornisce una raccomandazione indipendente dal marchio, trasferibile 1-a-1 al catalogo di qualsiasi produttore."
+    }
+  ],
+
+  "cta.title": "Più che solo calcolare?",
+  "cta.body": "In RigSize Live registri le tue sessioni, ricevi previsioni del vento per il tuo spot e vedi come vanno gli altri rider.",
+  "cta.button": "Scarica l'app",
+
+  "nav.home": "Home",
+  "nav.tracking": "Tracking",
+  "nav.features": "Funzioni",
+  "nav.garmin": "Garmin & Apple",
+  "nav.forecast": "Previsioni vento",
+  "nav.live": "Rigsizes in diretta",
+  "nav.openWebapp": "Apri webapp →",
+  "nav.download": "Scarica",
+
+  "mobile.download_app": "Scarica l'app →",
+  "mobile.open_webapp": "Apri webapp",
+
+  "footer.privacy": "Privacy",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
+  "footer.terms": "Termini",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
+  "footer.product_of": "RigSize Live è un prodotto di FTR Management B.V.",
+  "footer.kvk": "KvK 53751671",
+  "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
+  "schema.app_name": "RigSize Live Calcolatore pinna e foil"
+}

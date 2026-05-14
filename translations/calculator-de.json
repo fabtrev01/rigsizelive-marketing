@@ -1,0 +1,159 @@
+{
+  "lang.flag": "🇩🇪",
+  "lang.code": "DE",
+  "lang.name": "Deutsch",
+
+  "meta.title": "Finnen- & Foil-Rechner — die richtige Größe finden | RigSize Live",
+  "meta.description": "Kostenloser Online-Rechner für Windsurf-Finnen, Windsurf-Foils, Wing-Foils und Kite-Foils. Finnenlänge oder Foilgröße bestimmen anhand von Gewicht, Segel und Stil.",
+
+  "hero.eyebrow": "RigSize Live · Rechner",
+  "hero.title_pre": "Finnen- &",
+  "hero.title_acc": "Foil",
+  "hero.title_post": "Rechner",
+  "hero.subtitle": "Berechne in Sekunden die richtige Größe für deine Windsurf-Finne, dein Windsurf-Foil, Wing-Foil oder Kite-Foil. Basierend auf deinem Gewicht, Segel und Fahrstil.",
+
+  "calc.sport": "Sportart",
+  "calc.ws_fin": "Windsurfen (Finne)",
+  "calc.ws_foil": "Windsurfen (Foil)",
+  "calc.wing": "Wing-Foilen",
+  "calc.kite": "Kite-Foilen",
+  "calc.style": "Stil",
+  "calc.style_freeride": "Freeride",
+  "calc.style_slalom": "Slalom / Race",
+  "calc.style_wave": "Wave",
+  "calc.style_freestyle": "Freestyle",
+  "calc.weight": "Gewicht (kg)",
+  "calc.sail": "Segelgröße (m²)",
+  "calc.wing_size": "Wing-Größe (m²)",
+  "calc.sail_ph": "z.B. 7.5",
+  "calc.wing_ph": "z.B. 5.0",
+  "calc.width": "Boardbreite (cm)",
+  "calc.width_ph": "z.B. 70",
+  "calc.optional": "optional",
+  "calc.weed_fin": "🌿 Weedfinnen-Korrektur",
+  "calc.level": "Erfahrungslevel",
+  "calc.beginner": "Anfänger",
+  "calc.intermediate": "Fortgeschritten",
+  "calc.advanced": "Profi",
+  "calc.wind": "Windbedingungen",
+  "calc.rider": "Rider-Typ",
+  "calc.wind_low": "Underpowered",
+  "calc.wind_mid": "Normal",
+  "calc.wind_high": "Overpowered",
+  "calc.rider_light": "Leichtwind",
+  "calc.rider_allround": "Allround",
+  "calc.rider_strong": "Starkwind",
+  "calc.res_std": "Standard",
+  "calc.res_std_sub": "G10 - dicker, weniger steif",
+  "calc.res_perf": "Performance",
+  "calc.res_perf_sub": "Carbon - dünn, steif",
+  "calc.warn_max": "Max. Finnenlänge {len} cm für Board mit {board} cm.",
+  "calc.warn_min": "Mindestens {len} cm für {style}.",
+  "calc.warn_foil_wide": "Foil-Spannweite überschreitet die Boardbreite.",
+  "calc.foil_setup": "Foil-Setup-Empfehlung",
+  "calc.fuselage": "Fuselage",
+  "calc.mast": "Mast",
+  "calc.foil_note": "Fuselage = Abstand zwischen Frontflügel und Stabilizer. Mast = Höhe des Boards über dem Foil. Länger = stabiler, kürzer = wendiger.",
+  "calc.disclaimer": "Disclaimer",
+  "calc.disclaimer_text": "Dieser Rechner liefert eine Empfehlung auf Basis von Benchmark-Daten. Die endgültige Wahl hängt von persönlichen Vorlieben, lokalen Bedingungen und spezifischen Board-Eigenschaften ab. Nutze die Empfehlung als Ausgangspunkt und passe sie nach eigenen Erfahrungen auf dem Wasser an.",
+  "calc.sources": "Formeln basierend auf James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE und MACkite Benchmarks.",
+
+  "promo.title": "Größe gefunden? Ab aufs Wasser.",
+  "promo.text": "Live-Wind für deinen Spot, Sessions tracken und sehen, was andere Rider fahren — RigSize Live bringt alles zusammen.",
+  "promo.button": "RigSize Live entdecken →",
+
+  "sports.title": "Für welche Wassersportart?",
+  "sports.subtitle": "Der Rechner deckt alle vier Disziplinen ab, auf die RigSize Live spezialisiert ist. Basierend auf umfangreichen Markt-Benchmarks gegen Materialien führender Hersteller und öffentlichen Gear-Daten von Profi-Ridern.",
+  "sports.ws_fin_title": "Windsurfen — Finne",
+  "sports.ws_fin_desc": "Finnenlänge in cm für Slalom, Freeride, Wave und Freestyle. Inklusive Weedfinnen-Korrektur und G10 vs Carbon Empfehlung.",
+  "sports.ws_foil_title": "Windsurf-Foil",
+  "sports.ws_foil_desc": "Frontflügel-Fläche (cm²) für Low / Mid / High Aspect, plus Mast- und Fuselage-Empfehlung.",
+  "sports.wing_title": "Wing-Foilen",
+  "sports.wing_desc": "Foil-Größe basierend auf Wing-Größe und Gewicht. Freeride, Allround und Downwind.",
+  "sports.kite_title": "Kite-Foilen",
+  "sports.kite_desc": "Frontflügel-Größe für Freeride, Freestyle/Big Air und Race. Inklusive Setup-Empfehlung.",
+
+  "faq.title": "Häufig gestellte Fragen",
+  "faq.subtitle": "Die Fragen, mit denen die meisten Besucher auf diese Seite kommen.",
+  "faq.items": [
+    {
+      "q": "Wie lang muss meine Windsurf-Finne sein?",
+      "a": "Die richtige Finnenlänge hängt von deinem Gewicht, der Segelgröße, der Boardbreite und der Disziplin ab. Faustregel für Slalom: 30-34 cm bei einem 7,5 m² Segel. Für Freeride 28-32 cm, für Wave 18-24 cm und für Freestyle 16-22 cm. Der Rechner ermittelt es präzise basierend auf deinen Eingaben — inklusive Weedfinnen-Korrektur und einer separaten Empfehlung für G10 versus Carbon-Finnen."
+    },
+    {
+      "q": "Welche Wing-Größe brauche ich zum Wing-Foilen?",
+      "a": "Die Wing-Größe hängt von deinem Gewicht und dem Wind ab. Für einen Rider von 75-85 kg bei 15-20 Knoten Wind ist ein 5,0 m² Wing üblich. Bei leichterem Wind (10-15 Knoten) brauchst du 6,0-7,0 m², bei starkem Wind (25+ Knoten) 3,5-4,0 m². Viele Wing-Foiler haben zwei Größen im Quiver, um den gesamten Windbereich abzudecken. Der Rechner nutzt diese Eingabe, um deine Foilgröße zu bestimmen."
+    },
+    {
+      "q": "Welche Foilgröße brauche ich zum Wing-Foilen?",
+      "a": "Schwerere Rider, leichter Wind oder Anfänger brauchen einen größeren Frontflügel — typischerweise 1500-2200 cm² mit Low-Aspect-Profil. Fortgeschrittene Rider nutzen meistens 1200-1500 cm². Profis bei starkem Wind kommen mit 800-1200 cm² High Aspect aus. Der Rechner liefert drei Größen — Low, Mid und High Aspect — abgestimmt auf dein Gewicht und deine Wing-Größe."
+    },
+    {
+      "q": "Welche Kite-Foil-Größe für Anfänger?",
+      "a": "Für einen Anfänger im Kite-Foilen ist ein großer Frontflügel essenziell: 900-1200 cm², dicke Profile, niedriges Aspect Ratio. Das liefert frühen Lift, stabiles Fahrverhalten und Verzeihen bei Touch-Downs. Erst auf Profi-Niveau wechselt man zu 500-800 cm² High-Aspect-Race-Foils. Kombiniere mit einem kürzeren Mast (55-65 cm) für extra Kontrolle als Anfänger."
+    },
+    {
+      "q": "Stimmt die Faustregel: Finnenlänge = Segelgröße × 5 + 4?",
+      "a": "Diese klassische Faustregel funktioniert noch einigermaßen für traditionell lang-schmale Boards, ist aber überholt für die aktuelle Generation kurzer und breiter Boards. Ein 7,5 m² Segel würde nach dieser Regel eine 41,5 cm Finne bedeuten — in der Praxis viel zu lang für moderne Slalom-Boards von 75-85 cm Breite. Unser Rechner verwendet optimierte Formeln (Segelgröße × 4,0 + Korrekturen für Boardbreite und Gewicht), getestet gegen Materialien von Starboard, K4, Tabou und anderen Marken."
+    },
+    {
+      "q": "Wie messe ich die Boardbreite für die richtige Finnengröße?",
+      "a": "Verwende die \"One-Foot-Off\"-Regel (OFO): miss die Boardbreite genau 30 cm (1 Foot) vom Heck entfernt. Diese Breite ist ein üblicher Ausgangspunkt für die Finnenlänge — die maximale Finnenlänge entspricht etwa dieser Breite plus 2 cm, die minimale ungefähr 6-10 cm weniger. Der Rechner nutzt diese Breite als eine der Eingabevariablen für eine präzisere Empfehlung."
+    },
+    {
+      "q": "Was ist der Unterschied zwischen Low, Mid und High Aspect Foils?",
+      "a": "Low Aspect = breiterer Frontflügel, leichter zu Lift bringen, stabiler — ideal für Freeride und Anfänger. Mid Aspect = Balance zwischen Lift und Speed, geeignet für Allround und Freestyle. High Aspect = langer schmaler Flügel, hohe Topspeed, effizientes Gleiten — gedacht für Race, Downwind und fortgeschrittenen Freeride. Der Rechner zeigt alle drei, damit du wählen kannst, was zu deinem Fahrstil passt."
+    },
+    {
+      "q": "Welche Finnengröße für Wave-Windsurfen?",
+      "a": "Wave-Finnen sind deutlich kürzer als Freeride und Slalom. Für einen Rider von 75-85 kg mit einem 4,5-5,5 m² Wave-Segel liegt die richtige Länge zwischen 18 und 24 cm. Single-Fin-Setups gehen etwas länger, Thruster/Quad-Setups verwenden kürzere Fronts (12-16 cm) plus kleinere Seitenfinnen. Bei Wave-Finnen zählt das Profil und die Steifigkeit fast mehr als die Länge: weichere Profile geben mehr Drive in der Kurve."
+    },
+    {
+      "q": "Was ist eine Weedfinne und wann verwendet man sie?",
+      "a": "Eine Weedfinne hat ein stark nach hinten gepfeiltes Profil, entworfen um Pflanzenmaterial abzuwerfen statt sich darin zu verfangen. Verwende sie an Spots mit Algen, Gras oder seichtem Sandwasser — typisch an der Ostsee bei Zingst, dem Steinhuder Meer, Gardasee in der Hochsaison oder an Süßwasserseen. Eine Weedfinne verschiebt den Druckpunkt nach hinten, also stelle Mastfuß und Fußschlaufen ebenfalls etwas weiter hinten ein für die richtige Balance."
+    },
+    {
+      "q": "Wie viel kürzer muss meine Weedfinne sein?",
+      "a": "Für Slalom und Freeride ist eine Weedfinne etwa 18% kürzer als eine normale Finne bei vergleichbarer Leistung (durch die größere Oberfläche pro cm Länge). Für Wave und Freestyle: 10% kürzer — kürzere Finnen haben relativ weniger Oberflächen-Unterschied. Der Rechner passt das automatisch an, wenn du den Weedfinnen-Schalter aktivierst."
+    },
+    {
+      "q": "Welche Mastlänge für Wing-Foil oder Kite-Foil?",
+      "a": "Für Anfänger: ein kürzerer Mast (60-75 cm) hält dich näher am Wasser — weniger einschüchternd und weichere Touch-Downs. Fortgeschritten: 75-85 cm für mehr Spielraum zur Höhenkorrektur. Profi: 85-95 cm für Downwind und choppy Wasser — geringeres Risiko von Breaching. Berücksichtige auch die Wassertiefe an deinem Spot: ein 90 cm Mast funktioniert nicht in 1 m Wasser. Der Rechner zeigt eine Mastempfehlung pro Level im Foil-Setup-Block.",
+      "_quality_note": "Algemene foil mast-aanbevelingen, geen DE-specifieke aanpassingen nodig"
+    },
+    {
+      "q": "Carbon oder G10 Finne — was ist der Unterschied?",
+      "a": "G10 (Glasfaser-Epoxid-Laminat) ist dicker, fehlerverzeihender, günstiger und hervorragend für Freeride und Slalom-Einsteiger. Carbon ist dünner, steifer, schneller und leichter — aber weniger fehlerverzeihend in choppy Wasser. Der Rechner liefert beide Größen, weil eine Carbon-Finne in der Regel etwa 5% kürzer sein kann als eine G10 bei vergleichbarer Leistung (MUF X-Ride vs Ride Benchmark)."
+    },
+    {
+      "q": "Funktioniert dieser Rechner für alle Marken (Starboard, F-One, K4...)?",
+      "a": "Ja. Die Formeln sind gegen umfangreiche Markt-Benchmarks validiert — Materialien und Publikationen von Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA und MACkite, plus öffentliche Finnen-Guides vom PWA-Profi Nico Prien (NP7) und den Bornhoft/RYA Finnen-Studien. Sofern du die richtige Disziplin und den passenden Stil wählst, liefert der Rechner eine markenunabhängige Empfehlung, die du 1-zu-1 auf das Sortiment jedes Herstellers übertragen kannst."
+    }
+  ],
+
+  "cta.title": "Mehr als nur Rechnen?",
+  "cta.body": "In RigSize Live trackst du Sessions, erhältst Windvorhersagen für deinen Spot und siehst, wie andere Rider performen.",
+  "cta.button": "App herunterladen",
+
+  "nav.home": "Home",
+  "nav.tracking": "Tracking",
+  "nav.features": "Features",
+  "nav.garmin": "Garmin & Apple",
+  "nav.forecast": "Windvorhersage",
+  "nav.live": "Live Rigsizes",
+  "nav.openWebapp": "Webapp öffnen →",
+  "nav.download": "Download",
+
+  "mobile.download_app": "App herunterladen →",
+  "mobile.open_webapp": "Webapp öffnen",
+
+  "footer.privacy": "Datenschutz",
+  "footer.privacy_url": "https://app.rigsizelive.com/privacy.html",
+  "footer.terms": "AGB",
+  "footer.terms_url": "https://app.rigsizelive.com/terms.html",
+  "footer.product_of": "RigSize Live ist ein Produkt der FTR Management B.V.",
+  "footer.kvk": "KvK 53751671",
+  "footer.copyright": "© 2025–2026 FTR Management B.V.",
+
+  "schema.app_name": "RigSize Live Finnen- & Foil-Rechner"
+}
