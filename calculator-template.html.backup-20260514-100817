@@ -1,23 +1,17 @@
 <!doctype html>
-<html lang="es">
+<html lang="{{LANG_CODE}}">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Calculadora de aleta y foil — encuentra tu talla | RigSize Live</title>
-<meta name="description" content="Calculadora online gratuita para aleta de windsurf, foil de windsurf, wing foil y kite foil. Calcula el tamaño de aleta o foil según tu peso, vela y estilo." />
-<link rel="canonical" href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" />
-<link rel="alternate" hreflang="nl" href="https://www.rigsizelive.com/vin-foil-calculator/" />
-<link rel="alternate" hreflang="en" href="https://www.rigsizelive.com/en/fin-foil-calculator/" />
-<link rel="alternate" hreflang="de" href="https://www.rigsizelive.com/de/finnen-foil-rechner/" />
-<link rel="alternate" hreflang="fr" href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" />
-<link rel="alternate" hreflang="es" href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" />
-<link rel="alternate" hreflang="it" href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" />
-<link rel="alternate" hreflang="x-default" href="https://www.rigsizelive.com/vin-foil-calculator/" />
+<title>{{META.TITLE}}</title>
+<meta name="description" content="{{META.DESCRIPTION}}" />
+<link rel="canonical" href="{{CANONICAL_URL}}" />
+{{HREFLANG_TAGS}}
 <meta name="theme-color" content="#1a9cc4" />
-<meta property="og:title" content="Calculadora de aleta y foil — encuentra tu talla | RigSize Live" />
-<meta property="og:description" content="Calculadora online gratuita para aleta de windsurf, foil de windsurf, wing foil y kite foil. Calcula el tamaño de aleta o foil según tu peso, vela y estilo." />
+<meta property="og:title" content="{{META.TITLE}}" />
+<meta property="og:description" content="{{META.DESCRIPTION}}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rigsizelive.com/es/calculadora-aleta-foil/" />
+<meta property="og:url" content="{{CANONICAL_URL}}" />
 <meta property="og:image" content="https://www.rigsizelive.com/images/hero-photo.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" type="image/png" href="/icons/logo-192.png" />
@@ -32,9 +26,9 @@
   "@graph": [
     {
       "@type": "WebApplication",
-      "name": "RigSize Live Calculadora de aleta y foil",
-      "url": "https://www.rigsizelive.com/es/calculadora-aleta-foil/",
-      "description": "Calculadora online gratuita para aleta de windsurf, foil de windsurf, wing foil y kite foil. Calcula el tamaño de aleta o foil según tu peso, vela y estilo.",
+      "name": "{{SCHEMA.APP_NAME}}",
+      "url": "{{CANONICAL_URL}}",
+      "description": "{{META.DESCRIPTION}}",
       "applicationCategory": "SportsApplication",
       "operatingSystem": "Any",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
@@ -42,13 +36,13 @@
     },
     {
       "@type": "FAQPage",
-      "mainEntity": [{"@type":"Question","name":"¿Qué longitud de aleta de windsurf necesito?","acceptedAnswer":{"@type":"Answer","text":"La longitud correcta de aleta depende de tu peso, tamaño de vela, anchura de tabla y disciplina. Regla general para slalom: 30-34 cm con una vela de 7,5 m². Para freeride 28-32 cm, para olas 18-24 cm y para freestyle 16-22 cm. La calculadora lo determina con precisión basándose en tus datos — incluyendo corrección aleta weed y una talla separada para aletas de G10 versus carbono."}},{"@type":"Question","name":"¿Qué tamaño de wing necesito para wing foil?","acceptedAnswer":{"@type":"Answer","text":"El tamaño de wing depende de tu peso y del viento. Para un rider de 75-85 kg con 15-20 nudos de viento, una wing de 5,0 m² es estándar. Con viento más flojo (10-15 nudos) necesitas 6,0-7,0 m²; con viento fuerte (25+ nudos), 3,5-4,0 m². Muchos wing foilers tienen dos tamaños en su quiver para cubrir todo el rango de viento. La calculadora utiliza este dato para determinar el tamaño de tu foil."}},{"@type":"Question","name":"¿Qué tamaño de foil necesito para wing foil?","acceptedAnswer":{"@type":"Answer","text":"Los riders más pesados, el viento flojo o los principiantes necesitan un ala delantera más grande — típicamente 1500-2200 cm² con perfil low aspect. Los riders intermedios suelen usar 1200-1500 cm². Los avanzados con viento fuerte se apañan con 800-1200 cm² high aspect. La calculadora ofrece tres tallas — low, mid y high aspect — adaptadas a tu peso y tamaño de wing."}},{"@type":"Question","name":"¿Qué tamaño de kite foil para principiante?","acceptedAnswer":{"@type":"Answer","text":"Para un principiante en kite foil, un ala delantera grande es esencial: 900-1200 cm², perfiles gruesos, aspect ratio bajo. Esto proporciona elevación temprana, comportamiento estable y tolerancia ante touch-downs. Solo a nivel avanzado se pasa a foils de race 500-800 cm² high aspect. Combina con un mástil más corto (55-65 cm) para tener más control como principiante."}},{"@type":"Question","name":"¿Es cierta la regla: longitud aleta = tamaño vela × 5 + 4?","acceptedAnswer":{"@type":"Answer","text":"Esta regla clásica funciona razonablemente para tablas tradicionales largas y estrechas, pero está desfasada para la generación actual de tablas cortas y anchas. Una vela de 7,5 m² implicaría una aleta de 41,5 cm — en la práctica, demasiado larga para las tablas modernas de slalom de 75-85 cm de ancho. Nuestra calculadora utiliza fórmulas optimizadas (tamaño vela × 4,0 + correcciones por ancho de tabla y peso), testadas contra material de Starboard, K4, Tabou y otras marcas."}},{"@type":"Question","name":"¿Cómo mido el ancho de la tabla para la talla correcta de aleta?","acceptedAnswer":{"@type":"Answer","text":"Usa la regla \"one-foot-off\" (OFO): mide el ancho de tabla exactamente a 30 cm (1 pie) de la cola. Esta anchura es un punto de partida estándar para la longitud de aleta — la longitud máxima de aleta es aproximadamente esta anchura más 2 cm, la mínima 6-10 cm menos. La calculadora usa este ancho como una de las variables de entrada para una recomendación más precisa."}},{"@type":"Question","name":"¿Cuál es la diferencia entre foils low, mid y high aspect?","acceptedAnswer":{"@type":"Answer","text":"Low aspect = ala delantera más ancha, más fácil de levantar, más estable — ideal para freeride y principiantes. Mid aspect = equilibrio entre lift y velocidad, adecuado para polivalente y freestyle. High aspect = ala larga y estrecha, velocidad punta alta, glide eficiente — diseñado para race, downwind y freeride avanzado. La calculadora muestra los tres para que puedas elegir según tu estilo."}},{"@type":"Question","name":"¿Qué tamaño de aleta para windsurf de olas?","acceptedAnswer":{"@type":"Answer","text":"Las aletas de olas son sustancialmente más cortas que las de freeride y slalom. Para un rider de 75-85 kg con una vela de olas de 4,5-5,5 m², la longitud correcta está entre 18 y 24 cm. Los setups single-fin van un poco más largos, los setups thruster/quad usan fronts más cortos (12-16 cm) más sides más pequeños. En las aletas de olas el perfil y la rigidez cuentan casi más que la longitud: los perfiles más blandos dan más drive en la curva."}},{"@type":"Question","name":"¿Qué es una aleta weed y cuándo se usa?","acceptedAnswer":{"@type":"Answer","text":"Una aleta weed tiene un perfil fuertemente inclinado hacia atrás, diseñada para deslizarse sobre vegetación en lugar de engancharse. Úsala en spots con algas, hierba o agua poco profunda con arena — típico en algunas zonas del Delta del Ebro, lagunas de Pontevedra o ciertos spots de Mallorca en temporada alta. Una aleta weed desplaza el centro de presión hacia atrás, así que coloca también el pie de mástil y los foot straps algo más atrás para mantener el equilibrio."}},{"@type":"Question","name":"¿Cuánto más corta debe ser mi aleta weed?","acceptedAnswer":{"@type":"Answer","text":"Para slalom y freeride, una aleta weed es aproximadamente un 18% más corta que una aleta normal con rendimiento comparable (debido a la mayor superficie por cm de longitud). Para olas y freestyle: 10% más corta — las aletas cortas tienen una diferencia de superficie relativamente menor. La calculadora aplica esto automáticamente cuando activas el toggle de aleta weed."}},{"@type":"Question","name":"¿Qué longitud de mástil para wing foil o kite foil?","acceptedAnswer":{"@type":"Answer","text":"Para principiantes: un mástil más corto (60-75 cm) te mantiene más cerca del agua — menos intimidante y touch-downs más suaves. Intermedio: 75-85 cm para más margen de corrección de altura. Avanzado: 85-95 cm para downwind y aguas picadas — menos riesgo de breaching. Ten en cuenta también la profundidad del agua en tu spot: un mástil de 90 cm no funciona en 1 m de agua. La calculadora muestra una recomendación de mástil por nivel en el bloque foil setup."}},{"@type":"Question","name":"¿Carbono o G10 — qué diferencia hay en una aleta?","acceptedAnswer":{"@type":"Answer","text":"G10 (laminado fibra de vidrio-epoxi) es más grueso, más tolerante, más económico y excelente para freeride y slalom inicial. El carbono es más fino, más rígido, más rápido y más ligero — pero menos tolerante en aguas picadas. La calculadora ofrece ambas tallas porque una aleta de carbono puede ser típicamente alrededor de un 5% más corta que una de G10 con rendimiento comparable (benchmark MUF X-Ride vs Ride)."}},{"@type":"Question","name":"¿Funciona esta calculadora para todas las marcas (Starboard, F-One, K4...)?","acceptedAnswer":{"@type":"Answer","text":"Sí. Las fórmulas están validadas contra amplios benchmarks de mercado — materiales y publicaciones de Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA y MACkite, además de guías públicas de aletas del pro PWA Nico Prien (NP7) y los estudios Bornhoft/RYA sobre aletas. Siempre que elijas la disciplina y el estilo correctos, la calculadora ofrece una recomendación independiente de marca que puedes trasladar 1-a-1 al catálogo de cualquier fabricante."}}]
+      "mainEntity": [{{FAQ_SCHEMA_ITEMS}}]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.rigsizelive.com/es/" },
-        { "@type": "ListItem", "position": 2, "name": "RigSize Live Calculadora de aleta y foil", "item": "https://www.rigsizelive.com/es/calculadora-aleta-foil/" }
+        { "@type": "ListItem", "position": 1, "name": "{{NAV.HOME}}", "item": "{{HOME_URL}}" },
+        { "@type": "ListItem", "position": 2, "name": "{{SCHEMA.APP_NAME}}", "item": "{{CANONICAL_URL}}" }
       ]
     }
   ]
@@ -237,33 +231,28 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <!-- NAV -->
 <nav class="nav">
   <div class="wrap nav-row">
-    <a href="https://www.rigsizelive.com/es/" class="brand">
+    <a href="{{HOME_URL}}" class="brand">
       <img src="/icons/logo-color-lg.png" alt="RigSize Live" style="border-radius:8px" />
       <span>RigSize<em> Live</em></span>
     </a>
     <div class="nav-links">
-      <a href="https://www.rigsizelive.com/es/#how">Tracking</a>
-      <a href="https://www.rigsizelive.com/es/#features">Funciones</a>
-      <a href="https://www.rigsizelive.com/es/#forecast">Previsión de viento</a>
-      <a href="https://www.rigsizelive.com/es/#community">Rigsizes en directo</a>
+      <a href="{{HOME_URL}}#how">{{NAV.TRACKING}}</a>
+      <a href="{{HOME_URL}}#features">{{NAV.FEATURES}}</a>
+      <a href="{{HOME_URL}}#forecast">{{NAV.FORECAST}}</a>
+      <a href="{{HOME_URL}}#community">{{NAV.LIVE}}</a>
     </div>
     <div class="nav-cta">
       <div class="lang-switcher" id="langSwitcher">
         <button class="lang-switcher-btn" id="langSwitcherBtn" aria-haspopup="true" aria-expanded="false">
-          <span>🇪🇸 ES</span>
+          <span>{{LANG.FLAG}} {{LANG.CODE}}</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="lang-switcher-menu" role="menu">
-          <a href="https://www.rigsizelive.com/vin-foil-calculator/" data-lang="nl">🇳🇱 Nederlands</a>
-          <a href="https://www.rigsizelive.com/en/fin-foil-calculator/" data-lang="en">🇬🇧 English</a>
-          <a href="https://www.rigsizelive.com/de/finnen-foil-rechner/" data-lang="de">🇩🇪 Deutsch</a>
-          <a href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" data-lang="fr">🇫🇷 Français</a>
-          <a href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" data-lang="es">🇪🇸 Español</a>
-          <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" data-lang="it">🇮🇹 Italiano</a>
+{{LANG_SWITCHER_LINKS}}
         </div>
       </div>
-      <a class="btn btn-ghost" href="https://app.rigsizelive.com">Abrir webapp →</a>
-      <a class="btn btn-primary" href="https://www.rigsizelive.com/es/#download">Descargar</a>
+      <a class="btn btn-ghost" href="https://app.rigsizelive.com">{{nav.openWebapp}}</a>
+      <a class="btn btn-primary" href="{{HOME_URL}}#download">{{nav.download}}</a>
     </div>
     <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
@@ -271,21 +260,16 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="https://www.rigsizelive.com/es/#how">Tracking</a>
-  <a href="https://www.rigsizelive.com/es/#features">Funciones</a>
-  <a href="https://www.rigsizelive.com/es/#forecast">Previsión de viento</a>
-  <a href="https://www.rigsizelive.com/es/#community">Rigsizes en directo</a>
+  <a href="{{HOME_URL}}#how">{{NAV.TRACKING}}</a>
+  <a href="{{HOME_URL}}#features">{{NAV.FEATURES}}</a>
+  <a href="{{HOME_URL}}#forecast">{{NAV.FORECAST}}</a>
+  <a href="{{HOME_URL}}#community">{{NAV.LIVE}}</a>
   <div class="mobile-cta">
-    <a class="btn btn-primary" href="https://www.rigsizelive.com/es/#download">Descargar la app →</a>
-    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">Abrir webapp</a>
+    <a class="btn btn-primary" href="{{HOME_URL}}#download">{{MOBILE.DOWNLOAD_APP}}</a>
+    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">{{MOBILE.OPEN_WEBAPP}}</a>
   </div>
   <div class="mobile-lang">
-    <a href="https://www.rigsizelive.com/vin-foil-calculator/" data-lang="nl">🇳🇱 Nederlands</a>
-    <a href="https://www.rigsizelive.com/en/fin-foil-calculator/" data-lang="en">🇬🇧 English</a>
-    <a href="https://www.rigsizelive.com/de/finnen-foil-rechner/" data-lang="de">🇩🇪 Deutsch</a>
-    <a href="https://www.rigsizelive.com/fr/calculateur-aileron-foil/" data-lang="fr">🇫🇷 Français</a>
-    <a href="https://www.rigsizelive.com/es/calculadora-aleta-foil/" data-lang="es" class="active">🇪🇸 Español</a>
-    <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/" data-lang="it">🇮🇹 Italiano</a>
+{{MOBILE_LANG_LINKS}}
   </div>
 </div>
 
@@ -294,9 +278,9 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
   <div class="hero-photo"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <span class="eyebrow"><span class="dot"></span> RigSize Live · Calculadora</span>
-      <h1 class="headline">Calculadora <span class="acc">Aleta</span> & Foil</h1>
-      <p class="hero-sub">Calcula en segundos la talla correcta para tu aleta de windsurf, foil de windsurf, wing foil o kite foil. Basado en tu peso, vela y estilo de navegación.</p>
+      <span class="eyebrow"><span class="dot"></span> {{HERO.EYEBROW}}</span>
+      <h1 class="headline">{{HERO.TITLE_PRE}} <span class="acc">{{HERO.TITLE_ACC}}</span> {{HERO.TITLE_POST}}</h1>
+      <p class="hero-sub">{{HERO.SUBTITLE}}</p>
     </div>
   </div>
 </header>
@@ -307,61 +291,61 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
     <div class="calc-card">
 
       <div class="calc-fld">
-        <label class="calc-lbl">Deporte</label>
+        <label class="calc-lbl">{{CALC.SPORT}}</label>
         <select class="calc-sel" id="calcDisc">
-          <option value="ws_fin">Windsurf (Aleta)</option>
-          <option value="ws_foil">Windsurf (Foil)</option>
-          <option value="wing">Wing Foil</option>
-          <option value="kite">Kite Foil</option>
+          <option value="ws_fin">{{CALC.WS_FIN}}</option>
+          <option value="ws_foil">{{CALC.WS_FOIL}}</option>
+          <option value="wing">{{CALC.WING}}</option>
+          <option value="kite">{{CALC.KITE}}</option>
         </select>
       </div>
 
       <div class="calc-fld" id="calcStyleGroup">
-        <label class="calc-lbl">Estilo</label>
+        <label class="calc-lbl">{{CALC.STYLE}}</label>
         <select class="calc-sel" id="calcStyle">
-          <option value="freeride">Freeride</option>
-          <option value="slalom" selected>Slalom / Race</option>
-          <option value="wave">Olas</option>
-          <option value="freestyle">Freestyle</option>
+          <option value="freeride">{{CALC.STYLE_FREERIDE}}</option>
+          <option value="slalom" selected>{{CALC.STYLE_SLALOM}}</option>
+          <option value="wave">{{CALC.STYLE_WAVE}}</option>
+          <option value="freestyle">{{CALC.STYLE_FREESTYLE}}</option>
         </select>
       </div>
 
       <div class="calc-row2">
         <div class="calc-fld">
-          <label class="calc-lbl">Peso (kg)</label>
+          <label class="calc-lbl">{{CALC.WEIGHT}}</label>
           <input type="text" inputmode="decimal" id="calcWeight" value="80" class="calc-inp">
         </div>
         <div class="calc-fld" id="calcSailGroup">
-          <label class="calc-lbl" id="calcSailLabel">Tamaño de vela (m²)</label>
-          <input type="text" inputmode="decimal" id="calcSail" value="" placeholder="ej. 7.5" class="calc-inp">
+          <label class="calc-lbl" id="calcSailLabel">{{CALC.SAIL}}</label>
+          <input type="text" inputmode="decimal" id="calcSail" value="" placeholder="{{CALC.SAIL_PH}}" class="calc-inp">
         </div>
       </div>
 
       <div class="calc-fld" id="calcWidthGroup">
-        <label class="calc-lbl">Anchura de tabla (cm) <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#94a3b8">- opcional</span></label>
-        <input type="text" inputmode="decimal" id="calcWidth" value="" placeholder="ej. 70" class="calc-inp">
+        <label class="calc-lbl">{{CALC.WIDTH}} <span style="font-weight:400;text-transform:none;letter-spacing:0;color:#94a3b8">- {{CALC.OPTIONAL}}</span></label>
+        <input type="text" inputmode="decimal" id="calcWidth" value="" placeholder="{{CALC.WIDTH_PH}}" class="calc-inp">
       </div>
 
       <label class="calc-weed" id="calcWeedGroup">
         <input type="checkbox" id="calcWeed">
-        <span>🌿 Corrección aleta weed</span>
+        <span>{{CALC.WEED_FIN}}</span>
       </label>
 
       <div class="calc-fld">
-        <label class="calc-lbl">Nivel</label>
+        <label class="calc-lbl">{{CALC.LEVEL}}</label>
         <div class="calc-pills" id="calcLevelPills">
-          <button type="button" class="calc-pill" data-v="beginner">Principiante</button>
-          <button type="button" class="calc-pill on" data-v="intermediate">Intermedio</button>
-          <button type="button" class="calc-pill" data-v="gevorderd">Avanzado</button>
+          <button type="button" class="calc-pill" data-v="beginner">{{CALC.BEGINNER}}</button>
+          <button type="button" class="calc-pill on" data-v="intermediate">{{CALC.INTERMEDIATE}}</button>
+          <button type="button" class="calc-pill" data-v="gevorderd">{{CALC.ADVANCED}}</button>
         </div>
       </div>
 
       <div class="calc-fld" id="calcWindGroup">
-        <label class="calc-lbl" id="calcWindLabel">Condiciones de viento</label>
+        <label class="calc-lbl" id="calcWindLabel">{{CALC.WIND}}</label>
         <div class="calc-pills" id="calcWindPills">
-          <button type="button" class="calc-pill" data-v="low">Underpowered</button>
-          <button type="button" class="calc-pill on" data-v="mid">Normal</button>
-          <button type="button" class="calc-pill" data-v="high">Overpowered</button>
+          <button type="button" class="calc-pill" data-v="low">{{CALC.WIND_LOW}}</button>
+          <button type="button" class="calc-pill on" data-v="mid">{{CALC.WIND_MID}}</button>
+          <button type="button" class="calc-pill" data-v="high">{{CALC.WIND_HIGH}}</button>
         </div>
       </div>
 
@@ -375,7 +359,7 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
       <details class="calc-collapse" id="calcFoilSetup">
         <summary class="calc-collapse-head">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-          <span class="calc-collapse-title">Recomendación de setup del foil</span>
+          <span class="calc-collapse-title">{{CALC.FOIL_SETUP}}</span>
           <svg class="calc-collapse-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </summary>
         <div class="calc-collapse-body" id="calcFoilSetupContent"></div>
@@ -384,15 +368,15 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
       <details class="calc-collapse">
         <summary class="calc-collapse-head">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-          <span class="calc-collapse-title">Aviso</span>
+          <span class="calc-collapse-title">{{CALC.DISCLAIMER}}</span>
           <svg class="calc-collapse-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </summary>
         <div class="calc-collapse-body">
-          <p class="calc-disclaimer-text">Esta calculadora ofrece una recomendación basada en datos de referencia. La elección final depende de preferencias personales, condiciones locales y características específicas de la tabla. Úsalo como punto de partida y ajusta según tu propia experiencia en el agua.</p>
+          <p class="calc-disclaimer-text">{{CALC.DISCLAIMER_TEXT}}</p>
         </div>
       </details>
 
-      <p style="text-align:center;margin-top:16px;font-size:11px;color:#94a3b8;line-height:1.55">Fórmulas basadas en los benchmarks de James Douglass, Bornhoft/RYA, SURF Magazine, SROKA, F-ONE y MACkite.</p>
+      <p style="text-align:center;margin-top:16px;font-size:11px;color:#94a3b8;line-height:1.55">{{CALC.SOURCES}}</p>
 
     </div>
   </div>
@@ -401,28 +385,28 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <!-- SPORTS -->
 <section class="sports-section">
   <div class="wrap">
-    <h2>¿Para qué deporte acuático?</h2>
-    <p class="sub">La calculadora cubre las cuatro disciplinas en las que RigSize Live está especializada. Basada en amplios benchmarks de mercado contra material de fabricantes líderes y datos públicos de gear de riders profesionales.</p>
+    <h2>{{SPORTS.TITLE}}</h2>
+    <p class="sub">{{SPORTS.SUBTITLE}}</p>
     <div class="sports-grid">
       <div class="sport-card">
         <div class="sport-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h13a3 3 0 100-6M3 14h16a3 3 0 110 6M3 11h9"/></svg></div>
-        <h3>Windsurf — aleta</h3>
-        <p>Longitud de aleta en cm para slalom, freeride, olas y freestyle. Incluye corrección aleta weed y recomendación G10 vs Carbono.</p>
+        <h3>{{SPORTS.WS_FIN_TITLE}}</h3>
+        <p>{{SPORTS.WS_FIN_DESC}}</p>
       </div>
       <div class="sport-card">
         <div class="sport-icon" style="background:#e0e7ff;color:#4338ca"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 16l5-8 4 5 4-3 5 6"/></svg></div>
-        <h3>Foil de windsurf</h3>
-        <p>Superficie del ala delantera (cm²) para low / mid / high aspect, más recomendación de mástil y fuselaje.</p>
+        <h3>{{SPORTS.WS_FOIL_TITLE}}</h3>
+        <p>{{SPORTS.WS_FOIL_DESC}}</p>
       </div>
       <div class="sport-card">
         <div class="sport-icon" style="background:#fef3c7;color:#92400e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
-        <h3>Wing Foil</h3>
-        <p>Tamaño de foil según el tamaño de wing y el peso. Freeride, polivalente y downwind.</p>
+        <h3>{{SPORTS.WING_TITLE}}</h3>
+        <p>{{SPORTS.WING_DESC}}</p>
       </div>
       <div class="sport-card">
         <div class="sport-icon" style="background:#fce7f3;color:#9d174d"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8c4-4 12-4 16 0M6 12c3-3 9-3 12 0M8 16c2-2 6-2 8 0"/></svg></div>
-        <h3>Kite Foil</h3>
-        <p>Tamaño de ala delantera para freeride, freestyle/big air y race. Con recomendación de setup.</p>
+        <h3>{{SPORTS.KITE_TITLE}}</h3>
+        <p>{{SPORTS.KITE_DESC}}</p>
       </div>
     </div>
   </div>
@@ -435,11 +419,11 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7"/><path d="M2 12s3 7 10 7 10-7 10-7"/><circle cx="12" cy="12" r="3"/></svg>
     </div>
     <div class="rsl-promo-body">
-      <h3>¿Talla encontrada? ¡Al agua!</h3>
-      <p>Viento en directo para tu spot, seguimiento de sesiones y ver qué material usan otros riders — RigSize Live lo reúne todo en un solo lugar.</p>
+      <h3>{{PROMO.TITLE}}</h3>
+      <p>{{PROMO.TEXT}}</p>
     </div>
     <div class="rsl-promo-cta">
-      <a class="btn" href="https://www.rigsizelive.com/es/">Descubrir RigSize Live →</a>
+      <a class="btn" href="{{HOME_URL}}">{{PROMO.BUTTON}}</a>
     </div>
   </div>
 </section>
@@ -447,61 +431,10 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <!-- FAQ -->
 <section class="faq-section">
   <div class="wrap">
-    <h2>Preguntas frecuentes</h2>
-    <p class="sub">Las preguntas con las que la mayoría de visitantes llegan a esta página.</p>
+    <h2>{{FAQ.TITLE}}</h2>
+    <p class="sub">{{FAQ.SUBTITLE}}</p>
     <div class="faq-list">
-      <details class="faq-item" open>
-        <summary>¿Qué longitud de aleta de windsurf necesito?</summary>
-        <p>La longitud correcta de aleta depende de tu peso, tamaño de vela, anchura de tabla y disciplina. Regla general para slalom: 30-34 cm con una vela de 7,5 m². Para freeride 28-32 cm, para olas 18-24 cm y para freestyle 16-22 cm. La calculadora lo determina con precisión basándose en tus datos — incluyendo corrección aleta weed y una talla separada para aletas de G10 versus carbono.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué tamaño de wing necesito para wing foil?</summary>
-        <p>El tamaño de wing depende de tu peso y del viento. Para un rider de 75-85 kg con 15-20 nudos de viento, una wing de 5,0 m² es estándar. Con viento más flojo (10-15 nudos) necesitas 6,0-7,0 m²; con viento fuerte (25+ nudos), 3,5-4,0 m². Muchos wing foilers tienen dos tamaños en su quiver para cubrir todo el rango de viento. La calculadora utiliza este dato para determinar el tamaño de tu foil.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué tamaño de foil necesito para wing foil?</summary>
-        <p>Los riders más pesados, el viento flojo o los principiantes necesitan un ala delantera más grande — típicamente 1500-2200 cm² con perfil low aspect. Los riders intermedios suelen usar 1200-1500 cm². Los avanzados con viento fuerte se apañan con 800-1200 cm² high aspect. La calculadora ofrece tres tallas — low, mid y high aspect — adaptadas a tu peso y tamaño de wing.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué tamaño de kite foil para principiante?</summary>
-        <p>Para un principiante en kite foil, un ala delantera grande es esencial: 900-1200 cm², perfiles gruesos, aspect ratio bajo. Esto proporciona elevación temprana, comportamiento estable y tolerancia ante touch-downs. Solo a nivel avanzado se pasa a foils de race 500-800 cm² high aspect. Combina con un mástil más corto (55-65 cm) para tener más control como principiante.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Es cierta la regla: longitud aleta = tamaño vela × 5 + 4?</summary>
-        <p>Esta regla clásica funciona razonablemente para tablas tradicionales largas y estrechas, pero está desfasada para la generación actual de tablas cortas y anchas. Una vela de 7,5 m² implicaría una aleta de 41,5 cm — en la práctica, demasiado larga para las tablas modernas de slalom de 75-85 cm de ancho. Nuestra calculadora utiliza fórmulas optimizadas (tamaño vela × 4,0 + correcciones por ancho de tabla y peso), testadas contra material de Starboard, K4, Tabou y otras marcas.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cómo mido el ancho de la tabla para la talla correcta de aleta?</summary>
-        <p>Usa la regla "one-foot-off" (OFO): mide el ancho de tabla exactamente a 30 cm (1 pie) de la cola. Esta anchura es un punto de partida estándar para la longitud de aleta — la longitud máxima de aleta es aproximadamente esta anchura más 2 cm, la mínima 6-10 cm menos. La calculadora usa este ancho como una de las variables de entrada para una recomendación más precisa.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cuál es la diferencia entre foils low, mid y high aspect?</summary>
-        <p>Low aspect = ala delantera más ancha, más fácil de levantar, más estable — ideal para freeride y principiantes. Mid aspect = equilibrio entre lift y velocidad, adecuado para polivalente y freestyle. High aspect = ala larga y estrecha, velocidad punta alta, glide eficiente — diseñado para race, downwind y freeride avanzado. La calculadora muestra los tres para que puedas elegir según tu estilo.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué tamaño de aleta para windsurf de olas?</summary>
-        <p>Las aletas de olas son sustancialmente más cortas que las de freeride y slalom. Para un rider de 75-85 kg con una vela de olas de 4,5-5,5 m², la longitud correcta está entre 18 y 24 cm. Los setups single-fin van un poco más largos, los setups thruster/quad usan fronts más cortos (12-16 cm) más sides más pequeños. En las aletas de olas el perfil y la rigidez cuentan casi más que la longitud: los perfiles más blandos dan más drive en la curva.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué es una aleta weed y cuándo se usa?</summary>
-        <p>Una aleta weed tiene un perfil fuertemente inclinado hacia atrás, diseñada para deslizarse sobre vegetación en lugar de engancharse. Úsala en spots con algas, hierba o agua poco profunda con arena — típico en algunas zonas del Delta del Ebro, lagunas de Pontevedra o ciertos spots de Mallorca en temporada alta. Una aleta weed desplaza el centro de presión hacia atrás, así que coloca también el pie de mástil y los foot straps algo más atrás para mantener el equilibrio.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Cuánto más corta debe ser mi aleta weed?</summary>
-        <p>Para slalom y freeride, una aleta weed es aproximadamente un 18% más corta que una aleta normal con rendimiento comparable (debido a la mayor superficie por cm de longitud). Para olas y freestyle: 10% más corta — las aletas cortas tienen una diferencia de superficie relativamente menor. La calculadora aplica esto automáticamente cuando activas el toggle de aleta weed.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Qué longitud de mástil para wing foil o kite foil?</summary>
-        <p>Para principiantes: un mástil más corto (60-75 cm) te mantiene más cerca del agua — menos intimidante y touch-downs más suaves. Intermedio: 75-85 cm para más margen de corrección de altura. Avanzado: 85-95 cm para downwind y aguas picadas — menos riesgo de breaching. Ten en cuenta también la profundidad del agua en tu spot: un mástil de 90 cm no funciona en 1 m de agua. La calculadora muestra una recomendación de mástil por nivel en el bloque foil setup.</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Carbono o G10 — qué diferencia hay en una aleta?</summary>
-        <p>G10 (laminado fibra de vidrio-epoxi) es más grueso, más tolerante, más económico y excelente para freeride y slalom inicial. El carbono es más fino, más rígido, más rápido y más ligero — pero menos tolerante en aguas picadas. La calculadora ofrece ambas tallas porque una aleta de carbono puede ser típicamente alrededor de un 5% más corta que una de G10 con rendimiento comparable (benchmark MUF X-Ride vs Ride).</p>
-      </details>
-      <details class="faq-item">
-        <summary>¿Funciona esta calculadora para todas las marcas (Starboard, F-One, K4...)?</summary>
-        <p>Sí. Las fórmulas están validadas contra amplios benchmarks de mercado — materiales y publicaciones de Starboard, K4, Tabou, F-One, TAAROA, Ketos, MUF, SROKA y MACkite, además de guías públicas de aletas del pro PWA Nico Prien (NP7) y los estudios Bornhoft/RYA sobre aletas. Siempre que elijas la disciplina y el estilo correctos, la calculadora ofrece una recomendación independiente de marca que puedes trasladar 1-a-1 al catálogo de cualquier fabricante.</p>
-      </details>
+{{FAQ_ITEMS_HTML}}
     </div>
   </div>
 </section>
@@ -509,9 +442,9 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <!-- CTA -->
 <section class="cta-section">
   <div class="wrap">
-    <h3>¿Más que solo calcular?</h3>
-    <p>En RigSize Live registras tus sesiones, obtienes previsiones de viento para tu spot y ves cómo rinden otros riders.</p>
-    <a class="btn btn-primary" href="https://www.rigsizelive.com/es/#download">Descargar la app</a>
+    <h3>{{CTA.TITLE}}</h3>
+    <p>{{CTA.BODY}}</p>
+    <a class="btn btn-primary" href="{{HOME_URL}}#download">{{CTA.BUTTON}}</a>
   </div>
 </section>
 
@@ -519,13 +452,13 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 <footer class="footer-clean">
   <div class="wrap">
     <div class="footer-legal-links">
-      <a href="https://app.rigsizelive.com/privacy-en.html">Privacidad</a>
+      <a href="{{FOOTER.PRIVACY_URL}}">{{FOOTER.PRIVACY}}</a>
       <span class="footer-sep">&middot;</span>
-      <a href="https://app.rigsizelive.com/terms-en.html">Términos</a>
+      <a href="{{FOOTER.TERMS_URL}}">{{FOOTER.TERMS}}</a>
     </div>
-    <p class="footer-legal-line">RigSize Live es un producto de FTR Management B.V.</p>
-    <p class="footer-legal-line">KvK 53751671 &middot; <a href="mailto:info@rigsizelive.com">info@rigsizelive.com</a></p>
-    <p class="footer-legal-line footer-copyright">© 2025–2026 FTR Management B.V.</p>
+    <p class="footer-legal-line">{{FOOTER.PRODUCT_OF}}</p>
+    <p class="footer-legal-line">{{FOOTER.KVK}} &middot; <a href="mailto:info@rigsizelive.com">info@rigsizelive.com</a></p>
+    <p class="footer-legal-line footer-copyright">{{FOOTER.COPYRIGHT}}</p>
   </div>
 </footer>
 
@@ -552,7 +485,7 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
 
 // CALCULATOR
 (function(){
-  var I18N = {"SAIL": "Tamaño de vela (m²)", "SAIL_PH": "ej. 7.5", "WING_SIZE": "Tamaño de wing (m²)", "WING_PH": "ej. 5.0", "WIND": "Condiciones de viento", "RIDER": "Tipo de rider", "WIND_LOW": "Underpowered", "WIND_MID": "Normal", "WIND_HIGH": "Overpowered", "RIDER_LIGHT": "Viento flojo", "RIDER_ALLROUND": "Polivalente", "RIDER_STRONG": "Viento fuerte", "RES_STD": "Estándar", "RES_STD_SUB": "G10 - más grueso, menos rígido", "RES_PERF": "Performance", "RES_PERF_SUB": "Carbono - fino, rígido", "WARN_MAX": "Longitud máx. de aleta {len} cm para tabla de {board} cm.", "WARN_MIN": "Mínimo {len} cm para {style}.", "WARN_FOIL_WIDE": "La envergadura del foil excede el ancho de la tabla.", "BEGINNER": "Principiante", "INTERMEDIATE": "Intermedio", "ADVANCED": "Avanzado", "LEVEL": "Nivel", "FUSELAGE": "Fuselaje", "MAST": "Mástil", "FOIL_NOTE": "Fuselaje = distancia entre el ala delantera y el estabilizador. Mástil = altura de la tabla sobre el foil. Más largo = más estable, más corto = más maniobrable."};
+  var I18N = {{CALC_I18N_JSON}};
 
   var LF={ws_fin:{beginner:1.10,intermediate:1.03,gevorderd:0.92},ws_foil:{beginner:1.10,intermediate:0.85,gevorderd:0.70},wing:{beginner:1.10,intermediate:0.78,gevorderd:0.60},kite:{beginner:1.10,intermediate:1.03,gevorderd:0.85}};
   var WF={ws_fin:{low:1.07,mid:1.0,high:0.93},ws_foil:{low:1.10,mid:1.0,high:0.90},wing:{low:1.10,mid:1.0,high:0.90},kite:{low:1.0,mid:1.0,high:1.0}};
@@ -696,8 +629,6 @@ footer.footer-clean{padding:60px 0 50px;text-align:center;color:var(--muted);bac
   updateUI();
 })();
 </script>
-
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3ea2019a39a54c03a175bbcc4af0105f"}'></script><!-- End Cloudflare Web Analytics -->
 
 </body>
 </html>
