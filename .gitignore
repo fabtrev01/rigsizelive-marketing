@@ -1,0 +1,6 @@
+
+# macOS metadata
+.DS_Store
+
+# Deploy script backups
+.privacy-deploy-backup-*/
