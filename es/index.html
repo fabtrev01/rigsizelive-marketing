@@ -1973,7 +1973,29 @@
   }
   /* === EINDE RSL_MOBILE_V22 === */
 
-</style>
+
+  /* ================================================================ */
+  /* RSL_DESKTOP_SAFARI_BEZEL_FIX                                      */
+  /* Safari macOS desktop rendert images precies aan de onderrand van  */
+  /* hun bezel container, waardoor de zwarte bezel-onderkant niet      */
+  /* zichtbaar is. Image 12px korter maken zodat de bezel volledig is. */
+  /* Geldt voor: comm-phone, session-phone, windforecast-bezel.        */
+  /* NIET voor: .phone (hero), .spotinfo-phone (bewust afgeknipt).     */
+  /* @supports (-webkit-hyphens: none) is Safari-only.                 */
+  /* ================================================================ */
+  @media (min-width: 641px) {
+    @supports (-webkit-hyphens: none) {
+      .windforecast-bezel img,
+      .session-phone img,
+      .comm-phone img {
+        height: calc(100% - 12px) !important;
+        margin-top: 0 !important;
+      }
+    }
+  }
+  /* === EINDE RSL_DESKTOP_SAFARI_BEZEL_FIX === */
+
+  </style>
 </head>
 <body>
 
