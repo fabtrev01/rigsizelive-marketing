@@ -462,6 +462,9 @@
   .int-list{margin-top:36px;display:flex;flex-direction:column;gap:14px}
   .int-list li{list-style:none;display:flex;align-items:center;gap:14px;font-size:15px;color:rgba(255,255,255,.92)}
   .int-list li .ok{width:22px;height:22px;border-radius:999px;background:rgba(124,215,232,.22);color:#7cd7e8;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;border:1px solid rgba(124,215,232,.45)}
+  .int-list li .int-logo{width:24px;height:24px;border-radius:6px;object-fit:contain;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:transparent}
+  .int-list li .int-logo-apple{background:#111418;color:#fff}
+  .int-list li .int-logo-apple svg{width:15px;height:15px}
   .int-list li .coming{color:#ffd1b0;font-size:11px;margin-left:6px;padding:2px 8px;border-radius:999px;background:rgba(249,115,22,.18);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
 
   .watches{position:relative;display:flex;justify-content:center;align-items:center;padding-left:60px}
@@ -2487,8 +2490,8 @@
         <p>Gebruik je favoriete horloge en tracking-app zoals je dat nu ook doet. Zodra de sessie synct met <b style="color:#fff">Garmin Connect</b> of <b style="color:#fff">Apple Health</b>, landt alle data automatisch in RSL — en wordt gekoppeld aan rig, wind en spot voor analyses die je nergens anders krijgt.</p>
 
         <ul class="int-list">
-          <li><span class="ok">✓</span> <b style="color:#fff;font-weight:600">Garmin Connect™</b> — automatische sessie-import</li>
-          <li><span class="ok">✓</span> <b style="color:#fff;font-weight:600">Apple Health</b> — Apple Watch-sessies synchroniseren direct</li>
+          <li><img src="/icons/garmin-connect.png" class="int-logo" alt="Garmin Connect" /> <b style="color:#fff;font-weight:600">Garmin Connect™</b> — automatische sessie-import</li>
+          <li><span class="int-logo int-logo-apple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.4 2-3.5 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-2-.9-3.3-.8-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.8 1.2 1.9 2.6 3.2 2.6s1.8-.8 3.3-.8 2 .8 3.3.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM15.2 5.3c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.5 2.9-1.3z"/></svg></span> <b style="color:#fff;font-weight:600">Apple Health</b> — Apple Watch-sessies synchroniseren direct</li>
           <li><span class="ok">✓</span> GPS-route, top- & gemiddelde snelheid, afstand en hartslag</li>
           <li><span class="ok">✓</span> Alpha 500, streaks en records per gear-combo</li>
         </ul>
