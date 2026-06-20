@@ -83,6 +83,8 @@
   /* Mobile menu */
   .nav-burger{display:none;margin-left:auto;width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);align-items:center;justify-content:center;cursor:pointer;color:#fff}
   .nav-burger svg{width:22px;height:22px;display:block}
+  .mobile-lang-btn{display:none;margin-left:8px;width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);align-items:center;justify-content:center;cursor:pointer;font-size:20px;line-height:1}
+  @media (max-width:900px){ .mobile-lang-btn{display:flex} }
   .mobile-menu{
     display:none;position:fixed;top:68px;left:0;right:0;bottom:0;z-index:100;
     background:#0f3a5f;
@@ -2063,6 +2065,7 @@
       </div>
       <a class="btn btn-primary" href="#download">Download</a>
     </div>
+    <button class="mobile-lang-btn" id="mobileLangBtn" aria-label="Language">🇬🇧</button>
     <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
     </button>
@@ -3000,6 +3003,16 @@
   }
   burger.addEventListener('click', toggle);
   menu.addEventListener('click', function(e){ if(e.target.tagName === 'A') close(); });
+
+  // Mobiele taal-knop: opent menu en scrollt naar taal-sectie
+  var mobileLangBtn = document.getElementById('mobileLangBtn');
+  if (mobileLangBtn) {
+    mobileLangBtn.addEventListener('click', function(){
+      if (!menu.classList.contains('open')) toggle();
+      var langSection = menu.querySelector('.mobile-lang');
+      if (langSection) langSection.scrollIntoView({ block: 'center' });
+    });
+  }
 
   // Language switcher
   var langSwitcher = document.getElementById('langSwitcher');
