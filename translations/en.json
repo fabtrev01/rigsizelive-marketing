@@ -34,7 +34,7 @@
   "hero.free_chip": "Free to use — no Pro version, no paywall.",
   "hero.stat1_label": "Windsurf · Kite · Wing",
   "hero.stat2_label": "Spots worldwide",
-  "hero.stat3_label": "Spots in the Netherlands",
+  "hero.stat3_label": "Languages",
   "hero.float_live": "Live · Wijk aan Zee",
   "hero.float_imported": "Session<br>imported",
   "hero.quote": "See from your couch which <em>rig sizes</em> are being used at all surf spots.",
@@ -235,5 +235,6 @@
   "month.sept": "sept",
   "footer.privacy_url": "https://www.rigsizelive.com/privacy-en.html",
   "footer.terms_url": "https://www.rigsizelive.com/terms-en.html",
-  "hero.free_badge": "100% free, no paywall"
+  "hero.free_badge": "100% free, no paywall",
+  "hero.stat3_num": "6"
 }

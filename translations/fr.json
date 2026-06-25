@@ -34,7 +34,7 @@
   "hero.free_chip": "Gratuit à utiliser — sans version Pro ni paywall.",
   "hero.stat1_label": "Windsurf · Kite · Wing",
   "hero.stat2_label": "Spots dans le monde",
-  "hero.stat3_label": "Spots aux Pays-Bas",
+  "hero.stat3_label": "Langues",
   "hero.float_live": "Live · Wijk aan Zee",
   "hero.float_imported": "Session<br>importée",
   "hero.quote": "Voir depuis le canapé avec quelles <em>tailles de gréement</em> on navigue sur tous les spots de surf.",
@@ -235,5 +235,6 @@
   "month.sept": "sept",
   "footer.privacy_url": "https://www.rigsizelive.com/privacy-en.html",
   "footer.terms_url": "https://www.rigsizelive.com/terms-en.html",
-  "hero.free_badge": "100% gratuit, sans paywall"
+  "hero.free_badge": "100% gratuit, sans paywall",
+  "hero.stat3_num": "6"
 }
