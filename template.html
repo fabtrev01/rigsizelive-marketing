@@ -850,19 +850,19 @@
   .dl-primary b{color:#fff}
   /* Browser naar achtergrond (gedimd, klikbaar) */
   .dl-muted{opacity:.6;box-shadow:none}
-  /* Officiele store badges. Google PNG is 646x250 met content 646x192:
-     29px witruimte boven+onder, 0px zijkanten (gemeten). Content = 76.8%
-     van de hoogte, dus img-hoogte = gewenste hoogte / 0.768. */
+  /* Officiele store badges. De Google Play PNGs in images/badges zijn
+     gecropt op hun content (EN had afwijkende witruimte rondom), dus
+     beide badges krijgen simpelweg dezelfde hoogte. */
   .store-badges{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .store-badge{display:inline-flex;align-items:center;transition:opacity .15s ease,transform .15s ease}
   .store-badge:hover{opacity:.85;transform:translateY(-2px)}
   .store-badge img{display:block;width:auto}
   .hero-badges{margin-top:18px}
   .hero-badges .badge-apple img{height:46px}
-  .hero-badges .badge-google img{height:60px;margin:-7px 0}
+  .hero-badges .badge-google img{height:46px}
   .dl-badges{justify-content:center;margin-bottom:18px}
   .dl-badges .badge-apple img{height:52px}
-  .dl-badges .badge-google img{height:68px;margin:-8px 0}
+  .dl-badges .badge-google img{height:52px}
   .dl-muted:hover{opacity:.85;transform:translateY(-1px)}
 
   /* Clean footer (FTR Management info) */
