@@ -236,5 +236,9 @@
   "footer.privacy_url": "https://www.rigsizelive.com/privacy.html",
   "footer.terms_url": "https://www.rigsizelive.com/terms.html",
   "hero.free_badge": "100% gratis, geen paywall",
-  "hero.stat3_num": "400+"
+  "hero.stat3_num": "400+",
+  "badges.appstore_src": "/images/badges/appstore-nl.svg",
+  "badges.play_src": "/images/badges/googleplay-nl.png",
+  "badges.appstore_alt": "Download in de App Store",
+  "badges.play_alt": "Ontdek het op Google Play"
 }
