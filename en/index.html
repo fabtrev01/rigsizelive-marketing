@@ -856,22 +856,19 @@
   .dl-primary b{color:#fff}
   /* Browser naar achtergrond (gedimd, klikbaar) */
   .dl-muted{opacity:.6;box-shadow:none}
-  /* Officiele store badges. Google PNG heeft 25 procent ingebakken
-     witruimte rondom: daarom 1.5x hoogte + negatieve margin, zodat
-     beide badges visueel exact even hoog zijn. */
+  /* Officiele store badges. Google PNG heeft een kleine ingebakken
+     witruimte rondom: daarom iets grotere hoogte + kleine negatieve
+     margin, zodat beide badges visueel even hoog ogen. */
   .store-badges{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
   .store-badge{display:inline-flex;align-items:center;transition:opacity .15s ease,transform .15s ease}
   .store-badge:hover{opacity:.85;transform:translateY(-2px)}
   .store-badge img{display:block;width:auto}
   .hero-badges{margin-top:18px}
   .hero-badges .badge-apple img{height:46px}
-  .hero-badges .badge-google img{height:69px;margin:-11.5px}
+  .hero-badges .badge-google img{height:53px;margin:-4px}
   .dl-badges{justify-content:center;margin-bottom:18px}
   .dl-badges .badge-apple img{height:52px}
-  .dl-badges .badge-google img{height:78px;margin:-13px}
-  .footer-badges{justify-content:center;margin-bottom:20px}
-  .footer-badges .badge-apple img{height:34px}
-  .footer-badges .badge-google img{height:51px;margin:-8.5px}
+  .dl-badges .badge-google img{height:60px;margin:-4px}
   .dl-muted:hover{opacity:.85;transform:translateY(-1px)}
 
   /* Clean footer (FTR Management info) */
@@ -3003,10 +3000,6 @@
 <!-- ================= FOOTER ================= -->
 <footer class="footer-clean">
   <div class="wrap">
-    <div class="store-badges footer-badges">
-      <a class="store-badge badge-apple" href="https://apps.apple.com/nl/app/rigsize-live/id6771266857" target="_blank" rel="noopener"><img src="/images/badges/appstore-en.svg" alt="Download on the App Store" loading="lazy"></a>
-      <a class="store-badge badge-google" href="https://play.google.com/store/apps/details?id=com.rigsizelive.app" target="_blank" rel="noopener"><img src="/images/badges/googleplay-en.png" alt="Get it on Google Play" loading="lazy"></a>
-    </div>
     <div class="footer-legal-links">
       <a href="https://www.rigsizelive.com/privacy-en.html">Privacy policy</a>
       <span class="footer-sep">&middot;</span>
