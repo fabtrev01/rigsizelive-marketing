@@ -2024,6 +2024,17 @@
   }
   /* === EINDE RSL_DESKTOP_SAFARI_BEZEL_FIX === */
 
+  /* === RSL_HIDE_BROWSER_MOBILE ===================================== */
+  /* De browserknop is alleen nog voor desktopbezoekers, die geen app   */
+  /* kunnen installeren. Op telefoon en tablet stuurt de pagina puur    */
+  /* naar de stores. Staat bewust NA de media-blokken op 640px en       */
+  /* 641-1024px, die .dl-stores met !important op display zetten:       */
+  /* bij gelijke specificiteit wint de laatste regel.                   */
+  @media (max-width: 1024px) {
+    .dl-stores { display: none !important; }
+  }
+  /* === EINDE RSL_HIDE_BROWSER_MOBILE ================================ */
+
   </style>
 </head>
 <body>
@@ -2095,7 +2106,6 @@
   <a href="https://www.rigsizelive.com/vin-foil-calculator/">Vin & Foil calculator</a>
   <div class="mobile-cta">
     <a class="btn btn-primary" href="#download">Download de app →</a>
-    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">Open webapp</a>
   </div>
   <div class="mobile-lang">
     <a href="/" data-lang="nl">🇳🇱 Nederlands</a>
@@ -2981,7 +2991,7 @@
   <div class="wrap">
     <div class="mono" style="color:var(--brand)">— Download</div>
     <h2>Klaar voor je volgende sessie?</h2>
-    <p>RSL is nu beschikbaar in de App Store én Google Play — of open direct in je browser.</p>
+    <p>RSL is nu beschikbaar in de App Store én Google Play.</p>
 
     <div class="store-badges dl-badges">
       <a class="store-badge badge-apple" href="https://apps.apple.com/nl/app/rigsize-live/id6771266857" target="_blank" rel="noopener"><img src="/images/badges/appstore-nl.svg" alt="Download in de App Store" loading="lazy"></a>

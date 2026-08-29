@@ -2018,6 +2018,17 @@
   }
   /* === EINDE RSL_DESKTOP_SAFARI_BEZEL_FIX === */
 
+  /* === RSL_HIDE_BROWSER_MOBILE ===================================== */
+  /* De browserknop is alleen nog voor desktopbezoekers, die geen app   */
+  /* kunnen installeren. Op telefoon en tablet stuurt de pagina puur    */
+  /* naar de stores. Staat bewust NA de media-blokken op 640px en       */
+  /* 641-1024px, die .dl-stores met !important op display zetten:       */
+  /* bij gelijke specificiteit wint de laatste regel.                   */
+  @media (max-width: 1024px) {
+    .dl-stores { display: none !important; }
+  }
+  /* === EINDE RSL_HIDE_BROWSER_MOBILE ================================ */
+
   </style>
 </head>
 <body>
@@ -2089,7 +2100,6 @@
   <a href="{{CALC_URL}}">{{NAV.CALCULATOR}}</a>
   <div class="mobile-cta">
     <a class="btn btn-primary" href="#download">{{MOBILE.DOWNLOAD_APP}}</a>
-    <a class="btn btn-ghost" href="https://app.rigsizelive.com" style="border-color:rgba(255,255,255,.3);color:#fff">{{MOBILE.OPEN_WEBAPP}}</a>
   </div>
   <div class="mobile-lang">
     <a href="/" data-lang="nl">🇳🇱 Nederlands</a>
