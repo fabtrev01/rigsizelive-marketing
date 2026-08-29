@@ -2029,6 +2029,21 @@
   }
   /* === EINDE RSL_HIDE_BROWSER_MOBILE ================================ */
 
+  /* === RSL_GRADIENT_EDGE_FIX ======================================= */
+  /* .btn heeft border:1px solid transparent. Het verloop wordt        */
+  /* uitgerekend over de padding-box maar geverfd tot de border-box,   */
+  /* dus de randring krijgt via background-repeat een herhaling van de */
+  /* tegel te zien: het TEGENOVERGESTELDE uiteinde van het verloop     */
+  /* (teal links/boven, blauw rechts/onder). Zichtbaar als een licht   */
+  /* streepje langs de rand. border-box laat het verloop over de hele  */
+  /* randbox lopen, dus valt er niets te herhalen.                     */
+  /* Geldt voor elk element met een verloop EN een transparante rand.  */
+  .btn,
+  .fcard.dark {
+    background-origin: border-box;
+  }
+  /* === EINDE RSL_GRADIENT_EDGE_FIX ================================== */
+
   </style>
 </head>
 <body>
