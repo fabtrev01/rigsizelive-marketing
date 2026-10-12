@@ -1,0 +1,202 @@
+{
+  "status": "PAUSED_IOS_MODERN_TARGETING_AND_MEASUREMENT_PENDING",
+  "ad_account_id": "1701929497896944",
+  "requested_goal": "app installations",
+  "previous_ad_link": "https://www.rigsizelive.com/app",
+  "previous_ad_optimization": "LANDING_PAGE_VIEWS",
+  "pending": [
+    "Meta error 2446981 SKAdNetwork Not Ready blocks modern iOS adset creation. Native measurement integration/release needed.",
+    "Modern iOS targeting: Meta returned iOS_ver_2.0_to_14.4. Resolve before activation.",
+    "End-to-end install event measurement not yet verified.",
+    "Meta ad review pending; all six ads configured PAUSED.",
+    "Unused diagnostic UI draft remains off; do not publish."
+  ],
+  "ads": [
+    {
+      "slug": "waait-het",
+      "name": "RSL NL | Waait het?",
+      "headline": "Weet thuis al of het waait",
+      "message": "Het praatje aan de kant blijft, maar jij weet thuis al of het waait. Bekijk welke rigmaten anderen delen op jouw spot en help elkaar door ook jouw sessie te delen.\n\nRigSize Live — de meest complete app voor windsurf, kite en wing. Helemaal gratis, zonder paywall.",
+      "duration": 14.366667,
+      "file": "/Users/fabiantrevisan/rsl-video/out/rsl-waait-het-nl.mp4",
+      "video_id": "1800578284312872",
+      "video_status": {
+        "video_status": "ready",
+        "uploading_phase": {
+          "status": "complete"
+        },
+        "processing_phase": {
+          "status": "complete"
+        },
+        "publishing_phase": {
+          "status": "complete",
+          "publish_status": "published",
+          "publish_time": "2026-10-02T00:56:39+0000"
+        }
+      },
+      "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/834938898_1874859247268344_156054174833049752_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3495b&_nc_ohc=WQcjj89ehUwQ7kNvwF0L_hY&_nc_oc=AdqBNJxeSnX-zxEUyKL-02mTX94Cg6926jKZerEkj5COAQfwIzmRGjmcRPSgMz0D4AvXiiMsUDDrbkW4DVSyArwF&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=QcyfJFKDUo-sQhmb3WWaBg&_nc_tpa=Q5bMBQIIY1BFSSMvpRfE8wFdDTrvgjMIKQtyN2z8yBblcJW6vR4G2HFZh1TNVSlKvuzcf0Kej4jOgY6f&oh=00_AQNp9r3EFAxR6qUzbF5fdq7KAWUlAPxTI9X25DpmoqXCQw&oe=6AC4C50E"
+    },
+    {
+      "slug": "je-sessie",
+      "name": "RSL NL | Je sessie",
+      "headline": "Je sessie, wind en gear samen",
+      "message": "Wat vertelt jouw sessie je? Combineer je tracking met wind en gekozen gear en krijg meer inzicht in je prestaties en materiaal.\n\nRigSize Live — de meest complete app voor windsurf, kite en wing. Helemaal gratis, zonder paywall.",
+      "duration": 12.666667,
+      "file": "/Users/fabiantrevisan/rsl-video/out/rsl-je-sessie-nl.mp4",
+      "video_id": "1123926873495423",
+      "video_status": {
+        "video_status": "ready",
+        "uploading_phase": {
+          "status": "complete"
+        },
+        "processing_phase": {
+          "status": "complete"
+        },
+        "publishing_phase": {
+          "status": "complete",
+          "publish_status": "published",
+          "publish_time": "2026-10-02T00:56:50+0000"
+        }
+      },
+      "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/800258846_1023738927350471_3043784419518999858_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=IxRD3mMSgSsQ7kNvwEgRQD8&_nc_oc=AdoN9gor3Mk5Y00SdGaiIanp6iRU8t1w1NQWe7iJM1chiydXHsJcJvM0B08jiw9g8BaDhIU1moF1FTuwvtJCOT7W&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=aSawKXGkoFsz1dgH6-LcgA&_nc_tpa=Q5bMBQKNQ1lB60TtyhjHWZXHV03mawbEKpGz8HIYCFr2XvpRCgK1HisJhgvAKJI46VAlMpTjkg-8_kCt&oh=00_AQMMV5SSSzGTdJxfkdWYs2G_m42T3hT-t9h6fpHUajQULw&oe=6AC4C0CE"
+    },
+    {
+      "slug": "gratis",
+      "name": "RSL NL | Gratis. Echt.",
+      "headline": "Helemaal gratis. Geen paywall.",
+      "message": "Jouw gedeelde rigmaat helpt een ander op weg. En die van een ander helpt jou. Hoe meer mensen meedoen, hoe leuker het wordt.\n\nRigSize Live — de meest complete app voor windsurf, kite en wing. Gratis. Echt. Geen paywall, geen verrassingen.",
+      "duration": 11.6,
+      "file": "/Users/fabiantrevisan/rsl-video/out/rsl-gratis-nl.mp4",
+      "video_id": "941571308571264",
+      "video_status": {
+        "video_status": "ready",
+        "uploading_phase": {
+          "status": "complete"
+        },
+        "processing_phase": {
+          "status": "complete"
+        },
+        "publishing_phase": {
+          "status": "complete",
+          "publish_status": "published",
+          "publish_time": "2026-10-02T00:57:03+0000"
+        }
+      },
+      "thumbnail_url": "https://scontent-ams2-1.xx.fbcdn.net/v/t15.5256-10/832324270_1425128053136351_3269466624830956784_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=ouYII3PKxpMQ7kNvwHa8m_b&_nc_oc=Adqg0sCYLi90jbwkCnHyIeQCO2RAk6cq-YkS-A7yiKwr1NrZ4r660wGIKahbCPObcjdxweBxTIOSBc_AZmcXSmPs&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=wTpJvf7Lw24kXC4gAWXWbA&_nc_tpa=Q5bMBQI1HuQ83TSZ9klBICXKxcKDPzRMLccgy2F8Ei7sMfRwz4XGsc-0ZREyqhmkiKEnYRvlrbk8Ztrk&oh=00_AQP7CZQwSJLv4WUhXEnwd9_AQ0LORjWXA3xy6MmQSWjU0Q&oe=6AC4BD60"
+    }
+  ],
+  "mobile_app_link": {
+    "meta_app_id": "988782677571964",
+    "ios_store_id": "6771266857",
+    "bundle_id": "com.rigsizelive.app",
+    "android_package": "com.rigsizelive.app",
+    "android_class": "com.rigsizelive.app.MainActivity",
+    "verified_advertisable_store_keys": [
+      "itunes",
+      "google_play"
+    ],
+    "install_event_measurement": "not_configured_or_verified",
+    "campaign_route_choice": "app_installs"
+  },
+  "campaign_id": "120252356146190100",
+  "campaign_daily_budget_cents": 150,
+  "region": "NL",
+  "adset_attempt_ios": {
+    "error_category": "VALIDATION",
+    "error_message": "Mobiele app niet gevonden in App Store: De app waarvoor je een advertentie wilt maken, kan niet worden gevonden in de App Store. Controleer de instellingen van het registratieplatform en zorg ervoor dat de app beschikbaar is in de App Store.",
+    "error_subcode": "2446333",
+    "is_retryable": false
+  },
+  "budget_interpretation": "EUR 3 average daily shared across both platforms",
+  "ads_manager_url": "https://www.facebook.com/adsmanager/manage/campaigns/edit?act=1701929497896944&selected_campaign_ids=120252356146190100",
+  "ad_sets": [
+    {
+      "platform": "Android",
+      "store_url": "https://play.google.com/store/apps/details?id=com.rigsizelive.app&gl=NL",
+      "ad_set_id": "120252360193840100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/adsets/edit?act=1701929497896944&selected_adset_ids=120252360193840100",
+      "spec": "{\"campaign_id\":\"120252356146190100\",\"name\":\"RSL | NL | Android\",\"billing_event\":\"IMPRESSIONS\",\"optimization_goal\":\"APP_INSTALLS\",\"targeting\":{\"geo_locations\":{\"countries\":{\"0\":\"NL\"}},\"user_os\":{\"0\":\"Android\"},\"device_platforms\":{\"0\":\"mobile\"},\"publisher_platforms\":{\"0\":\"facebook\",\"1\":\"instagram\"},\"targeting_automation\":{\"advantage_audience\":{\"age_min_suggestion\":18}}},\"status\":\"PAUSED\",\"promoted_object\":{\"application_id\":988782677571964,\"object_store_url\":\"https:\\/\\/play.google.com\\/store\\/apps\\/details?id=com.rigsizelive.app&gl=NL\"},\"destination_type\":\"APP\",\"dsa_beneficiary\":\"rigsizelive\",\"dsa_payor\":\"rigsizelive\",\"campaign_creation_source\":\"mcp_campaign_creation\",\"targeting_as_signal\":3}",
+      "created_ad_set": "{\"ad_set_id\":\"120252360193840100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"campaign_id\":\"120252356146190100\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL | NL | Android\",\"status\":\"PAUSED\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/adsets\\/edit?act=1701929497896944&selected_adset_ids=120252360193840100\",\"currency\":\"EUR\",\"optimization_goal\":\"APP_INSTALLS\",\"billing_event\":\"IMPRESSIONS\",\"destination_type\":\"APP\",\"targeting\":{\"countries\":[\"NL\"]}}"
+    },
+    {
+      "platform": "iOS",
+      "store_url": "https://apps.apple.com/nl/app/rigsize-live/id6771266857",
+      "ad_set_id": "120252360247570100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/adsets/edit?act=1701929497896944&selected_adset_ids=120252360247570100",
+      "spec": "{\"campaign_id\":\"120252356146190100\",\"name\":\"RSL | NL | iOS\",\"billing_event\":\"IMPRESSIONS\",\"optimization_goal\":\"APP_INSTALLS\",\"targeting\":{\"geo_locations\":{\"countries\":{\"0\":\"NL\"}},\"user_os\":{\"0\":\"iOS\"},\"device_platforms\":{\"0\":\"mobile\"},\"publisher_platforms\":{\"0\":\"facebook\",\"1\":\"instagram\"},\"targeting_automation\":{\"advantage_audience\":{\"age_min_suggestion\":18}}},\"status\":\"PAUSED\",\"promoted_object\":{\"application_id\":988782677571964,\"object_store_url\":\"https:\\/\\/apps.apple.com\\/nl\\/app\\/rigsize-live\\/id6771266857\"},\"destination_type\":\"APP\",\"dsa_beneficiary\":\"rigsizelive\",\"dsa_payor\":\"rigsizelive\",\"campaign_creation_source\":\"mcp_campaign_creation\",\"targeting_as_signal\":3}",
+      "created_ad_set": "{\"ad_set_id\":\"120252360247570100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"campaign_id\":\"120252356146190100\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL | NL | iOS\",\"status\":\"PAUSED\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/adsets\\/edit?act=1701929497896944&selected_adset_ids=120252360247570100\",\"currency\":\"EUR\",\"optimization_goal\":\"APP_INSTALLS\",\"billing_event\":\"IMPRESSIONS\",\"destination_type\":\"APP\",\"targeting\":{\"countries\":[\"NL\"]}}"
+    }
+  ],
+  "ios_ui_draft": {
+    "adset_id": "120252360144630100",
+    "ad_id": "120252360144640100",
+    "name": "RSL | iOS | CONCEPT - storevalidatie nodig",
+    "status": "DRAFT",
+    "adset_toggle": "OFF",
+    "note": "Unfinished UI diagnostic draft, do not publish"
+  },
+  "created_ads": [
+    {
+      "slug": "waait-het",
+      "platform": "Android",
+      "ad_id": "120252360239380100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/ads/edit?act=1701929497896944&selected_ad_ids=120252360239380100",
+      "spec": "{\"name\":\"RSL NL | Waait het? | Android\",\"adset_id\":\"120252360193840100\",\"status\":\"PAUSED\",\"creative\":{\"object_story_spec\":{\"page_id\":\"1152931377906771\",\"instagram_user_id\":\"17841422351517376\",\"video_data\":{\"video_id\":\"1800578284312872\",\"image_url\":\"https:\\/\\/scontent-ams2-1.xx.fbcdn.net\\/v\\/t15.5256-10\\/834938898_1874859247268344_156054174833049752_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3495b&_nc_ohc=WQcjj89ehUwQ7kNvwF0L_hY&_nc_oc=AdqBNJxeSnX-zxEUyKL-02mTX94Cg6926jKZerEkj5COAQfwIzmRGjmcRPSgMz0D4AvXiiMsUDDrbkW4DVSyArwF&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=QcyfJFKDUo-sQhmb3WWaBg&_nc_tpa=Q5bMBQIIY1BFSSMvpRfE8wFdDTrvgjMIKQtyN2z8yBblcJW6vR4G2HFZh1TNVSlKvuzcf0Kej4jOgY6f&oh=00_AQNp9r3EFAxR6qUzbF5fdq7KAWUlAPxTI9X25DpmoqXCQw&oe=6AC4C50E\",\"message\":\"Het praatje aan de kant blijft, maar jij weet thuis al of het waait. Bekijk welke rigmaten anderen delen op jouw spot en help elkaar door ook jouw sessie te delen.\\n\\nRigSize Live \\u2014 de meest complete app voor windsurf, kite en wing. Helemaal gratis, zonder paywall.\",\"title\":\"Weet thuis al of het waait\",\"call_to_action\":{\"type\":\"INSTALL_MOBILE_APP\",\"value\":{\"link\":\"https:\\/\\/play.google.com\\/store\\/apps\\/details?id=com.rigsizelive.app&gl=NL\"}}}},\"contextual_multi_ads\":{\"enroll_status\":\"OPT_OUT\"}}}",
+      "created_ad": "{\"ad_id\":\"120252360239380100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"ad_set_id\":\"120252360193840100\",\"ad_set_name\":\"RSL | NL | Android\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL NL | Waait het? | Android\",\"status\":\"PAUSED\",\"creative_summary\":\"Video ad\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/ads\\/edit?act=1701929497896944&selected_ad_ids=120252360239380100\",\"page_id\":\"1152931377906771\",\"page_name\":\"RigSize Live\",\"page_platform\":\"INSTAGRAM\",\"image_url\":\"https:\\/\\/mcp.facebook.com\\/ads\\/creative-image?d=AQKk8eT0Jqnw8Xxp-dL9m6eq47n6gKkaKCJaEyFE0AzPp4-zNkNgQ_C1c_Q8IRK3VvFu_rBooCutMo-CtQXqqilBmn9qWkSMLMliMKq8TRSIL-vsiqzPEbQJfdQlAKS1IasWplJBQsd3RZ6fAvoET7e_\"}"
+    },
+    {
+      "slug": "je-sessie",
+      "platform": "Android",
+      "ad_id": "120252360239980100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/ads/edit?act=1701929497896944&selected_ad_ids=120252360239980100",
+      "spec": "{\"name\":\"RSL NL | Je sessie | Android\",\"adset_id\":\"120252360193840100\",\"status\":\"PAUSED\",\"creative\":{\"object_story_spec\":{\"page_id\":\"1152931377906771\",\"instagram_user_id\":\"17841422351517376\",\"video_data\":{\"video_id\":\"1123926873495423\",\"image_url\":\"https:\\/\\/scontent-ams2-1.xx.fbcdn.net\\/v\\/t15.5256-10\\/800258846_1023738927350471_3043784419518999858_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=IxRD3mMSgSsQ7kNvwEgRQD8&_nc_oc=AdoN9gor3Mk5Y00SdGaiIanp6iRU8t1w1NQWe7iJM1chiydXHsJcJvM0B08jiw9g8BaDhIU1moF1FTuwvtJCOT7W&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=aSawKXGkoFsz1dgH6-LcgA&_nc_tpa=Q5bMBQKNQ1lB60TtyhjHWZXHV03mawbEKpGz8HIYCFr2XvpRCgK1HisJhgvAKJI46VAlMpTjkg-8_kCt&oh=00_AQMMV5SSSzGTdJxfkdWYs2G_m42T3hT-t9h6fpHUajQULw&oe=6AC4C0CE\",\"message\":\"Wat vertelt jouw sessie je? Combineer je tracking met wind en gekozen gear en krijg meer inzicht in je prestaties en materiaal.\\n\\nRigSize Live \\u2014 de meest complete app voor windsurf, kite en wing. Helemaal gratis, zonder paywall.\",\"title\":\"Je sessie, wind en gear samen\",\"call_to_action\":{\"type\":\"INSTALL_MOBILE_APP\",\"value\":{\"link\":\"https:\\/\\/play.google.com\\/store\\/apps\\/details?id=com.rigsizelive.app&gl=NL\"}}}},\"contextual_multi_ads\":{\"enroll_status\":\"OPT_OUT\"}}}",
+      "created_ad": "{\"ad_id\":\"120252360239980100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"ad_set_id\":\"120252360193840100\",\"ad_set_name\":\"RSL | NL | Android\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL NL | Je sessie | Android\",\"status\":\"PAUSED\",\"creative_summary\":\"Video ad\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/ads\\/edit?act=1701929497896944&selected_ad_ids=120252360239980100\",\"page_id\":\"1152931377906771\",\"page_name\":\"RigSize Live\",\"page_platform\":\"INSTAGRAM\",\"image_url\":\"https:\\/\\/mcp.facebook.com\\/ads\\/creative-image?d=AQL_cxN2R7tcWTx_wj7fDpPJwCIQ35QN5OMipgUe-AxkN5iACVLGIMrO4ui-OB4c2Q0WkVJP0cRf0_ijKMYWzpSL9668K5-yG28Pu2qa1YrgGNLA4YhoCYEjWXFy0ctczGYm5T16O-NoSEprkgazNJUl\"}"
+    },
+    {
+      "slug": "gratis",
+      "platform": "Android",
+      "ad_id": "120252360240320100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/ads/edit?act=1701929497896944&selected_ad_ids=120252360240320100",
+      "spec": "{\"name\":\"RSL NL | Gratis. Echt. | Android\",\"adset_id\":\"120252360193840100\",\"status\":\"PAUSED\",\"creative\":{\"object_story_spec\":{\"page_id\":\"1152931377906771\",\"instagram_user_id\":\"17841422351517376\",\"video_data\":{\"video_id\":\"941571308571264\",\"image_url\":\"https:\\/\\/scontent-ams2-1.xx.fbcdn.net\\/v\\/t15.5256-10\\/832324270_1425128053136351_3269466624830956784_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=ouYII3PKxpMQ7kNvwHa8m_b&_nc_oc=Adqg0sCYLi90jbwkCnHyIeQCO2RAk6cq-YkS-A7yiKwr1NrZ4r660wGIKahbCPObcjdxweBxTIOSBc_AZmcXSmPs&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=wTpJvf7Lw24kXC4gAWXWbA&_nc_tpa=Q5bMBQI1HuQ83TSZ9klBICXKxcKDPzRMLccgy2F8Ei7sMfRwz4XGsc-0ZREyqhmkiKEnYRvlrbk8Ztrk&oh=00_AQP7CZQwSJLv4WUhXEnwd9_AQ0LORjWXA3xy6MmQSWjU0Q&oe=6AC4BD60\",\"message\":\"Jouw gedeelde rigmaat helpt een ander op weg. En die van een ander helpt jou. Hoe meer mensen meedoen, hoe leuker het wordt.\\n\\nRigSize Live \\u2014 de meest complete app voor windsurf, kite en wing. Gratis. Echt. Geen paywall, geen verrassingen.\",\"title\":\"Helemaal gratis. Geen paywall.\",\"call_to_action\":{\"type\":\"INSTALL_MOBILE_APP\",\"value\":{\"link\":\"https:\\/\\/play.google.com\\/store\\/apps\\/details?id=com.rigsizelive.app&gl=NL\"}}}},\"contextual_multi_ads\":{\"enroll_status\":\"OPT_OUT\"}}}",
+      "created_ad": "{\"ad_id\":\"120252360240320100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"ad_set_id\":\"120252360193840100\",\"ad_set_name\":\"RSL | NL | Android\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL NL | Gratis. Echt. | Android\",\"status\":\"PAUSED\",\"creative_summary\":\"Video ad\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/ads\\/edit?act=1701929497896944&selected_ad_ids=120252360240320100\",\"page_id\":\"1152931377906771\",\"page_name\":\"RigSize Live\",\"page_platform\":\"INSTAGRAM\",\"image_url\":\"https:\\/\\/mcp.facebook.com\\/ads\\/creative-image?d=AQIeYk1JPJIuR12-9T5amgTOwjwQS_Mw3AcAOr_WwpXKd9u66BJhgBUHGbc-DuHzWEgzSKIf1XYGXL15wDh6kGWxpZ5sTDeBHwmqVwmpmVVatLMGvCgtTmQ3AGOJHnwRxdsPtp4A_55jqS43TyVO8wDW\"}"
+    },
+    {
+      "slug": "waait-het",
+      "platform": "iOS",
+      "ad_id": "120252360252680100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/ads/edit?act=1701929497896944&selected_ad_ids=120252360252680100",
+      "spec": "{\"name\":\"RSL NL | Waait het? | iOS\",\"adset_id\":\"120252360247570100\",\"status\":\"PAUSED\",\"creative\":{\"object_story_spec\":{\"page_id\":\"1152931377906771\",\"instagram_user_id\":\"17841422351517376\",\"video_data\":{\"video_id\":\"1800578284312872\",\"image_url\":\"https:\\/\\/scontent-ams2-1.xx.fbcdn.net\\/v\\/t15.5256-10\\/834938898_1874859247268344_156054174833049752_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e3495b&_nc_ohc=WQcjj89ehUwQ7kNvwF0L_hY&_nc_oc=AdqBNJxeSnX-zxEUyKL-02mTX94Cg6926jKZerEkj5COAQfwIzmRGjmcRPSgMz0D4AvXiiMsUDDrbkW4DVSyArwF&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=QcyfJFKDUo-sQhmb3WWaBg&_nc_tpa=Q5bMBQIIY1BFSSMvpRfE8wFdDTrvgjMIKQtyN2z8yBblcJW6vR4G2HFZh1TNVSlKvuzcf0Kej4jOgY6f&oh=00_AQNp9r3EFAxR6qUzbF5fdq7KAWUlAPxTI9X25DpmoqXCQw&oe=6AC4C50E\",\"message\":\"Het praatje aan de kant blijft, maar jij weet thuis al of het waait. Bekijk welke rigmaten anderen delen op jouw spot en help elkaar door ook jouw sessie te delen.\\n\\nRigSize Live \\u2014 de meest complete app voor windsurf, kite en wing. Helemaal gratis, zonder paywall.\",\"title\":\"Weet thuis al of het waait\",\"call_to_action\":{\"type\":\"INSTALL_MOBILE_APP\",\"value\":{\"link\":\"https:\\/\\/apps.apple.com\\/nl\\/app\\/rigsize-live\\/id6771266857\"}}}},\"contextual_multi_ads\":{\"enroll_status\":\"OPT_OUT\"}}}",
+      "created_ad": "{\"ad_id\":\"120252360252680100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"ad_set_id\":\"120252360247570100\",\"ad_set_name\":\"RSL | NL | iOS\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL NL | Waait het? | iOS\",\"status\":\"PAUSED\",\"creative_summary\":\"Video ad\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/ads\\/edit?act=1701929497896944&selected_ad_ids=120252360252680100\",\"page_id\":\"1152931377906771\",\"page_name\":\"RigSize Live\",\"page_platform\":\"INSTAGRAM\",\"image_url\":\"https:\\/\\/mcp.facebook.com\\/ads\\/creative-image?d=AQLDLGhV67W7KCT9fEcSeMl14u8vDsfYp6IUPzEHZZWOF9cf_wIhBPIDDoQe85ShpYvHAG0kb41sbXoaCFmiXOMLF7mzWG1w6FLUjIXgBQYVmqJqlt9L2LlTvTNoe-sEHJnwgcHrtKtY4p32RcJWtbEX\"}"
+    },
+    {
+      "slug": "je-sessie",
+      "platform": "iOS",
+      "ad_id": "120252360252950100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/ads/edit?act=1701929497896944&selected_ad_ids=120252360252950100",
+      "spec": "{\"name\":\"RSL NL | Je sessie | iOS\",\"adset_id\":\"120252360247570100\",\"status\":\"PAUSED\",\"creative\":{\"object_story_spec\":{\"page_id\":\"1152931377906771\",\"instagram_user_id\":\"17841422351517376\",\"video_data\":{\"video_id\":\"1123926873495423\",\"image_url\":\"https:\\/\\/scontent-ams2-1.xx.fbcdn.net\\/v\\/t15.5256-10\\/800258846_1023738927350471_3043784419518999858_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3495b&_nc_ohc=IxRD3mMSgSsQ7kNvwEgRQD8&_nc_oc=AdoN9gor3Mk5Y00SdGaiIanp6iRU8t1w1NQWe7iJM1chiydXHsJcJvM0B08jiw9g8BaDhIU1moF1FTuwvtJCOT7W&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=aSawKXGkoFsz1dgH6-LcgA&_nc_tpa=Q5bMBQKNQ1lB60TtyhjHWZXHV03mawbEKpGz8HIYCFr2XvpRCgK1HisJhgvAKJI46VAlMpTjkg-8_kCt&oh=00_AQMMV5SSSzGTdJxfkdWYs2G_m42T3hT-t9h6fpHUajQULw&oe=6AC4C0CE\",\"message\":\"Wat vertelt jouw sessie je? Combineer je tracking met wind en gekozen gear en krijg meer inzicht in je prestaties en materiaal.\\n\\nRigSize Live \\u2014 de meest complete app voor windsurf, kite en wing. Helemaal gratis, zonder paywall.\",\"title\":\"Je sessie, wind en gear samen\",\"call_to_action\":{\"type\":\"INSTALL_MOBILE_APP\",\"value\":{\"link\":\"https:\\/\\/apps.apple.com\\/nl\\/app\\/rigsize-live\\/id6771266857\"}}}},\"contextual_multi_ads\":{\"enroll_status\":\"OPT_OUT\"}}}",
+      "created_ad": "{\"ad_id\":\"120252360252950100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"ad_set_id\":\"120252360247570100\",\"ad_set_name\":\"RSL | NL | iOS\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL NL | Je sessie | iOS\",\"status\":\"PAUSED\",\"creative_summary\":\"Video ad\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/ads\\/edit?act=1701929497896944&selected_ad_ids=120252360252950100\",\"page_id\":\"1152931377906771\",\"page_name\":\"RigSize Live\",\"page_platform\":\"INSTAGRAM\",\"image_url\":\"https:\\/\\/mcp.facebook.com\\/ads\\/creative-image?d=AQJ7yFcRgrByQzbBYYVDwtb1Gy_t0cfM6Mc_GMZuOvTR1K6KWbrXE_5IIUPIEN8NnIl2aTlwMfae9gL0ocRScrChwZMdFmPwOxeAbSg0LfvsHc4nZEdFHnN6UcxjyJ-3k69u9AlK7tMYktKUxduRC9Ko\"}"
+    },
+    {
+      "slug": "gratis",
+      "platform": "iOS",
+      "ad_id": "120252360256310100",
+      "status": "PAUSED",
+      "ads_manager_url": "https://www.facebook.com/adsmanager/manage/ads/edit?act=1701929497896944&selected_ad_ids=120252360256310100",
+      "spec": "{\"name\":\"RSL NL | Gratis. Echt. | iOS\",\"adset_id\":\"120252360247570100\",\"status\":\"PAUSED\",\"creative\":{\"object_story_spec\":{\"page_id\":\"1152931377906771\",\"instagram_user_id\":\"17841422351517376\",\"video_data\":{\"video_id\":\"941571308571264\",\"image_url\":\"https:\\/\\/scontent-ams2-1.xx.fbcdn.net\\/v\\/t15.5256-10\\/832324270_1425128053136351_3269466624830956784_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=e3495b&_nc_ohc=ouYII3PKxpMQ7kNvwHa8m_b&_nc_oc=Adqg0sCYLi90jbwkCnHyIeQCO2RAk6cq-YkS-A7yiKwr1NrZ4r660wGIKahbCPObcjdxweBxTIOSBc_AZmcXSmPs&_nc_zt=23&_nc_ht=scontent-ams2-1.xx&edm=APRAPSkEAAAA&_nc_gid=wTpJvf7Lw24kXC4gAWXWbA&_nc_tpa=Q5bMBQI1HuQ83TSZ9klBICXKxcKDPzRMLccgy2F8Ei7sMfRwz4XGsc-0ZREyqhmkiKEnYRvlrbk8Ztrk&oh=00_AQP7CZQwSJLv4WUhXEnwd9_AQ0LORjWXA3xy6MmQSWjU0Q&oe=6AC4BD60\",\"message\":\"Jouw gedeelde rigmaat helpt een ander op weg. En die van een ander helpt jou. Hoe meer mensen meedoen, hoe leuker het wordt.\\n\\nRigSize Live \\u2014 de meest complete app voor windsurf, kite en wing. Gratis. Echt. Geen paywall, geen verrassingen.\",\"title\":\"Helemaal gratis. Geen paywall.\",\"call_to_action\":{\"type\":\"INSTALL_MOBILE_APP\",\"value\":{\"link\":\"https:\\/\\/apps.apple.com\\/nl\\/app\\/rigsize-live\\/id6771266857\"}}}},\"contextual_multi_ads\":{\"enroll_status\":\"OPT_OUT\"}}}",
+      "created_ad": "{\"ad_id\":\"120252360256310100\",\"ad_account_id\":\"1701929497896944\",\"ad_account_name\":\"RigSize Live Ad account\",\"ad_set_id\":\"120252360247570100\",\"ad_set_name\":\"RSL | NL | iOS\",\"campaign_name\":\"RSL | App-installaties | NL | Videosnippets\",\"name\":\"RSL NL | Gratis. Echt. | iOS\",\"status\":\"PAUSED\",\"creative_summary\":\"Video ad\",\"ads_manager_url\":\"https:\\/\\/www.facebook.com\\/adsmanager\\/manage\\/ads\\/edit?act=1701929497896944&selected_ad_ids=120252360256310100\",\"page_id\":\"1152931377906771\",\"page_name\":\"RigSize Live\",\"page_platform\":\"INSTAGRAM\",\"image_url\":\"https:\\/\\/mcp.facebook.com\\/ads\\/creative-image?d=AQIh5fp71rtNoFJ5x7HqQgxyx3T7Cszks362TaA-mgfpZzqa9m7QFKadLvAYmFV8vOF3vnjpsERhz80y-E5uW6CrUqRywEeCALbmOjer42g1U_td6lDVRhM_U6sILKWCWtdb5dQDTAhE_ZHgHnoEICfS\"}"
+    }
+  ],
+  "meta_app_live": true,
+  "meta_app_live_authorization": "Fabian explicitly approved Development to Live in this conversation.",
+  "verification_file": "verification.json",
+  "total_daily_budget_cents": 300,
+  "modern_ios_campaign_id": "120252360351140100",
+  "modern_ios_daily_budget_cents": 150
+}

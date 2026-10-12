@@ -469,6 +469,7 @@
   .int-list li .int-logo{width:24px;height:24px;border-radius:6px;object-fit:contain;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:transparent}
   .int-list li .int-logo-apple{background:#111418;color:#fff}
   .int-list li .int-logo-apple svg{width:15px;height:15px}
+  .int-list li .int-logo-suunto{width:auto;height:24px;border-radius:0}
   .int-list li .coming{color:#ffd1b0;font-size:11px;margin-left:6px;padding:2px 8px;border-radius:999px;background:rgba(249,115,22,.18);font-weight:600;letter-spacing:.05em;text-transform:uppercase}
 
   .watches{position:relative;display:flex;justify-content:center;align-items:center;padding-left:60px}
@@ -2084,7 +2085,7 @@
     <div class="nav-links">
       <a href="#how">Tracking</a>
       <a href="#features">Funzioni</a>
-      <a href="#watch">Garmin & Apple</a>
+      <a href="#watch">Garmin, Apple & Suunto</a>
       <a href="#forecast">Previsioni vento</a>
       <a href="#community">Live rigsizes</a>
       <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/">Calcolatore pinna & foil</a>
@@ -2115,7 +2116,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#how">Tracking</a>
   <a href="#features">Funzioni</a>
-  <a href="#watch">Garmin & Apple</a>
+  <a href="#watch">Garmin, Apple & Suunto</a>
   <a href="#forecast">Previsioni vento</a>
   <a href="#community">Live rigsizes</a>
   <a href="https://www.rigsizelive.com/it/calcolatore-pinna-foil/">Calcolatore pinna & foil</a>
@@ -2142,7 +2143,7 @@
         Tutto della tua sessione.<br>
         <span class="acc">In una sola app.</span>
       </h1>
-      <p class="sub">RigSize Live è l'unica app che combina <b style="color:#fff;font-weight:600">dati di rig, vento, spot e il tuo tracking personale</b> in un'unica analisi. Usa semplicemente la tua app per orologio preferita — sincronizza via <b style="color:#fff;font-weight:600">Garmin Connect</b> o <b style="color:#fff;font-weight:600">Apple Health</b> e tutto arriva automaticamente in RSL.</p>
+      <p class="sub">RigSize Live è l'unica app che combina <b style="color:#fff;font-weight:600">dati di rig, vento, spot e il tuo tracking personale</b> in un'unica analisi. Usa semplicemente la tua app per orologio preferita — sincronizza via <b style="color:#fff;font-weight:600">Garmin Connect</b>, <b style="color:#fff;font-weight:600">Apple Health</b> o <b style="color:#fff;font-weight:600">Suunto</b> e tutto arriva automaticamente in RSL.</p>
 
       <div class="hero-ctas">
         <a href="#download" class="btn btn-primary">Scarica l'app →</a>
@@ -2168,7 +2169,7 @@
         <div style="border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:rgba(255,255,255,.03)">
           <div class="mono" style="color:#7cd7e8">02 · Track <span style="opacity:.6">(opzionale)</span></div>
           <div style="font-family:'Space Grotesk';font-size:15px;font-weight:600;margin-top:4px">Tramite il tuo orologio</div>
-          <div style="font-size:12px;color:var(--muted-d);margin-top:3px">Garmin Connect · Apple Health</div>
+          <div style="font-size:12px;color:var(--muted-d);margin-top:3px">Garmin Connect · Apple Health · Suunto</div>
         </div>
         <div style="border:1px solid rgba(43,179,166,.5);border-radius:12px;padding:12px 14px;background:rgba(43,179,166,.1)">
           <div class="mono" style="color:#7cd7e8">03 · Analizza</div>
@@ -2337,7 +2338,7 @@
           </div>
           <div>
             <b style="font-family:'Space Grotesk';font-size:15px;color:var(--ink);display:block;margin-bottom:4px">Orologio di tracking? Ancora più completo.</b>
-            <span style="font-size:13px;color:var(--muted);line-height:1.5">Garmin o Apple Watch — tramite Garmin Connect o Apple Health, i dati della tua sessione arrivano automaticamente in RSL e vengono collegati a rig, vento e spot.</span>
+            <span style="font-size:13px;color:var(--muted);line-height:1.5">Garmin, Apple Watch o Suunto — tramite Garmin Connect, Apple Health o l'app Suunto, i dati della tua sessione arrivano automaticamente in RSL e vengono collegati a rig, vento e spot.</span>
           </div>
         </div>
       </div>
@@ -2539,11 +2540,12 @@
       <div>
         <div class="mono" style="color:#7cd7e8">— Integrazione orologio</div>
         <h2>Il tuo orologio. I tuoi dati.<br><span style="background:linear-gradient(90deg,#7cd7e8,#5ee0c9);-webkit-background-clip:text;background-clip:text;color:transparent">Insight molto più affilati.</span></h2>
-        <p>Usa il tuo orologio e app di tracking preferiti come fai già. Appena la sessione si sincronizza con <b style="color:#fff">Garmin Connect</b> o <b style="color:#fff">Apple Health</b>, tutti i dati arrivano automaticamente in RSL — e vengono collegati a rig, vento e spot per analisi che non trovi da nessun'altra parte.</p>
+        <p>Usa il tuo orologio e app di tracking preferiti come fai già. Appena la sessione si sincronizza con <b style="color:#fff">Garmin Connect</b>, <b style="color:#fff">Apple Health</b> o <b style="color:#fff">Suunto</b>, tutti i dati arrivano automaticamente in RSL — e vengono collegati a rig, vento e spot per analisi che non trovi da nessun'altra parte.</p>
 
         <ul class="int-list">
           <li><img src="/icons/garmin-connect.png" class="int-logo" alt="Garmin Connect" /> <b style="color:#fff;font-weight:600">Garmin Connect™</b> — import automatico delle sessioni</li>
           <li><span class="int-logo int-logo-apple"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.4 2-3.5 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-2-.9-3.3-.8-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.8 1.2 1.9 2.6 3.2 2.6s1.8-.8 3.3-.8 2 .8 3.3.8c1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM15.2 5.3c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.2-.5 2.9-1.3z"/></svg></span> <b style="color:#fff;font-weight:600">Apple Health</b> — sessioni Apple Watch sincronizzano direttamente</li>
+          <li><img src="/icons/suunto-logo.svg" class="int-logo int-logo-suunto" alt="Suunto" /> <b style="color:#fff;font-weight:600">Suunto</b> — import automatico delle sessioni tramite l'app Suunto</li>
           <li><span class="ok">✓</span> Traccia GPS, velocità top & media, distanza e frequenza cardiaca</li>
           <li><span class="ok">✓</span> Alpha 500, streak e record per combo di materiale</li>
         </ul>
@@ -2556,7 +2558,7 @@
 
       <div class="watches">
         <div class="session-phone">
-          <img src="/images/session-details.png" alt="Dettagli sessione RigSize Live con tracking Garmin, mappa, velocità e distanza" />
+          <img src="/images/session-details.png" alt="Dettagli sessione RigSize Live con tracking Garmin o Suunto, mappa, velocità e distanza" />
         </div>
       </div>
     </div>
@@ -2991,7 +2993,7 @@
     <div class="free-grid">
       <div class="free-tile">
         <b>Niente livello Pro</b>
-        <p>Niente funzioni dietro un abbonamento. Condivisione rig, previsioni, Garmin, leaderboard — tutto è incluso.</p>
+        <p>Niente funzioni dietro un abbonamento. Condivisione rig, previsioni, Garmin, Suunto, leaderboard — tutto è incluso.</p>
       </div>
       <div class="free-tile" style="border-color:rgba(43,179,166,.6);background:rgba(43,179,166,.08)">
         <b style="color:#c8f1ea">Share rigsizes, good surfkarma</b>
