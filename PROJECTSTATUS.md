@@ -1,6 +1,6 @@
 # RSL — projectstatus social marketing
 
-Bijgewerkt: **6 oktober 2026**.
+Bijgewerkt: **12 oktober 2026**.
 
 Werkafspraak 6 oktober: bij Meta-advertentiewerk eerst MCP proberen. Als een verwachte functie of koppeling niet werkt, Fabian vragen de koppeling te controleren voordat op Chrome wordt teruggevallen. Vaste instructie opgenomen in `AGENTS.md`.
 
@@ -256,3 +256,71 @@ Bestanden: `campaigns/rsl-snippets-nl/concept.json` (copy/IDs), `verification.js
 - Meta stelde bij Free. Really. en Your session oude video’s voor als Related media. Deze alternatieven uit de advertentie verwijderd en 0 geselecteerde media bevestigd. Bij Is it blowing? geen Related media actief in Review defaults. De mediabibliotheek zelf is niet opgeschoond.
 - Meta bevestigde de publicaties. Eindstatus: Free. Really. In review; Your session en Is it blowing? Processing. Definitieve goedkeuring nog niet bevestigd. Alle drie aan; geen nieuwe advertenties aangemaakt. NL-campagne en twee bestaande accountconcepten ongemoeid gelaten.
 - Bewijs: `/Users/fabiantrevisan/rsl-video/out/eu-ads-published-2026-10-06.jpg`.
+
+### Verzoek prestatieanalyse — 12 oktober 2026
+
+- Fabian meldt weinig nieuwe RSL-gebruikers en vraagt de huidige campagnes te analyseren.
+- Beschikbare tools gecontroleerd en pluginzoekfunctie geraadpleegd: de eerder gebruikte MCP-server `meta-ads-rigsize` is in deze sessie niet als aanroepbare Meta Ads-tools beschikbaar. Geen actuele campagnecijfers opgehaald; geen nieuwe authenticatiefout of verlopen token vastgesteld.
+- Conform afspraak eerst Fabian vragen de bestaande koppeling te controleren; niet stilzwijgend via Chrome of een andere API doorgaan. Geen advertenties of budgetten gewijzigd.
+- Na herstel: NL en EN vergelijken over dezelfde volledige dagen (bij voorkeur 5–11 oktober), per advertentie/land/platform; uitgaven, bereik, frequentie, uitgaande klikken, landingpagebezoeken en eventuele gemeten installaties. RSL-registraties afzonderlijk vergelijken; landingpagebezoeken zijn geen bewijs van nieuwe gebruikers.
+
+### MCP-hercontrole na herstart — 12 oktober 2026
+
+- Fabian bevestigt herstart; screenshot toont `meta-ads-rigsize` ingeschakeld. Andere MCP-tools zijn na herstart beschikbaar, Meta-tools nog niet.
+- Rechtstreekse alleen-lezen MCP-initialisatie naar `https://mcp.facebook.com/ads` met het bestaande lokaal opgeslagen token geeft HTTP 401: `Permission Error`, `API access blocked.`, code 200. Token niet weergegeven of gewijzigd. Dit bevestigt een toegangsweigering, niet specifiek een verlopen token; oorzaak nog onbekend.
+- Campagneanalyse nog niet uitgevoerd. Fabian meldt 3 nieuwe RSL-gebruikers in de afgelopen zeven dagen; herkomst niet vastgesteld. Voor browseranalyse eerst afgestemde terugval vragen conform projectafspraak.
+
+### Prestatieanalyse via Chrome — 12 oktober 2026
+
+Fabian gaf expliciet akkoord voor browseranalyse na de MCP-toegangsweigering. Alleen rapportageweergaven gewijzigd; geen campagnes, advertenties, budgetten of publicaties aangepast. Bron: live Ads Manager, account 1701929497896944. Periode in de interface: **5–11 oktober 2026**, Amsterdam Time (URL gebruikt exclusieve eindgrens 12 oktober). Beide verkeerscampagnes en alle zes snippets Active; overige campagnes Off en €0 uitgaven in deze periode.
+
+| Campagne | Uitgaven | Bereik | Impressies | Frequentie | Linkklikken | Link-CTR | Landingpagebezoeken | Kosten/bezoek |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| EN Europa | €20,45 | 4.645 | 6.458 | 1,39 | 435 | 6,74% | 387 | €0,05 |
+| NL | €21,07 | 2.139 | 2.872 | 1,34 | 225 | 7,83% | 213 | €0,10 |
+
+Samen €41,52, 660 linkklikken en 600 landingpagebezoeken. Bereik niet optellen wegens mogelijke overlap. Fabian meldt 3 nieuwe RSL-gebruikers in de afgelopen zeven dagen; exacte cohort/datums en advertentieherkomst niet onafhankelijk bevestigd. €13,84 uitgaven per gemelde nieuwe gebruiker en verhouding 3/600 = 0,5% zijn slechts beschrijvende vergelijkingen, geen gemeten campagne-CPA of attributie/conversieratio. Linkklikken zijn geen unieke gebruikers of noodzakelijk uitsluitend uitgaande klikken; ook LPV zijn geen unieke personen/installaties. Geen app-/registratiemeting opgehaald.
+
+- EN landenuitgaven: Spanje €17,42 (85,2%), Frankrijk €1,49, Italië €1,11, België €0,29, Verenigd Koninkrijk €0,08, Duitsland €0,03, Noorwegen €0,02, Nederland €0,01. EN kliks: Spanje 366, Frankrijk 31, Italië 31, België 6, VK 1. Dit is geen bewijs dat Spanje slechte gebruikers oplevert; registraties per land ontbreken.
+- Platform: EN Facebook €20,40 / 432 kliks, Instagram €0,05 / 3 kliks. NL Facebook €21,00 / 225 kliks, Instagram €0,07 / 0 gerapporteerde kliks. Totaal 99,7% van uitgaven Facebook; Instagram onvoldoende levering om prestaties te beoordelen.
+- EN advertenties: Is it blowing? €16,84 / 328 LPV; Your session €3,47 / 55 LPV; Free. Really. €0,14 / 4 LPV. NL: Waait het? €20,97 / 213 LPV; Gratis en Je sessie elk €0,05 / geen gerapporteerde LPV. Geen eerlijke A/B-test; varianten met nauwelijks uitgaven niet afkeuren op deze cijfers.
+- Live downloadpagina `/app/` op desktop toont Nederlandse tekst en beide storelinks. Apple `ct=meta-carrousel-ned` en Google `utm_campaign=carrousel-ned` staan nog hardcoded, ook voor de EN-route. Dit bevestigt ongeschikte labels voor splitsing naar huidige campagne. Lokale `app/index.html` bevat OS-detectie en automatische storedoorverwijzing. Mobiele Facebook-/Instagram-in-appbrowserroute en installatie/registratie niet end-to-end getest; geen technische fout bewezen. Website niet gewijzigd.
+- Advies: budget voorlopig niet verhogen; eerst mobiele doorklik/installatie/registratieroute testen en uitval per stap/land/OS zichtbaar maken. Daarna gecontroleerd scherper geografisch testen en gericht Instagram-testen binnen het afgesproken budget als Fabian dat wil. Goedkope LPV alleen bewijzen geen gebruikersgroei; app-installatieoptimalisatie blijft een afzonderlijk implementatietraject.
+- Bewijs: `campaigns/analysis-2026-10-12/campagnes-week.jpg`. Rapportage-export niet bruikbaar ontvangen; bovenstaande cijfers rechtstreeks uit Ads Manager gelezen.
+
+### Verbindingsdiagnose — 12 oktober 2026
+
+- Op verzoek van Fabian lokale MCP-configuratie gecontroleerd: juiste endpoint en bestaande `http_headers_helper`; lokaal tokenbestand aanwezig en niet leeg. Geen geheimen weergegeven of gewijzigd.
+- Nieuwe alleen-lezen test: MCP initialize opnieuw HTTP 401 `API access blocked.` (code 200). Ook Graph v26.0 `/me?fields=id` en `/me/permissions` geven OAuthException code 200 `API access blocked.`. Blokkade treft dus ook Graph API met dit token; geen uitsluitend Codex/MCP-probleem. Niet bewezen dat token verlopen is, of welke app-/businessbeperking de oorzaak is.
+- Volgende stap: in Meta Developers bij app 988782677571964 waarschuwingen/vereiste acties en API-toegangsstatus controleren, plus Business Support Home voor beperkingen; op basis van exacte melding herstel kiezen. Geen token intrekken of nieuw aanmaken voordat oorzaak duidelijk is.
+- Fabian heeft rotatie van NL/EN snippets goedgekeurd (4 dagen Gratis, daarna 4 dagen Je sessie, €3 gemiddeld/dag per campagne). Nog niet ingesteld: verbinding herstellen; browserwijziging nog niet apart afgestemd. Startdata pas bij daadwerkelijke uitvoering vastleggen.
+
+### Meta-dashboard nagekeken na inloggen — 12 oktober 2026
+
+- Juiste app 988782677571964 staat Live; dashboard en centrale Required actions tonen geen vereiste acties. App-rate-limit 0% gebruikt, 100% over; geen gebruikers throttled.
+- Beide appmeldingen bekeken in Alerts: Live-modus gewijzigd op 2 oktober en welkomstbericht Marketing API van 1 oktober. Geen blokkademelding in dit overzicht.
+- Business Support Home gefilterd op rigsizelive toont geen account-/assetproblemen in de afgelopen 30 dagen. Dit sluit andere of oudere beperkingen niet uit.
+- Oorzaak `API access blocked` blijft onbewezen. Geen instellingen, tokens of advertenties veranderd. Mogelijke volgende diagnose: token/rechten controleren of een nieuw token testen zonder het oude in te trekken; bij dezelfde fout Meta-support met foutcode/trace-ID.
+
+### Meta MCP hersteld na identiteitsbevestiging — 12 oktober 2026
+
+- Fabian voltooide Meta-passkeyverificatie bij systeemgebruikers. Daarna slaagde dezelfde MCP-initialisatie met het bestaande token (HTTP 200); tools/list gaf 97 tools. Tijdelijk verband met verificatie vastgesteld, exacte interne oorzaak niet bewezen.
+- `ads_get_ad_accounts` via officiële MCP bevestigt uitsluitend RSL-account 1701929497896944: ACTIVE, MCP enabled, queryable, betaalmethode aanwezig, EUR, minimum dagbudget 90 cent. Verbinding via directe MCP HTTP-route werkt weer; native tools zijn niet automatisch in deze sessie geladen.
+- Business Settings > Integrations > Ads MCP server toont 7 van 7 acties toegestaan. Bestaande assettoegang van Rslcodex aanwezig. Geen nieuw token gemaakt of oude token ingetrokken; geen rechten/budgetten/advertenties gewijzigd.
+- Openstaande goedgekeurde snippetrotatie nog uitvoeren via herstelde MCP; geen startdatum of schakelmoment al ingesteld.
+
+### Tijdelijke videorotatie, fase 1 actief — 12 oktober 2026 circa 19:20
+
+- Fabian gaf akkoord de voorgestelde rotatie uit te voeren: vier dagen Gratis/Free, daarna vier dagen Je sessie/Your session, bestaand budget behouden.
+- Via officiële Meta MCP actuele campagnes (ACTIVE, elk EUR 3/dag), sets (ACTIVE, einddatum 2026-11-01T00:00:00+0100) en zes actieve ads gecontroleerd. `ads_get_ad_entities` draft-mode is niet beschikbaar voor dit account; melding gradual rollout. `ads_update_entity` werkt wel en retourneert success=true, is_draft=false: directe live statusupdates.
+- Gepauzeerd en opgeslagen status bevestigd: NL Waait 120252360446160100, NL Je sessie 120252360456410100, EN Is it blowing 120252363387670100, EN Your session 120252363387640100. NL effective status PAUSED; EN effective status tijdelijk IN_PROCESS, configured status PAUSED.
+- Actief gehouden en bevestigd: NL Gratis 120252360460650100 en EN Free 120252363387630100. Budgets, creatives, muziek, doelgroep en einddatum onveranderd. Geen nieuwe campagnes of advertenties.
+- VOORSTEL, NOG NIET INGEPLAND: 16 oktober 19:20 Europe/Amsterdam wisselen naar Je sessie/Your session; 20 oktober 19:20 alle zes terug actief om oorspronkelijke toestand te herstellen en test af te ronden.
+- Poging tot heartbeat-automation afgewezen door automatische veiligheidscontrole: financiële toekomstige statuswijzigingen en herstelactie vragen expliciete toestemming voor scheduler. Er is GEEN automation aangemaakt. Niet omzeilen met een andere scheduler/regels. Fabian expliciet vragen de automatische wissel, herstelactie en beëindiging van de automation goed te keuren. Eerste fase is al toegepast; volgende wissel is nog niet gegarandeerd/gepland.
+
+### Automatische opvolging bevestigd — 12 oktober 2026
+
+- Fabian gaf expliciet akkoord op automatische wissel op 16 oktober 19:20 en herstel van alle zes advertenties op 20 oktober 19:20, gevolgd door beëindiging van de opvolging.
+- Codex-thread-heartbeat `rsl-videorotatie-opvolgen` succesvol aangemaakt, status ACTIVE, dagelijks 19:20 (Europe/Amsterdam). Geen Meta-native regel: de wissels worden door de Codex-opvolging uitgevoerd. Voor 16 oktober blijft de opvolging stil en verandert niets.
+- 16 oktober: Gratis/Free uit, Je sessie/Your session aan; Waait/Is it blowing blijft uit. 20 oktober: alle zes snippets terug actief, resultaten controleren, PROJECTSTATUS bijwerken en automation op PAUSED. Elke fase eenmaal uitvoeren; recente gebruikerswijzigingen respecteren; bij toegangsproblemen melden.
+- Budgetten blijven EUR 3 gemiddeld per campagne per dag (EUR 6 samen). Dit vervangt de eerdere notitie dat de scheduler geblokkeerd/niet aangemaakt was.
