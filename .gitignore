@@ -4,3 +4,4 @@
 
 # Deploy script backups
 .privacy-deploy-backup-*/
+.vercel

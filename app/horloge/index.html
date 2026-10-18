@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>RigSize Live</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #0891b2, #2563eb);
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  h1 { font-size: 22px; font-weight: 700; margin: 0 0 8px; }
+  p  { font-size: 15px; opacity: .9; margin: 0 0 24px; max-width: 320px; }
+  .btns { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 300px; }
+  a.btn {
+    display: block;
+    background: #fff;
+    color: #1e40af;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 999px;
+  }
+  a.web { color: #fff; font-size: 14px; opacity: .9; margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>RigSize Live</h1>
+  <p id="msg">Download RigSize Live on your phone, then connect your watch.</p>
+  <div class="btns">
+    <a class="btn" id="primary" href="https://apps.apple.com/app/apple-store/id6771266857?pt=128920490&ct=horloge-qr&mt=8">Download on the App Store</a>
+    <a class="btn" id="secondary" href="https://play.google.com/store/apps/details?id=com.rigsizelive.app&referrer=utm_source%3Dgarmin-watch%26utm_campaign%3Dhorloge-qr">Get it on Google Play</a>
+  </div>
+  <a class="web" id="web" href="https://app.rigsizelive.com">Or open app.rigsizelive.com</a>
+</div>
+
+<script>
+(function () {
+  var IOS  = 'https://apps.apple.com/app/apple-store/id6771266857?pt=128920490&ct=horloge-qr&mt=8';
+  var PLAY = 'https://play.google.com/store/apps/details?id=com.rigsizelive.app&referrer=utm_source%3Dgarmin-watch%26utm_campaign%3Dhorloge-qr';
+
+  var T = {
+    nl: { msg: 'Download RigSize Live op je telefoon en koppel daarna je horloge.',
+          ios: 'Download in de App Store', play: 'Download in Google Play', web: 'Of open app.rigsizelive.com' },
+    en: { msg: 'Download RigSize Live on your phone, then connect your watch.',
+          ios: 'Download on the App Store', play: 'Get it on Google Play', web: 'Or open app.rigsizelive.com' },
+    de: { msg: 'Lade RigSize Live auf dein Handy und verbinde danach deine Uhr.',
+          ios: 'Im App Store laden', play: 'Bei Google Play laden', web: 'Oder öffne app.rigsizelive.com' },
+    fr: { msg: 'Téléchargez RigSize Live sur votre téléphone, puis connectez votre montre.',
+          ios: 'Télécharger dans l’App Store', play: 'Disponible sur Google Play', web: 'Ou ouvrez app.rigsizelive.com' },
+    es: { msg: 'Descarga RigSize Live en tu teléfono y luego conecta tu reloj.',
+          ios: 'Descargar en el App Store', play: 'Disponible en Google Play', web: 'O abre app.rigsizelive.com' },
+    it: { msg: 'Scarica RigSize Live sul telefono e poi collega il tuo orologio.',
+          ios: 'Scarica dall’App Store', play: 'Disponibile su Google Play', web: 'Oppure apri app.rigsizelive.com' }
+  };
+  var lang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  if (!T[lang]) lang = 'en';
+  var t = T[lang];
+  document.documentElement.lang = lang;
+
+  var ua = navigator.userAgent || '';
+  var isAndroid = /Android/i.test(ua);
+  // iPadOS meldt zich als Macintosh met touch; vandaar de tweede check.
+  var isIOS = /iPad|iPhone|iPod/i.test(ua) ||
+              (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+
+  var primary = document.getElementById('primary');
+  var secondary = document.getElementById('secondary');
+  document.getElementById('msg').textContent = t.msg;
+  document.getElementById('web').textContent = t.web;
+  primary.textContent = t.ios;
+  secondary.textContent = t.play;
+
+  if (isAndroid) {
+    // Zet de Play-knop bovenaan voor Android-bezoekers.
+    primary.href = PLAY;
+    primary.textContent = t.play;
+    secondary.href = IOS;
+    secondary.textContent = t.ios;
+    location.replace(PLAY);
+  } else if (isIOS) {
+    location.replace(IOS);
+  }
+  // Overig (desktop): pagina blijft staan, geen redirect.
+})();
+</script>
+</body>
+</html>

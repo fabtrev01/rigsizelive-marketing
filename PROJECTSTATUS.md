@@ -324,3 +324,13 @@ Samen €41,52, 660 linkklikken en 600 landingpagebezoeken. Bereik niet optellen
 - Codex-thread-heartbeat `rsl-videorotatie-opvolgen` succesvol aangemaakt, status ACTIVE, dagelijks 19:20 (Europe/Amsterdam). Geen Meta-native regel: de wissels worden door de Codex-opvolging uitgevoerd. Voor 16 oktober blijft de opvolging stil en verandert niets.
 - 16 oktober: Gratis/Free uit, Je sessie/Your session aan; Waait/Is it blowing blijft uit. 20 oktober: alle zes snippets terug actief, resultaten controleren, PROJECTSTATUS bijwerken en automation op PAUSED. Elke fase eenmaal uitvoeren; recente gebruikerswijzigingen respecteren; bij toegangsproblemen melden.
 - Budgetten blijven EUR 3 gemiddeld per campagne per dag (EUR 6 samen). Dit vervangt de eerdere notitie dat de scheduler geblokkeerd/niet aangemaakt was.
+
+### Videorotatie fase 2 uitgevoerd — 16 oktober 2026 circa 20:02 CEST
+
+- Heartbeat werd aangeleverd om 19:28; actuele klok bij voltooide wijzigingen 20:01:47 CEST. Wissel circa 42 minuten later dan geplande 19:20. Testduur/budget/hersteltijd niet verlengd.
+- Native Meta MCP nu beschikbaar en gebruikt. Vooraf alle zes statussen exact volgens fase 1; beide campagnes ACTIVE met EUR 3/dag, beide sets ACTIVE en einddatum 1 november 00:00 +0100. Geen afwijkende handmatige statuswijzigingen aangetroffen.
+- `ads_update_entity` pause-only live succes voor NL Gratis 120252360460650100 en EN Free 120252363387630100; opgeslagen PAUSED bevestigd. Geen draftpublicatie gedaan.
+- `ads_activate_entity` succes voor NL Je sessie 120252360456410100 en EN Your session 120252363387640100; opgeslagen ACTIVE bevestigd. Effective status aanvankelijk IN_PROCESS; dit is geen bewijs dat levering al begonnen is.
+- NL Waait 120252360446160100 en EN Is it blowing 120252363387670100 blijven PAUSED. Geen andere velden of concepten gewijzigd.
+- Fase 2 is uitgevoerd: deze statuswijzigingen niet herhalen bij volgende dagelijkse heartbeat. Herstel alle zes pas op/na 20 oktober 19:20 conform expliciet akkoord en mits geen nieuwe instructies/handmatige afwijkingen. Automation blijft tot dan ACTIVE.
+- Laatste live read-back bevestigt ook effective status ACTIVE voor beide sessieadvertenties en PAUSED voor de overige vier. Fase 2 volledig geverifieerd.
