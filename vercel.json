@@ -13,6 +13,30 @@
       "has": [{ "type": "header", "key": "user-agent", "value": ".*Android.*" }],
       "destination": "https://play.google.com/store/apps/details?id=com.rigsizelive.app&referrer=utm_source%3Dgarmin-watch%26utm_campaign%3Dhorloge-qr",
       "permanent": false
+    },
+    {
+      "source": "/app",
+      "has": [{ "type": "header", "key": "user-agent", "value": ".*(iPhone|iPad|iPod).*" }],
+      "destination": "https://apps.apple.com/app/apple-store/id6771266857?pt=128920490&ct=meta-carrousel-ned&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/app",
+      "has": [{ "type": "header", "key": "user-agent", "value": ".*Android.*" }],
+      "destination": "https://play.google.com/store/apps/details?id=com.rigsizelive.app&referrer=utm_source%3Dmeta%26utm_campaign%3Dcarrousel-ned",
+      "permanent": false
+    },
+    {
+      "source": "/app-en",
+      "has": [{ "type": "header", "key": "user-agent", "value": ".*(iPhone|iPad|iPod).*" }],
+      "destination": "https://apps.apple.com/app/apple-store/id6771266857?pt=128920490&ct=meta-carrousel-eng&mt=8",
+      "permanent": false
+    },
+    {
+      "source": "/app-en",
+      "has": [{ "type": "header", "key": "user-agent", "value": ".*Android.*" }],
+      "destination": "https://play.google.com/store/apps/details?id=com.rigsizelive.app&referrer=utm_source%3Dmeta%26utm_campaign%3Dcarrousel-eng",
+      "permanent": false
     }
   ],
   "rewrites": [
