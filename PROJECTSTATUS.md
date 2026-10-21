@@ -334,3 +334,12 @@ Samen €41,52, 660 linkklikken en 600 landingpagebezoeken. Bereik niet optellen
 - NL Waait 120252360446160100 en EN Is it blowing 120252363387670100 blijven PAUSED. Geen andere velden of concepten gewijzigd.
 - Fase 2 is uitgevoerd: deze statuswijzigingen niet herhalen bij volgende dagelijkse heartbeat. Herstel alle zes pas op/na 20 oktober 19:20 conform expliciet akkoord en mits geen nieuwe instructies/handmatige afwijkingen. Automation blijft tot dan ACTIVE.
 - Laatste live read-back bevestigt ook effective status ACTIVE voor beide sessieadvertenties en PAUSED voor de overige vier. Fase 2 volledig geverifieerd.
+
+### Videorotatie afgerond en oorspronkelijke toestand hersteld — 21 oktober 2026 circa 01:25 CEST
+
+- Vooraf via officiële native Meta MCP gecontroleerd: alle zes advertenties exact volgens fase 2, geen afwijkende handmatige statuswijzigingen aangetroffen. Beide campagnes ACTIVE, elk EUR 3 gemiddeld per dag; beide sets ACTIVE, einddatum 2026-11-01T00:00:00+0100.
+- Vier gepauzeerde advertenties afzonderlijk geactiveerd via `ads_activate_entity`: NL Gratis 120252360460650100, EN Free 120252363387630100, NL Waait 120252360446160100 en EN Is it blowing 120252363387670100. Beide sessieadvertenties bleven ACTIVE.
+- Opgeslagen status na iedere mutatie gelezen. Laatste read-backs bevestigen voor alle zes zowel configured status ACTIVE als effective status ACTIVE; tijdelijke IN_PROCESS volledig verdwenen.
+- Herstel bevestigd op 21 oktober circa 01:25 CEST, ongeveer 6 uur en 5 minuten later dan de geplande 20 oktober 19:20. Heartbeat droeg een eerdere starttijd; werkelijke toolklok bij verificatie was 20 oktober 23:24:24 UTC, gevolgd door laatste bevestiging. Budgetten en testduur niet zelfstandig aangepast.
+- Alleen deze vier advertentiestatussen gewijzigd. Creaties, muziek, doelgroep, einddatum en bestaande andere concepten ongemoeid gelaten. Budget blijft EUR 3 per campagne per dag, EUR 6 samen.
+- Automation `rsl-videorotatie-opvolgen` via automation_update op PAUSED gezet; tool bevestigt PAUSED. Opvolging afgerond, geen verdere rotatiewissels uitvoeren.
