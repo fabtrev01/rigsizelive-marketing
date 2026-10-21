@@ -55,3 +55,22 @@ grep -rln "OUDE_TEKST" . --include="*.html" 2>/dev/null | grep -v backup
   de oude versie serveert)
 
 Cloudflare Web Analytics token staat in de template en moet blijven staan.
+
+## Store-doorverwijzingen
+
+- `/app` (NL, `ct=meta-carrousel-ned`), `/app-en` (EN, `ct=meta-carrousel-eng`)
+  en `/app/horloge` (QR horloge-app, `ct=horloge-qr`) sturen door naar App
+  Store / Google Play via user-agent-redirects in `vercel.json`
+  (`iPhone|iPad|iPod` resp. `Android`, `permanent: false`, Vercel antwoordt
+  307). Daardoor is er geen flits van de tussenpagina.
+- De HTML-pagina's (`app/index.html`, `app-en/index.html`,
+  `app/horloge/index.html`) zijn alleen fallback voor desktop, iPadOS in
+  desktopmodus en crawlers (zoals Meta's advertentiecontrole). Laat ze staan.
+- De store-URL's in `vercel.json` en in de `IOS`/`PLAY`-variabelen van de
+  bijbehorende HTML-pagina moeten byte-voor-byte gelijk blijven; wijzig je een
+  campagnetag, dan op beide plekken.
+- Een nieuwe campagne-landingspagina krijgt beide: een HTML-pagina en twee
+  redirect-regels in `vercel.json`.
+- Controle na deploy:
+  `curl -sI -A "<iPhone- of Android-UA>" https://www.rigsizelive.com/<pad>`
+  moet 307 met de store-URL als `location` geven.
